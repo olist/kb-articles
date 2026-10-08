@@ -1,0 +1,96 @@
+{
+  "feature": "Configurações de estoque",
+  "summary": "The screen Configurações de estoque (page title Olist - Estoque, URL /parametros_estoque) shows the current stock parameters: negative-stock policy, when stock is posted for outflows, inflows and services, stock reversal, several on/off options, a notification email, and the quantity sent to e-commerce for made-to-order products. No label is marked required. Explanatory texts on the page describe what several options affect. Salvar was not clicked, so no configuration was changed.",
+  "entry_points": [
+    "The screen was already open at https://local.tiny.com.br/parametros_estoque (page title Olist - Estoque).",
+    "On-page breadcrumb: Voltar, Início, Suprimentos, Configurações, followed by the headings Estoque and Configurações de estoque."
+  ],
+  "capabilities": [
+    "View the current stock configuration on a single form titled Configurações de estoque.",
+    "Choose Permite estoque negativo among three radio options.",
+    "Choose Lançamento de estoque para saídas and Lançamento de estoque para entradas from dropdowns, each with five options; both currently show Manual.",
+    "Choose Lançamento de estoque para serviços and Estorno de estoques from radio groups.",
+    "Turn on or off the toggles for NF authorization blocking, automatic extra sync-limit extension, stock on the price list, automatic reversal when cancelling an order, low-stock email, considering stock balance for sob encomenda, and editing the quantity read on inventory import.",
+    "Fill Endereço de e-mail para receber os avisos and Quantidade enviada ao e-commerce quando produto sob encomenda.",
+    "The form ends with a blue salvar button and a cancelar control. salvar was not used."
+  ],
+  "user_flows": [
+    {
+      "name": "Consultar configurações de estoque",
+      "steps": [
+        "Open Configurações de estoque. The observed address is /parametros_estoque and the breadcrumb reads Início > Suprimentos > Configurações, with headings Estoque and Configurações de estoque.",
+        "Review the upper options: Permite estoque negativo, Bloquear autorização de Notas Fiscais com saldo de estoque igual ou inferior a zero, Lançamento de estoque para saídas, Lançamento de estoque para entradas, Lançamento de estoque para serviços, and Estorno de estoques, including the explanatory texts under those groups.",
+        "Scroll to the end of the form and review the remaining toggles, Endereço de e-mail para receber os avisos, and Quantidade enviada ao e-commerce quando produto sob encomenda. Leave salvar unclicked."
+      ],
+      "outcome": "The full stock-settings form is visible with the current values and on-screen explanations. No confirmation message appears because salvar was not clicked."
+    }
+  ],
+  "fields_and_options": [
+    "Permite estoque negativo (radio). Observed selection: Sim. Other options: Não - Validar os saldos de todos os depósitos com saldos a considerar; Não - Validar o saldo do depósito selecionado na venda. Visible text under the group: Não permite lançar estoque de notas fiscais, pedidos de venda e ordens de serviço caso o saldo de algum dos produtos for insuficiente. The page also contains this longer explanation: Não permite lançar estoque de notas fiscais, pedidos de venda e ordens de serviço caso o saldo de algum dos produtos for insuficiente. Para as vendas e notas fiscais, será considerado o depósito selecionado. Para as ordens se serviço, será considerado o depósito padrão.",
+    "Bloquear autorização de Notas Fiscais com saldo de estoque igual ou inferior a zero (toggle). Observed state: off. Visible text: Será considerado o saldo físico dos itens no estoque do depósito conforme o parâmetro \"Permite estoque negativo\".",
+    "Lançamento de estoque para saídas (dropdown). Observed selection: Manual. Options read from the control: Manual; Automático ao autorizar a nota fiscal; Automático ao salvar a nota fiscal; Automático ao salvar o pedido; Automático ao marcar pedido como enviado. Visible note: A sua conta possui a reserva de estoque habilitada, que realiza automaticamente a reserva de estoque conforme a situação do pedido. Neste caso, não recomendamos o lançamento automático ao salvar o pedido, pois invalida a utilização da reserva de estoque.",
+    "Lançamento de estoque para entradas (dropdown). Observed selection: Manual. Options: Manual; Automático ao autorizar a nota fiscal; Automático ao salvar a nota fiscal; Automático ao salvar a ordem de compra; Automático ao finalizar conferência de compra.",
+    "Lançamento de estoque para serviços (radio). Observed selection: Manual. Other options: Automático ao salvar a ordem de serviço; Automático ao finalizar a ordem de serviço.",
+    "Estorno de estoques (radio). Observed selection: Manual. Other option: Automático ao cancelar nota fiscal. Visible text: Ao excluir a NF, o estorno também será automático.",
+    "Contratar automaticamente extensão de limite de sincronização de estoque adicional (toggle). Observed state: on. Visible text: Desabilitar essa opção pode bloquear a sincronização de estoque caso ultrapasse o limite do plano.",
+    "Exibir estoque do produto na lista de preços (toggle). Observed state: on. No extra explanation beyond the label was visible.",
+    "Estornar estoque automaticamente ao cancelar o pedido (toggle). Observed state: off. No extra explanation beyond the label was visible.",
+    "Enviar e-mail sobre produtos abaixo do estoque mínimo (toggle). Observed state: on.",
+    "Endereço de e-mail para receber os avisos (text field). Observed value: empty. Not marked required.",
+    "Quantidade enviada ao e-commerce quando produto sob encomenda (text field). Observed value: 99. Not marked required.",
+    "Considerar saldo em estoque no sob encomenda (toggle). Observed state: on.",
+    "Permitir editar quantidade lida na importação de inventário (toggle). Observed state: off.",
+    "Footer controls: salvar (blue button) and cancelar. Neither was clicked."
+  ],
+  "validations": [
+    "No label on the form showed a required asterisk or other required marker. The two text fields were not marked required. No validation or error message was displayed."
+  ],
+  "restrictions": [
+    "A visible note says this account has reserva de estoque enabled and does not recommend Lançamento automático ao salvar o pedido, because it invalidates use of the stock reservation.",
+    "A visible note says disabling Contratar automaticamente extensão de limite de sincronização de estoque adicional can block stock synchronization if the plan limit is exceeded.",
+    "The negative-stock explanation states that stock cannot be posted for notas fiscais, pedidos de venda and ordens de serviço when a product balance is insufficient."
+  ],
+  "success_states": [],
+  "error_states": [],
+  "visible_changes": [
+    "No value was changed during observation. The form stayed open with the values listed above, and no save confirmation or error banner appeared."
+  ],
+  "evidence": [
+    {
+      "description": "Upper portion of Configurações de estoque: Permite estoque negativo with Sim selected, the NF authorization-block toggle off, both lançamento dropdowns showing Manual, service radios with Manual selected, and the start of Estorno de estoques.",
+      "source": "output/runs/20261006-202950-investigue-as-configura-es-de-estoque-ac/screenshots/1791318847393_Configura_es_de_estoque_upper_section_with_radios_dropdowns_.png",
+      "evidence_type": "screenshot",
+      "related_flow": "Consultar configurações de estoque",
+      "step_index": 2
+    },
+    {
+      "description": "Lower portion of Configurações de estoque: sync, price-list, order-reversal and low-stock-email toggles, empty email field, quantity 99, sob encomenda and inventory-import toggles, and salvar/cancelar.",
+      "source": "output/runs/20261006-202950-investigue-as-configura-es-de-estoque-ac/screenshots/1791318766698_Configura_es_de_estoque_lower_section_with_toggles_email_qua.png",
+      "evidence_type": "screenshot",
+      "related_flow": "Consultar configurações de estoque",
+      "step_index": 3
+    },
+    {
+      "description": "Native select options for opc_lancamento_estoque_saida (selected Manual) and opc_lancamento_estoque_entrada (selected Manual), five options each, plus checked states of all toggles and empty required-marker list.",
+      "source": "https://local.tiny.com.br/parametros_estoque",
+      "evidence_type": "dom_query",
+      "related_flow": "Consultar configurações de estoque",
+      "step_index": 2
+    },
+    {
+      "description": "Visible form from Permite estoque negativo through Permitir editar quantidade lida na importação de inventário, with Sim/Manual selected, toggles on or off as listed, email empty, quantity 99, and salvar/cancelar at the bottom. Breadcrumb above the fold: Início, Suprimentos, Configurações, headings Estoque and Configurações de estoque.",
+      "source": "https://local.tiny.com.br/parametros_estoque",
+      "evidence_type": "browser_state",
+      "related_flow": "Consultar configurações de estoque",
+      "step_index": 1
+    }
+  ],
+  "unknowns": [
+    "What happens after clicking salvar or cancelar was not observed. salvar was intentionally not clicked, and cancelar was not clicked.",
+    "Whether the email field or the quantity field becomes required in some toggle states was not tested. No required marker was visible while the low-stock email toggle was on and the email field was empty.",
+    "Runtime stock behavior of each option was not verified by changing a value. Only the labels and explanatory texts on this screen were observed.",
+    "The click path from the home menu was not exercised; the screen was already open. Only the URL and the breadcrumb on the page were observed.",
+    "The longer negative-stock explanation (depósito selecionado / depósito padrão) was present in the page content. Only the shorter sentence was confirmed as visible text in the screenshot.",
+    "Help text that might appear only after selecting another dropdown or radio option was not observed, because no option was changed."
+  ]
+}
