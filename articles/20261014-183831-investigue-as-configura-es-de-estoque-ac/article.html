@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Como configurar o estoque</title>
+</head>
+<body>
+<article>
+<h1>Como configurar o estoque</h1>
+<h2>Descrição</h2>
+<p>A tela <strong>Configurações de estoque</strong> reúne os parâmetros de estoque do ERP da Olist. Nela, você define estoque negativo, bloqueio de autorização de notas fiscais, momento do lançamento em saídas, entradas e serviços, estorno, sincronização, lista de preços, aviso por email, sob encomenda e importação de inventário.</p>
+<p>O caminho é <strong>Início &gt; Suprimentos &gt; Configurações &gt; Estoque</strong>.</p>
+<h2>Instruções</h2>
+<p><strong>Importante:</strong> se a reserva de estoque estiver habilitada, a tela informa que o estoque é reservado automaticamente conforme a situação do pedido. Nesse caso, a tela não recomenda <strong>Automático ao salvar o pedido</strong> em <strong>Lançamento de estoque para saídas</strong>, porque essa alternativa invalida a utilização da reserva de estoque.</p>
+<h3>Como acessar</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Suprimentos &gt; Configurações &gt; Estoque</strong>.</p>
+<p><img src="screenshots/1.png" alt="Parte superior da tela Configurações de estoque" /></p>
+</li>
+<li>
+<p>Ao terminar os ajustes, clique em <strong>Salvar</strong>, no fim da tela. <strong>Cancelar</strong> fica ao lado.</p>
+</li>
+</ol>
+<h3>O que cada opção faz</h3>
+<p>Nenhum campo é obrigatório.</p>
+<h4>Estoque negativo e autorização de notas fiscais</h4>
+<p>Em <strong>Permite estoque negativo</strong>, escolha uma alternativa:</p>
+<ul>
+<li><strong>Sim</strong></li>
+<li><strong>Não - Validar os saldos de todos os depósitos com saldos a considerar</strong></li>
+<li><strong>Não - Validar o saldo do depósito selecionado na venda</strong></li>
+</ul>
+<p>A tela informa que não permite lançar estoque de notas fiscais, pedidos de venda e ordens de serviço caso o saldo de algum dos produtos for insuficiente.</p>
+<p>Em <strong>Bloquear autorização de Notas Fiscais com saldo de estoque igual ou inferior a zero</strong>, ligue ou desligue a opção. O saldo considerado é o saldo físico dos itens no depósito, conforme <strong>Permite estoque negativo</strong>.</p>
+<h4>Lançamento de estoque</h4>
+<p>Em <strong>Lançamento de estoque para saídas</strong>, escolha uma alternativa:</p>
+<ul>
+<li><strong>Manual</strong></li>
+<li><strong>Automático ao autorizar a nota fiscal</strong></li>
+<li><strong>Automático ao salvar a nota fiscal</strong></li>
+<li><strong>Automático ao salvar o pedido</strong></li>
+<li><strong>Automático ao marcar pedido como enviado</strong></li>
+</ul>
+<p>Com a reserva de estoque habilitada, a tela não recomenda <strong>Automático ao salvar o pedido</strong>.</p>
+<p>Em <strong>Lançamento de estoque para entradas</strong>, escolha uma alternativa:</p>
+<ul>
+<li><strong>Manual</strong></li>
+<li><strong>Automático ao autorizar a nota fiscal</strong></li>
+<li><strong>Automático ao salvar a nota fiscal</strong></li>
+<li><strong>Automático ao salvar a ordem de compra</strong></li>
+<li><strong>Automático ao finalizar conferência de compra</strong></li>
+</ul>
+<p>Em <strong>Lançamento de estoque para serviços</strong>, escolha uma alternativa:</p>
+<ul>
+<li><strong>Manual</strong></li>
+<li><strong>Automático ao salvar a ordem de serviço</strong></li>
+<li><strong>Automático ao finalizar a ordem de serviço</strong></li>
+</ul>
+<h4>Estorno</h4>
+<p>Em <strong>Estorno de estoques</strong>, escolha uma alternativa:</p>
+<ul>
+<li><strong>Manual</strong></li>
+<li><strong>Automático ao cancelar nota fiscal</strong></li>
+</ul>
+<p>Abaixo de <strong>Automático ao cancelar nota fiscal</strong>, a tela informa: Ao excluir a NF, o estorno também será automático.</p>
+<p><strong>Estornar estoque automaticamente ao cancelar o pedido:</strong> ligue ou desligue a opção.</p>
+<h4>Sincronização, lista de preços e avisos</h4>
+<p><strong>Contratar automaticamente extensão de limite de sincronização de estoque adicional:</strong> ligue ou desligue a opção. Desabilitar pode bloquear a sincronização de estoque caso ultrapasse o limite do plano.</p>
+<p><strong>Exibir estoque do produto na lista de preços:</strong> ligue ou desligue a opção.</p>
+<p><strong>Enviar e-mail sobre produtos abaixo do estoque mínimo:</strong> ligue ou desligue a opção. Informe o email em <strong>Endereço de e-mail para receber os avisos</strong>.</p>
+<p><img src="screenshots/2.png" alt="Parte inferior da tela Configurações de estoque, até Salvar e Cancelar" /></p>
+<h4>Sob encomenda e inventário</h4>
+<p>Em <strong>Quantidade enviada ao e-commerce quando produto sob encomenda</strong>, informe a quantidade enviada ao ecommerce quando o produto está sob encomenda.</p>
+<p><strong>Considerar saldo em estoque no sob encomenda:</strong> ligue ou desligue a opção.</p>
+<p><strong>Permitir editar quantidade lida na importação de inventário:</strong> ligue ou desligue a opção.</p>
+<p>Ao concluir as escolhas, clique em <strong>Salvar</strong>.</p>
+<h2>Perguntas frequentes</h2>
+<h3>A reserva de estoque altera o lançamento em saídas?</h3>
+<p>Sim. Com a reserva de estoque habilitada, o estoque é reservado automaticamente conforme a situação do pedido. A tela não recomenda <strong>Automático ao salvar o pedido</strong>, porque essa alternativa invalida a utilização da reserva de estoque.</p>
+<h3>O que acontece ao desabilitar a extensão de sincronização?</h3>
+<p>Desabilitar <strong>Contratar automaticamente extensão de limite de sincronização de estoque adicional</strong> pode bloquear a sincronização de estoque caso ultrapasse o limite do plano.</p>
+<h3>Qual saldo o bloqueio de autorização considera?</h3>
+<p>O saldo físico dos itens no estoque do depósito, conforme <strong>Permite estoque negativo</strong>.</p>
+<h3>Ao excluir a nota fiscal, o estorno é automático?</h3>
+<p>Abaixo de <strong>Automático ao cancelar nota fiscal</strong>, a tela informa: Ao excluir a NF, o estorno também será automático.</p>
+<h3>Os campos são obrigatórios?</h3>
+<p>Não. Nenhum campo é obrigatório.</p>
+<h2>Links relacionados</h2>
+<p>Se precisar de ajuda com estas configurações, fale com o suporte.</p>
+</article>
+</body>
+</html>
