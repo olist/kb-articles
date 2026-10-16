@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Validações na importação de produtos</title>
+</head>
+<body>
+<article>
+<h1>Validações na importação de produtos</h1>
+<h2>Descrição</h2>
+<p>Na página <strong>Importação de produtos via planilha</strong>, do ERP da Olist, a tela reúne as regras do arquivo: formato, tamanho, layout padrão, variações e colunas obrigatórias. Seguir essas regras deixa a planilha no padrão exigido para a importação.</p>
+<p>Acesse <strong>início &gt; ferramentas &gt; importação de produtos</strong>.</p>
+<h2>Pré-requisitos</h2>
+<p>Você precisa destas permissões:</p>
+<ul>
+<li>permissão de produtos</li>
+<li>permissão de importação de registros</li>
+<li>permissão para incluir e editar produtos</li>
+</ul>
+<p>A planilha precisa conter ao menos uma linha de dados para a importação ser concluída.</p>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Leia o bloco <strong>Orientações</strong>. O arquivo deve ser Excel (.xls ou.xlsx) ou texto (.csv) e não deve ultrapassar 2 Mb.</p>
+<p><img src="screenshots/1.png" alt="Página Importação de produtos via planilha com Orientações e perguntas sobre validação" /></p>
+</li>
+<li>
+<p>Expanda <strong>Posso usar uma planilha com modelo diferente de Olist?</strong>. Baixe a planilha com o layout padrão em <strong>baixar planilha</strong>. Um modelo diferente não serve. Os formatos desse download são <strong>Excel (.xls)</strong> e <strong>Texto (.csv)</strong>.</p>
+</li>
+<li>
+<p>Expanda <strong>Como cadastrar produtos com variação?</strong>. No pai, preencha os dados e informe V em <strong>Tipo de Produto</strong>. No filho, informe S em <strong>Tipo de Produto</strong>, o código do pai em <strong>Código do Pai</strong> e as características em <strong>Variações</strong>, no modelo Tamanho:GG||Cor:Branco.</p>
+</li>
+<li>
+<p>Expanda <strong>Qual é o limite de tamanho para a importação de planilhas?</strong>. O arquivo deve ter até 500 registros e não deve ultrapassar 2 Mb.</p>
+</li>
+<li>
+<p>Expanda <strong>Quais colunas da planilha são de preenchimento obrigatório?</strong>. Preencha <strong>Descrição</strong>, <strong>Sob Encomenda</strong> e <strong>Situação</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Dicas para preencher corretamente</strong>. O artigo <strong>Importar planilha de produtos</strong> abre em outra aba, com as seções <strong>Baixar planilha modelo</strong>, <strong>Instruções de preenchimento</strong>, <strong>Recomendações de importação</strong> e <strong>Realizar o upload e finalizar a importação</strong>. Ele indica estas regras:</p>
+</li>
+</ol>
+<ul>
+<li>não altere o nome das colunas nem a ordem do cabeçalho</li>
+<li>não exclua colunas; deixe a célula em branco</li>
+<li>use termos padronizados</li>
+<li><strong>Situação</strong> deve ser Ativo ou Inativo</li>
+<li><strong>Sob Encomenda</strong> deve ser Sim ou Não</li>
+<li>para NF-e, informe <strong>Unidade</strong>, <strong>NCM</strong> de 8 dígitos e <strong>Origem</strong> com o número ou a descrição oficial (códigos 0 a 8)</li>
+<li>deixe <strong>ID</strong> em branco para produto novo e informe o ID já existente para atualizar</li>
+<li>use até 10 URLs diretas, com extensão.jpg,.png,.webp ou.jpeg; links de nuvem não são aceitos</li>
+<li>as colunas <strong>Imagem 1</strong> a <strong>Imagem 6</strong> armazenam a foto; <strong>Imagem Externa 7</strong> a <strong>Imagem Externa 10</strong> apenas guardam o link</li>
+</ul>
+<p>Na conferência depois do envio, itens com ícone vermelho bloqueiam a importação. Corrija a planilha e envie de novo. Só arquivos 100% corretos são processados.</p>
+<h2>Links relacionados</h2>
+<p>Para preencher a planilha e finalizar a importação, consulte o artigo <strong>Importar planilha de produtos</strong>.</p>
+</article>
+</body>
+</html>
