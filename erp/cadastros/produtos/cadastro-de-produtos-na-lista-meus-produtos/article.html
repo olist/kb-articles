@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Cadastro de produtos na lista Meus produtos</title>
+</head>
+<body>
+<article>
+<h1>Cadastro de produtos na lista Meus produtos</h1>
+<h2>Descrição</h2>
+<p>Você cadastra produtos no ERP da Olist pela lista de produtos. Acesse-a no menu lateral, no item <strong>Cadastros</strong>.</p>
+<p>Você pode cadastrar pela tela ou por planilha. Na tela, <strong>Incluir produto</strong> abre <strong>Novo produto</strong> na aba <strong>Dados Gerais</strong>. Na planilha, <strong>Mais ações &gt; Importar produtos de uma planilha</strong> abre <strong>Importação de produtos via planilha</strong>, com o modelo para baixar e o envio do arquivo.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Acesso à lista de produtos no ERP, com <strong>Cadastros</strong> visível no menu lateral.</li>
+<li>Para importar por planilha, você precisa da permissão de produtos, da permissão de importação de registros e da permissão para incluir e editar produtos.</li>
+<li>Para a planilha, arquivo Excel (.xls ou.xlsx) ou texto (.csv), de no máximo 2 Mb, a partir da planilha modelo.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Para emitir nota fiscal, preencha <strong>Origem do produto conforme ICMS</strong> e <strong>Unidade de medida</strong>.</li>
+<li>O preço promocional só é importado pela planilha quando a empresa tem o módulo de preço promocional.</li>
+<li>Na importação por planilha, a variação só é vinculada ao produto pai se ele já estiver cadastrado com o <strong>Código (SKU)</strong> informado.</li>
+<li>Na importação por planilha, o estoque não é atualizado para kits nem para produtos do tipo variações.</li>
+<li>Na importação por planilha, o fornecedor só é vinculado ao produto se já existir um contato cadastrado com o mesmo nome.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pela tela</h3>
+<ol>
+<li>
+<p>Acesse a lista de produtos no menu lateral, em <strong>Cadastros</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir produto</strong>.</p>
+</li>
+<li>
+<p>Na aba <strong>Dados Gerais</strong>, preencha os campos abaixo. Nenhum campo desta aba é obrigatório. O formulário também tem as abas <strong>Dados Complementares</strong>, <strong>Ficha técnica</strong>, <strong>Anúncios</strong>, <strong>Preços</strong>, <strong>Custos</strong> e <strong>Outros</strong>.</p>
+<p><img src="screenshots/3.png" alt="Novo produto na aba Dados Gerais" /></p>
+</li>
+</ol>
+<h4>Identificação</h4>
+<ul>
+<li><strong>Tipo do Produto</strong>: opções <strong>Simples</strong>, <strong>Kit</strong>, <strong>Com variações</strong>, <strong>Fabricado</strong> e <strong>Matéria-prima</strong>. O padrão é <strong>Simples</strong>.</li>
+<li><strong>Nome do produto</strong></li>
+<li><strong>Código de barras (GTIN)</strong></li>
+<li><strong>Código (SKU)</strong></li>
+</ul>
+<h4>Dados fiscais</h4>
+<ul>
+<li><strong>Origem do produto conforme ICMS</strong>: necessário para emitir nota fiscal. O padrão é <strong>0 - Nacional, exceto as indicadas nos códigos 3 a 5</strong>. Há opções de 0 a 8 para origem nacional ou estrangeira e faixas de conteúdo de importação.</li>
+<li><strong>Unidade de medida</strong>: necessário para emitir nota fiscal.</li>
+<li><strong>NCM - Nomenclatura comum do Mercosul</strong>: no campo, há o botão <strong>sugerir o ncm</strong>.</li>
+<li><strong>Código CEST</strong>: Código Especificador da Substituição Tributária.</li>
+</ul>
+<h4>Preço</h4>
+<ul>
+<li><strong>Preço de venda</strong></li>
+<li><strong>Preço promocional</strong></li>
+</ul>
+<h4>Peso e embalagem</h4>
+<ul>
+<li><strong>Peso Líquido</strong></li>
+<li><strong>Peso Bruto</strong></li>
+<li><strong>Tipo da embalagem</strong>: opções <strong>Envelope</strong>, <strong>Pacote / Caixa</strong> e <strong>Rolo / Cilindro</strong>. O padrão é <strong>Pacote / Caixa</strong>.</li>
+<li><strong>Embalagem</strong>: o padrão é <strong>Embalagem customizada</strong>. A lista também oferece caixas de encomenda, inclusive Flex, CE e variações de tamanho.</li>
+<li><strong>Largura</strong></li>
+<li><strong>Altura</strong></li>
+<li><strong>Comprimento</strong></li>
+<li><strong>Peso da embalagem</strong></li>
+</ul>
+<h4>Estoque</h4>
+<ul>
+<li><strong>Controlar estoque</strong>: opções <strong>Sim</strong> e <strong>Não</strong>. O padrão é <strong>Sim</strong>. Indica o acompanhamento da movimentação de estoque.</li>
+<li><strong>Estoque inicial ( E-commerce )</strong></li>
+<li><strong>Estoque mínimo</strong></li>
+<li><strong>Estoque máximo</strong></li>
+<li><strong>Sob encomenda</strong>: opções <strong>Sim</strong> e <strong>Não</strong>. O padrão é <strong>Não</strong>.</li>
+<li><strong>Controlar lotes</strong>: opções <strong>Sim</strong> e <strong>Não</strong>. O padrão é <strong>Não</strong>.</li>
+<li><strong>Localização</strong>: localização física no estoque.</li>
+<li><strong>Dias para preparação</strong></li>
+</ul>
+<ol start="4">
+<li>Clique em <strong>Salvar</strong> para gravar o produto.</li>
+</ol>
+<h3>Por planilha</h3>
+<ol>
+<li>Acesse a lista de produtos no menu lateral, em <strong>Cadastros</strong>.</li>
+<li>Acesse <strong>Mais ações &gt; Importar produtos de uma planilha</strong>.</li>
+<li>No passo 1 da tela <strong>Importação de produtos via planilha</strong>, clique em <strong>baixar planilha</strong>.</li>
+<li>Preencha a planilha modelo com os produtos.</li>
+<li>Mantenha o arquivo em Excel (.xls ou.xlsx) ou texto (.csv), com no máximo 2 Mb e a mesma quantidade de colunas do layout de importação.</li>
+<li>Informe cada nível de variação como tipo e valor separados por dois-pontos, com no máximo 5 níveis separados por duas barras verticais (||).</li>
+<li>Consulte <strong>Orientações</strong>, o link <strong>Dicas para preencher corretamente</strong> e as perguntas frequentes da mesma tela, se precisar de ajuda no preenchimento.</li>
+<li>No passo 2, clique em <strong>enviar planilha</strong> para importar o arquivo.</li>
+</ol>
+<h2>Informações adicionais</h2>
+<h3>Cancelar descarta o rascunho</h3>
+<p><strong>Cancelar</strong> fecha <strong>Novo produto</strong> e volta à lista de produtos, sem gravar.</p>
+<h3>O recebimento do ecommerce começa na lista</h3>
+<p>Na lista, <strong>Receber do e-commerce</strong> e <strong>Mais ações &gt; Receber produtos do e-commerce</strong> iniciam o recebimento de produtos do ecommerce.</p>
+<h3>O produto pode ser criado e atualizado por estes canais</h3>
+<ul>
+<li>Interface/Tela: criar sim, atualizar sim</li>
+<li>Lote (Planilha): criar sim, atualizar sim</li>
+<li>API V3: criar sim, atualizar sim</li>
+<li>Lis: criar sim, atualizar sim</li>
+</ul>
+<h2>Links relacionados</h2>
+<p>Se precisar de ajuda para cadastrar produtos, fale com o suporte.</p>
+</article>
+</body>
+</html>
