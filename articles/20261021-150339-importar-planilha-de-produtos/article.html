@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Importar planilha de produtos</title>
+</head>
+<body>
+<article>
+<h1>Importar planilha de produtos</h1>
+<h2>Descrição</h2>
+<p>A página <strong>Importação de produtos via planilha</strong>, no ERP da Olist, orienta você a baixar o layout oficial, preencher os produtos e enviar o arquivo.</p>
+<p>Você baixa a planilha modelo em <strong>Excel (.xls)</strong> ou <strong>Texto (.csv)</strong>. A página informa o formato aceito no envio, o limite de tamanho, as colunas obrigatórias e o cadastro de variações. Você inicia o envio em <strong>enviar planilha</strong>. A página abre por <strong>Início &gt; Ferramentas</strong>, na aba <strong>Importações</strong>, em <strong>Produtos</strong> no grupo <strong>Cadastros</strong>, ou por <strong>Cadastros &gt; Produtos &gt; Mais ações &gt; Importar produtos de uma planilha</strong>.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Você precisa estar no ERP.</li>
+<li>Você precisa de permissão de Produtos e de importação de registros, com permissão para incluir e editar produtos.</li>
+<li>Use a planilha modelo baixada nesta tela. Não use um modelo diferente do da Olist.</li>
+<li>Preencha a planilha antes do envio.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Envie um arquivo Excel (.xls ou.xlsx) ou texto (.csv), com no máximo 2 Mb e até 500 registros.</li>
+<li>Em <strong>Download do layout</strong>, as opções são <strong>Excel (.xls)</strong> e <strong>Texto (.csv)</strong>.</li>
+<li>Não altere os nomes das colunas nem a ordem do cabeçalho e não exclua colunas.</li>
+<li>Deixe as células opcionais em branco.</li>
+<li>Preencha as colunas obrigatórias <strong>Descrição</strong>, <strong>Sob Encomenda</strong> e <strong>Situação</strong>.</li>
+<li>Use termos padronizados, como Sim, Não e os códigos de <strong>Origem</strong>. Se o termo não for o esperado, a importação é bloqueada.</li>
+<li>O preço promocional informado na planilha só é importado se a empresa tiver o módulo de preço promocional.</li>
+<li>Para vincular o fornecedor, ele já precisa estar cadastrado com o mesmo nome informado na planilha.</li>
+<li>As imagens das colunas de URL imagem só são importadas se a empresa tiver espaço de anexos disponível.</li>
+</ul>
+<h2>Instruções</h2>
+<p>Pela lista de produtos, acesse <strong>Cadastros &gt; Produtos</strong>, clique em <strong>Mais ações</strong> e depois em <strong>Importar produtos de uma planilha</strong>. A mesma página abre. Siga a partir de <strong>baixar planilha</strong>.</p>
+<p>Por Ferramentas:</p>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Ferramentas</strong>.</p>
+</li>
+<li>
+<p>Abra a aba <strong>Importações</strong>.</p>
+<p><img src="screenshots/3.png" alt="Aba Importações com Produtos no grupo Cadastros" /></p>
+</li>
+<li>
+<p>Clique em <strong>Produtos</strong> no grupo <strong>Cadastros</strong>.</p>
+<p><img src="screenshots/1.png" alt="Página Importação de produtos via planilha" /></p>
+</li>
+<li>
+<p>Clique em <strong>baixar planilha</strong>.</p>
+</li>
+<li>
+<p>Escolha <strong>Excel (.xls)</strong> ou <strong>Texto (.csv)</strong> em <strong>Download do layout</strong> para baixar a planilha modelo.</p>
+<p><img src="screenshots/2.png" alt="Download do layout com Excel (.xls) e Texto (.csv)" /></p>
+</li>
+<li>
+<p>Preencha a planilha modelo com os produtos.</p>
+</li>
+</ol>
+<ul>
+<li>Em <strong>Situação</strong>, informe Ativo ou Inativo.</li>
+<li>Em <strong>Sob Encomenda</strong>, informe Sim ou Não.</li>
+<li>Nos dados fiscais, informe <strong>Unidade</strong>, <strong>NCM</strong> com 8 dígitos e <strong>Origem</strong> com código de 0 a 8.</li>
+<li>Deixe <strong>ID</strong> em branco para produto novo. Para atualizar, informe o <strong>ID</strong> exato.</li>
+<li>Em categorias, use o formato Nível 1 &gt; Nível 2 &gt; Nível 3.</li>
+<li>Informe até 10 URLs diretas de imagem. As colunas 1 a 6 são armazenadas e as colunas 7 a 10 são externas.</li>
+<li>Para variações, no produto pai informe <strong>Tipo de Produto</strong> com V.</li>
+<li>No produto filho, informe <strong>Tipo de Produto</strong> com S, K, F ou M, nunca com V, e preencha <strong>Código do Pai</strong>.</li>
+<li>Em <strong>Variações</strong>, use o formato Tamanho:GG||Cor:Branco.</li>
+</ul>
+<ol start="7">
+<li>Clique em <strong>enviar planilha</strong>. A validação mostra a linha e o motivo da falha. Se a planilha estiver correta, os produtos são criados ou atualizados.</li>
+</ol>
+<h2>Links relacionados</h2>
+<p>Se precisar de ajuda, fale com o suporte.</p>
+</article>
+</body>
+</html>
