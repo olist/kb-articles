@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Como configurar produtos da tabela ANP (Combustíveis) na Nota Fiscal</title>
+</head>
+<body>
+<article>
+<h1>Como configurar produtos da tabela ANP (Combustíveis) na Nota Fiscal</h1>
+<h2>Descrição</h2>
+<p>A aba <strong>Combustível</strong> do item da nota fiscal, no ERP da Olist, reúne o código do produto na tabela ANP, o código de autorização, a UF de consumo e os dados da CIDE. Com ela, você informa o combustível no item de uma nota nova, ainda sem emitir.</p>
+<p>Na lista de <strong>Notas Fiscais</strong>, com <strong>Vendas</strong> em destaque no menu lateral, o caminho é o botão <strong>Incluir nota fiscal</strong>. Você pode preencher os dados pela tela da nota ou consultar o código da categoria ANP no painel de busca.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A lista de <strong>Notas Fiscais</strong> precisa estar acessível.</li>
+<li>Para abrir a aba <strong>Combustível</strong>, inclua um item na nota e abra o item em <strong>editar</strong>.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li><strong>Os valores das bases e dos impostos somente serão recalculados ao salvar este item.</strong></li>
+<li>Nenhum campo da aba <strong>Combustível</strong> é obrigatório.</li>
+<li>O código digitado em <strong>Código do produto na ANP</strong> permanece no campo até a confirmação no painel <strong>Selecione uma opção</strong>.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pela tela da nota fiscal</h3>
+<ol>
+<li>Acesse a lista de <strong>Notas Fiscais</strong> e clique em <strong>Incluir nota fiscal</strong>. O formulário de uma nota nova abre, sem emitir. Alguns dados de cabeçalho já vêm preenchidos, entre eles <strong>Tipo de Saída</strong> <strong>Emissão própria</strong>, <strong>Natureza da operação</strong> <strong>Venda de mercadorias</strong> e <strong>Finalidade</strong> <strong>NF-e normal</strong>.</li>
+</ol>
+<h4>Dados da linha do item</h4>
+<ol start="2">
+<li>
+<p>Em <strong>Produtos ou serviços</strong>, informe os dados da linha. Nenhum destes campos é obrigatório. O total da linha é calculado na hora.</p>
+<ul>
+<li><strong>Descrição</strong></li>
+<li><strong>Un</strong></li>
+<li><strong>Qtde</strong>: quantidade com duas casas decimais, por exemplo 10,00</li>
+<li><strong>Preço un</strong>: valor com duas casas decimais, por exemplo R$ 5,90</li>
+</ul>
+<p><img src="screenshots/1.png" alt="Linha de inclusão de item em Produtos ou serviços" /></p>
+</li>
+<li>
+<p>Clique no <strong>salvar</strong> da linha do item, não no <strong>Salvar</strong> do rodapé da nota. O item entra na tabela com o selo <strong>Novo</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>editar</strong> na linha do item, depois em <strong>mais</strong> e em <strong>Combustível</strong>.</p>
+<p><img src="screenshots/2.png" alt="Aba Combustível do item antes do preenchimento" /></p>
+</li>
+</ol>
+<h4>Campos da aba Combustível</h4>
+<ol start="5">
+<li>
+<p>Preencha os campos abaixo. Nenhum é obrigatório. Para localizar o código na tabela, siga a consulta do código do produto na ANP. A aba traz <strong>Salvar</strong> e <strong>Cancelar</strong> do item. O item permanece na nota não salva e não emitida, com a aba preenchida e o aviso de recálculo ao salvar o item.</p>
+<ul>
+<li><strong>Código do produto na ANP</strong></li>
+<li><strong>Código de autorização</strong></li>
+<li><strong>UF de consumo</strong>: lista de siglas de UF, com a opção <strong>Selecione</strong></li>
+<li><strong>Total de combustível à temperatura ambiente</strong>: quantidade com 4 casas decimais e unidade Lt, por exemplo 10,0000</li>
+<li><strong>Base de cálculo da CIDE</strong>: valor com 4 casas decimais e sufixo %, por exemplo 10,0000</li>
+<li><strong>Alíquota da CIDE</strong>: percentual com 4 casas decimais e sufixo %, por exemplo 0,5000</li>
+<li><strong>Valor da CIDE</strong>: valor com prefixo R$</li>
+</ul>
+<p><img src="screenshots/3.png" alt="Aba Combustível com os dados de ANP e CIDE" /></p>
+</li>
+</ol>
+<h3>Consulta do código do produto na ANP</h3>
+<p>Na lista de <strong>Notas Fiscais</strong>, inclua o item e siga <strong>editar &gt; mais &gt; Combustível</strong>. Com a aba aberta, consulte o código sem salvar a nota.</p>
+<ol>
+<li>
+<p>Clique no botão de busca ao lado de <strong>Código do produto na ANP</strong>. O painel <strong>Selecione uma opção</strong> lista as categorias e oferece <strong>confirmar</strong> e <strong>cancelar</strong>.</p>
+<p><img src="screenshots/4.png" alt="Painel Selecione uma opção do código ANP" /></p>
+</li>
+<li>
+<p>Leia a orientação <strong>Selecione o código da categoria em que seu produto se enquadra</strong>. Filtre no campo <strong>Pesquisar</strong>. Ao pesquisar GASOLINA, a lista mostra categorias de gasolina. Cada opção aparece como código de 9 dígitos, hífen e descrição, por exemplo <strong>320101001 - GASOLINA A COMUM</strong>. O código já digitado permanece até a confirmação, e a consulta não salva a nota.</p>
+<p><img src="screenshots/5.png" alt="Categorias ANP filtradas no painel de busca" /></p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>O item aparece em <strong>Produtos ou serviços</strong> com a descrição informada e o selo <strong>Novo</strong>, e a nota continua não salva e não emitida. No painel <strong>Selecione uma opção</strong>, as categorias ANP filtradas ficam listadas, e o código digitado em <strong>Código do produto na ANP</strong> segue no campo até a confirmação.</p>
+<h2>Informações adicionais</h2>
+<h3>O cálculo do imposto exibe totais depois de incluir o item</h3>
+<p>Depois que o item entra em <strong>Produtos ou serviços</strong>, <strong>Cálculo do imposto</strong> passa a exibir totais, com <strong>Cálculo automático de imposto</strong> ligado.</p>
+<h2>Links relacionados</h2>
+<p>Se você precisar de ajuda para configurar o combustível na nota, fale com o suporte.</p>
+</article>
+</body>
+</html>
