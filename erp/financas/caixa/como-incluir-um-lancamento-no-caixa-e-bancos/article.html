@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Como incluir um lançamento no Caixa e Bancos</title>
+</head>
+<body>
+<article>
+<h1>Como incluir um lançamento no Caixa e Bancos</h1>
+<h2>Descrição</h2>
+<p>No ERP da Olist, a tela <strong>Caixa e Bancos</strong> lista os lançamentos da conta de caixa ou banco selecionada. Você pode registrar uma entrada, uma saída ou um saldo nessa conta.</p>
+<p>Acesse <strong>Finanças &gt; Caixa</strong>. Dá para incluir o lançamento pela tela, por planilha ou por extrato OFX.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Você precisa da permissão de Caixa para acessar <strong>Finanças &gt; Caixa</strong>.</li>
+<li>Para incluir pela tela e para importar extrato OFX, você precisa da permissão de inclusão no Caixa.</li>
+<li>Para importar lançamentos de uma planilha, você precisa da permissão de inclusão e de edição no Caixa e da permissão de importação de registros.</li>
+<li>A conta de caixa ou banco já deve estar selecionada na lista. O nome da conta e o saldo atual aparecem no topo.</li>
+<li>Para a planilha, tenha um arquivo no layout exibido no <strong>Importador de Caixa</strong>. O botão <strong>Download do arquivo de layout</strong> fica nessa tela.</li>
+<li>Para o OFX, tenha um arquivo exportado pelo banco no formato OFX, de até 2Mb, referente à conta selecionada.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Não é possível incluir um lançamento em data de período financeiro fechado. O rodapé da lista indica o <strong>financeiro fechado</strong>.</li>
+<li>Na aba <strong>Anexos</strong>, o arquivo não deve ultrapassar 2Mb.</li>
+<li>O arquivo OFX não deve ultrapassar 2Mb. Os registros entram na conta selecionada na lista.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pela tela</h3>
+<ol>
+<li>
+<p>Acesse <strong>Finanças &gt; Caixa</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir lançamento</strong>.</p>
+<p><img src="screenshots/1.png" alt="Lista Caixa e Bancos com pesquisa por cliente, período, conta selecionada, saldo" /></p>
+</li>
+<li>
+<p>Na aba <strong>Dados do lançamento</strong>, preencha os campos abaixo.</p>
+</li>
+</ol>
+<h4>Dados do lançamento</h4>
+<ul>
+<li><strong>Categoria</strong>: não obrigatório. Selecione uma categoria cadastrada ou <strong>Adicionar nova categoria</strong>.</li>
+<li><strong>Tipo</strong>: não obrigatório. Selecione <strong>Saída</strong>, <strong>Entrada</strong> ou <strong>Saldo</strong>.</li>
+<li><strong>Data</strong>: não obrigatório. Informe no formato DD/MM/AAAA.</li>
+<li><strong>Valor</strong>: não obrigatório.</li>
+<li><strong>Histórico</strong>: não obrigatório.</li>
+<li><strong>Cliente ou Fornecedor</strong>: não obrigatório. Se o cliente não estiver cadastrado, aparece o aviso <strong>Primeira conta para este cliente</strong>.</li>
+</ul>
+<p><img src="screenshots/3.png" alt="Formulário Incluir lançamento" /></p>
+<ol start="4">
+<li>Abra a aba <strong>Competência</strong> e informe o mês e o ano no navegador de mês. O campo <strong>Competência</strong> não é obrigatório.</li>
+<li>Abra a aba <strong>Anexos</strong> e clique em <strong>Procurar arquivo</strong>, se quiser anexar um arquivo de até 2Mb. O campo não é obrigatório.</li>
+<li>Abra a aba <strong>Marcadores</strong> e separe os marcadores por vírgula ou pela tecla Tab. O campo <strong>Marcadores</strong> não é obrigatório.</li>
+<li>Clique em <strong>Salvar</strong>. Para voltar à lista sem incluir o lançamento, clique em <strong>Cancelar</strong>.</li>
+</ol>
+<h3>Por planilha</h3>
+<ol>
+<li>
+<p>Acesse <strong>Finanças &gt; Caixa</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Mais ações</strong>.</p>
+<p><img src="screenshots/2.png" alt="Menu Mais ações na tela Caixa e Bancos" /></p>
+</li>
+<li>
+<p>Clique em <strong>Importar lançamentos de uma planilha</strong>.</p>
+</li>
+<li>
+<p>Confira o layout de exemplo no <strong>Importador de Caixa</strong>. As colunas são:</p>
+<ul>
+<li><strong>Data</strong></li>
+<li><strong>Categoria</strong></li>
+<li><strong>Histórico</strong></li>
+<li><strong>Tipo (D/C)</strong></li>
+<li><strong>Valor</strong></li>
+<li><strong>ID</strong></li>
+<li><strong>Contato</strong></li>
+<li><strong>CNPJ</strong></li>
+<li><strong>Marcadores</strong></li>
+<li><strong>Conta de destino</strong></li>
+<li><strong>Nº documento</strong></li>
+</ul>
+<p><img src="screenshots/4.png" alt="Layout de exemplo no Importador de Caixa" /></p>
+</li>
+<li>
+<p>Clique em <strong>Download do arquivo de layout</strong> para obter o modelo.</p>
+</li>
+<li>
+<p>Clique em <strong>Prosseguir com a importação</strong>.</p>
+</li>
+</ol>
+<h3>Por extrato OFX</h3>
+<ol>
+<li>
+<p>Acesse <strong>Finanças &gt; Caixa</strong>.</p>
+</li>
+<li>
+<p>Confira a conta selecionada no topo da lista.</p>
+</li>
+<li>
+<p>Clique em <strong>Mais ações</strong> e depois em <strong>Importar extrato OFX</strong>.</p>
+</li>
+<li>
+<p>Confira no painel <strong>Importar dados</strong> que os registros entram na conta selecionada. O banco exporta as movimentações em OFX para importação no ERP.</p>
+<p><img src="screenshots/5.png" alt="Painel Importar dados do extrato OFX" /></p>
+</li>
+<li>
+<p>Clique em <strong>Procurar arquivo</strong> e escolha um arquivo.ofx de até 2Mb. Para fechar o painel sem importar, clique em <strong>Cancelar</strong>.</p>
+</li>
+</ol>
+<h2>Links relacionados</h2>
+<p>Se precisar de ajuda para incluir o lançamento, fale com o suporte.</p>
+</article>
+</body>
+</html>
