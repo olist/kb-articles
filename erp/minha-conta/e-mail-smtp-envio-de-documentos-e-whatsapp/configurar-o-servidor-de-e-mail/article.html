@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Configurar o servidor de e-mail</title>
+</head>
+<body>
+<article>
+<h1>Configurar o servidor de e-mail</h1>
+<p>No ERP da Olist, você define como os emails saem do sistema. Em <strong>Configurações do servidor de e-mail</strong>, você escolhe <strong>SMTP</strong>, <strong>SMTP - Google</strong> ou <strong>MAIL</strong>, informa servidor, porta, segurança, autenticação e dados do remetente, e testa o envio.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Se <strong>Configurações do servidor de e-mail</strong> não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Para o tipo SMTP, tenha o servidor, a porta, a segurança da conexão e, se o provedor exigir, <strong>Usuário</strong> e <strong>Senha</strong>.</li>
+<li>No tipo SMTP - Google, clique em <strong>Logar no Google</strong> quando aparecer o aviso <strong>Você não está logado no Google</strong>. Sem esse login, o tipo não fica concluído.</li>
+<li>Nenhum campo da tela é marcado como obrigatório.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pelo tipo SMTP</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Geral &gt; Configurações do servidor de e-mail</strong>.</p>
+<p><img src="screenshots/1.png" alt="Aba Geral com Configurações do servidor de e-mail" /></p>
+</li>
+<li>
+<p>Em <strong>Tipo de envio</strong>, selecione <strong>SMTP</strong>.</p>
+<p><img src="screenshots/2.png" alt="Formulário com o tipo de envio SMTP" /></p>
+</li>
+</ol>
+<h4>Servidor e autenticação</h4>
+<ol start="3">
+<li>
+<p>Preencha <strong>Servidor</strong> e <strong>Porta</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Segurança da conexão:</strong>, selecione <strong>SSL</strong>, <strong>TLS</strong> ou <strong>Nenhuma</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Servidor requer autenticação</strong>, selecione <strong>Sim</strong> ou <strong>Não</strong>.</p>
+<p><img src="screenshots/8.png" alt="Servidor requer autenticação em Sim" /></p>
+</li>
+<li>
+<p>Preencha <strong>Usuário</strong> e <strong>Senha</strong>, tanto com <strong>Sim</strong> quanto com <strong>Não</strong>.</p>
+</li>
+</ol>
+<h4>Remetente</h4>
+<ol start="7">
+<li>
+<p>Preencha <strong>Nome remetente</strong>, <strong>E-mail remetente</strong> e <strong>Responder para o e-mail</strong>.</p>
+<p><img src="screenshots/7.png" alt="Formulário SMTP preenchido" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar o servidor SMTP, o remetente e o endereço de resposta.</p>
+</li>
+</ol>
+<h3>Pelo tipo SMTP - Google</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Geral &gt; Configurações do servidor de e-mail</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Tipo de envio</strong>, selecione <strong>SMTP - Google</strong>.</p>
+<p><img src="screenshots/4.png" alt="Tipo SMTP - Google com aviso de login no Google" /></p>
+</li>
+<li>
+<p>Confira <strong>Servidor</strong> smtp.gmail.com, <strong>Porta</strong> 587 e <strong>Segurança da conexão:</strong> TLS. <strong>Servidor requer autenticação</strong>, <strong>Usuário</strong> e <strong>Senha</strong> não aparecem neste tipo.</p>
+</li>
+<li>
+<p>Clique em <strong>Logar no Google</strong> se aparecer o aviso <strong>Você não está logado no Google</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para usar o SMTP do Google.</p>
+</li>
+</ol>
+<h3>Pelo tipo MAIL</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Geral &gt; Configurações do servidor de e-mail</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Tipo de envio</strong>, selecione <strong>MAIL</strong>. A tela deixa de pedir os dados de SMTP e mantém <strong>Tipo de envio</strong> e <strong>Teste de envio de e-mail</strong>.</p>
+<p><img src="screenshots/5.png" alt="Tipo de envio MAIL sem campos de servidor SMTP" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para usar o tipo MAIL.</p>
+</li>
+</ol>
+<h3>Testar as configurações</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Geral &gt; Configurações do servidor de e-mail</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Teste de envio de e-mail</strong>, clique em <strong>exibir</strong>.</p>
+<p><img src="screenshots/3.png" alt="Seção Teste de envio de e-mail expandida" /></p>
+</li>
+<li>
+<p>Preencha <strong>Endereço de e-mail do destinatário do teste</strong>.</p>
+<p><img src="screenshots/6.png" alt="Destinatário do teste preenchido" /></p>
+</li>
+<li>
+<p>Clique em <strong>Testar configurações</strong> para disparar um email ao destinatário informado.</p>
+</li>
+</ol>
+</article>
+</body>
+</html>
