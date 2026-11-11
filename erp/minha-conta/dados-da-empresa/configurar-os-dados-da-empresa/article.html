@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Configurar os dados da empresa</title>
+</head>
+<body>
+<article>
+<h1>Configurar os dados da empresa</h1>
+<p>A tela <strong>Dados da empresa</strong>, no ERP da Olist, permite revisar e atualizar o cadastro já existente da empresa: identificação, endereço, contatos, dados fiscais e o logotipo exibido em notas fiscais, pedidos e propostas.</p>
+<p>Você informa inscrição estadual, inscrição municipal, inscrição Suframa, CNAE e regime tributário, inclui inscrições estaduais de substituto tributário e envia o logotipo. O texto da página informa que o ERP pode consultar a Receita Federal pelo CNPJ para facilitar o preenchimento.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A empresa já precisa estar cadastrada. A tela altera o registro existente e não cria uma nova empresa.</li>
+<li>A tela não fica disponível para empresas no plano Conta Digital.</li>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Nenhum campo desta tela é marcado como obrigatório.</li>
+<li>O CNPJ já vem preenchido e não pode ser alterado nesta tela. Não há botão para consultar a Receita Federal.</li>
+<li>Ao alterar o <strong>Código de regime tributário</strong>, as naturezas de operação deverão ser reconfiguradas de acordo com as regras tributárias do novo regime.</li>
+<li>A <strong>Inscrição Suframa</strong>, quando usada, tem 8 ou 9 dígitos. Ela é obrigatória em operações com benefício de alíquota zero da CBS em áreas sob controle da SUFRAMA.</li>
+<li>O arquivo do logotipo não deve ultrapassar 2Mb.</li>
+<li>A inscrição estadual de substituto tributário só é gravada em <strong>Salvar</strong>. <strong>Voltar</strong> descarta a linha incluída e ainda não salva.</li>
+<li><strong>remover logo</strong> pede confirmação. Se você confirmar, o logotipo é removido de forma persistente.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações do Sistema ERP</strong>.</p>
+</li>
+<li>
+<p>Na aba <strong>Geral</strong>, clique em <strong>Alterar dados da empresa</strong>.</p>
+<p><img src="screenshots/7.png" alt="Lista da aba Geral, com o link Alterar dados da empresa" /></p>
+</li>
+<li>
+<p>Revise identificação, endereço e contatos.</p>
+<p><img src="screenshots/1.png" alt="Topo do formulário Dados da empresa, com a identificação da empresa" /></p>
+</li>
+</ol>
+<h4>Identificação, endereço e contatos</h4>
+<ul>
+<li><strong>Razão social</strong>: nome completo da empresa.</li>
+<li><strong>Fantasia</strong>: nome fantasia. Ele é exibido no topo das telas do sistema.</li>
+<li><strong>Tipo da Pessoa</strong>: <strong>Pessoa Jurídica</strong> ou <strong>Pessoa Física</strong>.</li>
+<li><strong>Endereço</strong>, <strong>Número</strong>, <strong>Bairro</strong>, <strong>Complemento</strong> e <strong>Cidade</strong>.</li>
+<li><strong>CEP</strong>.</li>
+<li><strong>UF</strong>: selecione a opção.</li>
+<li><strong>Fone</strong>, <strong>Fax</strong> e <strong>Celular</strong>.</li>
+<li><strong>E-mail</strong>.</li>
+<li><strong>WebSite</strong>: página na web.</li>
+<li><strong>Segmento de atuação</strong>: selecione a área que melhor representa a empresa.</li>
+<li><strong>Como deseja ser chamado</strong>.</li>
+<li><strong>Canal de Comunicação</strong>: <strong>E-mail</strong> ou <strong>WhatsApp</strong>.</li>
+</ul>
+<ol start="4">
+<li>
+<p>Nos dados fiscais, confira o <strong>CNPJ</strong> já preenchido.</p>
+</li>
+<li>
+<p>Para isenção de inscrição estadual, marque <strong>IE Isento</strong>.</p>
+<p><img src="screenshots/6.png" alt="IE Isento marcado e Inscrição Estadual com ISENTO" /></p>
+</li>
+</ol>
+<p><strong>Inscrição Estadual</strong> passa a exibir ISENTO e fica somente leitura. Desmarque <strong>IE Isento</strong> para limpar o campo e voltar a editá-lo.</p>
+<ol start="6">
+<li>
+<p>Preencha <strong>Inscrição Municipal</strong>, <strong>Inscrição Suframa</strong> (8 ou 9 dígitos, quando houver) e <strong>CNAE</strong>, como 6203-1/00.</p>
+<p><img src="screenshots/2.png" alt="Trecho fiscal do formulário, com inscrições, CNAE, regime tributário e logo" /></p>
+</li>
+<li>
+<p>Em <strong>Código de regime tributário</strong>, selecione uma opção:</p>
+</li>
+</ol>
+<ul>
+<li>Simples nacional</li>
+<li>Simples nacional - excesso de sublimite de receita bruta</li>
+<li>Regime normal</li>
+<li>Microempreendedor Individual (MEI)</li>
+</ul>
+<p>Leia o aviso do campo: ao alterar o regime, as naturezas de operação deverão ser reconfiguradas de acordo com as regras tributárias do novo regime.</p>
+<ol start="8">
+<li>
+<p>Em <strong>Inscrições Estaduais dos Substitutos Tributários</strong>, clique em <strong>adicionar outra inscrição</strong>.</p>
+<p><img src="screenshots/4.png" alt="Linha de inclusão de inscrição de substituto tributário ainda vazia" /></p>
+</li>
+<li>
+<p>Escolha a UF, informe a inscrição e inclua a linha. Ela permanece na tabela apenas até <strong>Salvar</strong>.</p>
+<p><img src="screenshots/5.png" alt="Linha local de substituto tributário preenchida, ainda não salva" /></p>
+</li>
+<li>
+<p>Em <strong>Logo da empresa</strong>, clique em <strong>procurar arquivo</strong> e envie uma imagem de até 2Mb. A logo é exibida em notas fiscais, pedidos e propostas. Para excluir, clique em <strong>remover logo</strong> e confirme Deseja remover o logotipo da empresa?.</p>
+</li>
+</ol>
+<p><img src="screenshots/3.png" alt="Seção de inscrições de substituto, logo, contato e pessoa administradora" /></p>
+<ol start="11">
+<li>Em <strong>Pessoa administradora da empresa</strong>, preencha <strong>Nome do sócio administrador</strong>, <strong>E-mail</strong> e <strong>Celular</strong>.</li>
+<li>Clique em <strong>Salvar</strong> para gravar identificação, endereço, contatos, dados fiscais, inscrições de substituto tributário e logotipo. <strong>Voltar</strong> sai sem gravar e descarta a linha de inscrição de substituto incluída e ainda não salva.</li>
+</ol>
+<h2>Resultado</h2>
+<p>Depois de <strong>Salvar</strong>, os dados cadastrais, fiscais e o logotipo ficam gravados no cadastro da empresa. A inscrição de substituto tributário só permanece se tiver sido salva.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>A tela não mostra importação por planilha nem ação de integração para estes dados.</li>
+</ul>
+</article>
+</body>
+</html>
