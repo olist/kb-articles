@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Multiempresa: configurar várias empresas (CNPJs)</title>
+</head>
+<body>
+<article>
+<h1>Multiempresa: configurar várias empresas (CNPJs)</h1>
+<p>A Multiempresa do ERP da Olist reúne os CNPJs vinculados. Você conecta outras empresas, define o que cada unidade compartilha e passa a operar em outra empresa do grupo pelo seletor em <strong>Minha conta</strong>.</p>
+<p>O compartilhamento pode incluir estoque, clientes, produtos, pedidos e dados fiscais. A lista <strong>Multiempresa</strong> explica a centralização dos CNPJs e mostra um card por empresa vinculada.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Para conectar outra empresa, tenha o email ou login e a senha da conta dessa empresa.</li>
+<li>Se <strong>Multiempresa</strong> não aparecer, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>O painel <strong>De quais unidades esta empresa recebe?</strong> apenas lista quem envia. A mudança é feita na configuração de envio da empresa de origem.</li>
+<li>A opção de como os produtos são ligados só aparece para empresas liberadas nessa funcionalidade. Ela deixa de aparecer se a empresa já usa o vínculo permanente.</li>
+<li>Ao ativar o vínculo permanente, a configuração é replicada às empresas conectadas e não pode ser desfeita.</li>
+<li>Para salvar com <strong>Enviar pedidos de venda automaticamente</strong> ligado, é preciso ter ao menos uma regra de sincronização.</li>
+<li>O local logístico externo só pode ser informado em regra com uma única integração Shopify.</li>
+<li>No card da empresa principal, o menu de ações mostra <strong>empresa principal</strong>. <strong>remover empresa</strong> aparece no menu de um card que não é a principal.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Abrir a lista pelo menu</h3>
+<ol>
+<li>
+<p>No menu lateral, clique em <strong>Configurações</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Na tela <strong>Configurações do Sistema ERP</strong>, com <strong>Geral</strong> ativo, clique em <strong>Multiempresa</strong>, em <strong>Outras configurações</strong>.</p>
+<p><img src="screenshots/20.png" alt="Tela Configurações do Sistema ERP com Multiempresa em Outras configurações" /></p>
+</li>
+</ol>
+<p>A lista abre com <strong>Voltar</strong>, <strong>Adicionar empresa</strong> e um card por empresa vinculada.</p>
+<h3>Abrir a lista por Minha conta</h3>
+<ol>
+<li>
+<p>Clique no avatar da empresa no menu lateral para abrir <strong>Minha conta</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Gerenciar Multiempresa</strong>.</p>
+<p><img src="screenshots/23.png" alt="Lista Multiempresa com Voltar, Adicionar empresa e cards" /></p>
+</li>
+</ol>
+<h3>Conectar outra empresa</h3>
+<ol>
+<li>
+<p>Na lista <strong>Multiempresa</strong>, clique em <strong>Adicionar empresa</strong>.</p>
+<p><img src="screenshots/10.png" alt="Formulário Adicionar empresa com E-mail ou login e Senha" /></p>
+</li>
+<li>
+<p>Preencha <strong>E-mail ou login</strong> e <strong>Senha</strong> da conta a conectar. <strong>Mostrar senha</strong> revela o que foi digitado.</p>
+<p><img src="screenshots/11.png" alt="Formulário de conexão preenchido, antes de conectar empresa" /></p>
+</li>
+<li>
+<p>Conclua a verificação exibida no formulário.</p>
+</li>
+<li>
+<p>Clique em <strong>conectar empresa</strong> para concluir o vínculo.</p>
+</li>
+</ol>
+<h3>Configurar o compartilhamento</h3>
+<ol>
+<li>
+<p>Na lista, clique em <strong>configurar</strong> no card da empresa.</p>
+<p><img src="screenshots/15.png" alt="Lista Multiempresa com cards, ícones de status e configurar" /></p>
+</li>
+<li>
+<p>Marque as unidades em <strong>Enviar dados para</strong>. Há uma caixa por unidade já vinculada.</p>
+</li>
+<li>
+<p>Ajuste estoque, catálogo, regra de vínculo de produtos e as opções fiscais e de pedidos. A tela mostra o que já estava salvo.</p>
+<p><img src="screenshots/19.png" alt="Tela configurar com envio, estoque, catálogo, vínculo, fiscal e pedidos" /></p>
+</li>
+</ol>
+<h4>Estoque</h4>
+<ul>
+<li>Marque <strong>Considerar estoque desta empresa</strong> se o estoque desta unidade entra no compartilhamento.</li>
+<li>Em <strong>Estoque considerado na API</strong>, escolha <strong>De todas as empresas do grupo</strong> ou <strong>Apenas desta empresa</strong>.</li>
+<li>Em <strong>Saldo do kit</strong>, escolha <strong>Saldo final do kit</strong> ou <strong>Saldo dos itens do kit</strong>. O saldo dos itens confere o estoque dos componentes entre as empresas e calcula o kit pelo saldo unificado.</li>
+</ul>
+<h4>Catálogo</h4>
+<p>Marque o que esta empresa deve compartilhar: <strong>Dados do cliente</strong>, <strong>Dados do produto</strong>, <strong>Dados de contatos</strong> e <strong>Dados de produtos</strong>.</p>
+<h4>Vínculo e campos do produto</h4>
+<p>Em <strong>Regra de vínculo de produtos</strong>, escolha <strong>SKU (recomendado)</strong>, <strong>SKU ou GTIN</strong> ou <strong>SKU, GTIN ou descrição do produto</strong>.</p>
+<p>Os campos opcionais de produto no compartilhamento são <strong>Localização</strong>, <strong>Estoque mínimo e máximo</strong>, <strong>Fornecedor</strong>, <strong>Preço de custo e médio</strong>, <strong>Preço de venda e promocional</strong> e <strong>Origem do produto</strong>.</p>
+<h4>Fiscal e pedidos</h4>
+<p>Ajuste estas opções:</p>
+<ul>
+<li><strong>Sincronizar dados fiscais automaticamente</strong></li>
+<li><strong>Validar duplicidade de faturamento em pedidos compartilhados</strong></li>
+<li><strong>Marcar pedidos transferidos como cancelados na empresa de origem</strong></li>
+<li><strong>Considerar a natureza de operação padrão da empresa de destino ao enviar pedidos</strong></li>
+<li><strong>Manter proporção das parcelas da venda de origem</strong></li>
+<li><strong>Enviar pedidos de venda automaticamente</strong></li>
+</ul>
+<ol start="4">
+<li>Clique em <strong>salvar</strong> para gravar. <strong>cancelar</strong> volta à lista sem gravar.</li>
+</ol>
+<h3>Criar regra de sincronização de pedidos</h3>
+<ol>
+<li>
+<p>Em <strong>configurar</strong>, marque <strong>Enviar pedidos de venda automaticamente</strong>. A seção <strong>Regras para sincronização</strong> aparece.</p>
+<p><img src="screenshots/16.png" alt="Seção Regras para sincronização após ativar o envio automático" /></p>
+</li>
+<li>
+<p>Na seção <strong>Regras para sincronização</strong>, clique em <strong>Adicionar regra</strong>.</p>
+<p><img src="screenshots/17.png" alt="Painel Regras para sincronização de pedidos antes do preenchimento" /></p>
+</li>
+<li>
+<p>Preencha a regra:</p>
+<ul>
+<li><strong>Empresa Destino</strong>: uma empresa já marcada para receber dados</li>
+<li><strong>Quando o pedido for referente aos estados</strong>: as UFs de AC a TO ou <strong>Selecionar todas</strong></li>
+<li><strong>Quando o pedido vier através da integração</strong>: <strong>Sem integração</strong> ou um canal já conectado à empresa</li>
+<li><strong>Quando o pedido estiver na situação</strong>: <strong>Em aberto</strong>, <strong>Faturado</strong>, <strong>Cancelado</strong>, <strong>Aprovado</strong>, <strong>Preparando envio</strong>, <strong>Enviado</strong>, <strong>Entregue</strong>, <strong>Pronto para envio</strong>, <strong>Dados incompletos</strong>, <strong>Não entregue</strong> ou <strong>Em devolução</strong></li>
+<li><strong>Quando o pedido possuir o seguinte depósito</strong>: <strong>Todos os depósitos</strong> ou um depósito já cadastrado</li>
+</ul>
+<p><img src="screenshots/18.png" alt="Regra preenchida com destino, UF, integração, situação e depósito" /></p>
+</li>
+<li>
+<p>Clique em <strong>salvar</strong> para gravar a regra. <strong>cancelar</strong> fecha o painel sem gravar. Na lista de regras, use <strong>editar</strong>, <strong>Clonar regra</strong> ou <strong>Remover regra</strong>.</p>
+</li>
+</ol>
+<h3>Consultar as unidades que enviam dados</h3>
+<ol>
+<li>
+<p>Em <strong>configurar</strong>, clique em <strong>De quais unidades esta empresa recebe?</strong>.</p>
+</li>
+<li>
+<p>Leia a lista de unidades que enviam dados para a empresa aberta. Para alterar quem envia, mude o envio na configuração da empresa de origem.</p>
+<p><img src="screenshots/9.png" alt="Painel somente leitura das unidades que enviam dados" /></p>
+</li>
+</ol>
+<h3>Operar em outra empresa do grupo</h3>
+<ol>
+<li>
+<p>Clique no avatar da empresa no menu lateral para abrir <strong>Minha conta</strong>.</p>
+<p><img src="screenshots/21.png" alt="Painel Minha conta com o seletor de empresa recolhido" /></p>
+</li>
+<li>
+<p>Expanda o seletor de empresa. As empresas listadas já estão vinculadas ao grupo, e a empresa atual permanece marcada.</p>
+<p><img src="screenshots/22.png" alt="Seletor expandido com a empresa atual marcada e as demais vinculadas" /></p>
+</li>
+<li>
+<p>Selecione a empresa vinculada em que deseja operar.</p>
+</li>
+</ol>
+<h3>Ajustar a empresa principal ou remover a empresa</h3>
+<ol>
+<li>
+<p>Na lista <strong>Multiempresa</strong>, clique no botão de mais ações do card.</p>
+</li>
+<li>
+<p>Escolha <strong>empresa principal</strong>.</p>
+<p><img src="screenshots/4.png" alt="Menu do card da empresa principal com a ação empresa principal" /></p>
+</li>
+<li>
+<p>Em um card que não é a empresa principal, o mesmo menu também oferece <strong>remover empresa</strong>.</p>
+<p><img src="screenshots/5.png" alt="Menu de um card que não é a principal, com empresa principal e remover empresa" /></p>
+</li>
+<li>
+<p>Confirme somente se quiser alterar o grupo.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>A lista <strong>Multiempresa</strong> mostra um card por empresa vinculada, com documento, ícones de status e o link <strong>configurar</strong>. O seletor em <strong>Minha conta</strong> lista as empresas vinculadas e mantém a empresa atual marcada. A tela <strong>configurar</strong> mostra as opções de compartilhamento já gravadas da empresa aberta.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>Os ícones do card indicam <strong>Empresa principal</strong>, <strong>Conectada</strong>, <strong>Enviando dados para esta empresa</strong> e <strong>Recebendo dados desta empresa</strong>.</li>
+<li>O status de cada empresa na lista pode ser principal, conectada, enviando dados ou recebendo dados.</li>
+<li><strong>Lista de dados compartilhados</strong> abre, em outra aba, o artigo de ajuda Multiempresa - Configurações.</li>
+</ul>
+</article>
+</body>
+</html>
