@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Produtos com variações e limite de variações por produto</title>
+</head>
+<body>
+<article>
+<h1>Produtos com variações e limite de variações por produto</h1>
+<p>No cadastro de produtos do ERP da Olist, você cria um produto pai do tipo <strong>Com variações</strong>, monta níveis (como cor e tamanho) e gera a grade de combinações. Cada combinação pode ter SKU, preço e estoque próprios.</p>
+<p>A mesma inclusão também pode começar por planilha, pela transformação de produtos já cadastrados ou pelo recebimento de anúncios de uma loja conectada. O sistema avisa quando o número de variações do produto passa de 200.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+<li>Para transformar produtos já cadastrados, marque ao menos um produto na listagem.</li>
+<li>Para receber do ecommerce, a loja precisa já estar conectada. O campo <strong>Integração</strong> lista as lojas disponíveis.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>O número de variações adicionadas ao produto não pode ser maior que o limite de 200.</li>
+<li>Depois de cinco níveis confirmados, o link <strong>Adicionar outra variação</strong> deixa de ser exibido.</li>
+<li>Em <strong>Alterar regras</strong>, a alteração vale para variações já existentes. Ajuste as regras antes de salvar o pai.</li>
+<li>Em <strong>Configurações de variações de produtos</strong> não há campo para mudar o limite de 200.</li>
+<li>Na planilha, o arquivo aceita Excel.xls ou.xlsx, ou CSV, com no máximo 2 Mb. A ajuda cita até 500 registros.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pela tela</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Produtos</strong>.</p>
+<p><img src="screenshots/1.png" alt="Listagem de produtos com as abas e Incluir produto" /></p>
+</li>
+<li>
+<p>Clique em <strong>Incluir produto</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Tipo do Produto</strong>, selecione <strong>Com variações</strong>.</p>
+<p><img src="screenshots/2.png" alt="Novo produto com Tipo do Produto e a opção Com variações" /></p>
+</li>
+<li>
+<p>Preencha os dados gerais do produto pai. Confirmar um nível de variação não grava o produto.</p>
+</li>
+<li>
+<p>Na aba <strong>Variações</strong>, informe o nome do nível e os valores. Separe os valores por vírgula ou tab, como no exemplo P, M, G.</p>
+</li>
+<li>
+<p>Confirme o nível. Os valores passam a aparecer como chips e a grade ganha uma linha por combinação.</p>
+</li>
+<li>
+<p>Repita para os outros níveis. Depois de cinco níveis confirmados, <strong>Adicionar outra variação</strong> deixa de ser exibido.</p>
+<p><img src="screenshots/19.png" alt="Aba Variações depois de cinco níveis, com a grade" /></p>
+</li>
+<li>
+<p>Se a quantidade passar do limite, feche o aviso <strong>O número de variações adicionadas ao produto é maior que o limite de 200 permitido pelo sistema</strong>. O formulário continua aberto e nada é gravado.</p>
+<p><img src="screenshots/18.png" alt="Aviso de que o número de variações é maior que o limite de 200" /></p>
+</li>
+<li>
+<p>Na grade, use editar na combinação que quiser ajustar. No modal <strong>Novo Produto</strong>, preencha <strong>Código (SKU)</strong>, <strong>GTIN/EAN</strong>, <strong>Peso líquido</strong>, <strong>Peso bruto</strong>, <strong>Preço</strong>, <strong>Preço promocional</strong>, <strong>Situação</strong> (<strong>Ativo</strong> ou <strong>Inativo</strong>) e <strong>Estoque inicial</strong>. Pesos e preços usam vírgula decimal. Feche sem salvar se não quiser alterar a grade.</p>
+<p><img src="screenshots/21.png" alt="Modal Novo Produto da variação, com SKU, GTIN, pesos, preços, situação e estoque" /></p>
+</li>
+<li>
+<p>Em <strong>Alterar regras</strong>, marque o que pode diferir entre as variações. Podem estar marcados <strong>NCM</strong>, <strong>Unidade</strong>, <strong>Embalagem e dimensões</strong>, <strong>Estoque mínimo e máximo</strong>, <strong>Descrição complementar</strong> e <strong>Tags</strong>. Podem estar desmarcados <strong>GTIN/EAN</strong>, <strong>Preço de venda</strong>, <strong>Preço promocional</strong>, <strong>Peso e volumes</strong> e <strong>Localização</strong>. Cancele se não quiser aplicar.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar o produto pai com a grade. <strong>Cancelar</strong> volta à listagem sem criar o produto.</p>
+</li>
+</ol>
+<h3>Por planilha</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Produtos</strong>.</p>
+</li>
+<li>
+<p>Abra <strong>Mais ações</strong> e clique em <strong>Importar produtos de uma planilha</strong>.</p>
+<p><img src="screenshots/22.png" alt="Mais ações com Importar produtos de uma planilha e Receber produtos do e-commerce" /></p>
+</li>
+<li>
+<p>Baixe a planilha.</p>
+</li>
+<li>
+<p>Preencha o arquivo. O pai usa <strong>Tipo de Produto</strong> V e não tem estoque próprio. O filho usa S, K, F ou M, nunca V. O <strong>Código do Pai</strong> do filho é o SKU do pai. Informe as variações no formato Nome:Valor||Nome:Valor, por exemplo Tamanho:GG||Cor:Branco. O SKU precisa ser manual. As colunas obrigatórias citadas na ajuda são <strong>Descrição</strong>, <strong>Sob Encomenda</strong> e <strong>Situação</strong>.</p>
+<p><img src="screenshots/27.png" alt="Ajuda de importação: pai tipo V, filho nunca V, Código do Pai e formato Nome:Valor" /></p>
+</li>
+<li>
+<p>Envie a planilha em Excel.xls ou.xlsx, ou CSV, com no máximo 2 Mb.</p>
+<p><img src="screenshots/23.png" alt="Tela de importação com baixar planilha e enviar planilha, máximo de 2 Mb" /></p>
+</li>
+</ol>
+<h3>Transformar produtos em variações</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Produtos</strong>.</p>
+</li>
+<li>
+<p>Marque um ou mais produtos. A ação não aparece no menu da linha nem no <strong>Mais ações</strong> do cabeçalho.</p>
+<p><img src="screenshots/32.png" alt="Menu da linha do produto sem Transformar em variações" /></p>
+</li>
+<li>
+<p>Na barra de seleção, abra <strong>Mais ações</strong> e clique em <strong>Transformar em variações</strong>.</p>
+<p><img src="screenshots/33.png" alt="Mais ações da seleção com Transformar em variações" /></p>
+</li>
+<li>
+<p>Escolha <strong>Criar novo produto pai</strong> ou <strong>Utilizar produto pai existente</strong>. <strong>Criar novo produto pai</strong> vem selecionado.</p>
+</li>
+<li>
+<p>Clique em <strong>Continuar</strong>. <strong>Cancelar</strong> abandona o fluxo sem alterar os produtos.</p>
+<p><img src="screenshots/34.png" alt="Painel Transformar em variações com criar novo pai ou utilizar pai existente" /></p>
+</li>
+<li>
+<p>Para um pai novo, em <strong>Informe os dados do produto pai</strong>, preencha <strong>Descrição</strong>, <strong>Código (SKU)</strong>, <strong>Origem</strong>, <strong>NCM</strong>, <strong>Preço de venda</strong>, <strong>Unidade</strong> e <strong>GTIN/EAN</strong>. <strong>Voltar</strong> retorna à escolha sem gravar.</p>
+<p><img src="screenshots/36.png" alt="Formulário Informe os dados do produto pai" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar produto</strong> para concluir com o pai novo.</p>
+</li>
+<li>
+<p>Para um pai já existente, selecione <strong>Utilizar produto pai existente</strong> e clique em <strong>Continuar</strong>.</p>
+<p><img src="screenshots/37.png" alt="Opção Utilizar produto pai existente" /></p>
+</li>
+<li>
+<p>Em <strong>Selecione o produto pai</strong>, busque em <strong>Produto pai</strong> e clique em <strong>Selecionar produto</strong>. <strong>Voltar</strong> retorna sem gravar.</p>
+<p><img src="screenshots/38.png" alt="Tela Selecione o produto pai, com busca e Selecionar produto" /></p>
+</li>
+</ol>
+<h3>Receber do ecommerce</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Produtos</strong>, sem produto marcado.</p>
+</li>
+<li>
+<p>Clique em <strong>Receber do e-commerce</strong>. O mesmo início está em <strong>Mais ações &gt; Receber produtos do e-commerce</strong>.</p>
+</li>
+<li>
+<p>Na janela <strong>Receber produtos do e-commerce</strong>, confira <strong>Consumo de anúncios</strong> e <strong>Anúncios restantes</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Integração</strong>, selecione a loja já conectada. Ao continuar, você segue para a nova tela de anúncios.</p>
+</li>
+<li>
+<p>Clique em <strong>Avançar</strong> para seguir à tela de anúncios da integração escolhida. Fechar a janela dispensa o recebimento sem importar.</p>
+<p><img src="screenshots/39.png" alt="Janela Receber produtos do e-commerce com consumo de anúncios, Integração e Avançar" /></p>
+</li>
+</ol>
+<h3>Catálogo de tipos de variação</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Configurações do Sistema ERP &gt; Cadastros &gt; Configurações de variações de produtos</strong>.</p>
+</li>
+<li>
+<p>Na tela <strong>Variações dos produtos</strong>, consulte <strong>Nome da Variação</strong> e <strong>Valores</strong>. Use a busca se precisar. Não há campo numérico de limite por produto.</p>
+<p><img src="screenshots/28.png" alt="Catálogo Variações dos produtos, com busca, Ajustar variações e Incluir variação de produto" /></p>
+</li>
+<li>
+<p>Clique em <strong>Incluir variação de produto</strong>.</p>
+</li>
+<li>
+<p>Preencha <strong>Nome</strong> e <strong>Valor</strong>. O valor também aceita itens separados por vírgula ou tab.</p>
+<p><img src="screenshots/30.png" alt="Inclusão de variação de produto com nome e valores" /></p>
+</li>
+<li>
+<p>Salve o tipo para incluí-lo no catálogo. Cancele se não quiser gravar.</p>
+</li>
+<li>
+<p>Em <strong>Ajustar variações</strong>, escolha <strong>Variação Origem</strong> e <strong>Variação Destino</strong> e marque os valores.</p>
+</li>
+<li>
+<p>Mova os selecionados para transferir os valores. <strong>Cancelar</strong> fecha sem mover.</p>
+<p><img src="screenshots/31.png" alt="Ajustar variações com origem, destino e valores" /></p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Na listagem, a aba <strong>Variações</strong> separa os produtos com variação. No produto pai, o indicador aparece no formato (N variações). Antes de salvar, a aba <strong>Variações</strong> mostra os níveis em chips e a grade de combinações.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>O limite de 200 por produto não é configurado em <strong>Configurações de variações de produtos</strong>.</li>
+<li>A ajuda da planilha não informa o limite de 200.</li>
+<li>Interface/Tela: criar sim, atualizar sim</li>
+<li>Lote (Planilha): criar sim, atualizar sim</li>
+<li>API V3: criar sim, atualizar sim</li>
+<li>Lis: criar sim, atualizar sim</li>
+</ul>
+</article>
+</body>
+</html>
