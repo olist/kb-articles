@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Kits: cadastro, kits com variações e limites do sistema</title>
+</head>
+<body>
+<article>
+<h1>Kits: cadastro, kits com variações e limites do sistema</h1>
+<p>No ERP da Olist, você cadastra um produto do tipo kit e monta a composição com componentes já cadastrados. Na composição, você informa o produto e a quantidade e confere os preços calculados na tela.</p>
+<p>No mesmo cadastro, o tipo <strong>Com variações</strong> gera a grade de variações para você editar os dados de cada SKU. Esse tipo não usa a composição de kit. O cadastro fica em <strong>Cadastros &gt; Produtos</strong>.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Os componentes precisam já existir como produtos. Na composição, um nome que não está cadastrado é sinalizado como produto não encontrado.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>A composição do kit aceita no máximo 20 produtos. Ao atingir o limite, a ficha exibe <strong>Não é possível incluir mais de 20 produtos na composição do kit</strong>.</li>
+<li>A ficha exibe <strong>Você não pode cadastrar mais de 50 anúncios por produto</strong>.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Cadastrar um kit</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Produtos</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir produto</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Tipo do Produto</strong>, selecione <strong>Kit</strong>.</p>
+</li>
+<li>
+<p>Preencha os dados gerais do produto, como <strong>Nome</strong>, <strong>Código (SKU)</strong>, <strong>Unidade</strong>, <strong>Preço de venda</strong> e <strong>Preço promocional</strong>. Nos preços, use vírgula para separar os centavos.</p>
+</li>
+<li>
+<p>Na composição do kit, clique em <strong>Adicionar produto no kit</strong>.</p>
+<p><img src="screenshots/20.png" alt="Composição do kit vazia, com Adicionar produto no kit e totais zerados" /></p>
+</li>
+<li>
+<p>Informe um produto já cadastrado e a quantidade. Na quantidade, use vírgula para separar os decimais, junto da unidade.</p>
+<p><img src="screenshots/21.png" alt="Linha de componente na composição, com quantidade 2,00" /></p>
+</li>
+<li>
+<p>Confira o preço unitário, o preço promocional e o preço total de cada linha, além dos totais da composição. Esses preços da linha não são editáveis.</p>
+</li>
+<li>
+<p>Se quiser recalcular o preço ou o peso do kit, clique em <strong>Atualizar preço do produto</strong> ou em <strong>Atualizar peso do produto</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar o kit.</p>
+</li>
+</ol>
+<h3>Cadastrar um produto com variações</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Produtos</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir produto</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Tipo do Produto</strong>, selecione <strong>Com variações</strong>. A aba de kit deixa de aparecer. Surgem a aba <strong>Variações</strong> e o campo <strong>Depósito padrão</strong>, depósito utilizado para as variações.</p>
+<p><img src="screenshots/23.png" alt="Dados gerais com Tipo do Produto em Com variações" /></p>
+</li>
+<li>
+<p>Preencha os dados gerais do produto.</p>
+</li>
+<li>
+<p>Em <strong>Variações</strong>, escolha a primeira variação, por exemplo <strong>Cor</strong>, e confirme.</p>
+<p><img src="screenshots/24.png" alt="Aba Variações com Primeira variação em Cor" /></p>
+</li>
+<li>
+<p>Informe os valores separados por vírgula ou tab. O exemplo da tela é P, M, G. Se precisar de outra característica, clique em <strong>Adicionar outra variação</strong>.</p>
+<p><img src="screenshots/25.png" alt="Campo de valores da variação, com o exemplo P, M, G" /></p>
+</li>
+<li>
+<p>Confira a grade gerada. A orientação da tela é <strong>Atribua imagens ou edite informações específicas para as suas variações</strong>. Em cada linha, use <strong>editar</strong> ou <strong>excluir</strong>.</p>
+<p><img src="screenshots/26.png" alt="Grade gerada com P, M e G, estoque e ações editar e excluir" /></p>
+</li>
+<li>
+<p>Clique em <strong>editar</strong> e preencha <strong>Código (SKU)</strong>, <strong>GTIN/EAN</strong>, peso líquido, peso bruto, preço, preço promocional, <strong>Situação</strong> e estoque inicial (e-commerce). Nos pesos, preços e estoque, use vírgula para separar os decimais. Em <strong>Situação</strong>, as opções são <strong>Ativo</strong> e <strong>Inativo</strong>. Esse modal não tem composição de kit.</p>
+<p><img src="screenshots/27.png" alt="Modal da variação com SKU, GTIN, pesos, preços e estoque" /></p>
+</li>
+<li>
+<p>Para definir quais dados acompanham as variações já existentes, clique em <strong>Alterar regras</strong>. No modal <strong>Produto com variações</strong>, marque o que atualizar: <strong>NCM</strong>, <strong>GTIN/EAN</strong>, <strong>Preço de venda</strong>, <strong>Preço promocional</strong>, <strong>Unidade</strong>, <strong>Peso e volumes</strong>, <strong>Embalagem e dimensões</strong>, <strong>Estoque mínimo e máximo</strong>, <strong>Localização</strong>, <strong>Descrição complementar</strong> e <strong>Tags</strong>. Também há <strong>Não exibir novamente</strong>. Clique em <strong>Cancelar</strong> se não for gravar essa alteração.</p>
+<p><img src="screenshots/22.png" alt="Modal Alterar regras, Produto com variações" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar o produto com a grade de variações.</p>
+</li>
+</ol>
+<h2>Informações adicionais</h2>
+<h3>O kit na tela, na planilha, na API e na Lis</h3>
+<ul>
+<li>Interface/Tela: criar sim, atualizar sim</li>
+<li>Lote (Planilha): criar não, atualizar sim</li>
+<li>API V3: criar não, atualizar sim</li>
+<li>Lis: criar não, atualizar sim</li>
+</ul>
+</article>
+</body>
+</html>
