@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Guias de pagamento de impostos (GNRE e outras)</title>
+</head>
+<body>
+<article>
+<h1>Guias de pagamento de impostos (GNRE e outras)</h1>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A empresa precisa ter a GNRE habilitada para abrir as guias de pagamento. Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+<li>Para a guia refletir DIFAL ou ST, a regra correspondente precisa estar definida na aba <strong>Notas Fiscais</strong>.</li>
+<li>Para guias de fulfillment, marque <strong>Gerar guias de fulfillment</strong> e indique o canal em <strong>configurar integrações</strong>.</li>
+<li>Para registrar o pagamento de uma guia gerada, escolha uma conta financeira no seletor da guia.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li><strong>Convênio padrão</strong> é obrigatório em cada receita usada. Enquanto não for informado, o estado pode aparecer como <strong>Configuração pendente</strong>.</li>
+<li>A geração automática depende de <strong>Enviar NF ao módulo GNRE ao autorizar</strong> e de <strong>Gerar guias automaticamente ao enviar NF ao módulo GNRE</strong>.</li>
+<li><strong>corrigir</strong> não edita a guia. A orientação é remover a guia, cancelar a nota já emitida, reemitir em <strong>Vendas &gt; Notas Fiscais</strong> e gerar a guia novamente.</li>
+<li><strong>Marcar como pago e concluir</strong> só fica disponível depois de escolher a conta financeira. Use só quando o pagamento for de fato registrado.</li>
+<li><strong>gerar novamente</strong>, <strong>Lançar contas</strong> e <strong>remover</strong> alteram os dados da guia.</li>
+<li>Guias com data de pagamento expirada continuam na lista até serem geradas novamente. Use <strong>gerar novamente</strong> da faixa só se quiser atualizar a data de pagamento.</li>
+<li><strong>Cancelar</strong> descarta o que não foi salvo.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Configurar a geração das guias</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Abra a aba <strong>Notas Fiscais</strong>.</p>
+<p><img src="screenshots/2.png" alt="Aba Notas Fiscais, com o acesso à configuração da GNRE" /></p>
+</li>
+<li>
+<p>Abra <strong>Configurações da Guia Nacional de Recolhimento de Tributos Estaduais (GNRE)</strong>.</p>
+</li>
+<li>
+<p>Confira <strong>Categoria padrão contas a pagar</strong>.</p>
+</li>
+<li>
+<p>Marque, conforme a operação: <strong>Enviar NF ao módulo GNRE ao autorizar</strong>, <strong>Gerar guias de fulfillment</strong> e <strong>Gerar guias automaticamente ao enviar NF ao módulo GNRE</strong>.</p>
+</li>
+<li>
+<p>Informe o <strong>Marcador padrão</strong>.</p>
+<p><img src="screenshots/10.png" alt="Configuração da GNRE, com categoria, envio da nota, fulfillment, geração automática, marcador, forma de pagamento e vencimento" /></p>
+</li>
+<li>
+<p>Em <strong>Forma de pagamento</strong>, escolha <strong>Boleto</strong> ou <strong>Pix</strong>. Sem Pix, o boleto é o padrão.</p>
+</li>
+<li>
+<p>Em <strong>Vencimento</strong>, escolha <strong>Data de saída/emissão da nota fiscal</strong>, <strong>data de geração da guia</strong> ou <strong>próximo dia útil após a geração</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. As notas autorizadas podem ser enviadas ao módulo GNRE e as guias podem ser geradas automaticamente, com categoria, marcador, forma de pagamento e vencimento padrão. <strong>Cancelar</strong> descarta as alterações.</p>
+</li>
+</ol>
+<h3>Informar o convênio por estado</h3>
+<ol>
+<li>
+<p>Na configuração da GNRE, abra <strong>Editar regras</strong>.</p>
+</li>
+<li>
+<p>No painel <strong>Configurações adicionais de estados</strong>, localize o estado. Vários aparecem como <strong>Configuração pendente</strong> até o convênio ser informado.</p>
+</li>
+<li>
+<p>Abra o estado e a receita usada. No Amapá, as abas são <strong>100099 ICMS ST</strong> e <strong>100102 ICMS DIFAL</strong>.</p>
+<p><img src="screenshots/12.png" alt="Estados da GNRE, parte em configuração pendente e parte já configurada" /></p>
+</li>
+<li>
+<p>Preencha <strong>Convênio padrão</strong> em cada receita usada. O campo é obrigatório.</p>
+</li>
+<li>
+<p>Grave a regra para o estado deixar de depender da configuração pendente. Se não for gravar, clique em <strong>Cancelar</strong>.</p>
+<p><img src="screenshots/14.png" alt="Receitas do Amapá com Convênio padrão obrigatório" /></p>
+</li>
+</ol>
+<h3>Indicar canais de fulfillment</h3>
+<ol>
+<li>
+<p>Na configuração da GNRE, abra <strong>configurar integrações</strong>.</p>
+</li>
+<li>
+<p>A lista mostra os canais já conectados à empresa. Não é preciso ativar a integração nesta consulta.</p>
+</li>
+<li>
+<p>Marque os canais que devem gerar guias de fulfillment.</p>
+<p><img src="screenshots/16.png" alt="Canais conectados disponíveis para as guias de fulfillment" /></p>
+</li>
+<li>
+<p>Clique em <strong>Confirmar</strong>. Os canais marcados passam a ser considerados na geração de guias de fulfillment, desde que <strong>Gerar guias de fulfillment</strong> esteja habilitada. <strong>Cancelar</strong> fecha sem alterar a seleção.</p>
+</li>
+</ol>
+<h3>Consultar as guias</h3>
+<ol>
+<li>
+<p>Acesse <strong>Vendas &gt; Notas Fiscais &gt; guias de pagamento</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Pesquise por cliente ou número</strong>, localize a guia. O refinamento oferece número, cliente ou <strong>Não refinar</strong>.</p>
+</li>
+<li>
+<p>Em <strong>por periodo</strong>, filtre pela data de emissão: sem filtro, período, mês, últimos 30 dias ou uma data.</p>
+</li>
+<li>
+<p>Em <strong>todos os estados</strong>, restrinja a UF. Cancele se não quiser aplicar.</p>
+</li>
+<li>
+<p>Em <strong>todas as guias</strong>, escolha <strong>Todas as guias</strong>, <strong>Vencidas</strong>, <strong>A vencer</strong> ou <strong>Pagamento expirado</strong>. Cancele se não quiser aplicar.</p>
+</li>
+<li>
+<p>Troque de aba: <strong>Aguardando</strong>, <strong>Com erro</strong>, <strong>Guias geradas</strong> ou <strong>Guias pagas</strong>. As três últimas exibem contagem.</p>
+</li>
+<li>
+<p>Na aba <strong>Guias geradas</strong>, a lista mostra <strong>N° da nota</strong>, <strong>Receita</strong>, <strong>Data emissão da nota</strong>, <strong>N° de controle</strong>, <strong>Data vencimento</strong>, <strong>Data prev. pagamento</strong>, <strong>CPF/CNPJ/Insc. Est.</strong>, <strong>UF</strong>, <strong>Valor (R$)</strong> e <strong>Integrações</strong>. O rodapé mostra a quantidade e o valor total do imposto.</p>
+</li>
+<li>
+<p>Se houver guias com data de pagamento expirada, a faixa avisa e oferece <strong>gerar novamente</strong>. Use esse botão só para atualizar a data de pagamento.</p>
+<p><img src="screenshots/36.png" alt="Guias de pagamento, com busca, filtros, abas e faixa de pagamento expirado" /></p>
+</li>
+<li>
+<p>Na aba <strong>Com erro</strong>, as colunas são <strong>Nº</strong>, <strong>Data emissão</strong>, <strong>Cliente</strong>, <strong>UF</strong>, <strong>Imposto (R$)</strong> e <strong>Erro</strong>, com a ação <strong>corrigir</strong>.</p>
+</li>
+<li>
+<p>Na aba <strong>Guias pagas</strong>, a lista segue as colunas da guia emitida. O menu da linha oferece <strong>imprimir</strong>, <strong>Download unificado</strong> e <strong>remover</strong>. Você localiza as guias por situação, período, estado e vencimento, e vê quantidade, valor total e, quando houver, o aviso de pagamento expirado.</p>
+</li>
+</ol>
+<h3>Exibir, imprimir ou registrar o pagamento</h3>
+<ol>
+<li>
+<p>Em <strong>Guias geradas</strong>, abra o menu da linha.</p>
+</li>
+<li>
+<p>As opções são <strong>Exibir guia de pagamento</strong>, <strong>gerar novamente guia de pagamento</strong>, <strong>imprimir</strong> e <strong>remover</strong>.</p>
+</li>
+<li>
+<p>Escolha <strong>Exibir guia de pagamento</strong> para abrir o documento, com código de barras, sem alterar a guia.</p>
+<p><img src="screenshots/37.png" alt="Menu da linha de uma guia gerada" /></p>
+</li>
+<li>
+<p>Clique em <strong>Imprimir guia</strong> para emitir a impressão. Em <strong>Selecione</strong>, escolha a conta financeira do registro do pagamento, entre caixa, bancos e gateways. <strong>Marcar como pago e concluir</strong> só deve ser usado quando o pagamento for de fato registrado.</p>
+<p><img src="screenshots/38.png" alt="Guia gerada, com código de barras e Imprimir guia" /></p>
+</li>
+<li>
+<p>Para várias guias, marque as linhas. A barra oferece <strong>Exibir guias de pagamento</strong>, <strong>Lançar contas</strong> e <strong>Mais ações</strong>.</p>
+<p><img src="screenshots/39.png" alt="Seletor de conta financeira para o registro do pagamento" /></p>
+</li>
+<li>
+<p>Em <strong>Mais ações</strong>, use <strong>Exibir guias de pagamento</strong>, <strong>gerar novamente guias de pagamento</strong>, <strong>Lançar contas</strong> ou <strong>remover</strong>.</p>
+<p><img src="screenshots/40.png" alt="Barra de ações depois de marcar uma guia gerada" /></p>
+</li>
+<li>
+<p>Nas guias pagas, a seleção em lote oferece <strong>Lançar contas</strong> e, em <strong>Mais ações</strong>, <strong>Lançar contas</strong> e <strong>Download Unificado</strong>. A guia gerada pode ser consultada e impressa. O pagamento, o lançamento de contas, a nova geração e a remoção ficam no mesmo menu.</p>
+<p><img src="screenshots/41.png" alt="Mais ações do lote de guias geradas" /></p>
+</li>
+</ol>
+<h3>Tratar uma guia com erro</h3>
+<ol>
+<li>
+<p>Abra a aba <strong>Com erro</strong>.</p>
+</li>
+<li>
+<p>Leia o texto da coluna <strong>Erro</strong>. Os motivos podem ser CEP ou código de município inválido, ou CNPJ/CPF que não confere com a chave de acesso.</p>
+</li>
+<li>
+<p>Clique em <strong>corrigir</strong>. O painel mostra os dados da guia e orienta a remover a guia, cancelar a nota já emitida, reemitir em <strong>Vendas &gt; Notas Fiscais</strong> e gerar a guia novamente. Não há campos editáveis.</p>
+</li>
+<li>
+<p>O menu da linha também oferece <strong>imprimir</strong> e <strong>remover</strong>.</p>
+<p><img src="screenshots/35.png" alt="Painel corrigir, sem campos editáveis, com a orientação para remover a guia e reemitir a nota" /></p>
+</li>
+<li>
+<p>Siga a orientação para corrigir a falha: remova a guia, cancele e reemita a nota e gere a guia de novo. <strong>entendi</strong> apenas fecha o aviso e não grava correção na guia. <strong>cancelar</strong> fecha o painel se você não for seguir a orientação.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>As guias emitidas aparecem em <strong>Guias geradas</strong>, com receita, vencimento, UF e valor. O rodapé soma a quantidade e o valor total do imposto. As guias já pagas ficam em <strong>Guias pagas</strong>. As falhas ficam em <strong>Com erro</strong>, com o motivo na coluna <strong>Erro</strong>. <strong>Exibir guia de pagamento</strong> abre o documento com código de barras, sem marcar a guia como paga.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>As regras já gravadas da GNRE aparecem preenchidas ao reabrir a tela.</li>
+<li>O filtro de últimos 30 dias pode esvaziar as abas. Limpe os filtros para voltar a listar as guias existentes.</li>
+<li>O download unificado das guias pagas reúne os arquivos junto ao DANFe.</li>
+</ul>
+</article>
+</body>
+</html>
