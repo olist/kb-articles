@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Checklist e primeira NF-e</title>
+</head>
+<body>
+<article>
+<h1>Checklist e primeira NF-e</h1>
+<p>No ambiente de testes do ERP da Olist, você confere se a emissão está pronta para faturar e monta a primeira NF-e de saída. Dá para incluir a nota em <strong>Vendas &gt; Notas Fiscais</strong> ou gerar a nota a partir de um pedido de venda, e deixar o lote pendente pronto para autorização em homologação.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Para gerar a nota a partir do pedido, é preciso ter um pedido de venda já existente.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>A lista avisa que a conta está no ambiente para testes de notas fiscais. O link <strong>alterar ambiente</strong> é o caminho mostrado para gerar notas com valor fiscal.</li>
+<li>Notas rejeitadas precisam ser corrigidas antes de serem reenviadas.</li>
+<li>No painel do lote, só serão enviadas notas emitidas após 13/10/2026.</li>
+<li>Para autorizar ou enviar o lote, a tela acessa um dispositivo de segurança antes de mostrar o painel.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Conferir a configuração para faturar</h3>
+<ol>
+<li>
+<p>Na página inicial, no <strong>Guia inicial</strong>, abra <strong>Configure a emissão da nota fiscal</strong> e acione <strong>configurar para faturar</strong>.</p>
+<p><img src="screenshots/1.png" alt="Página inicial com atalho para Notas Fiscais" /></p>
+</li>
+<li>
+<p>Na tela de configuração concluída, leia que já é possível emitir as notas fiscais e escolha <strong>Revisar as configurações</strong> ou <strong>Ir para tela de Notas Fiscais</strong>.</p>
+<p><img src="screenshots/2.png" alt="Configuração concluída, com a mensagem de que já é possível emitir notas fiscais" /></p>
+</li>
+<li>
+<p>Em <strong>Revisar as configurações</strong>, confira <strong>Ambiente das notas fiscais</strong> em ambiente de testes, as pendências de <strong>Dados da empresa</strong>, <strong>certificado digital</strong> e <strong>NFCe</strong>, e as seções de NFe, naturezas, DIFAL, GNRE, intermediadores, marcadores, entrada e serviço. A configuração para faturar fica concluída no ambiente de testes, e você pode seguir para <strong>Notas Fiscais</strong>.</p>
+<p><img src="screenshots/3.png" alt="Revisão das configurações, com ambiente de testes" /></p>
+<p><img src="screenshots/4.png" alt="Continuação da revisão das configurações fiscais" /></p>
+</li>
+</ol>
+<h3>Incluir a NF-e pela tela</h3>
+<ol>
+<li>
+<p>Acesse <strong>Vendas &gt; Notas Fiscais</strong> e confira o aviso de ambiente para testes de notas fiscais.</p>
+<p><img src="screenshots/5.png" alt="Lista de Notas Fiscais com aviso de ambiente de testes" /></p>
+<p><img src="screenshots/6.png" alt="Lista com Incluir nota fiscal, Autorizar pendentes e Mais ações" /></p>
+</li>
+<li>
+<p>Clique em <strong>Incluir nota fiscal</strong>.</p>
+</li>
+<li>
+<p>Confira os dados já trazidos da nota. Nenhum dos campos abaixo é obrigatório.</p>
+</li>
+</ol>
+<h4>Dados da nota</h4>
+<ul>
+<li><strong>Tipo de Saída</strong></li>
+<li><strong>Série</strong></li>
+<li>Número e datas</li>
+<li>Natureza</li>
+<li><strong>Finalidade</strong></li>
+<li><strong>CRT</strong></li>
+<li><strong>Consumidor final</strong></li>
+<li><strong>Cálculo automático de imposto</strong></li>
+</ul>
+<h4>Destinatário</h4>
+<p>Preencha com dados fictícios.</p>
+<ul>
+<li><strong>Tipo de pessoa</strong></li>
+<li><strong>Contribuinte</strong></li>
+<li><strong>Nome</strong></li>
+<li><strong>CPF</strong>, no formato de CPF</li>
+<li><strong>CEP</strong>, no formato de CEP</li>
+<li><strong>Endereço</strong></li>
+<li><strong>Número</strong></li>
+<li><strong>Bairro</strong></li>
+<li><strong>Cidade</strong></li>
+<li><strong>UF</strong></li>
+<li><strong>Fone</strong>, no formato de telefone</li>
+<li><strong>E-mail</strong></li>
+</ul>
+<p><img src="screenshots/8.png" alt="Formulário de inclusão preenchido com destinatário fictício" /></p>
+<ol start="4">
+<li>Confira o preenchimento. <strong>Salvar</strong> grava a inclusão da NF-e de saída no ambiente de testes. <strong>Cancelar</strong> descarta a inclusão.</li>
+</ol>
+<h3>Gerar a NF-e a partir do pedido de venda</h3>
+<ol>
+<li>
+<p>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</p>
+<p><img src="screenshots/10.png" alt="Lista de Pedidos de Venda" /></p>
+</li>
+<li>
+<p>Na linha do pedido, abra <strong>•••</strong> e clique em <strong>Gerar nota fiscal</strong>.</p>
+<p><img src="screenshots/11.png" alt="Menu do pedido com Gerar nota fiscal" /></p>
+</li>
+<li>
+<p>Confira a NF-e aberta, ainda não salva, com tipo de saída, finalidade, destinatário, frete, itens, cálculo do imposto e total da nota já preenchidos a partir do pedido.</p>
+<p><img src="screenshots/12.png" alt="Cabeçalho da NF-e gerada a partir do pedido" /></p>
+<p><img src="screenshots/13.png" alt="Itens, cálculo do imposto e total da NF-e gerada pelo pedido" /></p>
+</li>
+<li>
+<p>Confira os dados trazidos do pedido. <strong>Salvar</strong> grava a NF-e preenchida com os dados do pedido de venda.</p>
+</li>
+</ol>
+<h3>Deixar o lote pronto para autorização</h3>
+<ol>
+<li>
+<p>Em <strong>Vendas &gt; Notas Fiscais</strong>, clique em <strong>Autorizar pendentes</strong> ou em <strong>Mais ações &gt; Enviar notas pendentes</strong>. Os dois caminhos abrem o mesmo painel.</p>
+</li>
+<li>
+<p>Aguarde a mensagem de acesso ao dispositivo de segurança.</p>
+</li>
+<li>
+<p>No painel <strong>Lote de notas fiscais eletrônicas</strong>, confira o ambiente de homologação. <strong>Enviar notas fiscais por e-mail</strong> e <strong>Enviar notas fiscais rejeitadas anteriormente</strong> vêm desmarcadas. Leia o aviso de que só notas emitidas após 13/10/2026 serão enviadas.</p>
+<p><img src="screenshots/9.png" alt="Painel de lote aberto por Autorizar pendentes, em homologação" /></p>
+<p><img src="screenshots/25.png" alt="Painel de lote aberto por Enviar notas pendentes, em homologação" /></p>
+</li>
+<li>
+<p>Confira o lote. <strong>Enviar</strong> dispara o envio em homologação. <strong>Cancelar</strong> fecha o painel sem enviar. O lote fica pronto para esse envio.</p>
+</li>
+</ol>
+<h3>Autorizar pela nota</h3>
+<ol>
+<li>
+<p>Em <strong>Vendas &gt; Notas Fiscais</strong>, abra <strong>•••</strong> na linha da nota.</p>
+</li>
+<li>
+<p>Localize <strong>Autorizar no SEFAZ</strong>, junto de imprimir DANFE, compartilhar e salvar DANFE em PDF. Use <strong>Autorizar no SEFAZ</strong> quando quiser autorizar essa nota.</p>
+<p><img src="screenshots/26.png" alt="Menu da nota com Autorizar no SEFAZ" /></p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>A jornada de configurar para faturar exibe a configuração concluída e a mensagem de que já é possível emitir as notas fiscais. A lista de <strong>Notas Fiscais</strong> abre no ambiente de testes, com as situações todas, pendentes, emitidas e canceladas. A NF-e de saída fica preenchida, pronta para salvar, e o painel <strong>Lote de notas fiscais eletrônicas</strong> fica em homologação, pronto para envio.</p>
+</article>
+</body>
+</html>
