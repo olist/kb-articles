@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Naturezas de operação de entrada</title>
+</head>
+<body>
+<article>
+<h1>Naturezas de operação de entrada</h1>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A empresa precisa ter nota de entrada. Para abrir a tela, ela também precisa ter NF-e, notas fiscais, nota de entrada ou NFC-e.</li>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+<li>Tenha em mãos o código de regime tributário da empresa, o CFOP, a situação tributária (CST ou CSOSN) e as alíquotas da operação de entrada.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>O <strong>Código de regime tributário</strong> do cabeçalho define a aba de ICMS: <strong>Simples nacional</strong> exibe a aba <strong>Simples</strong>; <strong>Regime normal</strong> oculta a aba <strong>Simples</strong> e exibe a aba <strong>ICMS</strong>.</li>
+<li>Em <strong>Adicionar exceção</strong>, o botão <strong>próximo</strong> tenta gravar o cadastro. Sem uma regra válida, a tela informa que não foi possível salvar o cadastro e que uma regra de exceção válida deve ser informada. Nesse caso, o cadastro não é gravado.</li>
+<li><strong>Cancelar</strong> no painel de exceção fecha o painel sem gravar a natureza.</li>
+<li>Se em <strong>Preço considerado</strong> você escolher <strong>Preço de custo</strong>, confirme que esse preço será usado nas notas.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>. Na aba <strong>Notas Fiscais</strong>, abra <strong>Naturezas de operação de entrada (tributação)</strong>.</p>
+</li>
+<li>
+<p>Pesquise pela descrição, filtre as naturezas ativas ou limpe os filtros. A grade mostra <strong>Descrição</strong>, <strong>CFOP</strong>, <strong>Padrão</strong>, <strong>Série</strong> e <strong>Consumidor final</strong>.</p>
+<p><img src="screenshots/1.png" alt="Lista de naturezas de operação de entrada" /></p>
+</li>
+<li>
+<p>Na linha da natureza, acione a ação desejada: <strong>clonar operação</strong>, <strong>tornar padrão para compra</strong>, <strong>tornar operação de saída</strong>, <strong>enviar natureza para empresas</strong> ou <strong>inativar operação</strong>.</p>
+<p><img src="screenshots/3.png" alt="Ações da linha na lista" /></p>
+</li>
+<li>
+<p>Clique em <strong>Incluir natureza de operação</strong>.</p>
+<p><img src="screenshots/4.png" alt="Formulário de inclusão da natureza" /></p>
+</li>
+<li>
+<p>Preencha o cabeçalho:</p>
+</li>
+</ol>
+<ul>
+<li><strong>Descrição</strong></li>
+<li><strong>Finalidade</strong>: Normal, Devolução, Bonificação ou Remessa</li>
+<li><strong>Código de regime tributário</strong>: Simples nacional, Simples nacional - excesso de sublimite de receita bruta, Regime normal ou Microempreendedor Individual (MEI)</li>
+<li><strong>Série</strong></li>
+<li><strong>Consumidor final</strong>: Sim ou Não</li>
+<li><strong>Observações padrões para notas desta operação</strong>: texto livre. No link <strong>variáveis disponíveis</strong>, copie os marcadores e inclua os colchetes.</li>
+</ul>
+<ol start="6">
+<li>Se o regime for <strong>Simples nacional</strong>, abra a aba <strong>Simples</strong> e informe:</li>
+</ol>
+<ul>
+<li>
+<p><strong>CSOSN</strong>: 101, 102, 103, 201, 202, 203, 300, 400, 500 ou 900. A opção 400 aparece como Não tributada.</p>
+</li>
+<li>
+<p><strong>CFOP</strong>. Use <strong>Pesquisar</strong> ao lado do campo, se precisar localizar o código.</p>
+</li>
+<li>
+<p><strong>ICMS DIFAL para não contribuinte</strong>: Sim ou Não. O texto de ajuda indica ICMS para a UF de Destino.</p>
+</li>
+<li>
+<p><strong>Código de benefício fiscal</strong>, observações e <strong>Informações ao Fisco</strong>. No link <strong>variáveis disponíveis</strong> de cada campo, use os marcadores entre colchetes.</p>
+<p><img src="screenshots/5.png" alt="Aba Simples preenchida" /></p>
+</li>
+</ul>
+<ol start="7">
+<li>Se o regime for <strong>Regime normal</strong>, abra a aba <strong>ICMS</strong> e escolha a <strong>Situação tributária</strong>:</li>
+</ol>
+<ul>
+<li>
+<p>00 Tributada integralmente</p>
+</li>
+<li>
+<p>10 Tributada e com cobrança do ICMS por ST</p>
+</li>
+<li>
+<p>20 Com redução de base de cálculo</p>
+</li>
+<li>
+<p>30 Isenta ou não tributada e com cobrança do ICMS por ST</p>
+</li>
+<li>
+<p>40 Isenta</p>
+</li>
+<li>
+<p>41 Não tributada</p>
+</li>
+<li>
+<p>50 Suspensão</p>
+</li>
+<li>
+<p>51 Diferimento</p>
+</li>
+<li>
+<p>60 ICMS cobrado anteriormente por ST</p>
+</li>
+<li>
+<p>90 Outras</p>
+<p><img src="screenshots/16.png" alt="Aba ICMS com CST 00" /></p>
+</li>
+</ul>
+<ol start="8">
+<li>Complete os campos que a situação tributária exibe:</li>
+</ol>
+<ul>
+<li>
+<p>No CST 10, preencha a substituição tributária: <strong>Alíquota ICMS-ST</strong> (percentual no estado de destino, com vírgula), <strong>Base de Cálculo ICMS-ST</strong> (use valor diferente de 100 só se houver redução), <strong>MVA / IVA</strong>, <strong>Alíquota FCP ICMS-ST</strong>, <strong>Alíquota PIS</strong> e <strong>Alíquota COFINS</strong> sobre a substituição tributária.</p>
+</li>
+<li>
+<p>No CST 20, informe <strong>Base</strong> (percentual com vírgula), <strong>Calcular ICMS Desonerado</strong> (Sim ou Não) e <strong>Motivo da desoneração</strong>.</p>
+</li>
+<li>
+<p>No CST 51, informe <strong>Percentual de Diferimento</strong>, <strong>Alíquota FCP</strong>, <strong>Percentual FCP Diferido</strong> e <strong>Cód. benef. Redução BC</strong>, quando o campo aparecer.</p>
+</li>
+<li>
+<p>No CST 60, informe <strong>Alíquota ICMS efetivo</strong> e <strong>Base ICMS efetivo</strong>. Marque <strong>Obter ICMS-ST retido anteriormente a partir de nota fiscal de compra</strong> se quiser buscar o ICMS-ST retido da nota de compra.</p>
+</li>
+<li>
+<p>Informe também <strong>CFOP</strong>, <strong>Alíquota</strong> (percentual do ICMS próprio, com vírgula; na substituição tributária o rótulo complementar é Interestadual (próprio)), <strong>ICMS DIFAL para não contribuinte</strong>, <strong>Código de benefício fiscal</strong>, <strong>Cód. benef. Crédito Presumido</strong>, <strong>Percent. Crédito Presumido</strong> (formato 0,0000), <strong>Observações do ICMS</strong> e <strong>Informações ao Fisco</strong>.</p>
+<p><img src="screenshots/18.png" alt="Substituição tributária do ICMS" /></p>
+<p><img src="screenshots/19.png" alt="ICMS com CST 20" /></p>
+<p><img src="screenshots/20.png" alt="ICMS com CST 51" /></p>
+<p><img src="screenshots/21.png" alt="ICMS com CST 60 e ICMS efetivo" /></p>
+<p><img src="screenshots/22.png" alt="CST 60 e opção de obter ICMS-ST retido" /></p>
+</li>
+</ul>
+<ol start="9">
+<li>
+<p>Nas observações do ICMS, use com colchetes: [VALOR_BASE_ICMS], [VALOR_BASE_DIFERIMENTO], [VALOR_DIFERIMENTO], [VALOR_CREDITO_ICMS], [ICMS_PRESUMIDO], [ALIQUOTA_CREDITO_ICMS], [VALOR_ICMS_DESONERADO], [NUMERO_CUPOM] e [DATA_CUPOM]. Em <strong>Informações ao Fisco</strong> do ICMS, use os mesmos marcadores, exceto [NUMERO_CUPOM] e [DATA_CUPOM]. Abra <strong>variáveis disponíveis</strong> para ver a lista na própria página.</p>
+<p><img src="screenshots/23.png" alt="Variáveis das observações do ICMS" /></p>
+<p><img src="screenshots/24.png" alt="Variáveis das informações ao fisco do ICMS" /></p>
+</li>
+<li>
+<p>Preencha a aba <strong>IPI</strong>: <strong>Situação tributária do IPI</strong> (00 Entrada com recuperação de crédito, 01 Entrada tributada alíquota zero, 02 Entrada isenta, 03 Entrada não-tributada, 04 Entrada imune, 05 Entrada com suspensão, 49 Outras entradas ou Não destacar IPI), <strong>Alíquota do IPI</strong>, <strong>Código de enquadramento</strong>, observações e <strong>Informações ao Fisco</strong>.</p>
+</li>
+</ol>
+<p><img src="screenshots/6.png" alt="Aba IPI" /></p>
+<ol start="11">
+<li>Preencha a aba <strong>ISSQN</strong>: situação (tributado, isento ou outra situação), <strong>Alíquota do ISSQN</strong>, <strong>Base do ISSQN</strong>, <strong>Descontar ISS</strong> (Sim ou Não; o texto de ajuda indica que o desconto entra no total da nota), observações e <strong>Informações ao Fisco</strong>.</li>
+</ol>
+<p><img src="screenshots/7.png" alt="Aba ISSQN" /></p>
+<ol start="12">
+<li>Preencha a aba <strong>PIS</strong>: <strong>Situação tributária do PIS</strong> (01 a 09, 49, 50 a 56, 60 a 67 e 70 a 73), <strong>Alíquota PIS</strong>, <strong>Base do PIS</strong>, observações e <strong>Informações ao Fisco</strong>.</li>
+</ol>
+<p><img src="screenshots/8.png" alt="Aba PIS" /></p>
+<ol start="13">
+<li>Preencha a aba <strong>COFINS</strong> com a mesma faixa de situações do PIS, <strong>Alíquota COFINS</strong>, <strong>Base do COFINS</strong>, observações e <strong>Informações ao Fisco</strong>.</li>
+</ol>
+<p><img src="screenshots/9.png" alt="Aba COFINS" /></p>
+<ol start="14">
+<li>Preencha a aba <strong>Importação</strong>: <strong>Situação da Importação</strong> (Tributado ou Não tributado), <strong>Alíquota da Importação</strong>, observações e <strong>Informações ao Fisco</strong>. Em cada aba, o link <strong>variáveis disponíveis</strong> lista os marcadores daquela aba. Inclua os colchetes.</li>
+</ol>
+<p><img src="screenshots/10.png" alt="Aba Importação" /></p>
+<ol start="15">
+<li>Para uma regra por estado, produto, origem ou NCM, clique em <strong>Adicionar exceção</strong>. Informe a regra antes de clicar em <strong>próximo</strong>:</li>
+</ol>
+<ul>
+<li>
+<p><strong>UF da exceção</strong>: de AC a TO, EX ou <strong>Qualquer estado</strong></p>
+</li>
+<li>
+<p><strong>Origem da exceção</strong>: <strong>Qualquer origem</strong> ou os códigos 0 a 8</p>
+</li>
+<li>
+<p>produto: clique em <strong>Adicionar</strong> e informe o SKU na linha</p>
+</li>
+<li>
+<p>NCM: clique em <strong>Adicionar</strong> e informe o NCM na linha</p>
+<p><img src="screenshots/12.png" alt="Painel de exceções" /></p>
+<p><img src="screenshots/13.png" alt="Inclusão de produto na exceção" /></p>
+<p><img src="screenshots/14.png" alt="Inclusão de NCM na exceção" /></p>
+</li>
+</ul>
+<ol start="16">
+<li>Só clique em <strong>próximo</strong> depois de informar uma regra válida. Sem regra válida, o cadastro não é gravado e a tela permanece no aviso.</li>
+</ol>
+<p><img src="screenshots/15.png" alt="Aviso de exceção sem regra válida" /></p>
+<ol start="17">
+<li>Abra <strong>Configurações avançadas</strong> e defina:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Preço considerado</strong>: Preço de custo ou Preço da última entrada. Com Preço de custo, confirme que esse preço será usado nas notas.</p>
+</li>
+<li>
+<p><strong>Considerar CMV no DRE</strong>: Sim ou Não</p>
+</li>
+<li>
+<p><strong>Compra de produtor rural</strong>: Sim ou Não</p>
+</li>
+<li>
+<p><strong>Permite lançamento e reserva de estoque</strong>: Sim ou Não</p>
+</li>
+<li>
+<p><strong>Alíquota funrural</strong></p>
+</li>
+<li>
+<p><strong>Descontar funrural do total faturado</strong>: Sim ou Não</p>
+</li>
+<li>
+<p><strong>Redução da Base de Cálculo do ICMS-ST</strong>: Padrão ou Antes de somar o IPI</p>
+</li>
+<li>
+<p><strong>Somar despesas na importação</strong>: Sim ou Não. O texto de ajuda indica somar ICMS, PIS, COFINS e despesas aduaneiras ao total da nota.</p>
+</li>
+<li>
+<p><strong>Atualizar preço de última compra do produto</strong>: Sim ou Não</p>
+</li>
+<li>
+<p><strong>Descontar desoneração do total da nota fiscal</strong>: Sim ou Não</p>
+</li>
+<li>
+<p><strong>Itens compõem valor total da NF-e</strong>: Compõem total da nota fiscal; Compõem total da nota fiscal, mas sem gerar faturas no XML da NFe (o valor dos itens também não entra nas parcelas); ou Não (todos os totalizadores e valores da nota serão zerados)</p>
+<p><img src="screenshots/11.png" alt="Configurações avançadas" /></p>
+</li>
+</ul>
+<ol start="18">
+<li>Clique em <strong>Salvar</strong> para gravar a natureza.</li>
+</ol>
+</article>
+</body>
+</html>
