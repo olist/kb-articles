@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Inserir variáveis nas observações da natureza de operação</title>
+</head>
+<body>
+<article>
+<h1>Inserir variáveis nas observações da natureza de operação</h1>
+<p>Nas observações da natureza de operação de entrada do ERP da Olist, você insere marcadores entre colchetes para exibir valores nas notas dessa operação. O mesmo vale para as informações ao fisco de cada aba de tributação.</p>
+<p>O cadastro fica em <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais &gt; Naturezas de operação de entrada (tributação)</strong>.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A empresa precisa ter nota de entrada.</li>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Digite cada marcador entre colchetes, como a lista de <strong>variáveis disponíveis</strong> mostra.</li>
+<li><strong>Simples nacional</strong> abre a aba <strong>Simples</strong>. <strong>Regime normal</strong> abre a aba <strong>ICMS</strong>.</li>
+<li>Nas observações do ICMS, a lista inclui [NUMERO_CUPOM] e [DATA_CUPOM]. Em <strong>Informações ao Fisco</strong> do ICMS, esses dois marcadores não entram.</li>
+<li>Em cada aba, <strong>variáveis disponíveis</strong> lista só os marcadores daquela aba.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais &gt; Naturezas de operação de entrada (tributação)</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir natureza de operação</strong>.</p>
+<p><img src="screenshots/4.png" alt="Formulário de inclusão com observações padrões" /></p>
+<p><img src="screenshots/1.png" alt="Lista de naturezas de operação de entrada, com pesquisa por descrição, filtro de" /></p>
+<p><img src="screenshots/3.png" alt="Ações de linha da lista, sem alteração de dados: clonar operação, tornar padrão " /></p>
+</li>
+<li>
+<p>No campo <strong>Observações padrões para notas desta operação</strong>, clique em <strong>variáveis disponíveis</strong>.</p>
+</li>
+<li>
+<p>Digite no texto os marcadores entre colchetes que devem aparecer nas notas desta operação.</p>
+</li>
+<li>
+<p>Selecione o <strong>Código de regime tributário</strong> para abrir a aba <strong>Simples</strong> ou a aba <strong>ICMS</strong>.</p>
+<p><img src="screenshots/5.png" alt="Aba Simples preenchida com dados fictícios e não salva, CSOSN 400 e CFOP ?.102." /></p>
+</li>
+<li>
+<p>Na aba <strong>ICMS</strong>, clique em <strong>variáveis disponíveis</strong> de <strong>Observações do ICMS</strong>.</p>
+<p><img src="screenshots/16.png" alt="Aba ICMS em Regime normal, CST 00, com CFOP, alíquota, DIFAL, FCP e benefício fi" /></p>
+<p><img src="screenshots/18.png" alt="Bloco Substituição tributária com alíquota, base, MVA/IVA, FCP, PIS e COFINS de " /></p>
+<p><img src="screenshots/19.png" alt="ICMS com CST 20, base 100,0000, Calcular ICMS Desonerado e Motivo da desoneração" /></p>
+<p><img src="screenshots/20.png" alt="ICMS com CST 51, percentual de diferimento, alíquota FCP e percentual de FCP dif" /></p>
+<p><img src="screenshots/21.png" alt="ICMS com CST 60 e campos de alíquota e base de ICMS efetivo." /></p>
+<p><img src="screenshots/22.png" alt="CST 60 com a caixa Obter ICMS-ST retido anteriormente a partir de nota fiscal de" /></p>
+</li>
+<li>
+<p>Digite, com colchetes: [VALOR_BASE_ICMS], [VALOR_BASE_DIFERIMENTO], [VALOR_DIFERIMENTO], [VALOR_CREDITO_ICMS], [ICMS_PRESUMIDO], [ALIQUOTA_CREDITO_ICMS], [VALOR_ICMS_DESONERADO], [NUMERO_CUPOM] e [DATA_CUPOM].</p>
+<p><img src="screenshots/23.png" alt="Lista de variáveis das observações do ICMS" /></p>
+<p><img src="screenshots/6.png" alt="Aba IPI com CST 03 Entrada não-tributada, alíquota 0 e código de enquadramento 9" /></p>
+<p><img src="screenshots/7.png" alt="Aba ISSQN com situação isento, alíquota 0, base 100 e Descontar ISS Não, sem sal" /></p>
+<p><img src="screenshots/8.png" alt="Aba PIS com CST 01, alíquota 0 e base 100, sem salvar." /></p>
+<p><img src="screenshots/9.png" alt="Aba COFINS com CST 01, alíquota 0 e base 100, sem salvar." /></p>
+<p><img src="screenshots/10.png" alt="Aba Importação com situação Não tributado e alíquota 0, sem salvar." /></p>
+</li>
+<li>
+<p>Em <strong>Informações ao Fisco</strong> do ICMS, clique em <strong>variáveis disponíveis</strong>.</p>
+<p><img src="screenshots/12.png" alt="Painel Exceções do II vazio, com Qualquer estado, produtos, origens 0 a 8, NCMs " /></p>
+<p><img src="screenshots/13.png" alt="Inclusão de produto na exceção, com linha de SKU ainda não salva." /></p>
+<p><img src="screenshots/14.png" alt="Inclusão de NCM na exceção, com a linha ainda não salva." /></p>
+<p><img src="screenshots/15.png" alt="Aviso ao avançar a exceção sem regra válida: não foi possível salvar o cadastro " /></p>
+</li>
+<li>
+<p>Digite, com colchetes: [VALOR_BASE_ICMS], [VALOR_BASE_DIFERIMENTO], [VALOR_DIFERIMENTO], [VALOR_CREDITO_ICMS], [ICMS_PRESUMIDO], [ALIQUOTA_CREDITO_ICMS] e [VALOR_ICMS_DESONERADO].</p>
+<p><img src="screenshots/24.png" alt="Lista de variáveis das informações ao fisco do ICMS" /></p>
+<p><img src="screenshots/11.png" alt="Configurações avançadas expandidas: preço considerado, CMV, produtor rural, esto" /></p>
+</li>
+<li>
+<p>Nas abas <strong>Simples</strong>, <strong>IPI</strong>, <strong>ISSQN</strong>, <strong>PIS</strong>, <strong>COFINS</strong> e <strong>Importação</strong>, clique em <strong>variáveis disponíveis</strong> e digite os marcadores daquela aba entre colchetes em <strong>Observações</strong> e em <strong>Informações ao Fisco</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. O ERP grava a natureza com os textos e os marcadores.</p>
+</li>
+</ol>
+</article>
+</body>
+</html>
