@@ -1,3 +1,5 @@
+# Validação por token e autenticação multifator (MFA)
+
 A validação por token autoriza a troca da senha de acesso com um código de verificação enviado ao email da conta. A autenticação multifator (MFA) é a verificação em duas etapas do ERP da Olist: uma etapa a mais ao entrar, com um código do Google Authenticator.
 
 Em **Dados do usuário**, você informa esse código, pode reenviá-lo e inicia a verificação em duas etapas. No formulário da troca de senha, também pode marcar **Ativar Autenticação de 2 Fatores**.
