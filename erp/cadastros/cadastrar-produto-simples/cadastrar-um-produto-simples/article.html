@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Cadastrar um produto simples</title>
+</head>
+<body>
+<article>
+<h1>Cadastrar um produto simples</h1>
+<p>No ERP da Olist, o cadastro de produto simples reúne numa única ficha os dados para identificar o item, emitir nota fiscal, anunciar, precificar e controlar estoque.</p>
+<p>Você inclui um produto do tipo Simples e preenche as abas <strong>Dados Gerais</strong>, <strong>Dados Complementares</strong>, <strong>Ficha técnica</strong>, <strong>Anúncios</strong>, <strong>Preços</strong>, <strong>Custos</strong> e <strong>Outros</strong>. O mesmo cadastro também pode começar por planilha ou pela recepção de anúncios de um ecommerce já conectado.</p>
+<h2>Importante</h2>
+<ul>
+<li>Para usar o produto em nota fiscal, preencha <strong>Nome do produto</strong>, <strong>Origem do produto conforme ICMS</strong>, <strong>Unidade de medida</strong> e <strong>NCM - Nomenclatura comum do Mercosul</strong>. Na tela, esses campos exibem o texto Necessário para emissão de Nota Fiscal.</li>
+<li><strong>Código (SKU)</strong> é opcional.</li>
+<li>Para lançar preço na aba <strong>Preços</strong>, a conta precisa ter ao menos uma lista de preço.</li>
+<li>Para vincular anúncio ou receber produtos do ecommerce, a conta precisa ter uma integração conectada.</li>
+<li>Com o produto ainda não salvo, editar os preços do anúncio não abre a edição. A tela pede para salvar o produto antes.</li>
+<li>Na importação, use planilha.xls,.xlsx ou.csv, de até 2 Mb e até 500 registros.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pela tela</h3>
+<ol>
+<li>Acesse <strong>Cadastros &gt; Produtos</strong>.</li>
+<li>Clique em <strong>Incluir produto</strong>.</li>
+<li>Em <strong>Dados Gerais</strong>, selecione <strong>Simples</strong> em <strong>Tipo do Produto</strong>.</li>
+<li>Preencha <strong>Nome do produto</strong>.</li>
+<li>Para nota fiscal, preencha <strong>Origem do produto conforme ICMS</strong> (códigos 0 a 8), <strong>Unidade de medida</strong> e <strong>NCM - Nomenclatura comum do Mercosul</strong>. O NCM segue o formato 1001.10.10. Para pedir uma sugestão de NCM à Lis da Olist, use o aviso da ficha ou clique em <strong>Sugerir</strong>.</li>
+<li>Preencha, se quiser, os demais campos de <strong>Dados Gerais</strong>:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Código de barras (GTIN)</strong></p>
+</li>
+<li>
+<p><strong>Código (SKU)</strong></p>
+</li>
+<li>
+<p><strong>Código CEST</strong>, no formato 01.003.00</p>
+</li>
+<li>
+<p><strong>Preço de venda</strong> e <strong>Preço promocional</strong>, em R$</p>
+</li>
+<li>
+<p><strong>Peso Líquido</strong> e <strong>Peso da embalagem</strong>, em kg</p>
+</li>
+<li>
+<p><strong>Tipo da embalagem</strong>: Envelope, Pacote / Caixa ou Rolo / Cilindro</p>
+</li>
+<li>
+<p><strong>Embalagem</strong>: embalagem customizada ou uma embalagem já cadastrada</p>
+</li>
+<li>
+<p><strong>Largura</strong>, <strong>Altura</strong> e <strong>Comprimento</strong>, em cm</p>
+</li>
+<li>
+<p><strong>Controlar estoque</strong>: Sim ou Não</p>
+</li>
+<li>
+<p><strong>Estoque inicial (E-commerce)</strong>, <strong>Estoque mínimo</strong> e <strong>Estoque máximo</strong></p>
+</li>
+<li>
+<p><strong>Sob encomenda</strong>: Sim ou Não</p>
+</li>
+<li>
+<p><strong>Controlar lotes</strong>: Sim ou Não</p>
+</li>
+<li>
+<p><strong>Localização</strong></p>
+</li>
+<li>
+<p><strong>Dias para preparação</strong>: dias corridos para disponibilizar o produto</p>
+<p><img src="screenshots/80.png" alt="Aba Dados Gerais do produto simples, com os campos de nota fiscal, GTIN, SKU, CEST e preços" /></p>
+</li>
+</ul>
+<ol start="7">
+<li>Abra <strong>Dados Complementares</strong>.</li>
+<li>Atribua a <strong>Categoria</strong> no seletor. O caminho fica em níveis. Para retirar a categoria, clique em <strong>Remover</strong>.</li>
+<li>Informe, se quiser, <strong>Marca</strong>, <strong>Tabela de medidas</strong>, <strong>Descrição complementar</strong>, <strong>Link do vídeo</strong>, <strong>Slug</strong>, <strong>Palavras-chave</strong>, <strong>Título para SEO</strong> e <strong>Descrição para SEO</strong>.</li>
+<li>Inclua imagens, se quiser. Para as tags, clique em <strong>Editar tags</strong>.</li>
+<li>Abra <strong>Ficha técnica</strong>.</li>
+<li>Informe <strong>Atributo</strong> e <strong>Valor</strong>. Use <strong>sugerir atributos</strong> ou <strong>adicionar atributo</strong> e clique em <strong>Salvar</strong> na linha.</li>
+<li>Abra <strong>Anúncios</strong>.</li>
+<li>Clique em <strong>Adicionar anúncio</strong>.</li>
+</ol>
+<p><img src="screenshots/76.png" alt="Painel Adicionar anúncio vazio" /></p>
+<ol start="15">
+<li>Selecione o <strong>E-commerce</strong> já conectado e preencha <strong>Identificador</strong>, <strong>Descrição</strong> e <strong>Descrição complementar</strong>. Se a descrição complementar do anúncio ficar em branco, o ERP usa a descrição complementar do cadastro do produto.</li>
+</ol>
+<p><img src="screenshots/77.png" alt="Painel de anúncio preenchido com e-commerce, identificador e descrições" /></p>
+<ol start="16">
+<li>Em <strong>Notificação de estoque</strong>, selecione <strong>Sim</strong> ou <strong>Não</strong>. Sim inclui o produto na lista de atualizações.</li>
+<li>Clique em <strong>Aplicar</strong>. Se clicar em <strong>editar preços</strong> antes de salvar o produto, a tela exibe o aviso Para editar os preços do anúncio é necessário salvar o produto. Use <strong>salvar produto e editar preços</strong> ou <strong>cancelar</strong>.</li>
+</ol>
+<p><img src="screenshots/78.png" alt="Aviso para salvar o produto antes de editar os preços do anúncio" /></p>
+<ol start="18">
+<li>Abra <strong>Preços</strong>.</li>
+<li>Escolha a <strong>Lista de preço</strong> já cadastrada e informe o preço e o preço promocional. Para lançar outro valor, use <strong>informar novo preço</strong> e clique em <strong>Salvar</strong> na linha.</li>
+</ol>
+<p><img src="screenshots/79.png" alt="Aba Preços com lista de preço, preço e preço promocional" /></p>
+<ol start="20">
+<li>Abra <strong>Custos</strong>.</li>
+<li>Informe <strong>A partir de</strong> no formato DD/MM/AAAA, <strong>Saldo atual</strong>, <strong>Saldo anterior</strong>, <strong>Impostos recuperáveis</strong>, <strong>Preço custo</strong>, <strong>Custo médio</strong> e o preço de venda. Para lançar outro custo, use <strong>informar novo preço de custo</strong> e clique em <strong>Salvar</strong> na linha.</li>
+<li>Abra <strong>Outros</strong> e preencha, se quiser:</li>
+</ol>
+<ul>
+<li><strong>Unidade por caixa</strong>, <strong>Linha de produto</strong>, <strong>Garantia</strong> e <strong>Markup</strong></li>
+<li><strong>Permitir inclusão nas vendas</strong>: Sim ou Não</li>
+<li><strong>GTIN/EAN tributável</strong>, <strong>Unidade tributável</strong> e <strong>Fator de conversão</strong></li>
+<li><strong>Código de Enquadramento IPI</strong> e <strong>Valor do IPI fixo</strong></li>
+<li><strong>Código do produto na ANP</strong> e <strong>EX TIPI</strong></li>
+<li><strong>Alíq. específica de Imposto Seletivo</strong>, <strong>Qtd. tributada na monofasia</strong> e <strong>Qtd. tributada sujeita à retenção na monofasia</strong></li>
+<li><strong>Nome do fornecedor</strong> já cadastrado e <strong>Código no Fornecedor</strong>. Para incluir outro, clique em <strong>adicionar fornecedor</strong></li>
+<li><strong>Observações gerais sobre o produto</strong>, de uso interno. Esse texto não é exibido para o cliente</li>
+</ul>
+<ol start="23">
+<li>Clique em <strong>Salvar</strong>.</li>
+</ol>
+<h3>Por planilha</h3>
+<ol>
+<li>Acesse <strong>Cadastros &gt; Produtos</strong>.</li>
+<li>Abra <strong>Mais ações</strong> e clique em <strong>Importar produtos de uma planilha</strong>.</li>
+<li>Baixe a planilha modelo. Se a planilha tiver outro layout, associe as colunas aos campos do ERP.</li>
+<li>Preencha a planilha sem alterar os cabeçalhos e deixe em branco as células não usadas.</li>
+<li>Preencha os campos obrigatórios <strong>Descrição</strong>, <strong>Situação</strong> (Ativo ou Inativo) e <strong>Sob Encomenda</strong> (Sim ou Não). Para nota fiscal, preencha <strong>Unidade</strong>, <strong>NCM</strong> com 8 dígitos e <strong>Origem</strong> de 0 a 8.</li>
+<li>Use os termos padronizados, como Sim/Não e os códigos de origem. Em categorias, siga Nível 1 &gt; Nível 2 &gt; Nível 3. Em imagens, informe até 10 URLs diretas.jpg,.png,.webp ou.jpeg. As colunas 1 a 6 são armazenadas e as colunas 7 a 10 ficam externas.</li>
+<li>Deixe o ID em branco para criar um produto novo. O cruzamento posterior é por SKU ou ID.</li>
+<li>Envie a planilha em.xls,.xlsx ou.csv, com até 2 Mb e até 500 registros. Em seguida, valide o arquivo e confira a prévia <strong>Todos</strong>, <strong>Novos</strong>, <strong>Atualizados</strong> e <strong>Com erros</strong>. Itens com erro impedem a importação. Só um arquivo 100% correto é processado.</li>
+</ol>
+<h3>Receber do e-commerce</h3>
+<ol>
+<li>Acesse <strong>Cadastros &gt; Produtos</strong>.</li>
+<li>Clique em <strong>Receber do e-commerce</strong>. O mesmo início também aparece em <strong>Mais ações</strong>, em <strong>Receber produtos do e-commerce</strong>.</li>
+<li>Confira o consumo de anúncios da conta (quantidade usada, limite e restante) e selecione uma integração já conectada.</li>
+<li>Clique em <strong>Avançar</strong> para seguir para a tela de novos anúncios.</li>
+</ol>
+<h2>Resultado</h2>
+<p>Antes de salvar, os valores digitados permanecem ao trocar entre as sete abas. A categoria atribuída permanece no caminho escolhido, com <strong>Remover</strong>.</p>
+<h2>Informações adicionais</h2>
+<p>Cancelar o painel de anúncio fecha o painel sem incluir a linha na tabela de anúncios.</p>
+</article>
+</body>
+</html>
