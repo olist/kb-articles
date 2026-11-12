@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>DIFAL e ST para contribuintes e não contribuintes</title>
+</head>
+<body>
+<article>
+<h1>DIFAL e ST para contribuintes e não contribuintes</h1>
+<h2>Importante</h2>
+<ul>
+<li>No campo de redução da base, o percentual da tabela é a base restante, não o percentual de redução. Uma redução de 30% corresponde a 70% de base.</li>
+<li>No cálculo diferenciado de ST, para os demais estados vale o Convênio ICMS nº 142/18: ICMS Difal = [((V oper - ICMS origem) / (1 - alíq. interna)) × alíq. interna] - ICMS origem. Estados com fórmula própria são indicados na tabela.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Configurar o ICMS DIFAL para não contribuinte</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Abra a aba <strong>Notas Fiscais</strong>.</p>
+</li>
+<li>
+<p>Abra <strong>ICMS DIFAL para não contribuinte</strong>.</p>
+<p><img src="screenshots/2.png" alt="Aba Notas Fiscais com os acessos de ICMS DIFAL e de cálculo diferenciado de ST" /></p>
+</li>
+<li>
+<p>Marque <strong>Possui ICMS DIFAL para não contribuinte em operações interestaduais (EC 87/2015)</strong> se a empresa recolhe esse diferencial.</p>
+</li>
+<li>
+<p>Em <strong>Forma de cálculo</strong>, escolha <strong>Base simples</strong>, <strong>base por dentro (só destino)</strong>, <strong>base por dentro dupla (interestadual + destino)</strong> ou <strong>base por dentro só destino descontando ICMS próprio</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Redução da base</strong>, escolha <strong>Considerar base integral, sem redução</strong> ou a redução pelas alíquotas do estado de destino.</p>
+</li>
+<li>
+<p>Em <strong>Destacar DIFAL de origem</strong>, escolha se o DIFAL de origem deve ser destacado ou não.</p>
+</li>
+<li>
+<p>Confira a tabela <strong>Alíquotas por estado</strong>: alíquota interestadual, alíquota interna de destino sem FCP e FCP.</p>
+<p><img src="screenshots/4.png" alt="Tela de ICMS DIFAL para não contribuinte, com forma de cálculo, redução da base, destaque e alíquotas por estado" /></p>
+</li>
+<li>
+<p>Para uma exceção, clique em <strong>Editar</strong> no estado.</p>
+</li>
+<li>
+<p>Em <strong>Forma de cálculo da exceção de alíquota</strong>, escolha <strong>Padrão</strong>, <strong>Base simples</strong> ou uma das bases por dentro.</p>
+</li>
+<li>
+<p>Clique em <strong>Adicionar exceção</strong> e informe <strong>Tipo Produto/NCM</strong>, <strong>Produto/NCM</strong>, <strong>Alq interestadual</strong>, <strong>Alq destino</strong> e <strong>Alq FCP</strong>. Use alíquota com vírgula decimal, no padrão já exibido na tabela. <strong>Alq destino</strong> é a alíquota interna de destino, sem FCP.</p>
+</li>
+</ol>
+<p><img src="screenshots/5.png" alt="Exceção de alíquotas do DIFAL de não contribuinte com NCM e alíquotas" /></p>
+<ol start="12">
+<li>Clique em <strong>Salvar</strong>. A empresa passa a calcular o ICMS DIFAL de não contribuinte nas operações interestaduais com a base, o destaque e as alíquotas definidos, inclusive exceções por produto ou NCM.</li>
+</ol>
+<h3>Configurar o cálculo diferenciado de ST para consumidores contribuintes</h3>
+<ol>
+<li>
+<p>Em <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais</strong>, abra <strong>Cálculo diferenciado de ST para consumidor contribuintes - DIFAL</strong>.</p>
+</li>
+<li>
+<p>Ative <strong>Utilizar cálculo diferenciado de ST para consumidores contribuintes</strong>.</p>
+</li>
+<li>
+<p>Leia a orientação da tela sobre o Convênio ICMS nº 142/18 e confira na tabela quais estados têm fórmula própria.</p>
+</li>
+<li>
+<p>Informe ou revise a alíquota DIFAL e a alíquota de ICMS do FCP de cada estado. Use <strong>editar</strong> na linha do estado ou <strong>adicionar regra</strong>.</p>
+<p><img src="screenshots/7.png" alt="Cálculo diferenciado de ST para consumidores contribuintes, com o interruptor ativo e a tabela por estado" /></p>
+</li>
+<li>
+<p>Na exceção do estado, informe <strong>NCM</strong>, <strong>Alíquota DIFAL</strong> e <strong>Alíquota de ICMS do FCP</strong>, com vírgula decimal.</p>
+<p><img src="screenshots/8.png" alt="Exceção de alíquotas de ST e DIFAL com NCM e alíquotas" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. O cálculo de ST dos consumidores contribuintes passa a usar as alíquotas DIFAL e FCP informadas por estado e as exceções de NCM, em vez da regra geral.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Ao reabrir cada tela, as regras já gravadas de DIFAL e de ST aparecem preenchidas.</p>
+</article>
+</body>
+</html>
