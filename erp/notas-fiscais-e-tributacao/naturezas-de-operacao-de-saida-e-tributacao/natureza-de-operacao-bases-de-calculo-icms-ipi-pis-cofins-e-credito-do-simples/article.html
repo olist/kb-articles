@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Natureza de operação: bases de cálculo (ICMS, IPI, PIS/COFINS) e crédito do Simples</title>
+</head>
+<body>
+<article>
+<h1>Natureza de operação: bases de cálculo (ICMS, IPI, PIS/COFINS) e crédito do Simples</h1>
+<h2>Importante</h2>
+<ul>
+<li><strong>Cancelar</strong> em <strong>Configurações adicionais de tributação</strong> fecha a tela e volta à lista sem gravar a alteração.</li>
+<li>A <strong>Alíquota Aplicável de Cálculo do Crédito</strong> aparece quando o <strong>CSOSN</strong> é <strong>101</strong>.</li>
+<li>Trocar o <strong>CRT</strong> de <strong>Simples nacional</strong> para <strong>Regime normal</strong> substitui o <strong>CSOSN</strong> pelo <strong>CST de ICMS</strong>.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Em configurações adicionais de tributação</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Abra a aba <strong>Notas Fiscais</strong>.</p>
+<p><img src="screenshots/54.png" alt="Aba Notas Fiscais com o atalho de naturezas de operação de saída" /></p>
+</li>
+<li>
+<p>Clique em <strong>Naturezas de operação de saída (tributação)</strong>.</p>
+</li>
+<li>
+<p>Na lista, clique em <strong>Configurações</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Configurações adicionais de tributação</strong>, marque ou desmarque as bases:</p>
+<ul>
+<li><strong>Impostos e frete na primeira parcela</strong>: cobra impostos e frete na primeira parcela das notas fiscais de saída, pedidos de venda e propostas comerciais.</li>
+<li><strong>Considerar valor do frete na base de cálculo do IPI</strong></li>
+<li><strong>Remover ICMS na base de cálculo do PIS/COFINS</strong></li>
+<li><strong>Remover também o FCP</strong></li>
+<li><strong>Remover ICMS DIFAL na base de cálculo do PIS/COFINS</strong></li>
+<li><strong>Remover também o FCP do DIFAL</strong></li>
+<li><strong>Considerar desconto do item na base de cálculo do ICMS ST</strong></li>
+<li><strong>Considerar desconto do item na base de cálculo do IPI</strong></li>
+</ul>
+<p><img src="screenshots/51.png" alt="Configurações adicionais de tributação com bases, frete e impostos aproximados" /></p>
+</li>
+<li>
+<p>Em <strong>Calcular automaticamente o valor aproximado dos impostos</strong>, selecione <strong>Sim - Em todas as notas fiscais</strong>, <strong>Sim - Apenas em notas fiscais para consumidor final</strong> ou <strong>Não</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Subtrair e recalcular valor do IPI em vendas originadas do e-commerce</strong>, selecione <strong>Não</strong>, <strong>Apenas para pedidos importados do e-commerce</strong> ou <strong>Para pedidos importados do e-commerce e recebidos por API</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>.</p>
+</li>
+</ol>
+<h3>Crédito do Simples na natureza</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Abra a aba <strong>Notas Fiscais</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Naturezas de operação de saída (tributação)</strong>.</p>
+</li>
+<li>
+<p>Abra a inclusão de uma nova natureza.</p>
+</li>
+<li>
+<p>Mantenha o <strong>CRT</strong> em <strong>Simples nacional</strong>.</p>
+</li>
+<li>
+<p>Em <strong>CSOSN</strong>, selecione <strong>101</strong>.</p>
+</li>
+<li>
+<p>Informe a <strong>Alíquota Aplicável de Cálculo do Crédito</strong> no formato 0,0000.</p>
+<p><img src="screenshots/30.png" alt="Preenchimento da natureza no Simples Nacional" /></p>
+</li>
+<li>
+<p>Para a base do ICMS-ST, abra as opções avançadas e, em <strong>Redução BC ICMS-ST</strong>, selecione <strong>Padrão</strong> ou <strong>Antes de somar o IPI</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>.</p>
+</li>
+</ol>
+</article>
+</body>
+</html>
