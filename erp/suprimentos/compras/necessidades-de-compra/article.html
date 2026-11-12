@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Necessidades de compra</title>
+</head>
+<body>
+<article>
+<h1>Necessidades de compra</h1>
+<h2>Importante</h2>
+<ul>
+<li>Alterar o estoque mínimo ou máximo neste relatório também atualiza o cadastro do produto.</li>
+<li>As saídas do período contabilizam todos os lançamentos de saída de estoque.</li>
+<li>Naturezas marcadas para não controlar estoque não entram no cálculo.</li>
+<li>Em <strong>Multiempresa</strong>, o nome da natureza de operação precisa ser igual em todas as empresas.</li>
+<li><strong>Ignorar Entradas Previstas por Empresas</strong> e <strong>Ignorar Saidas Previstas por Empresas</strong> só aparecem depois de selecionar todas as empresas em <strong>Multiempresa</strong>.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Suprimentos &gt; Necessidades de Compra</strong>.</p>
+<p><img src="screenshots/14.png" alt="Formulário inicial de Necessidades de Compra" /></p>
+</li>
+<li>
+<p>Defina <strong>Calcular cobertura de estoque</strong> como <strong>Não</strong> ou <strong>Sim</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Baseado em</strong>, escolha <strong>Último mês</strong>, <strong>Últimos 2 meses</strong>, <strong>Últimos 3 meses</strong> ou <strong>Personalizado</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Calcular necessidade de compra para</strong>, informe a quantidade de meses em número inteiro.</p>
+</li>
+<li>
+<p>Em <strong>Exibir produtos</strong>, escolha <strong>Todos</strong>, <strong>Apenas com necessidade de compra</strong> ou <strong>Com necessidade de compra para atender o estoque mínimo</strong>.</p>
+</li>
+<li>
+<p>Ajuste os filtros que quiser usar. Nenhum deles é obrigatório:</p>
+</li>
+</ol>
+<ul>
+<li><strong>Exibir estoque mínimo e máximo</strong>: <strong>Não</strong> ou <strong>Sim</strong></li>
+<li><strong>Situações de venda para saídas previstas</strong>: uma ou mais entre <strong>Em aberto</strong>, <strong>Aprovado</strong>, <strong>Preparando envio</strong>, <strong>Faturado</strong>, <strong>Pronto para envio</strong>, <strong>Enviado</strong>, <strong>Entregue</strong>, <strong>Não entregue</strong>, <strong>Dados incompletos</strong>, <strong>Em devolução</strong> e <strong>Cancelado</strong></li>
+<li><strong>Filtrar tags</strong>: tags já cadastradas, ou sem filtro</li>
+<li><strong>Filtrar Fornecedores</strong>: pesquise o fornecedor; use <strong>Remover</strong> ao lado do campo para limpar</li>
+<li><strong>Produto</strong>: pesquise o produto</li>
+<li><strong>Informações adicionais visíveis</strong>: <strong>Código no Fornecedor Padrão</strong> ou <strong>Sem informações visíveis</strong></li>
+<li><strong>Natureza de operação</strong>: naturezas já cadastradas</li>
+<li><strong>Considerar saídas previstas dos últimos</strong>: número inteiro de meses</li>
+<li><strong>Filtrar depósitos</strong>: depósitos já cadastrados, ou todos</li>
+<li><strong>Marca</strong>: pesquise pelo nome da marca</li>
+<li><strong>Tipo de produto</strong>: <strong>Todos</strong>, <strong>Simples</strong>, <strong>Fabricado</strong> ou <strong>Matéria-prima</strong></li>
+</ul>
+<ol start="7">
+<li>
+<p>Marque, se quiser, <strong>Considerar lançamentos de transferência</strong> e <strong>Considerar saídas previstas para cálculo de compra</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Multiempresa</strong>, selecione as empresas. Ao marcar todas, o rótulo passa a indicar todas as empresas e surgem <strong>Ignorar Entradas Previstas por Empresas</strong> e <strong>Ignorar Saidas Previstas por Empresas</strong>. Use esses campos para indicar as empresas cujas entradas ou saídas previstas não devem entrar no cálculo.</p>
+<p><img src="screenshots/38.png" alt="Campos para ignorar entradas e saídas previstas por empresa" /></p>
+</li>
+<li>
+<p>Se escolheu <strong>Personalizado</strong>, informe <strong>Baseado no mês</strong> e <strong>Até o mês</strong> no formato mm/aaaa. Clique em confirmar para aplicar. <strong>Cancelar</strong> fecha o modal sem aplicar.</p>
+<p><img src="screenshots/39.png" alt="Modal do período personalizado" /></p>
+</li>
+<li>
+<p>Clique em <strong>Gerar</strong>. Ao terminar, a tabela mostra a sugestão por produto, com seleção por linha e a coluna <strong>Comprar</strong> editável. Na barra do resultado ficam <strong>Exibir filtros</strong>, <strong>Gerar Ordem de Compra dos selecionados</strong>, <strong>Imprimir</strong> e <strong>Download</strong>.</p>
+</li>
+</ol>
+<p><img src="screenshots/16.png" alt="Tabela de necessidades após gerar" /></p>
+<p><img src="screenshots/36.png" alt="Barra do resultado com as ações" /></p>
+<ol start="11">
+<li>Para mudar os filtros com o resultado na tela, clique em <strong>Exibir filtros</strong>.</li>
+</ol>
+<p><img src="screenshots/37.png" alt="Filtros reabertos acima do resultado" /></p>
+<h2>Resultado</h2>
+<p>O relatório lista, por produto, estoques, cobertura e a quantidade em <strong>Comprar</strong>. Selecione as linhas e use <strong>Gerar Ordem de Compra dos selecionados</strong> para seguir com a ordem, ou <strong>Imprimir</strong> e <strong>Download</strong> para sair com o resultado.</p>
+<h2>Informações adicionais</h2>
+<h3>O que cada coluna representa</h3>
+<ul>
+<li><strong>Entradas previstas</strong>: ordens em aberto e em andamento ainda não integradas ao estoque.</li>
+<li><strong>Saídas previstas</strong>: notas pendentes e autorizadas e pedidos nas situações selecionadas, ainda não integrados ao estoque.</li>
+<li><strong>Estoque físico</strong>: estoque atual.</li>
+<li><strong>Estoque virtual</strong>: estoque físico mais entradas previstas menos saídas previstas.</li>
+<li><strong>Saídas do período</strong>: lançamentos de saída.</li>
+<li><strong>Média mensal</strong>: saídas do período dividido pelo período base.</li>
+<li><strong>Coberturas (meses)</strong>: estoque físico dividido pela média mensal.</li>
+<li><strong>Comprar</strong>: média mensal vezes a necessidade de compra, menos estoque físico, menos entradas previstas.</li>
+</ul>
+<p>A tabela também mostra <strong>Produto</strong>, <strong>Código (SKU)</strong>, <strong>GTIN/EAN</strong>, <strong>Fornecedor Padrão</strong>, <strong>Un</strong> e <strong>Custo médio</strong>.</p>
+</article>
+</body>
+</html>
