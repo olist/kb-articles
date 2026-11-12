@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Natureza de operação: regras de exceção e ICMS ST</title>
+</head>
+<body>
+<article>
+<h1>Natureza de operação: regras de exceção e ICMS ST</h1>
+<h2>Importante</h2>
+<ul>
+<li>Para avançar no assistente da exceção, marque ao menos uma UF ou informe um produto, uma origem ou um NCM.</li>
+<li>No <strong>Regime normal</strong>, o <strong>CST</strong> <strong>10</strong> trata a substituição tributária.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Incluir uma regra de exceção</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Abra a aba <strong>Notas Fiscais</strong>.</p>
+<p><img src="screenshots/54.png" alt="Aba Notas Fiscais das configurações do ERP, com o atalho Naturezas de operação d" /></p>
+</li>
+<li>
+<p>Clique em <strong>Naturezas de operação de saída (tributação)</strong>.</p>
+<p><img src="screenshots/52.png" alt="Menu de ações da linha, com Clonar operação, Tornar padrão para NFC-e, Tornar op" /></p>
+<p><img src="screenshots/55.png" alt="Barra de ações em lote depois de selecionar uma linha: Enviar naturezas para emp" /></p>
+</li>
+<li>
+<p>Abra o formulário da natureza.</p>
+<p><img src="screenshots/53.png" alt="Formulário de inclusão reaberto, com os padrões de finalidade, CRT, consumidor f" /></p>
+</li>
+<li>
+<p>Na aba do imposto, abra a inclusão de uma exceção. As abas são <strong>ICMS</strong>, <strong>IPI</strong>, <strong>PIS</strong>, <strong>COFINS</strong> e <strong>ISSQN</strong>.</p>
+<p><img src="screenshots/47.png" alt="Filtro da exceção antes de marcar a UF" /></p>
+</li>
+<li>
+<p>No filtro, marque uma ou mais UFs, de <strong>AC</strong> a <strong>TO</strong>, ou <strong>EX</strong>. Ou informe o produto, a origem ou o NCM. A origem vai de 0 a 8.</p>
+<p><img src="screenshots/48.png" alt="Filtro da exceção com a UF marcada" /></p>
+<p><img src="screenshots/41.png" alt="Assistente de exceção de IPI" /></p>
+</li>
+<li>
+<p>Clique em <strong>Avançar</strong>.</p>
+<p><img src="screenshots/30.png" alt="Parte da sequência de preenchimento fictício da natureza no Simples, não salva." /></p>
+</li>
+<li>
+<p>Informe a situação, a alíquota, a base e as observações. No ISSQN, informe também <strong>Descontar ISS</strong>, com <strong>Sim</strong> ou <strong>Não</strong>. A ajuda desse campo indica que o valor é considerado no total da nota.</p>
+<p><img src="screenshots/49.png" alt="Passo do imposto da exceção, antes de escolher a situação" /></p>
+<p><img src="screenshots/50.png" alt="Exceção de ISSQN preenchida no assistente" /></p>
+</li>
+<li>
+<p>Clique em <strong>Cancelar</strong> se não for manter a exceção. A tela volta à aba do imposto e a lista de exceções fica sem a nova linha.</p>
+</li>
+</ol>
+<h3>Definir a substituição tributária do ICMS</h3>
+<ol>
+<li>No formulário da natureza, selecione em <strong>CRT</strong> a opção <strong>Regime normal</strong> quando a operação usar esse regime. Os códigos de ICMS passam a ser o <strong>CST</strong>.</li>
+<li>Selecione o <strong>CST</strong> <strong>10</strong> para a substituição tributária.</li>
+<li>Abra as opções avançadas.</li>
+<li>Em <strong>Redução BC ICMS-ST</strong>, selecione <strong>Padrão</strong> ou <strong>Antes de somar o IPI</strong>.</li>
+</ol>
+<h3>Revisar o desconto do item na base do ICMS ST</h3>
+<ol>
+<li>
+<p>Na lista de naturezas de operação de saída, clique em <strong>Configurações</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Configurações adicionais de tributação</strong>, revise <strong>Considerar desconto do item na base de cálculo do ICMS ST</strong>.</p>
+<p><img src="screenshots/51.png" alt="Configurações adicionais de tributação" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar a revisão ou em <strong>Cancelar</strong> para fechar sem gravar e voltar à lista.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Ao cancelar a exceção, a aba do imposto permanece sem a nova linha. Em <strong>Configurações adicionais de tributação</strong>, <strong>Cancelar</strong> retorna à lista de naturezas sem gravar a alteração.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>A inclusão da exceção fica na aba do imposto da natureza: <strong>ICMS</strong>, <strong>IPI</strong>, <strong>PIS</strong>, <strong>COFINS</strong> ou <strong>ISSQN</strong>.</li>
+<li>O filtro da exceção aceita UF, produto, origem ou NCM. As UFs vão de <strong>AC</strong> a <strong>TO</strong>, além de <strong>EX</strong>. A origem vai de 0 a 8.</li>
+<li>Trocar o <strong>CRT</strong> de <strong>Simples nacional</strong> para <strong>Regime normal</strong> substitui o <strong>CSOSN</strong> pelo <strong>CST</strong> de ICMS.</li>
+</ul>
+</article>
+</body>
+</html>
