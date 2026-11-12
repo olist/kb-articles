@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Naturezas de operação de saída</title>
+</head>
+<body>
+<article>
+<h1>Naturezas de operação de saída</h1>
+<h2>Importante</h2>
+<ul>
+<li>Defina antes o regime da operação: <strong>Simples nacional</strong>, excesso de sublimite, <strong>Regime normal</strong> ou <strong>MEI</strong>.</li>
+<li>Para criar uma exceção, informe ao menos uma UF, um produto, uma origem ou um NCM. Sem um desses filtros, o assistente não avança.</li>
+<li>Com desoneração de ICMS sem motivo, informe o motivo da desoneração ou deixe <strong>Calcular ICMS Desonerado</strong> como <strong>Não</strong>.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Cadastro pela tela</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Abra a aba <strong>Notas Fiscais</strong>.</p>
+<p><img src="screenshots/54.png" alt="Aba Notas Fiscais com o atalho Naturezas de operação de saída (tributação)" /></p>
+</li>
+<li>
+<p>Clique em <strong>Naturezas de operação de saída (tributação)</strong>. A lista mostra <strong>Descrição</strong>, <strong>CFOP</strong>, <strong>Padrão</strong>, <strong>Série</strong> e <strong>Consumidor final</strong>. Busque por descrição ou CFOP e use o filtro de naturezas ativas. O menu da linha mostra <strong>Clonar operação</strong>, <strong>Tornar padrão para NFC-e</strong>, <strong>Tornar operação de entrada</strong>, <strong>Enviar natureza para empresas</strong> e <strong>Inativar operação</strong>. Ao selecionar uma linha, a lista mostra <strong>Enviar naturezas para empresas</strong> e <strong>Excluir naturezas de operação</strong>.</p>
+<p><img src="screenshots/52.png" alt="Menu de ações da linha da natureza" /></p>
+<p><img src="screenshots/55.png" alt="Ações em lote depois de selecionar uma linha" /></p>
+</li>
+<li>
+<p>Abra a inclusão de uma nova natureza. O formulário inicia com <strong>Finalidade</strong> <strong>Normal</strong>, <strong>CRT</strong> <strong>Simples nacional</strong>, <strong>Consumidor final</strong> <strong>Sim</strong> e, na tributação do Simples, <strong>CSOSN</strong> <strong>400</strong>.</p>
+<p><img src="screenshots/53.png" alt="Formulário de inclusão com finalidade, CRT, consumidor final e CSOSN padrão" /></p>
+</li>
+<li>
+<p>Informe a <strong>Descrição</strong> e revise <strong>Finalidade</strong>, <strong>CRT</strong>, <strong>Série</strong> e <strong>Consumidor final</strong>. Nenhum campo do formulário é obrigatório.</p>
+</li>
+<li>
+<p>Preencha o <strong>CFOP</strong> e as <strong>Observações</strong>. Nas observações há variáveis disponíveis. Preencha também <strong>Benefício fiscal</strong> e os textos de observação e fisco, se forem usar.</p>
+</li>
+</ol>
+<h4>Dados gerais</h4>
+<ul>
+<li><strong>Descrição</strong></li>
+<li><strong>Finalidade</strong>: <strong>Normal</strong>, <strong>Devolução</strong>, <strong>Bonificação</strong> ou <strong>Remessa</strong></li>
+<li><strong>CRT</strong>: <strong>Simples nacional</strong>, excesso de sublimite, <strong>Regime normal</strong> ou <strong>MEI</strong></li>
+<li><strong>Série</strong></li>
+<li><strong>Consumidor final</strong>: <strong>Sim</strong> ou <strong>Não</strong></li>
+<li><strong>CFOP</strong></li>
+<li><strong>Observações</strong></li>
+<li><strong>Benefício fiscal</strong></li>
+</ul>
+<ol start="7">
+<li>
+<p>No Simples Nacional, escolha o <strong>CSOSN</strong> entre <strong>101</strong>, <strong>102</strong>, <strong>103</strong>, <strong>201</strong>, <strong>202</strong>, <strong>203</strong>, <strong>300</strong>, <strong>400</strong>, <strong>500</strong> e <strong>900</strong>. No <strong>CSOSN</strong> <strong>101</strong>, preencha <strong>Alíquota Aplicável de Cálculo do Crédito</strong> no formato 0,0000. Revise <strong>DIFAL não contribuinte</strong> (<strong>Sim</strong> ou <strong>Não</strong>): ICMS para a UF de destino.</p>
+<p><img src="screenshots/30.png" alt="Tributação do Simples no formulário da natureza" /></p>
+</li>
+<li>
+<p>Se a operação for de <strong>Regime normal</strong>, troque o <strong>CRT</strong>. Os códigos passam a ser <strong>CST de ICMS</strong>: <strong>00</strong>, <strong>10</strong>, <strong>20</strong>, <strong>30</strong>, <strong>40</strong>, <strong>41</strong>, <strong>50</strong>, <strong>51</strong>, <strong>60</strong>, <strong>70</strong> e <strong>90</strong>. O <strong>CST</strong> <strong>10</strong> trata substituição tributária. Os motivos de desoneração são <strong>1</strong> e de <strong>3</strong> a <strong>12</strong>.</p>
+</li>
+<li>
+<p>Abra as opções avançadas e revise os parâmetros abaixo. Em <strong>Preço considerado</strong>, a seleção inicial é <strong>Preço de venda ou promocional</strong>; há alternativa de custo. Em <strong>ZFM</strong>, a seleção inicial é <strong>Não</strong>, com alternativas de desoneração para todos ou só origem nacional. Em <strong>Redução BC ICMS-ST</strong>, use <strong>Padrão</strong> ou <strong>Antes de somar o IPI</strong>. Na composição dos itens no total da NF-e, a opção selecionada é <strong>Compõem total da nota fiscal</strong>.</p>
+</li>
+</ol>
+<h4>Opções avançadas</h4>
+<ul>
+<li><strong>Preço considerado</strong></li>
+<li><strong>Enviar expedição</strong>: <strong>Sim</strong> ou <strong>Não</strong></li>
+<li><strong>Receita DRE</strong>: <strong>Sim</strong> ou <strong>Não</strong></li>
+<li><strong>CMV DRE</strong>: <strong>Sim</strong> ou <strong>Não</strong></li>
+<li><strong>Compra produtor rural</strong>: <strong>Sim</strong> ou <strong>Não</strong></li>
+<li>lançamento ou reserva de estoque</li>
+<li><strong>Alíquota funrural</strong></li>
+<li><strong>Descontar funrural</strong>: <strong>Sim</strong> ou <strong>Não</strong></li>
+<li><strong>ZFM</strong></li>
+<li><strong>Redução BC ICMS-ST</strong></li>
+<li><strong>Descontar desoneração</strong>: <strong>Sim</strong> ou <strong>Não</strong></li>
+<li>composição dos itens no total da NF-e</li>
+</ul>
+<ol start="10">
+<li>Nas abas de IPI, PIS, COFINS e ISSQN, escolha a situação tributária, a alíquota e a base.</li>
+<li>Clique em <strong>Salvar</strong>. A natureza fica com finalidade, regime, série, consumidor final e impostos definidos.</li>
+</ol>
+<h4>IPI, PIS, COFINS e ISSQN</h4>
+<ul>
+<li><strong>CST do IPI</strong>: ao abrir a aba, o valor é <strong>50</strong></li>
+<li><strong>CST do PIS</strong> e <strong>CST do COFINS</strong>: <strong>01</strong> a <strong>09</strong>, <strong>49</strong>, <strong>50</strong> a <strong>56</strong>, <strong>60</strong> a <strong>67</strong> e <strong>70</strong> a <strong>73</strong></li>
+<li><strong>CST do ISSQN</strong>: <strong>tributado</strong>, <strong>isento</strong> ou <strong>outra situação</strong></li>
+<li><strong>Alíquota do ISSQN</strong>: formato 0,0000</li>
+<li><strong>Base de cálculo do ISSQN</strong>: formato 0,0000</li>
+<li><strong>Descontar ISS</strong>: <strong>Sim</strong> ou <strong>Não</strong>. Considerado no total da nota</li>
+</ul>
+<p><img src="screenshots/40.png" alt="Aba de IPI com CST 50" /></p>
+<p><img src="screenshots/46.png" alt="Aba de ISSQN com situação, alíquota e base" /></p>
+<h3>Regras de exceção pela tela</h3>
+<ol>
+<li>
+<p>No formulário da natureza, na aba do imposto (ICMS, IPI, PIS, COFINS ou ISSQN), abra a inclusão de uma exceção.</p>
+</li>
+<li>
+<p>No filtro, marque ao menos uma UF (AC a TO, além de EX) ou informe produto, origem (<strong>0</strong> a <strong>8</strong>) ou NCM.</p>
+<p><img src="screenshots/47.png" alt="Filtro da exceção de ISSQN antes de marcar a UF" /></p>
+<p><img src="screenshots/48.png" alt="Filtro da exceção de ISSQN com SP marcado" /></p>
+<p><img src="screenshots/41.png" alt="Assistente de exceção de IPI" /></p>
+</li>
+<li>
+<p>No passo do imposto, informe situação, alíquota, base e observações. No ISSQN, use <strong>Descontar ISS</strong> (<strong>Sim</strong> ou <strong>Não</strong>) e, se precisar, as observações da exceção e as informações ao fisco. Para descartar, clique em <strong>Cancelar</strong>: você volta à aba do imposto e a lista de exceções permanece sem a nova linha.</p>
+<p><img src="screenshots/49.png" alt="Passo de imposto da exceção de ISSQN" /></p>
+<p><img src="screenshots/50.png" alt="Exceção de ISSQN para SP preenchida no assistente" /></p>
+</li>
+</ol>
+<h3>Bases de cálculo em Configurações adicionais de tributação</h3>
+<ol>
+<li>
+<p>Na lista de naturezas de operação de saída, clique em <strong>Configurações</strong>.</p>
+</li>
+<li>
+<p>Revise as bases, o frete, o desconto e o valor aproximado dos impostos.</p>
+<p><img src="screenshots/51.png" alt="Configurações adicionais de tributação" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar a revisão. <strong>Cancelar</strong> fecha a tela e retorna à lista sem gravar a alteração.</p>
+</li>
+</ol>
+<h4>Opções da tela</h4>
+<ul>
+<li><strong>Impostos e frete na primeira parcela</strong>: cobra impostos e frete na primeira parcela das notas fiscais de saída, pedidos de venda e propostas comerciais</li>
+<li><strong>Considerar valor do frete na base de cálculo do IPI</strong></li>
+<li><strong>Remover ICMS na base de cálculo do PIS/COFINS</strong></li>
+<li><strong>Remover também o FCP</strong></li>
+<li><strong>Remover ICMS DIFAL na base de cálculo do PIS/COFINS</strong></li>
+<li><strong>Remover também o FCP do DIFAL</strong></li>
+<li><strong>Considerar desconto do item na base de cálculo do ICMS ST</strong></li>
+<li><strong>Considerar desconto do item na base de cálculo do IPI</strong></li>
+<li><strong>Calcular automaticamente o valor aproximado dos impostos</strong>: <strong>Sim - Em todas as notas fiscais</strong>, <strong>Sim - Apenas em notas fiscais para consumidor final</strong> ou <strong>Não</strong></li>
+<li><strong>Subtrair e recalcular valor do IPI em vendas originadas do e-commerce</strong>: <strong>Não</strong>, <strong>Apenas para pedidos importados do e-commerce</strong> ou <strong>Para pedidos importados do e-commerce e recebidos por API</strong></li>
+<li><strong>Natureza de operação Tributação</strong></li>
+</ul>
+<h2>Informações adicionais</h2>
+<ul>
+<li>Trocar o <strong>CRT</strong> de <strong>Simples nacional</strong> para <strong>Regime normal</strong> substitui o <strong>CSOSN</strong> pelo <strong>CST de ICMS</strong>.</li>
+<li>O <strong>CSOSN</strong> <strong>101</strong> exibe <strong>Alíquota Aplicável de Cálculo do Crédito</strong>.</li>
+<li><strong>Cancelar</strong> uma exceção preenchida volta à aba do imposto sem adicionar a linha.</li>
+</ul>
+</article>
+</body>
+</html>
