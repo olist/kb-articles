@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Configuração da NF-e: automações e configurações adicionais</title>
+</head>
+<body>
+<article>
+<h1>Configuração da NF-e: automações e configurações adicionais</h1>
+<p>Na tela <strong>Configuração da nota fiscal eletrônica (NFe)</strong> do ERP da Olist, você define as automações ligadas ao pedido e os dados complementares da NF-e: frete, volumes, observações, presença do comprador e contabilidade.</p>
+<p>Com isso, você escolhe se a nota é gerada ao aprovar o pedido, se a nota emitida é cancelada junto com a venda e quais desses dados entram na nota.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A empresa precisa ter o módulo de nota fiscal eletrônica.</li>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Nenhum campo desta tela é obrigatório.</li>
+<li>O cancelamento automático só ocorre quando a situação do pedido de venda passa para <strong>Cancelado</strong> e existe nota vinculada.</li>
+<li>Com a substituição pelo endereço de entrega, o endereço do cliente não é atualizado a partir da nota.</li>
+<li>O padrão de frete por conta vale para as notas fiscais e para os pedidos de venda.</li>
+<li><strong>Bloquear a geração de notas fiscais com quantidade de itens menor que a da venda</strong> só aparece se a empresa não tiver o módulo de faturar pedidos agrupadamente.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais &gt; Configuração da nota fiscal eletrônica (NFe)</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Automações</strong>, ligue ou desligue <strong>Gerar nota fiscal automaticamente ao aprovar pedido</strong> e <strong>Cancelar automaticamente nota fiscal emitida ao cancelar venda vinculada</strong>.</p>
+<p><img src="screenshots/1.png" alt="Automações da NF-e com os dois interruptores" /></p>
+</li>
+<li>
+<p>Em <strong>Configurações adicionais</strong>, clique em <strong>exibir</strong>. O link passa a <strong>ocultar</strong> e os campos ficam visíveis.</p>
+<p><img src="screenshots/12.png" alt="Configurações adicionais expandidas" /></p>
+<p><img src="screenshots/8.png" alt="Lista de Notas Fiscais sem item separado de número/série ou de peso e volumes. C" /></p>
+</li>
+<li>
+<p>Ajuste os campos que você quer usar.</p>
+<p><img src="screenshots/7.png" alt="Busca por peso sem resultado dentro de Notas Fiscais; os itens encontrados ficam" /></p>
+</li>
+</ol>
+<h4>Envio, frete e volumes</h4>
+<ul>
+<li><strong>E-mail padrão como cópia para o envio das notas fiscais</strong>: digite um email.</li>
+<li><strong>Padrão do campo &quot;frete por conta&quot;</strong>: selecione uma opção:</li>
+<li>Contratação do Frete por conta do Remetente (CIF)</li>
+<li>Contratação do Frete por conta do Destinatário (FOB)</li>
+<li>Contratação do Frete por conta de Terceiros</li>
+<li>Transporte Próprio por conta do Remetente</li>
+<li>Transporte Próprio por conta do Destinatário</li>
+<li>Sem Ocorrência de Transporte</li>
+<li><strong>Espécie padrão dos volumes transportados</strong>: digite o tipo de carga, como caixa ou fardo.</li>
+</ul>
+<p><img src="screenshots/10.png" alt="E-mail de cópia, frete por conta e espécie dos volumes" /></p>
+<h4>Observações e campos da nota</h4>
+<ul>
+<li><strong>Validar campo NCM em notas fiscais</strong></li>
+<li><strong>Importar número da ordem de compra do pedido nas observações</strong>: importa o número da ordem de compra do pedido para as observações da nota fiscal.</li>
+<li><strong>Importar número da venda nas observações</strong>: importa o número do pedido de venda para as observações da nota fiscal.</li>
+<li><strong>Exibir campos referentes a combustíveis</strong></li>
+<li><strong>Exibir campos referentes a Defensivos Agrícolas</strong></li>
+<li><strong>Exibir campos referentes a Guia de Trânsito</strong></li>
+<li><strong>Substituir endereço do destinatário pelo endereço de entrega ao gerar a nota fiscal pela venda</strong></li>
+</ul>
+<h4>Bloqueios, presença e contabilidade</h4>
+<ul>
+<li><strong>Bloquear edição do número da nota fiscal</strong></li>
+<li><strong>Bloquear a geração de notas fiscais com quantidade de itens menor que a da venda</strong></li>
+<li><strong>Indicador de presença do comprador no momento da venda</strong>: indica se o comprador estava presente no local da venda. Selecione uma opção:</li>
+<li>Não se aplica (por exemplo, Nota Fiscal complementar ou de ajuste)</li>
+<li>Operação presencial</li>
+<li>Operação não presencial, pela Internet</li>
+<li>Operação não presencial, Teleatendimento</li>
+<li>Operação presencial, fora do estabelecimento</li>
+<li>Operação não presencial, outros</li>
+</ul>
+<p><img src="screenshots/13.png" alt="Bloqueio do número da nota e indicador de presença" /></p>
+<ul>
+<li><strong>CNPJ / CPF da Contabilidade</strong>: digite o CNPJ ou o CPF.</li>
+</ul>
+<p><img src="screenshots/9.png" alt="CNPJ ou CPF da contabilidade" /></p>
+<ul>
+<li><strong>Markup para formação do preço de venda</strong>: digite o valor com vírgula. O ícone ao lado informa que a alíquota é usada quando o produto não tem markup individual.</li>
+</ul>
+<p><img src="screenshots/11.png" alt="Ajuda do markup para formação do preço de venda" /></p>
+<ul>
+<li><strong>UF exige código do benefício fiscal e motivo de desoneração</strong></li>
+</ul>
+<ol start="5">
+<li>Clique em <strong>Salvar</strong>, no fim da tela, para gravar as automações e as configurações adicionais.</li>
+</ol>
+</article>
+</body>
+</html>
