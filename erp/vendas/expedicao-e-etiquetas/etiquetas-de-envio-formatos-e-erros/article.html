@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Etiquetas de envio: formatos e erros</title>
+</head>
+<body>
+<article>
+<h1>Etiquetas de envio: formatos e erros</h1>
+<h2>Importante</h2>
+<ul>
+<li>Um aviso de indisponibilidade ligado a Shopee/SEFAZ, na lista de expedição e na lista de etiquetas, impede a impressão de etiquetas, a emissão de nota fiscal e o envio manual de XML.</li>
+<li>Não é possível imprimir as etiquetas do gateway logístico se o agrupamento foi concluído manualmente, sem integração com a logística.</li>
+<li>Para imprimir as etiquetas da forma de envio, os pedidos precisam já ter sido enviados para a forma de envio, e a forma de envio precisa oferecer impressão de etiquetas.</li>
+<li>Para imprimir as etiquetas do ecommerce, a expedição precisa ter pedido no ecommerce e a integração precisa estar ativa e permitir etiquetas.</li>
+<li>Coleta, etiqueta de transportadora, declaração de conteúdo e envio de XML só aparecem no menu de um agrupamento de transportadora com DC-e.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Conferir o aviso que impede a impressão</h3>
+<ol>
+<li>
+<p>Acesse <strong>Vendas &gt; Expedição</strong>.</p>
+</li>
+<li>
+<p>Se a lista exibir o aviso de indisponibilidade ligado a Shopee/SEFAZ, a impressão de etiquetas fica impedida, junto com a emissão de nota fiscal e o envio manual de XML.</p>
+<p><img src="screenshots/1.png" alt="Lista de agrupamentos com aviso de indisponibilidade" /></p>
+</li>
+</ol>
+<h3>Conferir o formato ao incluir um modelo</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Geral &gt; Configurações das etiquetas</strong>.</p>
+<p><img src="screenshots/21.png" alt="Menu com Configurações das etiquetas, Impressão automática e Impressão PrintNode" /></p>
+</li>
+<li>
+<p>Na lista, confira os modelos pelo uso: <strong>Correios</strong>, <strong>Transportadora</strong>, <strong>Produtos</strong>, <strong>Clientes e fornecedores</strong> e <strong>Volumes</strong>.</p>
+<p><img src="screenshots/22.png" alt="Lista de etiquetas por tipo, com alterar logo para ZPL e incluir etiqueta" /></p>
+</li>
+<li>
+<p>Clique em <strong>incluir etiqueta</strong>.</p>
+</li>
+<li>
+<p>Selecione o tipo: <strong>Clientes e fornecedores</strong>, <strong>Produtos</strong>, <strong>Volumes</strong>, <strong>Transportadora</strong> ou <strong>Separação</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Continuar</strong>.</p>
+<p><img src="screenshots/23.png" alt="Seletor do tipo da nova etiqueta" /></p>
+</li>
+<li>
+<p>No formulário de etiqueta de produtos, informe a descrição.</p>
+</li>
+<li>
+<p>Em <strong>Modo de impressão</strong>, escolha <strong>Página</strong> ou <strong>Bobina</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Orientação</strong>, escolha <strong>Retrato</strong> ou <strong>Paisagem</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Dimensões</strong>, selecione o código da folha, como <strong>3080/3180</strong>, <strong>6080/6180</strong> ou <strong>A4050/A4250/A4350</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>salvar</strong> para gravar o modelo. Use <strong>imprimir página de testes</strong> só se quiser testar o formato antes, ou <strong>cancelar</strong> para sair sem gravar.</p>
+</li>
+</ol>
+<p><img src="screenshots/24.png" alt="Formulário de etiqueta de produtos com modo, orientação e dimensões" /></p>
+<p>O mesmo <strong>incluir etiqueta</strong> abre o formulário de transportadora quando esse tipo é escolhido.</p>
+<p><img src="screenshots/35.png" alt="Formulário de etiqueta de transportadora" /></p>
+<h3>Imprimir etiquetas no agrupamento</h3>
+<ol>
+<li>
+<p>Acesse <strong>Vendas &gt; Expedição</strong>.</p>
+</li>
+<li>
+<p>Na visão por agrupamentos, abra o menu de contexto do agrupamento.</p>
+</li>
+<li>
+<p>Em um agrupamento de gateway, escolha <strong>Imprimir etiquetas de volumes</strong> ou <strong>Imprimir etiquetas de clientes</strong>. O mesmo menu também oferece <strong>Imprimir DANFEs</strong>.</p>
+<p><img src="screenshots/12.png" alt="Menu de contexto do agrupamento de gateway" /></p>
+</li>
+<li>
+<p>Em um agrupamento de transportadora com DC-e, escolha <strong>Imprimir etiquetas de transportadora</strong>. O menu também oferece <strong>Imprimir coleta</strong>, <strong>Imprimir declaração de conteúdo</strong> e <strong>Enviar XML das notas para transportadora</strong>. A impressão só segue se as regras do bloco Importante forem atendidas.</p>
+<p><img src="screenshots/14.png" alt="Menu de contexto do agrupamento de transportadora com DC-e" /></p>
+</li>
+</ol>
+<h3>Tratar o erro da impressão automática</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Geral &gt; Impressão automática (Novo/Recomendado)</strong>.</p>
+</li>
+<li>
+<p>Se a atribuição da impressora padrão exibir <strong>Erro ao obter impressoras</strong> e <strong>Unable to establish connection with QZ Tray</strong>, deixe o aplicativo de conexão (QZ Tray) acessível. Sem ele, a atribuição não lista impressoras. A tela também oferece <strong>imprimir etiqueta teste</strong>, <strong>testar conexão</strong> e <strong>baixar aplicativo</strong>.</p>
+<p><img src="screenshots/38.png" alt="Impressão automática com erro de conexão com o QZ Tray" /></p>
+</li>
+</ol>
+<h3>Direcionar a etiqueta de envio no PrintNode</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Geral &gt; Impressão PrintNode</strong>.</p>
+</li>
+<li>
+<p>Siga o texto da página: crie a conta em www.printnode.com, instale e faça login no cliente, gere a API key e cole no campo <strong>API Key</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Atribuir impressoras padrão</strong>, abra <strong>Impressão de etiquetas de envio</strong>. A página avisa que a etiqueta de envio é enviada em ZPL e exige impressora Zebra. As opções começam em <strong>Nenhuma</strong> e passam a listar as impressoras que o PrintNode devolve.</p>
+</li>
+<li>
+<p>Em <strong>Atribuir impressoras por usuários</strong>, abra quem vai imprimir e defina <strong>Impressão de etiquetas de envio</strong> em <strong>Impressora padrão</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>aplicar</strong> para gravar a impressora dessa pessoa, ou em <strong>cancelar</strong> para fechar sem aplicar. Na página, clique em <strong>Salvar</strong> para gravar a configuração da conta.</p>
+<p><img src="screenshots/39.png" alt="Lista de atribuição de impressoras por usuário" /></p>
+<p><img src="screenshots/40.png" alt="Painel com etiqueta de envio em Impressora padrão" /></p>
+</li>
+</ol>
+<h2>Informações adicionais</h2>
+<ul>
+<li>Na lista de etiquetas, o botão <strong>alterar logo para ZPL</strong> fica junto de <strong>incluir etiqueta</strong>.</li>
+<li>Em <strong>Configurações &gt; Configurações ERP &gt; Vendas &gt; Configurações da expedição</strong>, <strong>Imprimir automaticamente ao finalizar expedição</strong> pode reunir <strong>DANFE</strong> e <strong>Etiqueta de envio</strong>.</li>
+<li>A opção <strong>Imprimir valor declarado nas etiquetas</strong> pode ficar ligada ou desligada nessa mesma tela.</li>
+</ul>
+</article>
+</body>
+</html>
