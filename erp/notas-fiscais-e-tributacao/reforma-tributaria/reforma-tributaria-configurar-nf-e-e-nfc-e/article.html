@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Reforma Tributária: configurar NF-e e NFC-e</title>
+</head>
+<body>
+<article>
+<h1>Reforma Tributária: configurar NF-e e NFC-e</h1>
+<p>No ERP da Olist, <strong>Tributação (RTC)</strong> é onde você define a classificação, as alíquotas e o cálculo do IBS e da CBS da Reforma Tributária do Consumo na NF-e e na NFC-e.</p>
+<p>Você grava a regra geral dos produtos, liga o cálculo para esses tributos entrarem na emissão e cadastra uma regra por NCM, produto e natureza de operação quando um produto não deve seguir a regra geral. Se a opção não aparecer para você, peça acesso ao administrador da conta.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Naturezas de operação já cadastradas na empresa, para marcar a regra específica e filtrar a lista.</li>
+<li>NCM e identificação do produto, se a regra não valer para qualquer NCM e produto.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li><strong>IBS Municipal</strong> e <strong>IS</strong> aparecem como em breve, com efeito citado para janeiro de 2027, e não ficam editáveis.</li>
+<li>No cálculo, o Regime Normal passa a ser obrigatório em janeiro de 2026. Simples e MEI permanecem como simulação até o uso obrigatório em 2027.</li>
+<li>A lista de regras não oferece planilha, modelo, importar nem envio de arquivo.</li>
+<li>Os campos abaixo não estão indicados como obrigatórios.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Configurar a regra geral</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Tributação (RTC)</strong>.</p>
+<p><img src="screenshots/3.png" alt="Visão geral de Tributação (RTC), com NFe e NFCe" /></p>
+</li>
+<li>
+<p>Em <strong>NFe e NFCe</strong>, abra <strong>Configuração dos tributos e códigos de classificação</strong>. Essa regra geral é o padrão aplicado aos produtos.</p>
+<p><img src="screenshots/4.png" alt="Configuração geral de IBS e CBS da NF-e e da NFC-e" /></p>
+</li>
+<li>
+<p>Selecione o <strong>CST</strong>:</p>
+</li>
+</ol>
+<ul>
+<li>000 - Tributação integral</li>
+<li>010 alíquotas uniformes</li>
+<li>011 alíquotas uniformes reduzidas</li>
+<li>200 Alíquota reduzida</li>
+<li>221 Alíquota fixa proporcional</li>
+<li>400 Isenção</li>
+<li>410 Imunidade e não incidência</li>
+<li>510 Diferimento</li>
+<li>515 Diferimento com redução de alíquota</li>
+<li>550 Suspensão</li>
+<li>620 Tributação Monofásica</li>
+<li>800 Transferência de crédito</li>
+<li>810 Ajuste de IBS na ZFM</li>
+<li>811 Ajustes</li>
+<li>820 Tributação em documento específico</li>
+<li>830 Exclusão da Base de Cálculo</li>
+</ul>
+<ol start="4">
+<li>
+<p>Informe o <strong>cClassTrib</strong>. Na consulta, use <strong>Pesquisar</strong> e clique em <strong>Confirmar</strong> para aplicar o código. <strong>Cancelar</strong> fecha a consulta sem aplicar um código novo. A consulta não lista todos os códigos da tabela oficial. No caso integral, os códigos vistos incluem 000001, 000003, 000004, 000005 e 000006.</p>
+<p><img src="screenshots/6.png" alt="Consulta de cClassTrib na configuração da NF-e e da NFC-e" /></p>
+</li>
+<li>
+<p>Informe <strong>CBS</strong> e <strong>IBS UF</strong> com vírgula no decimal, por exemplo 0,90 e 0,10. Essa classificação e essas alíquotas são o padrão usado na NF-e e na NFC-e.</p>
+</li>
+</ol>
+<h3>Habilitar o cálculo</h3>
+<ol>
+<li>
+<p>Em <strong>NFe e NFCe</strong>, abra <strong>Habilitar cálculo de tributos da Reforma Tributária</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Habilitar o cálculo de tributos da Reforma Tributária</strong>. Com a opção marcada, a emissão calcula e envia IBS e CBS à SEFAZ nas notas fiscais.</p>
+<p><img src="screenshots/7.png" alt="Cálculo de tributos da Reforma Tributária marcado na NF-e e na NFC-e" /></p>
+</li>
+</ol>
+<h3>Cadastrar uma regra específica</h3>
+<ol>
+<li>
+<p>Em <strong>NFe e NFCe</strong>, abra <strong>Cadastro de regras tributárias</strong>. Use essa regra quando o produto não seguir a regra geral.</p>
+<p><img src="screenshots/8.png" alt="Lista Cadastro de Regras Tributárias" /></p>
+</li>
+<li>
+<p>Clique em <strong>Cadastrar regra tributária</strong>. O primeiro passo é <strong>Dados do IBS/CBS</strong>.</p>
+<p><img src="screenshots/9.png" alt="Passo Dados do IBS/CBS sem preenchimento" /></p>
+</li>
+<li>
+<p>Selecione o <strong>CST</strong>, consulte o <strong>cClassTrib</strong> e clique em <strong>Confirmar</strong>.</p>
+<p><img src="screenshots/10.png" alt="Consulta de cClassTrib no cadastro da regra" /></p>
+</li>
+<li>
+<p>Informe <strong>CBS</strong> e <strong>IBS UF</strong> com vírgula no decimal. Um exemplo confirmado na tela é <strong>CST</strong> 000, <strong>cClassTrib</strong> 000001 - Situações tributadas integralmente, <strong>CBS</strong> 0,90 e <strong>IBS UF</strong> 0,10. <strong>IBS Municipal</strong> pode aparecer como 0,00 e <strong>IS</strong> vazio, sem edição.</p>
+<p><img src="screenshots/11.png" alt="Dados do IBS/CBS preenchidos" /></p>
+</li>
+<li>
+<p>Clique em <strong>Avançar</strong>. Deixe <strong>Aplicar para qualquer NCM e produto</strong> ligado para valer para todos os itens.</p>
+<p><img src="screenshots/12.png" alt="Escopo com Aplicar para qualquer NCM e produto ligado" /></p>
+</li>
+<li>
+<p>Desligue <strong>Aplicar para qualquer NCM e produto</strong> para informar um NCM, um produto ou os dois.</p>
+<p><img src="screenshots/13.png" alt="Escopo depois de desligar a opção de qualquer NCM e produto" /></p>
+</li>
+<li>
+<p>Informe o <strong>NCM</strong> completo no formato 0000.00.00, ou use ? para um grupo, por exemplo 8471.??.??. Clique em <strong>salvar</strong> na linha do NCM.</p>
+<p><img src="screenshots/14.png" alt="Linha de NCM preenchida" /></p>
+<p><img src="screenshots/15.png" alt="Orientação do NCM: código completo ou ? para grupo" /></p>
+</li>
+<li>
+<p>Para limitar por produto, pesquise por nome, SKU ou GTIN e use <strong>Código (SKU)</strong>.</p>
+<p><img src="screenshots/16.png" alt="Inclusão de produto ainda vazia" /></p>
+<p><img src="screenshots/17.png" alt="Busca de produto por nome" /></p>
+</li>
+<li>
+<p>Clique em <strong>Avançar</strong> e marque as naturezas de operação que devem usar a regra. <strong>Venda de mercadorias (Saída)</strong> pode ser marcada.</p>
+<p><img src="screenshots/18.png" alt="Naturezas de operação antes da marcação" /></p>
+<p><img src="screenshots/19.png" alt="Natureza Venda de mercadorias (Saída) marcada" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar regra</strong>. A regra só é criada nesse clique. <strong>Voltar</strong> sai do cadastro e retorna a <strong>Tributação (RTC)</strong> sem criar a regra.</p>
+</li>
+</ol>
+<h3>Consultar e filtrar regras</h3>
+<ol>
+<li>
+<p>Em <strong>NFe e NFCe</strong>, abra <strong>Cadastro de regras tributárias</strong>. A lista <strong>Cadastro de Regras Tributárias</strong> mostra <strong>cClassTrib</strong>, <strong>Naturezas de operação</strong>, <strong>Produtos</strong>, <strong>NCMs</strong> e um contador de quantidade.</p>
+</li>
+<li>
+<p>Pesquise em <strong>Pesquise por produto ou NCM</strong>. No refinamento, escolha <strong>produto</strong>, <strong>ncm</strong> ou <strong>Não refinar</strong>.</p>
+<p><img src="screenshots/24.png" alt="Refinamento da pesquisa: produto, ncm e Não refinar" /></p>
+</li>
+<li>
+<p>Abra <strong>Todas as naturezas de operação</strong>, escolha a <strong>Natureza de operação</strong> e clique em <strong>aplicar</strong>. <strong>Cancelar</strong> fecha o filtro sem aplicá-lo.</p>
+<p><img src="screenshots/25.png" alt="Filtro de natureza de operação" /></p>
+</li>
+<li>
+<p>Abra o menu de ações da linha. A opção exibida é <strong>excluir</strong>. Não clique em <strong>excluir</strong> se a regra deve ser mantida.</p>
+<p><img src="screenshots/26.png" alt="Menu da linha com excluir" /></p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Em <strong>Tributação (RTC)</strong>, o item de habilitar o cálculo da NF-e e da NFC-e pode aparecer como habilitado. A configuração geral mostra o <strong>CST</strong>, o <strong>cClassTrib</strong> e as alíquotas atuais. As regras salvas ficam em <strong>Cadastro de Regras Tributárias</strong>, com <strong>cClassTrib</strong>, naturezas, produtos, NCMs e a quantidade.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>A regra específica vale só para as naturezas de operação marcadas no cadastro.</li>
+<li>A pesquisa da lista refina por produto ou NCM e o filtro usa as naturezas já cadastradas na empresa.</li>
+</ul>
+</article>
+</body>
+</html>
