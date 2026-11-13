@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Impressão automática e PrintNode</title>
+</head>
+<body>
+<article>
+<h1>Impressão automática e PrintNode</h1>
+<p>A impressão automática e o PrintNode, no ERP da Olist, enviam DANFE, etiqueta de envio, NFC-e e recibos direto para a impressora, sem escolher o equipamento a cada documento.</p>
+<p>Na impressão automática, você acompanha a cota, testa a conexão e aponta a impressora padrão. No PrintNode, você informa a chave da conta e define a impressora padrão da conta ou a impressora de cada pessoa.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Para a impressão automática listar as impressoras, o aplicativo de conexão (QZ Tray) precisa estar acessível.</li>
+<li>Para o PrintNode, tenha conta em www.printnode.com, o cliente instalado e logado nas impressoras, e a API key para colar no campo <strong>API Key</strong>.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Sem o QZ Tray, a atribuição da impressora padrão na impressão automática mostra <strong>Erro ao obter impressoras</strong> e <strong>Unable to establish connection with QZ Tray</strong>.</li>
+<li>No PrintNode, a etiqueta de envio sai em ZPL e exige impressora do tipo Zebra.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pela impressão automática</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Geral &gt; Impressão automática (Novo/Recomendado)</strong>.</p>
+<p><img src="screenshots/21.png" alt="Menu Configurações ERP, Geral, com Impressão automática e Impressão PrintNode" /></p>
+</li>
+<li>
+<p>Confira a situação da impressão, a cota de uso e a opção <strong>Renovação automática ativada</strong>.</p>
+</li>
+<li>
+<p>Se as impressoras não aparecerem, clique em <strong>Baixar aplicativo</strong> e deixe o QZ Tray acessível.</p>
+</li>
+<li>
+<p>Clique em <strong>Testar conexão</strong>.</p>
+</li>
+<li>
+<p>Atribua a impressora padrão. Com o QZ Tray acessível, a tela lista as impressoras. Sem ele, aparece o erro de conexão.</p>
+<p><img src="screenshots/38.png" alt="Impressão automática com cota, renovação automática e erro de conexão com o QZ Tray" /></p>
+</li>
+<li>
+<p>Clique em <strong>Imprimir etiqueta teste</strong> para validar a impressão.</p>
+</li>
+</ol>
+<h3>Pelo PrintNode</h3>
+<ol>
+<li>Acesse <strong>Configurações &gt; Configurações ERP &gt; Geral &gt; Impressão PrintNode</strong>.</li>
+<li>Crie a conta em www.printnode.com, instale o cliente e faça login nas impressoras.</li>
+<li>Gere a API key no PrintNode e cole no campo <strong>API Key</strong>.</li>
+<li>Clique em <strong>Testar integração</strong> para validar a conexão.</li>
+<li>Em <strong>Atribuir impressoras padrão</strong>, selecione a impressora de cada documento. Cada lista começa em <strong>Nenhuma</strong>:</li>
+</ol>
+<ul>
+<li><strong>Impressão da DANFE</strong></li>
+<li><strong>Impressão de etiquetas de envio</strong></li>
+<li><strong>Impressão de NFC-e</strong></li>
+<li><strong>Impressão de recibo</strong></li>
+<li><strong>Impressão de recibo de troca</strong></li>
+</ul>
+<ol start="6">
+<li>
+<p>Em <strong>Impressão de etiquetas de envio</strong>, escolha uma impressora Zebra.</p>
+</li>
+<li>
+<p>Para definir a impressora de uma pessoa, abra o cadastro em <strong>Atribuir impressoras por usuários</strong>.</p>
+<p><img src="screenshots/39.png" alt="Lista de atribuição de impressoras, sem alteração" /></p>
+</li>
+<li>
+<p>Selecione <strong>Impressora padrão</strong> em cada uma das cinco impressões e clique em <strong>Aplicar</strong>.</p>
+<p><img src="screenshots/40.png" alt="Impressões da DANFE, etiqueta de envio, NFC-e, recibo e recibo de troca em Impressora padrão" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. DANFE, etiqueta de envio, NFC-e e recibos passam a usar a impressora padrão da conta ou a impressora definida para cada pessoa.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Na impressão automática, a tela mostra a situação, a cota de uso e se a <strong>Renovação automática ativada</strong> está marcada. No PrintNode, os documentos ficam direcionados à impressora escolhida.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>A tela do PrintNode tem um atalho para a impressão automática.</li>
+<li>As impressoras listadas no PrintNode são as que o serviço devolve, inclusive térmicas, laser e PDF.</li>
+</ul>
+</article>
+</body>
+</html>
