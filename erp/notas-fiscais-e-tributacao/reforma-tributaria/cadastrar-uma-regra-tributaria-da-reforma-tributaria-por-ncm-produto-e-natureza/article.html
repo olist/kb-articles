@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Cadastrar uma regra tributária da Reforma Tributária por NCM, produto e natureza</title>
+</head>
+<body>
+<article>
+<h1>Cadastrar uma regra tributária da Reforma Tributária por NCM, produto e natureza</h1>
+<p>No ERP da Olist, a regra tributária específica define a classificação e as alíquotas de IBS e CBS para produtos que não devem seguir a regra geral da Reforma Tributária do Consumo. Você informa esses dados, o NCM e/ou o produto e as naturezas de operação em que a regra vale, para uso em NF-e e NFC-e.</p>
+<p>O cadastro fica em <strong>Configurações &gt; Configurações ERP &gt; Tributação (RTC)</strong>, na seção <strong>NFe e NFCe</strong>, em <strong>Cadastro de regras tributárias</strong>.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Naturezas de operação já cadastradas na empresa.</li>
+<li>NCM e/ou identificação do produto, quando a regra não for para qualquer NCM e produto.</li>
+<li>Se <strong>Cadastro de regras tributárias</strong> não aparecer, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li><strong>IBS Municipal</strong> aparece como 0,00 e não pode ser editado. <strong>IS</strong> fica em branco e também não pode ser editado.</li>
+<li>Com <strong>Aplicar para qualquer NCM e produto</strong> ligado, a regra vale para todos os itens. Desligue o interruptor para informar um NCM e/ou um produto.</li>
+<li><strong>Voltar</strong> sai do cadastro e retorna a <strong>Tributação (RTC)</strong> sem criar a regra.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Tributação (RTC)</strong>.</p>
+<p><img src="screenshots/3.png" alt="Tela Tributação (RTC), com NFe e NFCe e o acesso ao cadastro de regras" /></p>
+</li>
+<li>
+<p>Em <strong>NFe e NFCe</strong>, acesse <strong>Cadastro de regras tributárias</strong>.</p>
+</li>
+</ol>
+<p>A tela informa: defina a regra específica de tributação a ser aplicada quando o produto não seguir a regra geral.</p>
+<p><img src="screenshots/8.png" alt="Lista Cadastro de Regras Tributárias" /></p>
+<ol start="3">
+<li>Clique em <strong>Cadastrar regra tributária</strong>.</li>
+</ol>
+<p>O primeiro passo é <strong>Dados do IBS/CBS</strong>.</p>
+<p><img src="screenshots/9.png" alt="Passo Dados do IBS/CBS, ainda sem preenchimento" /></p>
+<ol start="4">
+<li>
+<p>Selecione <strong>CST</strong>. O campo não é obrigatório. As opções são:</p>
+<ul>
+<li>000 - Tributação integral</li>
+<li>010 alíquotas uniformes</li>
+<li>011 alíquotas uniformes reduzidas</li>
+<li>200 Alíquota reduzida</li>
+<li>221 Alíquota fixa proporcional</li>
+<li>400 Isenção</li>
+<li>410 Imunidade e não incidência</li>
+<li>510 Diferimento</li>
+<li>515 Diferimento com redução de alíquota</li>
+<li>550 Suspensão</li>
+<li>620 Tributação Monofásica</li>
+<li>800 Transferência de crédito</li>
+<li>810 Ajuste de IBS na ZFM</li>
+<li>811 Ajustes</li>
+<li>820 Tributação em documento específico</li>
+<li>830 Exclusão da Base de Cálculo</li>
+</ul>
+</li>
+<li>
+<p>Informe <strong>cClassTrib</strong>. O campo não é obrigatório. Clique em <strong>Pesquisar</strong>, escolha o código e clique em <strong>Confirmar</strong>. <strong>Cancelar</strong> fecha a pesquisa sem aplicar um código novo.</p>
+<p><img src="screenshots/10.png" alt="Pesquisa de cClassTrib no cadastro da regra" /></p>
+</li>
+<li>
+<p>Informe <strong>CBS</strong> e <strong>IBS UF</strong>. Os dois campos não são obrigatórios. Use vírgula como separador decimal, como em 0,90 e 0,10.</p>
+<p><img src="screenshots/11.png" alt="Dados do IBS/CBS preenchidos" /></p>
+</li>
+<li>
+<p>Clique em <strong>Avançar</strong>.</p>
+</li>
+<li>
+<p>Mantenha <strong>Aplicar para qualquer NCM e produto</strong> ligado para cobrir todos os itens.</p>
+<p><img src="screenshots/12.png" alt="Escopo com Aplicar para qualquer NCM e produto ligado" /></p>
+</li>
+<li>
+<p>Desligue <strong>Aplicar para qualquer NCM e produto</strong> para informar um NCM e/ou um produto. O interruptor não é obrigatório.</p>
+<p><img src="screenshots/13.png" alt="Escopo depois de desligar Aplicar para qualquer NCM e produto" /></p>
+</li>
+<li>
+<p>Informe o <strong>NCM</strong>. O campo não é obrigatório. O código completo fica no formato 0000.00.00. Use ? para um grupo, por exemplo 8471.??.??.</p>
+</li>
+</ol>
+<p><img src="screenshots/14.png" alt="NCM informado no formato 0000.00.00" /></p>
+<p><img src="screenshots/15.png" alt="Orientação do NCM: código completo ou ? para grupo" /></p>
+<ol start="11">
+<li>Adicione o produto pela busca de nome, SKU ou GTIN. <strong>Produto</strong> e <strong>Código (SKU)</strong> não são obrigatórios.</li>
+</ol>
+<p><img src="screenshots/16.png" alt="Inclusão de produto, com busca e Código (SKU)" /></p>
+<p><img src="screenshots/17.png" alt="Busca de produto no cadastro da regra" /></p>
+<ol start="12">
+<li>
+<p>Clique em <strong>Avançar</strong>.</p>
+</li>
+<li>
+<p>Marque as naturezas de operação que devem usar a regra. <strong>Natureza de operação</strong> não é obrigatória. Você pode marcar <strong>Venda de mercadorias (Saída)</strong>.</p>
+</li>
+</ol>
+<p><img src="screenshots/18.png" alt="Naturezas de operação antes da marcação, com Salvar regra" /></p>
+<p><img src="screenshots/19.png" alt="Natureza Venda de mercadorias (Saída) marcada" /></p>
+<ol start="14">
+<li>Clique em <strong>Salvar regra</strong>. A regra só é criada nesse clique.</li>
+</ol>
+<h2>Resultado</h2>
+<p>A regra salva fica em <strong>Cadastro de Regras Tributárias</strong>, com as colunas <strong>cClassTrib</strong>, <strong>Naturezas de operação</strong>, <strong>Produtos</strong> e <strong>NCMs</strong>, e um contador de quantidade.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>A lista de regras não oferece planilha, modelo nem importação.</li>
+<li>O cadastro de regras tributárias aparece em <strong>NFe e NFCe</strong>. A seção <strong>NFSe</strong> não tem esse cadastro.</li>
+</ul>
+</article>
+</body>
+</html>
