@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Notas de devolução (venda e compra)</title>
+</head>
+<body>
+<article>
+<h1>Notas de devolução (venda e compra)</h1>
+<p>No ERP da Olist, a devolução usa a finalidade <strong>Devolução</strong>. Na devolução de venda, você marca essa finalidade na natureza de operação de saída e escolhe a mesma opção ao incluir a nota fiscal. Na devolução de compra, a finalidade fica na natureza de operação de entrada.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Para a devolução de venda, use uma natureza de operação de saída.</li>
+<li>Para a devolução de compra, use uma natureza de operação de entrada.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Na nota, a <strong>Finalidade</strong> inclui <strong>4 Devolução</strong>. As outras opções vistas são <strong>1 normal</strong>, <strong>2 NF-e complementar</strong>, <strong>3 ajuste</strong>, <strong>6 débito</strong>, <strong>7 cupom</strong>, <strong>9 chave</strong> e <strong>10 pagamento antecipado</strong>.</li>
+<li><strong>Bonificação</strong>, <strong>Remessa</strong> e <strong>Retorno</strong> não aparecem na <strong>Finalidade</strong> da nota.</li>
+<li>Na natureza de saída e na de entrada, a <strong>Finalidade</strong> lista <strong>Normal</strong>, <strong>Devolução</strong>, <strong>Bonificação</strong> e <strong>Remessa</strong>. <strong>Retorno</strong> não aparece nessa lista.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Configurar a natureza de saída</h3>
+<ol>
+<li>Acesse <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais &gt; Naturezas de operação de saída (tributação)</strong>.</li>
+<li>Abra a inclusão ou a edição de uma natureza de operação de saída.</li>
+<li>No campo <strong>Finalidade</strong>, selecione <strong>Devolução</strong>. A finalidade <strong>Devolução</strong> fica selecionada na natureza de saída.</li>
+</ol>
+<h3>Incluir a nota de devolução de venda</h3>
+<ol>
+<li>Acesse <strong>Vendas &gt; Notas Fiscais</strong>.</li>
+<li>Clique em <strong>incluir nota fiscal</strong>.</li>
+<li>No campo <strong>Finalidade</strong>, selecione <strong>4 Devolução</strong>. Use a natureza de saída com <strong>Finalidade</strong> <strong>Devolução</strong>, em <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais &gt; Naturezas de operação de saída (tributação)</strong>. A inclusão da nota oferece a finalidade <strong>Devolução</strong>.</li>
+</ol>
+<h3>Configurar a natureza de entrada</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais &gt; Naturezas de operação de entrada</strong>.</p>
+</li>
+<li>
+<p>Abra <strong>incluir natureza</strong>.</p>
+</li>
+<li>
+<p>No campo <strong>Finalidade</strong>, selecione <strong>Devolução</strong>.</p>
+</li>
+<li>
+<p>Preencha o restante da natureza.</p>
+<p><img src="screenshots/22.png" alt="Natureza de entrada com finalidade de devolução" /></p>
+</li>
+<li>
+<p>Abra a aba <strong>Importação</strong>. Nela aparecem <strong>CST</strong> <strong>Não tributado</strong> e alíquota <strong>0</strong>.</p>
+<p><img src="screenshots/23.png" alt="Aba Importação da natureza de entrada" /></p>
+</li>
+<li>
+<p>Abra as opções avançadas. A tela mostra <strong>Preço</strong> (última entrada ou custo), <strong>CMV</strong>, <strong>Estoque</strong>, <strong>Funrural</strong>, <strong>Descontar funrural</strong>, redução da BC de ICMS-ST (<strong>Padrão</strong> ou <strong>Antes de somar o IPI</strong>), somar despesas de importação, <strong>Atualizar última compra</strong>, descontar desoneração e itens que compõem o total. A natureza de entrada de devolução fica preenchida na tela, com a aba de importação e as regras avançadas de preço, estoque e ICMS-ST.</p>
+<p><img src="screenshots/24.png" alt="Opções avançadas da natureza de entrada" /></p>
+</li>
+</ol>
+</article>
+</body>
+</html>
