@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Automações do fluxo de vendas</title>
+</head>
+<body>
+<article>
+<h1>Automações do fluxo de vendas</h1>
+<p>No ERP da Olist, o Painel de automação define quais ações do fluxo de vendas o ERP executa e em que momento. Você liga ou desliga cada ação e escolhe o gatilho no campo <strong>Quando</strong>.</p>
+<p>Há também duas automações de nota fiscal eletrônica, em outra tela: gerar a nota ao aprovar o pedido e cancelar a nota emitida quando o pedido de venda vinculado for marcado como <strong>Cancelado</strong>.</p>
+<h2>Importante</h2>
+<ul>
+<li>No Painel de automação, a configuração só fica garantida depois de salvar.</li>
+<li>Os gatilhos não são os mesmos em todas as automações.</li>
+<li>Em <strong>Configurações adicionais</strong>, na configuração da NFe, aparecem parâmetros gerais da NFe e do DANFE, não outras automações do fluxo de vendas.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pelo Painel de Automações</h3>
+<ol>
+<li>Acesse <strong>Vendas &gt; Painel de Automações</strong>.</li>
+<li>Ligue ou desligue as automações que deseja usar. Nenhuma é obrigatória:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Lançar saída de estoque</strong></p>
+</li>
+<li>
+<p><strong>Emitir Nota Fiscal Eletrônica (NFe)</strong></p>
+</li>
+<li>
+<p><strong>Imprimir etiqueta de envio</strong></p>
+</li>
+<li>
+<p><strong>Enviar para separação</strong></p>
+</li>
+<li>
+<p><strong>Enviar para expedição</strong></p>
+<p><img src="screenshots/1.png" alt="Painel de automação com as cinco automações, os campos Quando e o botão Salvar automações" /></p>
+</li>
+</ul>
+<ol start="3">
+<li>No campo <strong>Quando</strong> de cada automação ligada, escolha o gatilho. Todos esses campos também têm a opção <strong>Selecionar ação inicial</strong>.</li>
+</ol>
+<ul>
+<li><strong>Lançar saída de estoque</strong>: <strong>Ao autorizar a nota fiscal</strong>, <strong>Ao salvar a nota fiscal</strong>, <strong>Ao salvar o pedido</strong> ou <strong>Ao marcar pedido como enviado</strong>.</li>
+<li><strong>Emitir Nota Fiscal Eletrônica (NFe)</strong>: <strong>Ao aprovar o pedido</strong>.</li>
+<li><strong>Imprimir etiqueta de envio</strong>: <strong>Ao concluir embalagem</strong>.</li>
+<li><strong>Enviar para separação</strong> e <strong>Enviar para expedição</strong>: <strong>Ao autorizar a nota fiscal</strong>, <strong>Ao salvar a nota fiscal</strong>, <strong>Ao salvar o pedido</strong> ou <strong>Ao aprovar o pedido</strong>.</li>
+</ul>
+<ol start="4">
+<li>Clique em <strong>Salvar automações</strong>. A tela indica quais ações devem ocorrer e em qual gatilho, e só garante a configuração depois desse clique.</li>
+</ol>
+<h3>Na configuração da nota fiscal eletrônica</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Abra a aba <strong>Notas Fiscais</strong> e clique em <strong>Configuração da nota fiscal eletrônica (NFe)</strong>.</p>
+</li>
+<li>
+<p>Na seção <strong>Automações</strong>, ligue ou desligue <strong>Gerar nota fiscal automaticamente ao aprovar pedido</strong>.</p>
+</li>
+<li>
+<p>Ligue ou desligue <strong>Cancelar automaticamente nota fiscal emitida ao cancelar venda vinculada</strong>. Com essa opção ligada, ao alterar a situação do pedido de venda para <strong>Cancelado</strong>, a nota fiscal vinculada é cancelada automaticamente. Essas duas automações ficam nesta tela, separadas da lista do Painel de automação.</p>
+<p><img src="screenshots/2.png" alt="Seção Automações da configuração da NFe, com os dois interruptores e o texto de ajuda do cancelamento" /></p>
+</li>
+</ol>
+<h2>Informações adicionais</h2>
+<h3>A lista de automações é fixa</h3>
+<p>Não há formulário para incluir uma automação nova. Você só liga, desliga e define o gatilho das ações já exibidas no Painel de automação.</p>
+</article>
+</body>
+</html>
