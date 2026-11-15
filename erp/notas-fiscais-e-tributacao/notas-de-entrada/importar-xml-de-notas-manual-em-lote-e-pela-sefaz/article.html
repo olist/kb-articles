@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Importar XML de notas (manual, em lote e pela SEFAZ)</title>
+</head>
+<body>
+<article>
+<h1>Importar XML de notas (manual, em lote e pela SEFAZ)</h1>
+<p>No ERP da Olist, você importa o XML de NF-e e de CT-e recebidos de terceiros para registrar a nota de entrada. Dá para enviar os arquivos na hora, incluir um ZIP em lote ou localizar a NF-e no <strong>Buscador de notas</strong>, que acompanha as notas disponíveis na Sefaz e permite iniciar a importação.</p>
+<p>A importação manual também aceita NF-e e CT-e no mesmo envio, com marcadores opcionais. No CT-e, você escolhe se o CFOP permanece o do arquivo ou se segue a tabela de regras.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Tenha o XML da NF-e ou do CT-e. Na importação em lote, o arquivo é um ZIP de até 5Mb.</li>
+<li>A <strong>Importação de XMLs em lote</strong> e o <strong>Buscador de notas</strong> só aparecem com o certificado digital da empresa armazenado.</li>
+<li>Se o <strong>Buscador de notas</strong> não aparecer, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>A importação manual aceita até 50 XMLs.</li>
+<li><strong>Marcadores</strong> é opcional na importação manual.</li>
+<li>Sem regra na tabela de CFOP, o CFOP do CT-e iniciado em 5 passa a 1 e o iniciado em 6 passa a 2.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Importar o XML manualmente</h3>
+<ol>
+<li>Acesse <strong>Suprimentos &gt; Notas de Entrada</strong>.</li>
+<li>Clique em <strong>Importar XML</strong>. O mesmo comando está em <strong>Mais ações &gt; Importar XML</strong> e em <strong>Buscador de notas &gt; Ações &gt; Importar XML</strong>.</li>
+<li>Escolha a aba <strong>NF-e</strong>, <strong>CT-e</strong> ou <strong>Ambos</strong>.</li>
+<li>Selecione os XMLs e, se quiser, informe <strong>Marcadores</strong>.</li>
+<li>Em <strong>CT-e</strong>, escolha <strong>Utilizar o CFOP presente no arquivo XML</strong> ou <strong>Substituir CFOP conforme tabela de regras de CFOP</strong>. Na aba <strong>Ambos</strong>, a tela reúne o tratamento da NF-e e a escolha de CFOP do CT-e.</li>
+</ol>
+<p>Para montar a substituição, abra a tabela de regras de CFOP a partir dessa opção. Informe <strong>CFOP de saída</strong> e <strong>CFOP equivalente de entrada</strong>. A tela usa o exemplo 5.102 e 1.102. Inclua a regra na linha e clique em <strong>Salvar</strong>.</p>
+<h3>Importar XMLs em lote</h3>
+<ol>
+<li>
+<p>Acesse <strong>Suprimentos &gt; Notas de Entrada</strong>.</p>
+</li>
+<li>
+<p>Abra <strong>Mais ações</strong> e clique em <strong>Importação de XMLs em lote</strong>. O mesmo item está em <strong>Buscador de notas &gt; Ações</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir arquivo para importação</strong>.</p>
+</li>
+<li>
+<p>Escolha <strong>NFe emissão própria</strong>, <strong>Importação de Notas Fiscais (NFe) emitidas por fornecedores</strong> ou <strong>Importação de Conhecimentos de Transporte (CT-e)</strong>.</p>
+<p><img src="screenshots/52.png" alt="Inclusão em lote com NFe emissão própria" /></p>
+<p><img src="screenshots/54.png" alt="Inclusão em lote de NFe emitidas por fornecedores" /></p>
+<p><img src="screenshots/55.png" alt="Inclusão em lote de CT-e com aviso de CFOP" /></p>
+</li>
+<li>
+<p>Selecione o ZIP de até 5Mb. Em <strong>Importação de Conhecimentos de Transporte (CT-e)</strong>, a substituição de CFOP segue a tabela de regras do CFOP.</p>
+</li>
+</ol>
+<p>A lista do lote mostra <strong>Incluir arquivo para importação</strong> e as colunas <strong>Tipo</strong>, <strong>Nome do arquivo</strong>, <strong>Data</strong>, <strong>Data prevista</strong>, <strong>Marcadores</strong>, <strong>Notas importadas</strong> e <strong>Situação</strong>.</p>
+<h3>Importar pelo Buscador de notas</h3>
+<ol>
+<li>
+<p>Acesse <strong>Suprimentos &gt; Notas de Entrada</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Buscador de notas</strong>. A tela acompanha e importa notas emitidas por terceiros direto da Sefaz. A manifestação serve para confirmar compras ou recusar notas desconhecidas.</p>
+</li>
+<li>
+<p>Pesquise por número, emitente ou CNPJ. Ajuste o período em <strong>Últimos 30 dias</strong>, a ordenação para as mais recentes e os filtros.</p>
+</li>
+<li>
+<p>Use as abas <strong>Todas</strong>, <strong>Sem manifestação</strong>, <strong>Confirmada</strong>, <strong>Ciência registrada</strong>, <strong>Desconhecida</strong>, <strong>Não realizada</strong> e <strong>Cancelada</strong>.</p>
+<p><img src="screenshots/56.png" alt="Buscador de notas com abas de manifestação" /></p>
+</li>
+</ol>
+<p>Nos filtros, a origem pode ser <strong>Notas na Sefaz</strong>, <strong>Notas importadas</strong> ou <strong>Todas</strong>. Em notas ignoradas, as opções são <strong>Não exibir</strong>, <strong>Exibir notas ignoradas</strong> e <strong>Exibir apenas notas ignoradas</strong>.</p>
+<ol start="5">
+<li>
+<p>Abra <strong>Ações</strong> e clique em <strong>Importar XML</strong> ou em <strong>Importação de XMLs em lote</strong> para seguir com o arquivo da nota localizada.</p>
+<p><img src="screenshots/57.png" alt="Menu Ações do Buscador de notas" /></p>
+</li>
+</ol>
+<p>Para buscar uma NF-e específica:</p>
+<ol>
+<li>No <strong>Buscador de notas</strong>, abra <strong>Ações</strong> e clique em <strong>Buscar nota pela chave de acesso</strong>.</li>
+<li>Em <strong>Chave de Acesso</strong>, informe a chave da NF-e.</li>
+<li>Clique em <strong>Continuar</strong>.</li>
+</ol>
+<h3>Configurar a importação automática</h3>
+<ol>
+<li>No <strong>Buscador de notas</strong>, abra <strong>Ações</strong> e clique em <strong>Configurações de importação automática</strong>.</li>
+<li>Em NF-e, escolha <strong>Todos os fornecedores</strong> ou <strong>Escolher individualmente</strong>. No escopo individual, só os CNPJs listados são importados. Cada fornecedor pode ser refinado por NCM ou CFOP ao editá-lo.</li>
+<li>Defina a manifestação padrão entre <strong>Ciente da operação</strong> e <strong>Operação confirmada</strong>.</li>
+<li>Use <strong>Adicionar CNPJ</strong> na lista de exceções. Os CNPJs informados não têm a NF-e importada automaticamente.</li>
+<li>Em CT-e, escolha <strong>Todos os prestadores</strong> ou <strong>Escolher individualmente</strong>. Essa aba não tem manifestação padrão.</li>
+</ol>
+<h2>Informações adicionais</h2>
+<ul>
+<li>Quando a pesquisa do <strong>Buscador de notas</strong> não encontra notas, a tela informa que a pesquisa não retornou resultados e que nenhuma nota fiscal de terceiros foi encontrada.</li>
+<li>A situação da manifestação no buscador aparece nas abas <strong>Sem manifestação</strong>, <strong>Confirmada</strong>, <strong>Ciência registrada</strong>, <strong>Desconhecida</strong>, <strong>Não realizada</strong> e <strong>Cancelada</strong>.</li>
+</ul>
+</article>
+</body>
+</html>
