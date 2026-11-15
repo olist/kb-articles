@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Separação e embalagem</title>
+</head>
+<body>
+<article>
+<h1>Separação e embalagem</h1>
+<p>Na separação do ERP da Olist você consulta pedidos e notas por etapa, separa os itens e embala os pedidos. Também imprime a lista, a DANFE e as etiquetas, gera notas fiscais e envia os pedidos para a expedição.</p>
+<p>As configurações definem quando a venda entra na separação, o que é impresso e se a embalagem pode criar expedições. Os marcadores identificam os registros na fila. A consulta fica em <strong>Vendas &gt; Separação</strong>.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Os pedidos ou as notas precisam já estar na separação. Em <strong>Configurações da separação</strong>, <strong>Envio para a separação</strong> define se o envio é manual ou automático.</li>
+<li>Se alguma opção não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Para embalar pela barra, selecione ao menos um item. Sem seleção, <strong>Embalar pedidos</strong> avisa <strong>Nenhum item selecionado para embalar</strong>. <strong>Fechar</strong> (ESC) fecha o aviso.</li>
+<li>A pergunta <strong>Criar e concluir expedições</strong> aparece ao embalar quando <strong>Permitir criar e concluir expedições ao iniciar embalagem de pedidos</strong> está marcada.</li>
+<li><strong>Embalar por produto</strong> não está disponível nos planos Começar e Crescer.</li>
+<li>O botão <strong>Ações</strong> não abre menu sem nenhum item selecionado.</li>
+<li>Na etapa <strong>Embaladas checkout</strong>, o menu da linha não oferece <strong>Separar pedido</strong>, <strong>Embalar pedido checkout</strong>, <strong>Reiniciar progresso de separação</strong> nem <strong>Imprimir DANFE</strong>.</li>
+<li>Não é possível alterar manualmente a situação de pedidos cancelados. Remova esses pedidos da separação antes.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Consultar a fila</h3>
+<ol>
+<li>Acesse <strong>Vendas &gt; Separação</strong>.</li>
+<li>Escolha a etapa: <strong>Aguardando separação</strong>, <strong>Em separação</strong>, <strong>Separadas</strong> ou <strong>Embaladas checkout</strong>. Cada etapa mostra um contador.</li>
+<li>Pesquise por destinatário ou número.</li>
+<li>Filtre por período, marcador, <strong>e-commerce</strong>, depósito, estado, cidade, produto e origem da separação. No período, o tipo pode ser <strong>Data de envio a separação</strong>, <strong>Data do pedido</strong> ou <strong>Data máxima do despacho</strong>, e o intervalo <strong>Sem filtro</strong>, <strong>Últimos 30 dias</strong>, <strong>Últimos 7 dias</strong>, <strong>Do dia</strong>, <strong>Do mês</strong> ou <strong>Do intervalo</strong>. A origem pode ser <strong>Pedidos</strong>, <strong>Notas</strong> ou <strong>Fulfillment</strong>.</li>
+<li>Em <strong>Informações visíveis</strong>, escolha as colunas da lista: <strong>Identificação</strong>, <strong>Data de envio a separação</strong>, <strong>Destinatário</strong>, <strong>UF</strong>, <strong>Cidade</strong>, <strong>Forma de envio</strong>, <strong>Data do pedido</strong>, <strong>Separação</strong>, <strong>Data prevista de entrega</strong>, <strong>Prazo máximo de despacho</strong>, <strong>Marcadores</strong>, <strong>Integrações</strong> e <strong>Situação</strong>. A lista mostra os itens da etapa e dos filtros, prontos para separar, embalar ou imprimir.</li>
+</ol>
+<h3>Separar pedidos</h3>
+<ol>
+<li>
+<p>Na lista, clique em <strong>Separar pedidos</strong> (atalho ctrl+s), em <strong>Separar pedido</strong> no menu da linha ou na mesma ação na barra da seleção.</p>
+</li>
+<li>
+<p>Se aparecerem <strong>Abrir lista de separação</strong>, <strong>Imprimir lista de separação</strong> e <strong>Marcar como separado</strong>, escolha a opção. As duas primeiras estão ligadas à situação em separação e a terceira a separado. Em outros acessos, <strong>Separar pedidos</strong> abre direto <strong>Separação de mercadorias</strong>.</p>
+</li>
+<li>
+<p>Na aba produtos, confira <strong>Produto</strong>, <strong>Cód. (SKU/GTIN)</strong>, <strong>Qtd</strong>, <strong>Un</strong> e <strong>Localização</strong>. Use o link <strong>visualização padrão</strong> quando precisar dele.</p>
+<p><img src="screenshots/37.png" alt="Aba produtos da separação de mercadorias" /></p>
+</li>
+<li>
+<p>Abra a aba pedidos e notas para ver o pedido, os itens e a <strong>Observação Interna</strong>.</p>
+<p><img src="screenshots/38.png" alt="Aba pedidos e notas com observação interna" /></p>
+</li>
+<li>
+<p>Clique em <strong>Concluir</strong> (ctrl+enter) para encerrar a separação. <strong>Salvar para depois</strong> (ctrl+e) guarda o andamento, <strong>Reiniciar progresso</strong> (ctrl+m) recomeça e <strong>Cancelar</strong> (esc) volta à lista.</p>
+</li>
+</ol>
+<p><strong>Separar fulfillment</strong> no menu <strong>Ações</strong> (ctrl+f) e o atalho ctrl+g só aparecem se a empresa usa envios fulfillment.</p>
+<h3>Embalar pedidos</h3>
+<ol>
+<li>
+<p>Selecione ao menos um item da lista.</p>
+</li>
+<li>
+<p>Clique em <strong>Embalar pedidos</strong> (ctrl+e) ou em <strong>Embalar pedido checkout</strong> no menu da linha.</p>
+</li>
+<li>
+<p>Se abrir <strong>Criar e concluir expedições</strong>, clique em <strong>Continuar</strong> (CTRL+ENTER) para criar e concluir os agrupamentos de expedição dos pedidos a embalar, ou em <strong>Deixar para depois</strong> (ESC) para seguir sem criar a expedição.</p>
+<p><img src="screenshots/39.png" alt="Pergunta criar e concluir expedições" /></p>
+</li>
+<li>
+<p>Em <strong>Embalagem de mercadorias</strong>, escolha <strong>Embalar por pedido</strong> ou <strong>Embalar por produto</strong>.</p>
+<p><img src="screenshots/40.png" alt="Escolha embalar por pedido ou por produto" /></p>
+</li>
+<li>
+<p>Clique em <strong>Continuar</strong> para seguir com a opção escolhida. <strong>Cancelar</strong> fecha a tela e volta à lista.</p>
+</li>
+</ol>
+<p><strong>Embalar fulfillment</strong> (ctrl+h) só aparece se a empresa usa envios fulfillment.</p>
+<h3>Usar as ações da linha e da seleção</h3>
+<ol>
+<li>
+<p>Na etapa <strong>Aguardando separação</strong>, abra o menu da linha. As ações são <strong>Separar pedido</strong>, <strong>Embalar pedido checkout</strong>, <strong>Reiniciar progresso de separação</strong>, <strong>Imprimir separação</strong>, <strong>Gerenciar lotes de produtos</strong>, <strong>Imprimir DANFE</strong>, <strong>Imprimir etiquetas de volumes</strong>, <strong>Alterar situação</strong>, <strong>Marcadores</strong> e <strong>Remover da separação</strong>.</p>
+<p><img src="screenshots/34.png" alt="Menu da linha em aguardando separação" /></p>
+</li>
+<li>
+<p>Selecione um pedido. A barra mostra a quantidade e <strong>Imprimir separação</strong>, <strong>Separar pedidos</strong>, <strong>Embalar pedidos checkout</strong>, <strong>Gerar notas fiscais</strong>, <strong>Enviar para expedição</strong> e <strong>Mais ações</strong>.</p>
+<p><img src="screenshots/35.png" alt="Barra de ações da seleção" /></p>
+</li>
+<li>
+<p>Abra <strong>Mais ações</strong> para <strong>Gerar notas fiscais em lote</strong>, <strong>Imprimir etiquetas de envio</strong>, <strong>Imprimir etiquetas de volumes</strong>, <strong>Imprimir etiquetas de separação</strong>, <strong>Alterar situação</strong>, <strong>Alterar marcadores</strong> e <strong>Remover da separação</strong>. A emissão da nota no checkout só segue se a emissão de nota fiscal estiver autorizada.</p>
+<p><img src="screenshots/36.png" alt="Mais ações da seleção" /></p>
+</li>
+<li>
+<p>Na etapa <strong>Embaladas checkout</strong>, use o menu da linha para <strong>Imprimir separação</strong>, <strong>Gerar nota fiscal</strong>, <strong>Gerenciar lotes de produtos</strong>, <strong>Imprimir etiquetas de volumes</strong>, <strong>Alterar situação</strong>, <strong>Marcadores</strong> e <strong>Remover da separação</strong>.</p>
+<p><img src="screenshots/13.png" alt="Menu da linha em embaladas checkout" /></p>
+</li>
+</ol>
+<h3>Configurar a separação</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Vendas &gt; Configurações da separação</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Envio para a separação</strong>, escolha <strong>Manual</strong>, <strong>Automático ao salvar o pedido</strong>, <strong>Automático ao aprovar o pedido</strong>, <strong>Automático ao salvar a nota fiscal</strong> ou <strong>Automático ao autorizar a nota fiscal</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Imprimir automaticamente ao finalizar embalagem</strong>, marque <strong>DANFE</strong>, <strong>Etiqueta de envio</strong> ou as duas. Em <strong>Layout para impressão automática da DANFE</strong>, escolha <strong>Padrão</strong>, <strong>Simplificado</strong> ou <strong>Etiqueta</strong>.</p>
+<p><img src="screenshots/41.png" alt="Envio para a separação e impressão automática" /></p>
+</li>
+<li>
+<p>Ajuste as demais opções do formulário.</p>
+</li>
+</ol>
+<h4>Impressão</h4>
+<ul>
+<li><strong>Imprimir observações internas da venda na separação</strong></li>
+<li><strong>Imprimir observações internas do produto na separação</strong>: vale apenas para a impressão da listagem</li>
+<li><strong>Exibir imagem do produto na separação e na impressão</strong></li>
+<li><strong>Exibir código de barras GTIN na separação e na impressão</strong></li>
+<li><strong>Imprimir DANFe junto com a etiqueta na impressão manual beta</strong></li>
+<li><strong>Imprimir código de barras da venda</strong>: vale apenas para a impressão da listagem</li>
+<li><strong>Imprimir estoque físico do produto</strong>: vale apenas para a impressão da listagem</li>
+<li><strong>Imprimir estoque disponível do produto</strong>: vale apenas para a impressão da listagem</li>
+<li><strong>Separador entre pedidos na impressão térmica</strong>: <strong>Pontilhado</strong> ou <strong>Quebra de página</strong></li>
+</ul>
+<h4>Lotes, kits, expedição e bloqueio</h4>
+<ul>
+<li><strong>Reservar lotes automaticamente ao separar pedidos</strong></li>
+<li><strong>Substituir kits pelos seus componentes na separação e embalagem de produtos</strong></li>
+<li><strong>Permitir criar e concluir expedições ao iniciar embalagem de pedidos</strong></li>
+<li><strong>Confirmar número de volumes ao término da embalagem</strong>: vale apenas para embalagem individual ou por pedido</li>
+<li><strong>Ocultar ação para adicionar itens manualmente no processo de embalagem</strong></li>
+<li><strong>Receber marcadores da venda ou da nota fiscal nas separações/embalagem</strong>: só os marcadores da origem principal são enviados, com prioridade para o pedido de venda</li>
+<li><strong>Impedir que mais de um usuário separe ou embale o mesmo pedido</strong>: o pedido em separação ou embalagem fica bloqueado para as outras pessoas da conta</li>
+</ul>
+<p><img src="screenshots/42.png" alt="Lotes, expedições, volumes, marcadores e bloqueio" /></p>
+<ol start="5">
+<li>Clique em <strong>Salvar</strong> para gravar as opções. <strong>Cancelar</strong> descarta o que não foi salvo.</li>
+</ol>
+<h3>Incluir marcador da separação</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Vendas &gt; Configurações dos marcadores na separação</strong>.</p>
+</li>
+<li>
+<p>Na seção <strong>Separação</strong>, use a pesquisa e a coluna <strong>Descrição</strong> para ver os marcadores já criados e clique em <strong>Incluir marcador</strong>.</p>
+<p><img src="screenshots/43.png" alt="Lista de marcadores da separação" /></p>
+</li>
+<li>
+<p>Preencha <strong>Descrição</strong> e escolha <strong>Cor do marcador</strong>.</p>
+<p><img src="screenshots/44.png" alt="Painel incluir marcador vazio" /></p>
+<p><img src="screenshots/45.png" alt="Incluir marcador com descrição preenchida" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para criar o marcador. <strong>Cancelar</strong> fecha o painel e o marcador não entra na lista. Para usar um marcador no pedido, abra <strong>Marcadores</strong> no menu da linha ou <strong>Alterar marcadores</strong> na seleção. O filtro da lista também oferece <strong>Sem filtro por marcador</strong> e <strong>Sem marcadores</strong>.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>A lista exibe a etapa escolhida com o contador. <strong>Separar pedidos</strong> abre <strong>Separação de mercadorias</strong>, com as abas produtos e pedidos e notas. Ao embalar um item selecionado, pode abrir <strong>Criar e concluir expedições</strong>; <strong>Deixar para depois</strong> abre <strong>Embalagem de mercadorias</strong>. <strong>Cancelar</strong> em <strong>Separação de mercadorias</strong> ou em <strong>Embalagem de mercadorias</strong> devolve à lista. <strong>Cancelar</strong> em <strong>Incluir marcador</strong> fecha o painel e o marcador não salvo não aparece na lista.</p>
+<h2>Informações adicionais</h2>
+<h3>Condições da impressão de etiquetas</h3>
+<ul>
+<li>A impressão das etiquetas do gateway logístico exige que já exista uma expedição da origem.</li>
+<li>A etiqueta de transportadora só é impressa quando a forma de envio é transportadora.</li>
+</ul>
+<h3>Emissão de nota no checkout</h3>
+<p>A emissão da nota no checkout só segue se a emissão de nota fiscal estiver autorizada.</p>
+<h3>Separação bloqueada</h3>
+<p>Com a separação bloqueada por outra pessoa, quem não tem permissão de alterar a situação não consegue mudá-la.</p>
+</article>
+</body>
+</html>
