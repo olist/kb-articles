@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Configurações dos pedidos de venda</title>
+</head>
+<body>
+<article>
+<h1>Configurações dos pedidos de venda</h1>
+<p>No ERP da Olist, as configurações dos pedidos de venda definem como o pedido é exibido, impresso e emitido. Você ajusta exibição, impressão, consignação, numeração, estoque, descontos e regras de emissão.</p>
+<p>O formulário fica em <strong>Configurações &gt; Configurações ERP &gt; Vendas &gt; Configurações dos pedidos de venda</strong>.</p>
+<h2>Importante</h2>
+<ul>
+<li>Com <strong>Bloquear emissão de pedidos de venda com estoques que não podem ser atendidos</strong> em <strong>Sim</strong>, a validação não vale para pedidos incluídos via API, aplicativo móvel e ecommerce.</li>
+<li>Com <strong>Bloquear emissão de pedidos cujo cliente possui contas em atraso</strong> habilitado, a regra vale para pedidos de venda, exceto API e aplicativo, e para o PDV da Olist.</li>
+<li>O marcador de status do pagamento não reflete o status do pagamento no integrador.</li>
+<li>Para não limitar <strong>Desconto máximo nos itens</strong> ou <strong>Desconto máximo nos itens para gerente</strong>, informe 100.</li>
+<li><strong>Quantidade de volumes padrão</strong> vale para pedidos de venda e notas fiscais.</li>
+<li><strong>Exibir alerta quando comissão estiver zerada</strong> considera o vendedor selecionado e a comissão zerada em todos os itens.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Vendas</strong>, clique em <strong>Configurações dos pedidos de venda</strong>.</p>
+<p><img src="screenshots/34.png" alt="Índice de Vendas com o atalho Configurações dos pedidos de venda" /></p>
+</li>
+<li>
+<p>Ajuste as opções. Nenhuma delas é obrigatória.</p>
+</li>
+</ol>
+<h4>Exibição</h4>
+<ul>
+<li><strong>Exibir campo preço de lista e desconto nos itens dos pedidos e propostas comerciais</strong></li>
+<li><strong>Exibir alerta quando endereço do cliente estiver incompleto</strong></li>
+<li><strong>Exibir alerta quando comissão estiver zerada</strong>: quando o vendedor estiver selecionado e a comissão de todos os itens estiver zerada.</li>
+<li><strong>Permitir a visualização das contas a receber em aberto nos pedidos/notas fiscais</strong></li>
+<li><strong>Exibir marcador com status do pagamento do pedido de venda</strong>: a visualização não reflete o status do pagamento no integrador.</li>
+<li>Em <strong>Exibir detalhes da venda nos pedidos</strong>, <strong>Exibir dados adicionais nos pedidos</strong> e <strong>Exibir transportador nos pedidos</strong>, escolha <strong>Sim</strong>, <strong>Não</strong> ou <strong>Exibir recolhido</strong>.</li>
+</ul>
+<p><img src="screenshots/35.png" alt="Topo das configurações dos pedidos de venda" /></p>
+<h4>Impressão</h4>
+<ul>
+<li><strong>Imprimir número do pedido em código de barras</strong></li>
+<li><strong>Imprimir descrição complementar dos produtos nos pedidos de venda</strong></li>
+<li><strong>Imprimir cabeçalho na impressão de pedidos para produção</strong></li>
+<li><strong>Incluir campos de data e assinatura para comprovação de entrega na impressão de pedidos de venda</strong></li>
+<li><strong>Imprimir endereço da empresa</strong></li>
+<li><strong>Imprimir a imagem dos produtos na impressão detalhada do pedido de venda</strong></li>
+<li><strong>Imprimir nome fantasia ao invés de razão social nas vendas e propostas</strong></li>
+<li><strong>Calcular impostos nas vendas</strong></li>
+<li><strong>Imprimir impostos dos itens na impressão detalhada do pedido de venda</strong>: selecione quais impostos imprimir no pedido de venda.</li>
+<li>Em <strong>Ordenação dos itens na impressão dos pedidos de venda</strong>, escolha <strong>Inclusão no pedido</strong>, <strong>Código (SKU) do produto</strong> ou <strong>Descrição do produto</strong>.</li>
+</ul>
+<p><img src="screenshots/36.png" alt="Impressão, ordenação dos itens e consignação" /></p>
+<h4>Consignação</h4>
+<ul>
+<li><strong>Bloquear novas consignações em caso de atraso</strong>: novas vendas por consignação ficam bloqueadas para clientes com pedidos vencidos em aberto.</li>
+<li><strong>Limite de produtos</strong>: quantidade máxima de produtos em cada venda por consignação.</li>
+<li><strong>Observação padrão para as vendas consignadas</strong>: preenche <strong>Observações</strong> de cada nova venda consignada e sai no comprovante, acima da assinatura.</li>
+</ul>
+<h4>Emissão</h4>
+<ul>
+<li><strong>Vendedor obrigatório</strong></li>
+<li><strong>Bloquear emissão de pedidos cujo cliente possui contas em atraso</strong>: vale para pedidos de venda, exceto API e aplicativo, e para o PDV da Olist.</li>
+<li><strong>Bloquear emissão de pedidos sem forma de recebimento e condições de pagamento</strong></li>
+<li><strong>Permitir edição de pedidos de venda para o vendedor</strong></li>
+<li><strong>Permitir a venda de produtos não cadastrados</strong></li>
+<li><strong>Inserir automaticamente o marcador &quot;1ª venda&quot;</strong>: aplicado nas próximas vendas em que o cliente faz a primeira compra.</li>
+<li><strong>Enviar marcadores da venda para as notas fiscais</strong>: os marcadores do pedido são replicados na nota fiscal quando ela é gerada.</li>
+<li><strong>Bloquear a exclusão de ocorrência das vendas</strong>: a remoção de ocorrências nos pedidos de venda fica desabilitada.</li>
+<li><strong>Mudar status do pedido de &quot;em aberto&quot; para &quot;aprovado&quot; após a identificação do pagamento</strong>: ao identificar o pagamento de pelo menos uma conta a receber do pedido, o status vai para aprovado.</li>
+<li><strong>Considerar peso das embalagens no peso bruto da venda</strong>: soma o peso das embalagens de envio ao peso bruto para frete e logística.</li>
+</ul>
+<h4>Numeração e estoque</h4>
+<ul>
+<li>Em <strong>Numeração dos pedidos de venda</strong>, escolha <strong>Sequencial</strong> ou <strong>Manual</strong>.</li>
+<li>Em <strong>Modalidade de lançamento de estoque para fabricado</strong>, escolha entre produto fabricado ou matéria-prima: lançar estoque do produto fabricado ou lançar estoque dos componentes.</li>
+<li>Em <strong>Bloquear emissão de pedidos de venda com estoques que não podem ser atendidos</strong>, escolha <strong>Não</strong> ou <strong>Sim</strong>. Essa validação não é feita para pedidos incluídos via API, aplicativo móvel e ecommerce.</li>
+</ul>
+<p><img src="screenshots/37.png" alt="Outras configurações, numeração e modalidade de estoque" /></p>
+<h4>Volumes, descontos e devolução</h4>
+<ul>
+<li>Em <strong>Campo vendedor no cadastro de vendas via API</strong>, escolha <strong>Não aceita se vendedor não existe</strong>, <strong>Aceita sem o vendedor</strong> ou <strong>Cadastra o vendedor automaticamente</strong>.</li>
+<li>Informe <strong>Quantidade de volumes padrão</strong>. O valor vale para pedidos de venda e notas fiscais.</li>
+<li>Em <strong>Aviso de contas a receber em atraso</strong>, escolha <strong>Não avisar</strong> ou <strong>Avisar a partir de 1 a 10 dias</strong>.</li>
+<li>Informe <strong>Desconto máximo nos itens</strong> e <strong>Desconto máximo nos itens para gerente</strong> em percentual. Para não limitar, informe 100.</li>
+<li>Preencha <strong>Observação padrão para os pedidos de vendas</strong>.</li>
+<li>Em <strong>Depósito para lançamento de estoque de devoluções de vendas</strong>, escolha <strong>Mesmo depósito da venda/nota</strong> ou um depósito da empresa.</li>
+</ul>
+<p><img src="screenshots/38.png" alt="Rodapé das configurações, com volumes, descontos, depósito e Salvar" /></p>
+<ol start="4">
+<li>Clique em <strong>Salvar</strong> para gravar as regras dos pedidos de venda.</li>
+</ol>
+</article>
+</body>
+</html>
