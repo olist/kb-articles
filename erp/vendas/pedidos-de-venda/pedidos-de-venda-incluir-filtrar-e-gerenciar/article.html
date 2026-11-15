@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Pedidos de venda: incluir, filtrar e gerenciar</title>
+</head>
+<body>
+<article>
+<h1>Pedidos de venda: incluir, filtrar e gerenciar</h1>
+<p>Em <strong>Pedidos de Venda</strong>, no ERP da Olist, você inclui um pedido, filtra a lista e acompanha a situação. A partir do pedido, você gera nota, estoque, cobrança e impressão e atualiza o envio.</p>
+<p>A inclusão também pode começar por planilha ou pelo ecommerce. Exibição, impressão, numeração, estoque, desconto e regras de emissão ficam em <strong>Configurações dos pedidos de venda</strong>.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Se alguma opção não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Vendedor, lista de preço, depósito, forma de recebimento e lojas de ecommerce vêm dos cadastros da empresa.</li>
+<li>Na planilha, a coluna <strong>Nome do contato</strong> é obrigatória.</li>
+<li>Com <strong>Vendedor obrigatório</strong> ativo, o vendedor passa a ser exigido no pedido.</li>
+<li>Com o bloqueio de emissão sem forma de recebimento ativo, o pedido exige forma de recebimento e condições de pagamento.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Incluir pedido pela tela</h3>
+<ol>
+<li>
+<p>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir pedido</strong>.</p>
+</li>
+<li>
+<p>Preencha <strong>Cliente</strong>, <strong>Vendedor</strong> e <strong>Lista de preço</strong>. A tela pode já trazer <strong>Número</strong>, <strong>Natureza da operação</strong>, <strong>Data da venda</strong> e <strong>Observações</strong>. Use o controle de endereço de entrega diferente quando o destino não for o do cliente.</p>
+<p><img src="screenshots/7.png" alt="Formulário de incluir pedido" /></p>
+</li>
+<li>
+<p>Informe os itens em <strong>Descrição do item</strong>, <strong>Quantidade</strong> e <strong>Valor unitário</strong>. Quantidade e valor unitário usam vírgula decimal. A tela mostra número de itens, soma das quantidades, peso bruto, peso líquido e os totais de IPI, ICMS ST + FCP ST, ICMS + FCP, PIS, COFINS, Difal, IBS estadual, IBS municipal, IBS total, CBS, total dos produtos e total da venda. Use <strong>adicionar outro item</strong> ou a <strong>busca avançada</strong> para incluir mais produtos.</p>
+<p><img src="screenshots/10.png" alt="Pedido preenchido com itens e totais" /></p>
+</li>
+<li>
+<p>Complete <strong>Data da venda</strong>, <strong>Data prevista de entrega</strong>, <strong>Data de envio</strong>, <strong>Data máxima de despacho</strong>, <strong>Nº do pedido</strong>, <strong>Identificador do pedido e-commerce</strong>, <strong>Nº no canal</strong>, <strong>Desconto</strong>, <strong>Frete do cliente</strong>, <strong>Frete da empresa</strong> e <strong>Despesas</strong>. Em <strong>Desconto</strong>, use valor como 3,00 ou percentual como 10%. Frete e despesas usam vírgula decimal.</p>
+</li>
+<li>
+<p>Em recebimento, preencha <strong>Forma de recebimento</strong>, <strong>Meio</strong>, <strong>Gateway</strong>, <strong>Categoria</strong> e <strong>Condição de pagamento</strong>. Use <strong>gerar parcelas</strong> se quiser montar as parcelas. Há também o controle <strong>Sem intermediador</strong>.</p>
+</li>
+<li>
+<p>Em envio, preencha <strong>Forma de envio</strong>, <strong>Forma de frete</strong>, <strong>Frete por conta</strong>, <strong>Nome do transportador</strong>, <strong>Código de rastreamento</strong>, <strong>URL de rastreamento</strong>, <strong>Quantidade de volumes</strong>, <strong>Enviar para expedição</strong> e <strong>Depósito</strong>.</p>
+</li>
+<li>
+<p>Preencha <strong>Observações</strong>, <strong>Observações internas</strong> e <strong>Marcadores</strong>. A tela também oferece <strong>dados do cliente</strong>, <strong>ver últimas vendas</strong> e <strong>limite de crédito</strong>.</p>
+<p><img src="screenshots/15.png" alt="Outra parte do pedido preenchido" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar o pedido. <strong>Cancelar</strong> descarta a inclusão. O pedido fica com os totais calculados na tela.</p>
+</li>
+</ol>
+<h3>Filtrar pedidos na lista</h3>
+<ol>
+<li>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</li>
+<li>Escolha a aba de situação: <strong>Todos</strong>, <strong>Em aberto</strong>, <strong>Aprovado</strong>, <strong>Preparando envio</strong>, <strong>Faturado</strong>, <strong>Pronto para envio</strong>, <strong>Enviado</strong>, <strong>Entregue</strong> ou <strong>Não entregue</strong>. No excedente da barra estão <strong>Dados incompletos</strong>, <strong>Em devolução</strong> e <strong>Cancelado</strong>. Cada aba mostra a quantidade.</li>
+<li>Use a busca e o período.</li>
+<li>Abra os filtros e preencha o que precisar:</li>
+</ol>
+<ul>
+<li><strong>Vendedor</strong></li>
+<li><strong>Marcador</strong>, com <strong>Sem filtro por marcador</strong> e os marcadores da empresa, entre eles <strong>1ª venda</strong></li>
+<li><strong>E-commerce</strong>, com <strong>Selecione</strong>, <strong>Sem vínculo</strong>, plataformas como Tray, VTEX, Dooca, Cartpanda, Yampi, Nuvemshop, Loja Integrada, Wix, Shopify, Shein, Amazon e Shopee, e as lojas da empresa</li>
+<li><strong>Forma de recebimento da venda</strong></li>
+<li><strong>Forma de envio</strong>, com a opção <strong>Todas</strong></li>
+<li><strong>Produto</strong></li>
+<li><strong>Estados</strong>, com UF de AC a TO e EX</li>
+<li><strong>Cidade</strong></li>
+</ul>
+<ol start="5">
+<li>
+<p>Clique em <strong>Aplicar</strong>. A lista mostra só os pedidos da situação, do período e dos filtros escolhidos. <strong>Cancelar</strong> fecha o painel sem aplicar. Na lista também há <strong>limpar filtros</strong>.</p>
+<p><img src="screenshots/3.png" alt="Filtros de pedidos de venda" /></p>
+</li>
+</ol>
+<h3>Usar as ações do pedido</h3>
+<ol>
+<li>
+<p>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</p>
+</li>
+<li>
+<p>Localize o pedido.</p>
+</li>
+<li>
+<p>Abra o menu <strong>•••</strong> desse pedido.</p>
+<p><img src="screenshots/32.png" alt="Lista com Mais ações e o menu do pedido" /></p>
+</li>
+<li>
+<p>Escolha a ação. O menu traz <strong>Gerar nota fiscal</strong>, <strong>Gerar NFC-e</strong>, <strong>Faturar parcialmente</strong>, <strong>Gerar nota de serviço</strong>, <strong>Gerar ordem de serviço</strong>, <strong>Emitir cobrança</strong>, <strong>Lançar contas</strong>, <strong>Gerar ordem de compra</strong>, <strong>Lançar estoque</strong>, <strong>Lançar matéria-prima</strong>, <strong>Compartilhar</strong>, <strong>Clonar venda</strong>, <strong>Devolver produtos</strong>, <strong>Excluir venda</strong>, <strong>Imprimir etiqueta com um clique</strong>, <strong>Imprimir</strong>, <strong>Salvar em PDF</strong>, <strong>Imprimir carnê</strong>, <strong>Imprimir pedido para produção</strong> e <strong>Alterar situação</strong>. Você vê o que pode gerar, lançar ou imprimir antes de confirmar.</p>
+</li>
+</ol>
+<h3>Alterar a situação do pedido</h3>
+<ol>
+<li>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</li>
+<li>Abra o menu <strong>•••</strong> do pedido.</li>
+<li>Em <strong>Alterar situação</strong>, selecione a nova situação nos pontos coloridos: <strong>Em aberto</strong>, <strong>Aprovado</strong>, <strong>Preparando envio</strong>, <strong>Faturado</strong>, <strong>Pronto para envio</strong>, <strong>Enviado</strong>, <strong>Entregue</strong>, <strong>Não entregue</strong>, <strong>Dados incompletos</strong>, <strong>Em devolução</strong> ou <strong>Cancelado</strong>. A escolha fica no próprio menu, antes de confirmar a mudança.</li>
+</ol>
+<h3>Importar pedidos de uma planilha</h3>
+<ol>
+<li>
+<p>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</p>
+</li>
+<li>
+<p>Abra <strong>Mais ações</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Importar pedidos de uma planilha</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Importador de Pedidos de Venda</strong>, clique em <strong>Download do arquivo de layout</strong>.</p>
+<p><img src="screenshots/16.png" alt="Importador de pedidos com o download do layout" /></p>
+</li>
+<li>
+<p>Preencha a planilha. A coluna <strong>Nome do contato</strong> é obrigatória. As demais colunas do layout são: <strong>ID</strong>, <strong>Número do pedido</strong>, <strong>Data</strong>, <strong>Data prevista</strong>, <strong>ID contato</strong>, <strong>Tipo de Pessoa</strong>, <strong>CPF/CNPJ</strong>, <strong>RG/IE</strong>, <strong>CEP</strong>, <strong>Município</strong>, <strong>UF</strong>, <strong>Endereço</strong>, <strong>Endereço Nro</strong>, <strong>Complemento</strong>, <strong>Bairro</strong>, <strong>Fone</strong>, <strong>Celular</strong>, <strong>e-mail</strong>, <strong>Desconto pedido (% ou valor)</strong>, <strong>Frete</strong>, <strong>Observações</strong>, <strong>Situação</strong>, <strong>ID produto</strong>, <strong>Descrição</strong>, <strong>Quantidade</strong>, <strong>Valor unitário</strong>, <strong>Desconto item %</strong>, <strong>Código de rastreamento</strong>, <strong>Número da ordem de compra</strong>, <strong>Vendedor</strong>, <strong>Despesas</strong>, <strong>Desconto do pedido rateado</strong>, <strong>Frete pedido rateado</strong>, <strong>Despesas pedido rateado</strong>, <strong>Destinatário</strong>, <strong>CPF/CNPJ entrega</strong>, <strong>CEP entrega</strong>, <strong>Município entrega</strong>, <strong>UF entrega</strong>, <strong>Endereço entrega</strong>, <strong>Endereço Nro entrega</strong>, <strong>Complemento entrega</strong>, <strong>Bairro entrega</strong>, <strong>Fone entrega</strong> e <strong>Código (SKU)</strong>.</p>
+<p><img src="screenshots/20.png" alt="Colunas do layout do importador" /></p>
+</li>
+<li>
+<p>Clique em <strong>Prosseguir com a importação</strong> para enviar a planilha preenchida.</p>
+</li>
+</ol>
+<h3>Receber pedidos do ecommerce</h3>
+<ol>
+<li>
+<p>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Receber do e-commerce</strong> ou em <strong>Mais ações &gt; Receber pedidos do e-commerce</strong>.</p>
+</li>
+<li>
+<p>Na tela <strong>Pedidos no e-commerce</strong>, use a busca de pedido, que inclui a plataforma.</p>
+<p><img src="screenshots/23.png" alt="Busca de pedido no ecommerce" /></p>
+</li>
+<li>
+<p>Clique em <strong>Ações &gt; Iniciar recebimento</strong> para começar o recebimento.</p>
+</li>
+</ol>
+<h3>Importar um pedido do ecommerce</h3>
+<ol>
+<li>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</li>
+<li>Abra <strong>Mais ações</strong>.</li>
+<li>Clique em <strong>Importar pedido do e-commerce</strong>. O caminho da importação de um pedido fica nesse menu.</li>
+</ol>
+<h3>Atualizar a situação de envio</h3>
+<ol>
+<li>
+<p>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</p>
+</li>
+<li>
+<p>Abra <strong>Mais ações</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Atualizar situação de envio dos pedidos</strong>. A tela indica se os filtros atuais deixam algum pedido elegível.</p>
+<p><img src="screenshots/33.png" alt="Atualização de situação de envio" /></p>
+</li>
+<li>
+<p>Clique em <strong>Fechar</strong> para voltar à lista quando não houver pedido para atualizar.</p>
+</li>
+</ol>
+<h3>Exportar pedidos para planilha</h3>
+<ol>
+<li>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</li>
+<li>Abra <strong>Mais ações</strong>.</li>
+<li>Clique em <strong>Exportar pedidos para planilha</strong>.</li>
+</ol>
+<h3>Imprimir relatório e consultar multiempresa</h3>
+<ol>
+<li>Acesse <strong>Vendas &gt; Pedidos de Venda</strong>.</li>
+<li>Abra <strong>Mais ações</strong>.</li>
+<li>Clique em <strong>Imprimir relatório</strong> ou em <strong>Consultar pedidos multiempresa</strong>. A barra da lista também tem <strong>Imprimir</strong>.</li>
+</ol>
+<h3>Configurar os pedidos de venda</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Vendas</strong>, abra <strong>Configurações dos pedidos de venda</strong>.</p>
+<p><img src="screenshots/34.png" alt="Atalho de configurações dos pedidos de venda" /></p>
+</li>
+<li>
+<p>Em exibição, ajuste:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><strong>Exibir campo preço de lista e desconto nos itens dos pedidos e propostas comerciais</strong></p>
+</li>
+<li>
+<p><strong>Exibir alerta quando endereço do cliente estiver incompleto</strong></p>
+</li>
+<li>
+<p><strong>Exibir alerta quando comissão estiver zerada</strong>, quando o vendedor estiver selecionado e a comissão de todos os itens estiver zerada</p>
+</li>
+<li>
+<p><strong>Permitir a visualização das contas a receber em aberto nos pedidos/notas fiscais</strong></p>
+</li>
+<li>
+<p><strong>Exibir marcador com status do pagamento do pedido de venda</strong></p>
+</li>
+<li>
+<p><strong>Exibir detalhes da venda nos pedidos</strong>, <strong>Exibir dados adicionais nos pedidos</strong> e <strong>Exibir transportador nos pedidos</strong>, em <strong>Sim</strong>, <strong>Não</strong> ou <strong>Exibir recolhido</strong></p>
+<p><img src="screenshots/35.png" alt="Topo das configurações dos pedidos de venda" /></p>
+</li>
+</ul>
+<ol start="4">
+<li>
+<p>Em impressão, ajuste <strong>Imprimir número do pedido em código de barras</strong>, <strong>Imprimir descrição complementar dos produtos nos pedidos de venda</strong>, <strong>Imprimir cabeçalho na impressão de pedidos para produção</strong>, <strong>Incluir campos de data e assinatura para comprovação de entrega na impressão de pedidos de venda</strong>, <strong>Imprimir endereço da empresa</strong>, <strong>Imprimir a imagem dos produtos na impressão detalhada do pedido de venda</strong>, <strong>Imprimir nome fantasia ao invés de razão social nas vendas e propostas</strong>, <strong>Calcular impostos nas vendas</strong> e <strong>Imprimir impostos dos itens na impressão detalhada do pedido de venda</strong>. Nesse último, selecione quais impostos imprimir. Em <strong>Ordenação dos itens na impressão dos pedidos de venda</strong>, escolha <strong>Inclusão no pedido</strong>, <strong>Código (SKU) do produto</strong> ou <strong>Descrição do produto</strong>.</p>
+<p><img src="screenshots/36.png" alt="Impressão e consignação nas configurações" /></p>
+</li>
+<li>
+<p>Em consignação, ajuste <strong>Bloquear novas consignações em caso de atraso</strong>, <strong>Limite de produtos</strong> e <strong>Observação padrão para as vendas consignadas</strong>. O bloqueio impede nova consignação para clientes com pedidos vencidos em aberto. O limite é a quantidade máxima de produtos em cada venda por consignação. A observação padrão preenche <strong>Observações</strong> da nova venda consignada e sai no comprovante, acima da assinatura.</p>
+</li>
+<li>
+<p>Ajuste as outras regras: <strong>Vendedor obrigatório</strong>, <strong>Bloquear emissão de pedidos cujo cliente possui contas em atraso</strong>, <strong>Bloquear emissão de pedidos sem forma de recebimento e condições de pagamento</strong>, <strong>Permitir edição de pedidos de venda para o vendedor</strong>, <strong>Permitir a venda de produtos não cadastrados</strong>, <strong>Inserir automaticamente o marcador &quot;1ª venda&quot;</strong>, <strong>Enviar marcadores da venda para as notas fiscais</strong>, <strong>Bloquear a exclusão de ocorrência das vendas</strong>, <strong>Mudar status do pedido de &quot;em aberto&quot; para &quot;aprovado&quot; após a identificação do pagamento</strong> e <strong>Considerar peso das embalagens no peso bruto da venda</strong>.</p>
+<p><img src="screenshots/37.png" alt="Numeração e estoque nas configurações" /></p>
+</li>
+<li>
+<p>Em <strong>Numeração dos pedidos de venda</strong>, escolha <strong>Sequencial</strong> ou <strong>Manual</strong>. Em <strong>Modalidade de lançamento de estoque para fabricado</strong>, escolha entre produto fabricado ou matéria-prima, lançar estoque do produto fabricado, ou lançar estoque dos componentes. Em <strong>Bloquear emissão de pedidos de venda com estoques que não podem ser atendidos</strong>, escolha <strong>Não</strong> ou <strong>Sim</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Campo vendedor no cadastro de vendas via API</strong>, escolha <strong>Não aceita se vendedor não existe</strong>, <strong>Aceita sem o vendedor</strong> ou <strong>Cadastra o vendedor automaticamente</strong>.</p>
+</li>
+<li>
+<p>Informe <strong>Quantidade de volumes padrão</strong>, <strong>Aviso de contas a receber em atraso</strong>, <strong>Desconto máximo nos itens</strong>, <strong>Desconto máximo nos itens para gerente</strong>, <strong>Observação padrão para os pedidos de vendas</strong> e <strong>Depósito para lançamento de estoque de devoluções de vendas</strong>. O aviso pode ficar em <strong>Não avisar</strong> ou <strong>Avisar a partir de 1 a 10 dias</strong>. O depósito oferece <strong>Mesmo depósito da venda/nota</strong> e os depósitos da empresa.</p>
+<p><img src="screenshots/38.png" alt="Rodapé das configurações dos pedidos" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar as regras. <strong>Cancelar</strong> descarta a alteração.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>A lista de <strong>Pedidos de Venda</strong> reúne as abas de situação, a busca, o período e as ações <strong>Incluir pedido</strong>, <strong>Receber do e-commerce</strong>, <strong>Imprimir</strong> e <strong>Mais ações</strong>. No menu do pedido ficam as ações fiscais, de estoque, de impressão e os pontos de <strong>Alterar situação</strong>.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>O marcador <strong>1ª venda</strong> entra nas próximas vendas em que o cliente faz a primeira compra.</li>
+<li>Os marcadores do pedido são replicados na nota fiscal quando ela é gerada, se o envio de marcadores estiver ativo.</li>
+<li>Com o bloqueio de exclusão de ocorrência ativo, a remoção de ocorrências nos pedidos fica desabilitada.</li>
+<li>Ao identificar o pagamento de pelo menos uma conta a receber do pedido, o status pode ir de em aberto para aprovado.</li>
+<li>O peso das embalagens de envio entra no peso bruto usado no frete e na logística, quando essa opção está ativa.</li>
+<li>A quantidade de volumes padrão vale para pedidos de venda e notas fiscais.</li>
+<li>Para não limitar <strong>Desconto máximo nos itens</strong> ou <strong>Desconto máximo nos itens para gerente</strong>, informe 100.</li>
+<li>O marcador de status do pagamento não reflete o status do pagamento no integrador.</li>
+<li>A validação de estoque que não pode ser atendido não é feita para pedidos incluídos via API, aplicativo móvel e ecommerce.</li>
+<li>O bloqueio por contas em atraso, quando habilitado, vale para pedidos de venda, exceto API e aplicativo, e para o PDV da Olist.</li>
+</ul>
+</article>
+</body>
+</html>
