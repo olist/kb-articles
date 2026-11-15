@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Configurar o PDV</title>
+</head>
+<body>
+<article>
+<h1>Configurar o PDV</h1>
+<p>No PDV da Olist, você define as regras da loja física numa única tela: a natureza de operação usada automaticamente na NFC-e, o depósito padrão do estoque e o fechamento da venda e do caixa. Também é possível escolher situação, marcador, lista de preço, impressão, desconto, separação de recebimento, balança e atalhos de produtos.</p>
+<p>A tela fica em <strong>Configurações &gt; Configurações ERP</strong>, na categoria <strong>Vendas</strong>.</p>
+<h2>Importante</h2>
+<ul>
+<li>Natureza de operação, depósito, lista de preço, marcador e operadores de caixa não são criados nesta tela. As listas mostram registros já cadastrados. Para incluir um marcador, use o link <strong>adicionar marcador</strong>, ao lado de <strong>Marcador padrão para vendas</strong>.</li>
+<li>Com <strong>Vendedor obrigatório</strong>, a venda só é concluída se o vendedor for informado. A confirmação do vendedor só aparece quando o vendedor selecionado é o mesmo da venda anterior.</li>
+<li>Com <strong>Cliente obrigatório (com CPF ou CNPJ)</strong>, o cliente precisa ter CPF ou CNPJ informado para concluir a venda.</li>
+<li>A emissão automática pela NFCe desabilita a emissão de NFe na conclusão da venda.</li>
+<li>Com <strong>Habilitar separação entre venda e recebimento</strong>, a venda finalizada pelo vendedor é repassada ao operador de caixa, que confirma o recebimento e emite a nota. O operador de caixa não edita itens, formas de pagamento nem desconto.</li>
+</ul>
+<h2>Instruções</h2>
+<p>Os campos desta tela não são obrigatórios.</p>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Na categoria <strong>Vendas</strong>, clique em <strong>Configurações do PDV</strong>.</p>
+<p><img src="screenshots/1.png" alt="Lista de configurações da categoria Vendas, com Configurações do PDV" /></p>
+</li>
+</ol>
+<h4>Venda, nota e estoque</h4>
+<ol start="3">
+<li>
+<p>Em <strong>Situação padrão para vendas finalizadas</strong>, escolha <strong>Em aberto</strong>, <strong>Aprovado</strong>, <strong>Preparando envio</strong>, <strong>Faturado</strong>, <strong>Pronto para envio</strong>, <strong>Enviado</strong> ou <strong>Entregue</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Marcador padrão para vendas</strong>, escolha <strong>Sem marcador</strong> ou um marcador já cadastrado.</p>
+</li>
+<li>
+<p>Em <strong>Lista de preço preferencial</strong>, escolha <strong>Selecione</strong> ou uma lista já cadastrada. A lista pode ser alterada durante a venda. Esta opção não aparece para empresas com PAF-NFC-e.</p>
+</li>
+<li>
+<p>Em <strong>Natureza de operação padrão para NFC-e</strong>, escolha uma natureza já cadastrada ou deixe <strong>Selecione</strong>. A natureza padrão é usada automaticamente na emissão da NFC-e.</p>
+</li>
+<li>
+<p>Em <strong>Depósito padrão para lançamento de estoque</strong>, escolha o depósito das movimentações do PDV.</p>
+</li>
+<li>
+<p>Em <strong>Bloquear emissão de vendas com estoques que não podem ser atendidos</strong>, escolha <strong>Não</strong>, <strong>Sim</strong> ou <strong>Utilizar configuração padrão dos pedidos de venda</strong>. Com <strong>Sim</strong>, a venda no PDV de produtos sem estoque é bloqueada.</p>
+<p><img src="screenshots/2.png" alt="Natureza de operação padrão para NFC-e e depósito padrão para lançamento de estoque" /></p>
+</li>
+</ol>
+<h4>Fechamento de venda</h4>
+<ol start="9">
+<li>Marque as regras de fechamento que deseja usar. O fluxo de fechamento de venda do PDV segue essa seleção.</li>
+</ol>
+<ul>
+<li>
+<p><strong>Vendedor obrigatório</strong></p>
+</li>
+<li>
+<p><strong>Confirmar vendedor a cada venda</strong></p>
+</li>
+<li>
+<p><strong>Cliente obrigatório (com CPF ou CNPJ)</strong></p>
+</li>
+<li>
+<p><strong>Bloquear vendas com total recebido inferior ao total da venda</strong></p>
+</li>
+<li>
+<p><strong>Permitir a venda de produtos não cadastrados</strong></p>
+</li>
+<li>
+<p><strong>Bloquear alteração de preço unitário do item</strong></p>
+</li>
+<li>
+<p><strong>Agrupamento automático de produtos iguais</strong>: produtos com o mesmo preço, inseridos manualmente ou por código de barras, são agrupados na visualização</p>
+</li>
+<li>
+<p><strong>Mostrar tela com formas de recebimento</strong>: exibe as formas de recebimento ao fechar a venda</p>
+<p><img src="screenshots/5.png" alt="Regras de fechamento de venda do PDV" /></p>
+</li>
+</ul>
+<ol start="10">
+<li>Em <strong>Tipo de nota fiscal padrão no fechamento da venda</strong>, escolha <strong>Emitir automaticamente a NFCe</strong> ou <strong>Permitir a emissão de NFe</strong>.</li>
+<li>Em <strong>Impressão automática ao finalizar venda</strong>, marque <strong>Recibo</strong>, <strong>NFCe</strong> e <strong>Recibo de troca</strong>. Use <strong>Selecionar todas as opções</strong> para marcar as três.</li>
+<li>Marque <strong>Voltar automaticamente ao início após enviar NFC-e para impressão</strong> se quiser que o PDV volte à tela inicial depois que a NFC-e for autorizada e enviada para impressão automática.</li>
+<li>Em <strong>Desconto máximo nos itens</strong> e em <strong>Desconto máximo nos itens para gerente</strong>, digite o percentual com vírgula decimal. Use 100% se não houver percentual preferencial.</li>
+</ol>
+<p><img src="screenshots/3.png" alt="Tipo de nota, impressão, descontos máximos e início do fechamento de caixa" /></p>
+<h4>Fechamento de caixa</h4>
+<ol start="14">
+<li>Marque como o caixa deve funcionar. O fluxo de fechamento de caixa do PDV segue essa seleção.</li>
+</ol>
+<ul>
+<li><strong>Controlar abertura e fechamento de caixa</strong></li>
+<li><strong>Considerar recebimentos do &quot;faturar pré-venda&quot; para fechamento de caixa</strong>: esses recebimentos entram no relatório de controle de caixa e movimentações. A opção não aparece para empresas com PAF-NFC-e. Se ela não aparecer para você, peça acesso ao administrador da conta.</li>
+<li><strong>Permitir compartilhamento de caixa entre usuários</strong>: quem opera o PDV usa o mesmo caixa</li>
+<li><strong>Exibir valores de cada forma de recebimento no fechamento de caixa</strong></li>
+<li><strong>Realizar abertura de caixa com último valor de fechamento</strong>: preenche o dinheiro do último fechamento de caixa</li>
+</ul>
+<h4>Separação, balança e atalhos</h4>
+<ol start="15">
+<li>Marque <strong>Habilitar separação entre venda e recebimento</strong> se a venda e o recebimento forem feitos por pessoas diferentes.</li>
+<li>Em <strong>Operadores de caixa</strong>, marque quem já está cadastrado na conta. Use <strong>Selecionar todos</strong> para marcar toda a lista.</li>
+<li>Em <strong>Composição do código de barras gerado na balança</strong>, escolha <strong>Por preço</strong> ou <strong>Por peso</strong>.</li>
+<li>Marque <strong>Habilitar acesso rápido aos produtos</strong> para exibir produtos em destaque como atalhos na tela de vendas do PDV. A seção se chama <strong>Atalhos na tela de vendas</strong>.</li>
+</ol>
+<p><img src="screenshots/4.png" alt="Fechamento de caixa, separação, operadores, balança, atalhos e botões Salvar e Cancelar" /></p>
+<ol start="19">
+<li>Clique em <strong>Salvar</strong> para gravar as regras do PDV ou em <strong>Cancelar</strong> para sair sem gravar.</li>
+</ol>
+</article>
+</body>
+</html>
