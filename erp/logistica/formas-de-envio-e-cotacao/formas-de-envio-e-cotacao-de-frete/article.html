@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Formas de envio e cotação de frete</title>
+</head>
+<body>
+<article>
+<h1>Formas de envio e cotação de frete</h1>
+<p>Formas de envio é a configuração em que você define como os pedidos são expedidos e como o frete é cotado no ERP da Olist. Nela você consulta as formas já cadastradas, inclui uma nova forma, informa o remetente das etiquetas e as credenciais de rastreamento, adiciona formas de frete e, para os Correios, configura contrato, cotação e logística reversa.</p>
+<p>A tela fica em <strong>Configurações &gt; Configurações ERP &gt; Vendas &gt; Formas de envio</strong>.</p>
+<h2>Importante</h2>
+<ul>
+<li>Preencha o endereço do remetente nas etiquetas somente se ele for diferente do endereço da empresa.</li>
+<li>A senha de acesso à API dos Correios deve ser gerada no painel do Correios Web Services.</li>
+<li>A logística reversa exige um usuário e uma senha especiais, diferentes dos dados do Sigep WEB e das credenciais da interface de logística reversa.</li>
+<li><strong>Gateway logístico</strong> lista apenas <strong>Não possui</strong> e os gateways já configurados na conta. A tela não cria o gateway.</li>
+<li>Com <strong>Utilizar outro CNPJ</strong> marcado, a autenticação usa outro CNPJ.</li>
+<li>Com <strong>Utiliza DC-e</strong> em <strong>Sim</strong>, expedições sem nota fiscal exigirão DC-e via Correios.</li>
+<li><strong>Utilizar as dimensões mínimas</strong> vale apenas para cotações feitas pelas APIs de frete.</li>
+<li><strong>Nome do cliente</strong> é usado apenas na impressão da chancela.</li>
+<li>As preferências valem para pedidos de venda e notas fiscais.</li>
+<li>Nenhum campo destes formulários aparece marcado como obrigatório.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Consultar as formas de envio</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Vendas &gt; Formas de envio</strong>.</p>
+</li>
+<li>
+<p>Use a pesquisa e o filtro de situação para localizar a forma. A lista mostra <strong>Descrição</strong>, <strong>Tipo logística</strong> e <strong>Gateway logístico</strong> e é paginada.</p>
+<p><img src="screenshots/1.png" alt="Lista de formas de envio com pesquisa, filtro e ações" /></p>
+</li>
+<li>
+<p>Na linha de uma forma habilitada, abra o menu de ações e clique em <strong>Desabilitar</strong> para desabilitar a forma.</p>
+<p><img src="screenshots/20.png" alt="Menu de ações da linha com Desabilitar" /></p>
+</li>
+</ol>
+<h3>Editar o endereço do remetente</h3>
+<ol>
+<li>
+<p>Na lista de <strong>Formas de envio</strong>, clique em <strong>Editar endereço do remetente</strong>.</p>
+</li>
+<li>
+<p>No painel <strong>Endereço do remetente nas etiquetas</strong>, preencha <strong>CEP</strong>, <strong>Município</strong>, <strong>UF</strong>, <strong>Endereço</strong>, <strong>Bairro</strong>, <strong>Número</strong> e <strong>Complemento</strong> somente se o remetente das etiquetas for diferente do endereço da empresa. Em <strong>UF</strong>, escolha <strong>Selecione</strong>, uma UF brasileira ou <strong>EX</strong>. O <strong>CEP</strong> usa o formato 12.345-678.</p>
+<p><img src="screenshots/2.png" alt="Painel de endereço do remetente vazio" /></p>
+<p><img src="screenshots/3.png" alt="Endereço do remetente preenchido" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. <strong>Fechar</strong> encerra o painel sem gravar.</p>
+</li>
+</ol>
+<h3>Editar o usuário de rastreamento</h3>
+<ol>
+<li>
+<p>Na lista de <strong>Formas de envio</strong>, clique em <strong>Editar usuário de rastreamento</strong>.</p>
+</li>
+<li>
+<p>No painel <strong>Usuário de Rastreamento</strong>, informe <strong>Usuário</strong> e <strong>Senha</strong>.</p>
+<p><img src="screenshots/4.png" alt="Painel de usuário de rastreamento vazio" /></p>
+<p><img src="screenshots/5.png" alt="Usuário de rastreamento preenchido" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. <strong>Fechar</strong> encerra o painel sem gravar.</p>
+</li>
+</ol>
+<h3>Incluir uma forma de envio</h3>
+<ol>
+<li>
+<p>Na lista, clique em <strong>Incluir forma de envio</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Tipo logística</strong>, selecione o tipo. As opções são <strong>Correios</strong>, <strong>Transportadora</strong>, <strong>Mercado Envios</strong>, <strong>Correios Log</strong>, <strong>Americanas Entrega</strong>, <strong>Jadlog</strong>, <strong>Total Express</strong>, <strong>Olist</strong>, <strong>Gateway logístico</strong>, <strong>Customizado</strong>, <strong>Magalu Entregas</strong>, <strong>Magalu Fulfillment</strong>, <strong>Shopee Envios</strong>, <strong>Netshoes Entregas</strong>, <strong>CB Entrega</strong>, <strong>AliExpress Envios</strong>, <strong>Madeira Envios</strong>, <strong>Conecta Lá Etiquetas</strong>, <strong>Loggi</strong>, <strong>Amazon DBA</strong>, <strong>Magalu Entregas por Netshoes</strong>, <strong>Shein Envios</strong>, <strong>Mandaê (beta)</strong>, <strong>Kwai Envios</strong>, <strong>Envios da Olist</strong>, <strong>Beleza Envios</strong>, <strong>Forma Teste (beta)</strong>, <strong>TikTok Shipping</strong>, <strong>Envios do HUB</strong> e <strong>Posta Ja</strong>.</p>
+<p><img src="screenshots/6.png" alt="Formulário de inclusão de forma de envio" /></p>
+</li>
+<li>
+<p>Informe <strong>Descrição da forma de envio</strong>. <strong>URL de rastreamento padrão</strong> é opcional.</p>
+</li>
+<li>
+<p>Em <strong>Imprimir automaticamente ao finalizar embalagem</strong> e em <strong>Imprimir automaticamente ao finalizar expedição</strong>, escolha <strong>Não imprimir</strong>, <strong>DANFE</strong> ou <strong>Etiqueta de envio</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Modelo da etiqueta para impressão</strong>, escolha <strong>Etiqueta padrão</strong> ou <strong>Minha transportadora</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Gateway logístico</strong>, escolha <strong>Não possui</strong> ou um gateway já configurado na conta.</p>
+<p><img src="screenshots/7.png" alt="Inclusão preenchida com descrição, impressão, etiqueta e gateway" /></p>
+</li>
+<li>
+<p>Para incluir frete, siga <strong>Adicionar uma forma de frete</strong>. Para Correios, siga <strong>Configurar Correios</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. <strong>Cancelar</strong> descarta o formulário e volta à lista.</p>
+</li>
+</ol>
+<h3>Configurar Correios</h3>
+<ol>
+<li>
+<p>Em <strong>Incluir forma de envio</strong>, selecione <strong>Correios</strong> em <strong>Tipo logística</strong>.</p>
+</li>
+<li>
+<p>Informe <strong>Descrição da forma de envio</strong>. <strong>URL de rastreamento padrão</strong> permanece opcional.</p>
+<p><img src="screenshots/12.png" alt="Topo do formulário com tipo Correios" /></p>
+</li>
+<li>
+<p>Defina <strong>Possui contrato</strong> como <strong>Sim</strong> ou <strong>Não</strong> e informe o <strong>Transportador</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Utilizar outro CNPJ</strong> se a autenticação deve usar outro CNPJ. O campo <strong>CNPJ</strong> usa o formato 00.000.000/0001-91.</p>
+<p><img src="screenshots/17.png" alt="Utilizar outro CNPJ marcado" /></p>
+</li>
+<li>
+<p>Preencha <strong>Usuário do portal Meu Correios</strong> e <strong>Senha de acesso a API</strong>. Gere essa senha no painel do Correios Web Services.</p>
+<p><img src="screenshots/16.png" alt="Autenticação dos Correios" /></p>
+</li>
+<li>
+<p>Ajuste <strong>Habilitar atualização automática de rastreios</strong> (<strong>Não</strong> ou <strong>Sim</strong>) e <strong>Utiliza DC-e</strong> (<strong>Sim</strong> ou <strong>Não</strong>).</p>
+</li>
+<li>
+<p>Informe <strong>Número do cartão de postagem</strong>, <strong>Unidade de postagem</strong> e <strong>Diretoria regional (DR)</strong>. Em <strong>Diretoria regional (DR)</strong>, escolha <strong>Selecione</strong> ou uma diretoria regional dos Correios, como <strong>DR - SÃO PAULO</strong> ou <strong>DR - SÃO PAULO INTERIOR</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Utilizar data da expedição como data prevista de postagem</strong> se quiser usar essa data. Informe <strong>Código administrativo</strong>, <strong>Número do contrato</strong>, <strong>Ano do contrato</strong> e <strong>Nome do cliente</strong>.</p>
+<p><img src="screenshots/15.png" alt="Contrato dos Correios preenchido" /></p>
+</li>
+<li>
+<p>Na cotação, defina <strong>Utilizar as dimensões mínimas</strong> como <strong>Não</strong> ou <strong>Sim</strong>. Essa opção vale apenas para cotações pelas APIs de frete.</p>
+</li>
+<li>
+<p>Marque <strong>Agrupar produtos por embalagem</strong> para usar as embalagens da conta.</p>
+</li>
+<li>
+<p>Para valor declarado abaixo de R$ 25,63, escolha <strong>Não utilizar valor declarado</strong> ou a opção que aplica o mínimo de R$ 25,63.</p>
+</li>
+<li>
+<p>Para Mini Envios abaixo de R$ 12,82, escolha não utilizar ou aplicar o mínimo de R$ 12,82.</p>
+</li>
+<li>
+<p>Em <strong>Prazo de postagem (Envio convencional)</strong>, informe o prazo. O máximo é 90 dias. O valor inicial é 14.</p>
+</li>
+</ol>
+<p><img src="screenshots/13.png" alt="Seções de postagem, contrato e cotação" /></p>
+<p><img src="screenshots/14.png" alt="Parte inferior do formulário Correios" /></p>
+<ol start="14">
+<li>Expanda <strong>Logística Reversa</strong> e siga a seção seguinte, se precisar. Use <strong>Buscar formas de frete</strong> para localizar os serviços dos Correios.</li>
+<li>Clique em <strong>Salvar</strong>. <strong>Cancelar</strong> volta à lista sem gravar.</li>
+</ol>
+<h3>Informar a logística reversa</h3>
+<ol>
+<li>
+<p>No formulário de <strong>Incluir forma de envio</strong>, em <strong>Logística Reversa</strong>, clique em <strong>exibir</strong>.</p>
+</li>
+<li>
+<p>Leia o aviso: é necessário um usuário e uma senha especiais, diferentes dos dados do Sigep WEB e do usuário e da senha da interface de logística reversa.</p>
+</li>
+<li>
+<p>Acesse o link da logística reversa para conferir se as credenciais estão corretas. O link abre, em uma nova aba, o serviço público de logística reversa dos Correios.</p>
+<p><img src="screenshots/26.png" alt="Logística reversa expandida" /></p>
+</li>
+<li>
+<p>Preencha <strong>Usuário Logística Reversa</strong> e <strong>Senha Logística Reversa</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Prazo de postagem (Logística reversa)</strong>, informe um número inteiro de 1 a 90. O valor inicial é 14. A validade da etiqueta definida pelos Correios é de até 90 dias.</p>
+<p><img src="screenshots/27.png" alt="Logística reversa preenchida" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> no formulário da forma de envio. <strong>Cancelar</strong> descarta o formulário.</p>
+</li>
+</ol>
+<h3>Adicionar uma forma de frete</h3>
+<ol>
+<li>
+<p>No formulário da forma de envio, em <strong>Configurações das formas de frete</strong>, clique em <strong>Adicionar forma de frete</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Configuração da forma de frete</strong>, informe <strong>Descrição</strong>, <strong>Código</strong>, <strong>Tipo de entrega</strong> e <strong>Transportador</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Tipo de entrega</strong>, escolha <strong>Não definida</strong>, <strong>Normal</strong>, <strong>Expressa</strong>, <strong>Agendada</strong>, <strong>Econômica</strong>, <strong>Super Expressa</strong> ou <strong>Retirada em mãos</strong>.</p>
+<p><img src="screenshots/8.png" alt="Configuração da forma de frete vazia" /></p>
+</li>
+<li>
+<p>Em <strong>Transportador</strong>, informe um nome já cadastrado. Se o nome não existir, a tela mostra <strong>cadastro não encontrado</strong> e permite abrir o cadastro rápido.</p>
+<p><img src="screenshots/9.png" alt="Forma de frete com transportador não encontrado" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> na configuração da forma de frete. <strong>Cancelar</strong> fecha essa configuração sem incluí-la e mantém o formulário da forma de envio aberto.</p>
+</li>
+</ol>
+<h3>Cadastrar o transportador no cadastro rápido</h3>
+<ol>
+<li>
+<p>A partir de <strong>Transportador</strong> na forma de frete, abra o cadastro rápido quando o nome não for encontrado.</p>
+</li>
+<li>
+<p>Preencha <strong>Nome</strong> e <strong>Código</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Tipo da Pessoa</strong>, escolha <strong>Pessoa Física</strong>, <strong>Pessoa Jurídica</strong>, <strong>Estrangeiro</strong> ou <strong>Estrangeiro no Brasil</strong>.</p>
+<p><img src="screenshots/10.png" alt="Cadastro rápido de transportador" /></p>
+</li>
+<li>
+<p>Para pessoa física, preencha <strong>CPF</strong>, <strong>IE</strong>, <strong>RG</strong>, <strong>Data Nascimento</strong>, <strong>CEP</strong>, <strong>Cidade</strong>, <strong>UF</strong>, <strong>Endereço</strong>, <strong>Bairro</strong>, <strong>Número</strong>, <strong>Complemento</strong>, <strong>Fone</strong>, <strong>Email</strong> e <strong>Celular</strong>.</p>
+</li>
+<li>
+<p>Use estes formatos: <strong>CPF</strong> 000.000.000-00, <strong>Data Nascimento</strong> mm/dd/aaaa, <strong>CEP</strong> 12.345-678, <strong>Fone</strong> (11) 98765-4321 e <strong>Celular</strong> (11) 91234-5678. Se a cidade não estiver cadastrada, a tela mostra <strong>Cidade não encontrada</strong>.</p>
+<p><img src="screenshots/11.png" alt="Cadastro rápido preenchido" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> no cadastro rápido. <strong>Cancelar</strong> fecha o cadastro sem gravar o transportador.</p>
+</li>
+</ol>
+<h3>Buscar formas de frete dos Correios</h3>
+<ol>
+<li>
+<p>Com <strong>Tipo logística</strong> em <strong>Correios</strong>, role até <strong>Buscar formas de frete</strong> e clique no botão.</p>
+</li>
+<li>
+<p>No modal <strong>Adicionar formas de frete</strong>, confira a lista de serviços.</p>
+</li>
+<li>
+<p>Se o modal mostrar <strong>Problema ao obter formas de frete</strong>, clique em <strong>Tentar novamente</strong>. Sem credenciais de Correios gravadas, a busca não lista serviços.</p>
+<p><img src="screenshots/25.png" alt="Modal de busca sem lista de serviços" /></p>
+</li>
+<li>
+<p>Clique em <strong>Adicionar</strong> para incluir os serviços. <strong>Cancelar</strong> fecha o modal sem adicionar serviços e sem gravar a forma de envio.</p>
+</li>
+</ol>
+<h3>Definir a forma de envio padrão</h3>
+<ol>
+<li>
+<p>Na lista de <strong>Formas de envio</strong>, clique em <strong>Preferências</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Configurar forma de envio padrão</strong>, leia a ajuda: a configuração é válida para pedidos de venda e notas fiscais.</p>
+<p><img src="screenshots/18.png" alt="Preferências antes da alteração" /></p>
+</li>
+<li>
+<p>Em <strong>Forma de envio padrão</strong>, escolha <strong>Não definida</strong> ou uma forma já cadastrada na conta.</p>
+</li>
+<li>
+<p>Em <strong>Transportadora padrão</strong>, busque um transportador do cadastro. Um nome inexistente mostra <strong>Cadastro não encontrado</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Forma de Frete padrão (Devoluções)</strong>, escolha <strong>Não definida</strong> ou uma opção de envio para devoluções composta pelas formas já cadastradas.</p>
+<p><img src="screenshots/19.png" alt="Transportadora padrão com nome não encontrado" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. <strong>Cancelar</strong> descarta a alteração e não grava a preferência.</p>
+</li>
+</ol>
+<h2>Informações adicionais</h2>
+<ul>
+<li><strong>Fechar</strong> nos painéis de endereço do remetente e de usuário de rastreamento encerra sem gravar.</li>
+<li><strong>Cancelar</strong> na inclusão da forma de envio volta à lista sem criar a forma.</li>
+<li><strong>Cancelar</strong> na configuração da forma de frete fecha essa configuração e mantém o formulário da forma de envio aberto, sem incluir o frete.</li>
+<li><strong>Cancelar</strong> no cadastro rápido fecha o cadastro sem criar o transportador.</li>
+<li><strong>Cancelar</strong> no modal <strong>Adicionar formas de frete</strong> fecha o modal sem adicionar serviços.</li>
+<li><strong>Cancelar</strong> em <strong>Preferências</strong> descarta a alteração da forma padrão.</li>
+</ul>
+</article>
+</body>
+</html>
