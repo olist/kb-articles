@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Intelipost</title>
+</head>
+<body>
+<article>
+<h1>Intelipost</h1>
+<p>A Intelipost no ERP da Olist liga a conta de frete ao ERP. Você inclui um gateway do tipo <strong>InteliPost</strong>, com token, modelo da etiqueta, rastreio, declaração de conteúdo e origem das dimensões.</p>
+<p>Na mesma área de vendas, <strong>Configurações da Intelipost</strong> guarda a chave de API, um endereço de origem diferente do cadastro da empresa, se quiser, e as opções de telefone, canal de venda e link para marcar pedidos como entregues. Com chave válida, a aba <strong>Transportadoras</strong> obtém o mapeamento das transportadoras.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Token da conta Intelipost para incluir o gateway.</li>
+<li>Chave de API da Intelipost para as configurações. Busque no painel da Intelipost, em <strong>Configurações &gt; Informações da loja</strong>.</li>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Sem o token, a tela mostra <strong>Você não está logado</strong> / <strong>Token não informado</strong> e o link <strong>efetuar login</strong>.</li>
+<li>A aba <strong>Transportadoras</strong> só segue com o mapeamento quando a chave de API é válida.</li>
+<li>Em <strong>Utiliza declaração de conteúdo</strong>, <strong>Sim</strong> possibilita concluir expedições sem notas fiscais.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Incluir o gateway pela tela</h3>
+<ol>
+<li>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</li>
+<li>Na aba <strong>Vendas</strong>, na seção <strong>Expedição e Logística</strong>, clique em <strong>Gateways logísticos</strong>.
+<img src="screenshots/1.png" alt="Lista de gateways logísticos" /></li>
+<li>Clique em <strong>Incluir gateway logístico</strong>.
+<img src="screenshots/2.png" alt="Formulário de incluir gateway logístico" /></li>
+<li>Em <strong>Tipo</strong>, selecione <strong>InteliPost</strong>.</li>
+<li>Preencha <strong>Descrição</strong>.</li>
+<li>Informe o <strong>Token</strong>.</li>
+<li>Em <strong>Modelo da etiqueta</strong>, selecione <strong>PDF</strong> ou <strong>ZPL</strong>.</li>
+<li>Em <strong>Habilitar atualização automática de rastreios</strong>, selecione <strong>Sim</strong> ou <strong>Não</strong>.</li>
+<li>Em <strong>Utiliza declaração de conteúdo</strong>, selecione <strong>Sim</strong> ou <strong>Não</strong>.
+<img src="screenshots/4.png" alt="Ajuda da declaração de conteúdo" /></li>
+<li>Nas dimensões, selecione <strong>Utilizar as dimensões informadas na tela de cotação</strong> ou <strong>Utilizar as dimensões dos produtos</strong>.
+<img src="screenshots/3.png" alt="Inclusão do gateway InteliPost preenchida" /></li>
+<li>Clique em <strong>Salvar</strong> para concluir a inclusão. Para descartar, clique em <strong>Cancelar</strong>. A tela volta à lista sem incluir o gateway.</li>
+</ol>
+<h3>Configurar a Intelipost pela tela</h3>
+<ol>
+<li>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</li>
+<li>Na aba <strong>Vendas</strong>, na seção <strong>Expedição e Logística</strong>, clique em <strong>Configurações da Intelipost</strong>.
+<img src="screenshots/11.png" alt="Aba Vendas com os acessos da Intelipost" /></li>
+<li>Na aba <strong>Dados Gerais</strong>, preencha <strong>Chave da API</strong>.
+<img src="screenshots/6.png" alt="Aba Dados Gerais antes do preenchimento" /></li>
+<li>Se o envio deve sair de outro endereço, marque <strong>Endereço de origem diferente do cadastrado nos dados da empresa</strong>.
+<img src="screenshots/7.png" alt="Campos de endereço de origem" /></li>
+<li>Preencha <strong>CEP</strong>, <strong>Município</strong>, <strong>UF</strong>, <strong>Endereço</strong>, <strong>Bairro</strong>, <strong>Número</strong> e <strong>Complemento</strong>.
+<img src="screenshots/8.png" alt="Configurações da Intelipost com chave e endereço" /></li>
+<li>Se quiser, marque <strong>Replicar campo &quot;Telefone&quot; no campo &quot;Celular&quot;</strong>. O telefone do cliente é enviado no celular da Intelipost quando o celular está vazio no ERP.</li>
+<li>Se quiser, marque <strong>Adicionar o nome da plataforma ao canal de venda</strong>. O envio leva o nome do integrador mais o canal, como Anymarket - Mercado Livre.</li>
+<li>No campo <strong>Marcação de pedidos como entregues</strong>, use o botão de copiar para enviar o link à Intelipost.
+<img src="screenshots/9.png" alt="Campo de marcação de pedidos como entregues" /></li>
+<li>Abra a aba <strong>Transportadoras</strong> para obter o mapeamento. Sem chave válida, a tela mostra <strong>Erro ao obter mapeamento das transportadoras — informe uma chave de API válida</strong>. Clique em <strong>Fechar</strong> para voltar ao formulário.
+<img src="screenshots/10.png" alt="Aviso ao abrir Transportadoras sem chave válida" /></li>
+<li>Clique em <strong>salvar</strong> para gravar ou em <strong>testar configurações</strong> para testar. <strong>Voltar</strong> retorna à aba <strong>Vendas</strong> sem gravar o que foi digitado.</li>
+</ol>
+<h2>Informações adicionais</h2>
+<h3>A lista pode repetir a mesma integração</h3>
+<p>A lista de <strong>Gateways logísticos</strong> mostra <strong>Descrição</strong> e <strong>Integração</strong>. Pode haver mais de um gateway da mesma integração.</p>
+<h3>O menu de ações da linha tem Excluir</h3>
+<p>No menu de ações da linha, a opção é <strong>Excluir</strong>.</p>
+<p><img src="screenshots/5.png" alt="Menu de ações com Excluir" /></p>
+<h3>Esta tela não tem cadastro por planilha</h3>
+<p>Não há botão de importar planilha nem outro controle de cadastro em massa.</p>
+</article>
+</body>
+</html>
