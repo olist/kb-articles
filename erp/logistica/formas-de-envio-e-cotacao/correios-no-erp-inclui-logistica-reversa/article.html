@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Correios no ERP (inclui logística reversa)</title>
+</head>
+<body>
+<article>
+<h1>Correios no ERP (inclui logística reversa)</h1>
+<p>No ERP da Olist, a forma de envio <strong>Correios</strong> reúne contrato, autenticação, cotação e logística reversa para expedir pedidos e cotar o frete.</p>
+<p>Você inclui essa forma em <strong>Configurações &gt; Configurações ERP &gt; Vendas &gt; Formas de envio</strong> e informa os dados do contrato, as regras de cotação e as credenciais da logística reversa.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+<li>A <strong>Senha de acesso a API</strong> precisa ser gerada no painel do Correios Web Services.</li>
+<li>A logística reversa exige identificação e senha especiais, diferentes dos dados do Sigep WEB e das credenciais da interface de logística reversa.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Com <strong>Utilizar outro CNPJ</strong> marcado, a autenticação usa outro CNPJ.</li>
+<li>Com <strong>Utiliza DC-e</strong> em <strong>Sim</strong>, expedições sem nota fiscal exigem DC-e via Correios.</li>
+<li><strong>Utilizar as dimensões mínimas</strong> vale apenas para cotações feitas pelas APIs de frete.</li>
+<li><strong>Nome do cliente</strong> é usado apenas na impressão da chancela.</li>
+<li>O <strong>Prazo de postagem (Envio convencional)</strong> aceita até 90 dias.</li>
+<li>O <strong>Prazo de postagem (Logística reversa)</strong> aceita um número inteiro de 1 a 90. A validade da etiqueta definida pelos Correios é de até 90 dias.</li>
+<li>Em <strong>Gateway logístico</strong>, a lista traz <strong>Não possui</strong> e os gateways já configurados na conta. A tela não cria o gateway.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Vendas &gt; Formas de envio</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir forma de envio</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Tipo logística</strong>, selecione <strong>Correios</strong>.</p>
+<p><img src="screenshots/12.png" alt="Topo do formulário com Tipo logística Correios" /></p>
+</li>
+<li>
+<p>Informe a <strong>Descrição da forma de envio</strong>. A <strong>URL de rastreamento padrão</strong> é opcional.</p>
+</li>
+<li>
+<p>Em <strong>Imprimir automaticamente ao finalizar embalagem</strong> e <strong>Imprimir automaticamente ao finalizar expedição</strong>, selecione <strong>Não imprimir</strong>, <strong>DANFE</strong> ou <strong>Etiqueta de envio</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Modelo da etiqueta para impressão</strong>, selecione <strong>Etiqueta padrão</strong> ou <strong>Minha transportadora</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Gateway logístico</strong>, selecione <strong>Não possui</strong> ou um gateway já configurado na conta.</p>
+</li>
+</ol>
+<h4>Contrato e autenticação</h4>
+<ol start="8">
+<li>Em <strong>Possui contrato</strong>, selecione <strong>Sim</strong> ou <strong>Não</strong>.</li>
+<li>Informe o <strong>Transportador</strong> já cadastrado.</li>
+<li>Marque <strong>Utilizar outro CNPJ</strong> quando a autenticação deve usar outro CNPJ. Preencha o <strong>CNPJ</strong> no formato 00.000.000/0001-91.</li>
+</ol>
+<p><img src="screenshots/17.png" alt="Utilizar outro CNPJ marcado e CNPJ preenchido" /></p>
+<ol start="11">
+<li>Preencha <strong>Usuário do portal Meu Correios</strong> e <strong>Senha de acesso a API</strong>.</li>
+</ol>
+<p><img src="screenshots/16.png" alt="Autenticação dos Correios com usuário do Meu Correios e senha da API" /></p>
+<ol start="12">
+<li>Em <strong>Habilitar atualização automática de rastreios</strong>, selecione <strong>Não</strong> ou <strong>Sim</strong>. Essa opção só fica disponível quando a conta tem atualização de status de envio da venda.</li>
+<li>Em <strong>Utiliza DC-e</strong>, selecione <strong>Sim</strong> ou <strong>Não</strong>.</li>
+<li>Informe <strong>Número do cartão de postagem</strong>, <strong>Unidade de postagem</strong> e <strong>Diretoria regional (DR)</strong>.</li>
+<li>Marque <strong>Utilizar data da expedição como data prevista de postagem</strong> para usar a data da expedição.</li>
+<li>Preencha <strong>Código administrativo</strong>, <strong>Número do contrato</strong>, <strong>Ano do contrato</strong> e <strong>Nome do cliente</strong>.</li>
+</ol>
+<p><img src="screenshots/15.png" alt="Contrato dos Correios com cartão, unidade, DR, código, número, ano e nome" /></p>
+<h4>Cotação</h4>
+<ol start="17">
+<li>Em <strong>Utilizar as dimensões mínimas</strong>, selecione <strong>Não</strong> ou <strong>Sim</strong>.</li>
+<li>Marque <strong>Agrupar produtos por embalagem</strong> para usar as embalagens da conta.</li>
+<li>Para valor declarado abaixo de R$ 25,63, escolha não utilizar o valor declarado ou aplicar o mínimo de R$ 25,63.</li>
+<li>Para Mini Envios abaixo de R$ 12,82, escolha não utilizar ou aplicar o mínimo de R$ 12,82.</li>
+<li>Informe o <strong>Prazo de postagem (Envio convencional)</strong>. O valor inicial é 14 e o máximo é 90 dias.</li>
+</ol>
+<p><img src="screenshots/13.png" alt="Seções de postagem, contrato e cotação dos Correios" /></p>
+<p><img src="screenshots/14.png" alt="Parte inferior do formulário Correios, com prazo, gateway e ações" /></p>
+<h4>Logística reversa</h4>
+<ol start="22">
+<li>Em <strong>Logística Reversa</strong>, clique em <strong>exibir</strong>.</li>
+<li>Confira o aviso de credenciais especiais. O link abre, em nova aba, o serviço público de logística reversa dos Correios.</li>
+</ol>
+<p><img src="screenshots/26.png" alt="Logística Reversa expandida, com aviso, link e prazo 14" /></p>
+<ol start="24">
+<li>Preencha <strong>Usuário Logística Reversa</strong>, <strong>Senha Logística Reversa</strong> e <strong>Prazo de postagem (Logística reversa)</strong>. O prazo inicial é 14.</li>
+</ol>
+<p><img src="screenshots/27.png" alt="Logística reversa preenchida com identificação, senha e prazo 14" /></p>
+<h4>Formas de frete</h4>
+<ol start="25">
+<li>Clique em <strong>Buscar formas de frete</strong>.</li>
+<li>No modal <strong>Adicionar formas de frete</strong>, clique em <strong>Adicionar</strong> para incluir os serviços. Sem credenciais dos Correios gravadas, o modal mostra <strong>Problema ao obter formas de frete</strong>. Clique em <strong>Tentar novamente</strong> para repetir a busca ou em <strong>Cancelar</strong> para fechar sem adicionar serviços.</li>
+</ol>
+<p><img src="screenshots/25.png" alt="Modal Adicionar formas de frete com Problema ao obter formas de frete" /></p>
+<ol start="27">
+<li>Clique em <strong>Salvar</strong> para gravar a forma de envio. <strong>Cancelar</strong> volta à lista sem gravar.</li>
+</ol>
+</article>
+</body>
+</html>
