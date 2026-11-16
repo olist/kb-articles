@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Gateways logísticos: o que são e como instalar</title>
+</head>
+<body>
+<article>
+<h1>Gateways logísticos: o que são e como instalar</h1>
+<p>Gateways logísticos no ERP da Olist é a tela em que você consulta e inclui a integração com uma plataforma de frete. Você escolhe o tipo, informa a descrição e, no caso da InteliPost, o token e as opções de etiqueta, rastreio, declaração de conteúdo e dimensões.</p>
+<p>Na mesma área, <strong>Configurações da Intelipost</strong> guarda a chave de API, um endereço de origem opcional e as opções de telefone, canal de venda e o link para marcar pedidos como entregues.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Tenha o token da conta Intelipost para instalar o gateway <strong>InteliPost</strong>.</li>
+<li>Tenha a chave de API para <strong>Configurações da Intelipost</strong>. No painel da Intelipost, busque a chave em <strong>Configurações &gt; Informações da loja</strong>.</li>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>A aba <strong>Transportadoras</strong> só obtém o mapeamento com uma chave de API válida.</li>
+<li>Em <strong>Utiliza declaração de conteúdo</strong>, <strong>Sim</strong> possibilita a conclusão de expedições sem notas fiscais.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Incluir um gateway logístico</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>. Na aba <strong>Vendas</strong>, na seção <strong>Expedição e Logística</strong>, clique em <strong>Gateways logísticos</strong>.</p>
+</li>
+<li>
+<p>A lista mostra as colunas <strong>Descrição</strong> e <strong>Integração</strong>. Clique em <strong>Incluir gateway logístico</strong>.</p>
+<p><img src="screenshots/1.png" alt="Lista de Gateways logísticos com as colunas Descrição e Integração" /></p>
+</li>
+<li>
+<p>Em <strong>Tipo</strong>, escolha a integração: <strong>Melhor Envio</strong>, <strong>Frenet</strong>, <strong>Datafrete</strong>, <strong>Frete Rápido</strong>, <strong>Flixlog</strong>, <strong>SmartEnvios (beta)</strong>, <strong>Super Frete (beta)</strong> ou <strong>InteliPost</strong>. Preencha a <strong>Descrição</strong>. Nenhum campo deste formulário é obrigatório.</p>
+<p><img src="screenshots/2.png" alt="Formulário de incluir gateway logístico com Tipo e Descrição" /></p>
+</li>
+<li>
+<p>Com <strong>InteliPost</strong> selecionado, informe o <strong>Token</strong>. Sem token, a tela mostra <strong>Você não está logado / Token não informado</strong> e o link <strong>efetuar login</strong>.</p>
+</li>
+<li>
+<p>Escolha o <strong>Modelo da etiqueta</strong>: <strong>PDF</strong> ou <strong>ZPL</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Habilitar atualização automática de rastreios</strong>, escolha <strong>Sim</strong> ou <strong>Não</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Utiliza declaração de conteúdo</strong>, escolha <strong>Sim</strong> ou <strong>Não</strong>.</p>
+<p><img src="screenshots/4.png" alt="Texto de ajuda da declaração de conteúdo" /></p>
+</li>
+<li>
+<p>Escolha a origem das dimensões: <strong>Utilizar as dimensões informadas na tela de cotação</strong> ou <strong>Utilizar as dimensões dos produtos</strong>.</p>
+<p><img src="screenshots/3.png" alt="Inclusão de InteliPost com descrição, token e modelo PDF" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para concluir a inclusão. Para descartar e voltar à lista, clique em <strong>Cancelar</strong>.</p>
+</li>
+</ol>
+<h3>Configurar a Intelipost</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>. Na aba <strong>Vendas</strong>, na seção <strong>Expedição e Logística</strong>, clique em <strong>Configurações da Intelipost</strong>.</p>
+<p><img src="screenshots/11.png" alt="Aba Vendas com Gateways logísticos e Configurações da Intelipost" /></p>
+</li>
+<li>
+<p>Na aba <strong>Dados Gerais</strong>, preencha <strong>Chave da API</strong>.</p>
+<p><img src="screenshots/6.png" alt="Aba Dados Gerais de Configurações da Intelipost" /></p>
+</li>
+<li>
+<p>Se o envio deve sair de outro endereço, marque <strong>Endereço de origem diferente do cadastrado nos dados da empresa</strong>. Preencha <strong>CEP</strong>, <strong>Município</strong>, <strong>UF</strong>, <strong>Endereço</strong>, <strong>Bairro</strong>, <strong>Número</strong> e <strong>Complemento</strong>.</p>
+<p><img src="screenshots/7.png" alt="Campos de endereço de origem" /></p>
+<p><img src="screenshots/8.png" alt="Configurações da Intelipost com chave e endereço preenchidos" /></p>
+</li>
+<li>
+<p>Se quiser, marque <strong>Replicar campo &quot;Telefone&quot; no campo &quot;Celular&quot;</strong>. O telefone do cliente é enviado no celular da Intelipost quando o celular está vazio no ERP.</p>
+</li>
+<li>
+<p>Se quiser, marque <strong>Adicionar o nome da plataforma ao canal de venda</strong>. O envio leva o nome do integrador mais o canal, como no exemplo Anymarket - Mercado Livre.</p>
+</li>
+<li>
+<p>Em <strong>Marcação de pedidos como entregues</strong>, use o botão de copiar para enviar o link à Intelipost.</p>
+<p><img src="screenshots/9.png" alt="Campo Marcação de pedidos como entregues com botão de copiar" /></p>
+</li>
+<li>
+<p>Abra a aba <strong>Transportadoras</strong> para obter o mapeamento das transportadoras. Sem chave válida, a tela mostra <strong>Erro ao obter mapeamento das transportadoras — informe uma chave de API válida</strong>. Clique em <strong>Fechar</strong> para voltar ao formulário.</p>
+<p><img src="screenshots/10.png" alt="Aviso ao abrir Transportadoras sem chave válida" /></p>
+</li>
+<li>
+<p>Clique em <strong>salvar</strong> para gravar. <strong>Voltar</strong> retorna à aba <strong>Vendas</strong> sem gravar o que foi digitado. <strong>cancelar</strong> também está na tela, junto de <strong>testar configurações</strong>.</p>
+</li>
+</ol>
+<h2>Informações adicionais</h2>
+<ul>
+<li>A lista pode ter mais de um gateway da mesma integração, cada um com descrição e tipo.</li>
+<li>No menu de ações da linha, a opção é <strong>Excluir</strong>.</li>
+</ul>
+<p><img src="screenshots/5.png" alt="Menu de ações da linha com a opção Excluir" /></p>
+</article>
+</body>
+</html>
