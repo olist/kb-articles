@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Configurar a cobrança registrada do Banco do Brasil na conta bancária</title>
+</head>
+<body>
+<article>
+<h1>Configurar a cobrança registrada do Banco do Brasil na conta bancária</h1>
+<p>No ERP da Olist, a cobrança registrada do Banco do Brasil define a conta bancária como meio de recebimento com boleto registrado. Você informa beneficiário, contrato, convênio, carteira, instruções do boleto, juros, multa, protesto e espécie do título.</p>
+<p>O cadastro fica em <strong>Configurações &gt; Configurações ERP &gt; Finanças &gt; Cadastro de contas bancárias</strong>.</p>
+<h2>Importante</h2>
+<ul>
+<li>Tenha em mãos o código do beneficiário, o contrato e o convênio informados pelo banco.</li>
+<li><strong>Contrato</strong> aceita até 20 posições e vale apenas para a remessa.</li>
+<li><strong>Convênio</strong> tem 6 ou 7 posições. No CEB, use 11 posições.</li>
+<li>Na última linha das instruções de impressão, para o juros diário, use a variável [valor_juros_dia], com os colchetes.</li>
+<li>A tela não marca esses campos com asterisco.</li>
+</ul>
+<h2>Instruções</h2>
+<h4>Dados da conta</h4>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Finanças &gt; Cadastro de contas bancárias</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir conta bancária</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Banco</strong>, selecione <strong>Banco do Brasil</strong>.</p>
+</li>
+<li>
+<p>Informe <strong>Descrição da conta</strong>, a agência e o dígito no campo <strong>-</strong>, a conta e o dígito no campo <strong>-</strong>.</p>
+<p><img src="screenshots/52.png" alt="Topo do formulário Incluir conta bancária com Banco do Brasil, descrição, agência e conta" /></p>
+</li>
+<li>
+<p>Em <strong>Conta financeira para o registro de lançamentos</strong>, selecione uma conta já cadastrada ou <strong>Criar nova conta</strong>.</p>
+</li>
+</ol>
+<h4>Cobrança registrada</h4>
+<ol start="6">
+<li>Em <strong>Configuração para cobrança como meio de recebimento</strong>, selecione <strong>Emissão de boletos com registro (cobrança registrada)</strong>.</li>
+<li>Informe <strong>Código beneficiário</strong> e o dígito no campo <strong>-</strong>, <strong>Contrato</strong> e <strong>Convênio</strong>.</li>
+<li>Em <strong>Carteira</strong>, selecione a opção e informe <strong>Variação</strong> no campo <strong>/</strong>.</li>
+</ol>
+<ul>
+<li>
+<p>11 - Cobrança simples</p>
+</li>
+<li>
+<p>12 - Cobrança indexada</p>
+</li>
+<li>
+<p>15 - Cobrança de prêmios de seguro</p>
+</li>
+<li>
+<p>16 - Cobrança direta</p>
+</li>
+<li>
+<p>17 - Cobrança simples</p>
+</li>
+<li>
+<p>18 - Cobrança direta pré-impressa</p>
+</li>
+<li>
+<p>21 - Cecred</p>
+</li>
+<li>
+<p>31 - Cobrança caucionada/vinculada</p>
+</li>
+<li>
+<p>51 - Carteira descontada</p>
+</li>
+<li>
+<p>11 - Cobrança descontada</p>
+</li>
+<li>
+<p>11 - Cobrança vinculada</p>
+</li>
+<li>
+<p>17 - Cobrança descontada</p>
+</li>
+<li>
+<p>17 - Cobrança vinculada</p>
+<p><img src="screenshots/51.png" alt="Tipo da chave, cobrança registrada, beneficiário, contrato, convênio e carteira" /></p>
+</li>
+</ul>
+<h4>Instruções, juros e multa</h4>
+<ol start="9">
+<li>Selecione <strong>Primeira instrução</strong> e <strong>Segunda instrução</strong>. As opções são as mesmas nos dois campos:</li>
+</ol>
+<ul>
+<li>Ausência de instruções</li>
+<li>Cobrar juros</li>
+<li>Protestar no 3º, 4º ou 5º dia útil após o vencimento</li>
+<li>Protestar em n dias</li>
+<li>Não protestar</li>
+<li>Protestar no 10º, 15º, 20º, 25º, 30º ou 45º dia corrido após vencimento</li>
+<li>Conceder desconto só até a data estipulada</li>
+</ul>
+<ol start="10">
+<li>Preencha as quatro linhas de <strong>Instruções para impressão no boleto</strong>.</li>
+<li>Em <strong>Aceite</strong>, selecione <strong>Sem aceite</strong> ou <strong>Com aceite</strong>.</li>
+<li>Em <strong>Espécie dos títulos</strong>, selecione a espécie:</li>
+</ol>
+<ul>
+<li>Duplicata mercantil</li>
+<li>Nota promissória</li>
+<li>Nota de seguro</li>
+<li>Recibo</li>
+<li>Letra de câmbio</li>
+<li>Warrant</li>
+<li>Cheque</li>
+<li>Duplicata de serviço</li>
+<li>Nota de débito</li>
+<li>Apólice de seguro</li>
+<li>Duplicata rural</li>
+<li>Dívida ativa da união</li>
+<li>Dívida ativa do estado</li>
+<li>Dívida ativa do município</li>
+</ul>
+<ol start="13">
+<li>Informe <strong>Número próxima remessa</strong> e <strong>Dias para protesto</strong>.</li>
+</ol>
+<p><img src="screenshots/53.png" alt="Instruções de impressão do boleto e dados adicionais do cadastro" /></p>
+<ol start="14">
+<li>Informe <strong>Taxa mensal de juros</strong> e <strong>Custo adicional de cobrança por título</strong> em valor numérico.</li>
+<li>Informe <strong>Multa</strong> em percentual e <strong>N° de dias para multa após o vencimento</strong>.</li>
+<li>Marque <strong>Calcular juros e multas após o vencimento</strong> se quiser que as taxas sejam consideradas no recebimento de títulos vencidos no contas a receber e no recebimento por cliente.</li>
+</ol>
+<p><img src="screenshots/50.png" alt="Juros, custo, multa e a opção Calcular juros e multas após o vencimento" /></p>
+<ol start="17">
+<li>Clique em <strong>salvar</strong> para gravar a conta bancária com a cobrança registrada do Banco do Brasil.</li>
+</ol>
+</article>
+</body>
+</html>
