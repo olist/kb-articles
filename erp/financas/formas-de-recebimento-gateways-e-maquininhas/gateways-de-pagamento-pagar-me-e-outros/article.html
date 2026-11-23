@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Gateways de pagamento (Pagar.me e outros)</title>
+</head>
+<body>
+<article>
+<h1>Gateways de pagamento (Pagar.me e outros)</h1>
+<p>No ERP da Olist, o cadastro de gateways conecta a empresa aos meios de pagamento, em especial Pagar.me e Stone POS. Você informa as credenciais, a conta que recebe os resgates e as regras de juros, multa, baixa e antecipação.</p>
+<p>A tela fica em <strong>Configurações &gt; Configurações ERP &gt; Finanças &gt; Cadastro de gateways</strong>. No campo <strong>Gateway</strong> também entram Pagar.me 2.0, Wirecard, Cielo, Rede, Getnet, SafraPay, PagBank, Vero, Bin, Sicredi, Caixa, Sipag, PicPay, Redeflex e Outro.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Para Pagar.me: chave da API e a versão da API da conta.</li>
+<li>Para Stone POS: Account ID que comece com acc_ e a chave da API da conta Stone.</li>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>O <strong>Account ID - Stone</strong> precisa começar com acc_.</li>
+<li><strong>Inativar gateway</strong> e <strong>Excluir gateway</strong>, no menu da linha, desativam ou removem o gateway. Use só quando quiser esse efeito.</li>
+<li>Banco Inter não é um gateway nesta tela. Ele aparece como conta financeira para crédito.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Finanças &gt; Cadastro de gateways</strong>. A lista mostra <strong>Descrição</strong> e <strong>Gateway</strong>, o filtro habilitados e <strong>Incluir gateway</strong>.</p>
+<p><img src="screenshots/40.png" alt="Lista de gateways com filtro habilitados e Incluir gateway" /></p>
+</li>
+<li>
+<p>No menu da linha de um gateway já cadastrado, as opções são <strong>Ações</strong>, <strong>Inativar gateway</strong> e <strong>Excluir gateway</strong>.</p>
+<p><img src="screenshots/41.png" alt="Menu da linha de gateway com Ações, Inativar gateway e Excluir gateway" /></p>
+</li>
+<li>
+<p>Clique em <strong>Incluir gateway</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Gateway</strong>, selecione <strong>Pagar.me</strong> ou <strong>Stone POS</strong>. Os campos abaixo não estão marcados como obrigatórios.</p>
+</li>
+</ol>
+<h4>Pagar.me</h4>
+<ol start="5">
+<li>
+<p>Preencha <strong>Descrição do gateway</strong> e <strong>Situação</strong> (<strong>Habilitado</strong> ou <strong>Desabilitado</strong>). A conta de extrato é sugerida com o nome do gateway.</p>
+</li>
+<li>
+<p>Escolha a <strong>Categoria padrão para as contas a receber</strong>, a <strong>Conta financeira para crédito</strong> e a <strong>Categoria para as tarifas</strong>. Banco Inter está entre as contas de crédito.</p>
+</li>
+<li>
+<p>Em <strong>Data em que será baixada</strong>, escolha <strong>Data de liberação no gateway</strong> ou <strong>Data de pagamento da conta a receber (beta)</strong>.</p>
+<p><img src="screenshots/43.png" alt="Formulário do gateway Pagar.me com descrição, contas e credenciais" /></p>
+</li>
+<li>
+<p>Informe a <strong>Taxa mensal de juros</strong> e a <strong>Multa</strong> em percentual, o <strong>N° de dias para multa</strong> e, se quiser, marque <strong>Calcular juros e multas</strong>.</p>
+</li>
+<li>
+<p>Informe a <strong>Chave da API</strong> e a <strong>Versão da API</strong>: <strong>V4 - 2019-09-01</strong>, <strong>V3 - 2017-08-28</strong>, <strong>V2 - 2017-07-17</strong> ou <strong>V1 - 2013-03-01</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar o gateway Pagar.me.</p>
+</li>
+</ol>
+<p><img src="screenshots/42.png" alt="Juros, multa, chave da API e versão da API no Pagar.me" /></p>
+<h4>Stone POS</h4>
+<ol start="5">
+<li>
+<p>Informe a descrição, a situação e a <strong>Conta financeira para lançamentos</strong>. Essa conta é o extrato do saldo disponível no gateway.</p>
+</li>
+<li>
+<p>Escolha a <strong>Categoria padrão para as contas a receber</strong> e a <strong>Conta financeira para crédito</strong>, a conta bancária que recebe os resgates deste gateway. Banco Inter está nessa lista.</p>
+</li>
+<li>
+<p>Em <strong>Baixar contas a receber automaticamente</strong>, escolha <strong>Manual</strong>, <strong>Data de vencimento da conta a receber</strong> ou <strong>Data da efetivação da venda</strong>.</p>
+</li>
+<li>
+<p>Em configurações do gateway, informe o <strong>Account ID - Stone</strong> (começa com acc_) e a <strong>Chave da API</strong>. O botão <strong>Testar conexão</strong> fica na tela.</p>
+</li>
+<li>
+<p>Escolha as <strong>Bandeiras atendidas</strong> e a <strong>Antecipação dos recebíveis</strong>: <strong>Sem antecipação</strong> ou <strong>Antecipado</strong>. Em <strong>Antecipado</strong>, informe a <strong>Forma de cálculo das taxas</strong> (<strong>Juros simples</strong> ou <strong>Valor presente</strong>) e os <strong>Dias para recebimento</strong>, contados após a data da operação.</p>
+<p><img src="screenshots/47.png" alt="Antecipação Antecipado no Stone POS, com forma de cálculo e dias para recebimento" /></p>
+</li>
+<li>
+<p>Use o interruptor <strong>Considerar próximo dia útil para parcelas e tarifas</strong> se quiser esse ajuste. A seção <strong>Condições comerciais das formas selecionadas</strong> lista <strong>Forma</strong>, <strong>Bandeira</strong>, <strong>Parcelado até</strong>, <strong>Prazo</strong>, <strong>Taxa</strong> e <strong>Tarifa</strong>.</p>
+</li>
+<li>
+<p>Em POS, o interruptor <strong>Imprimir NFC-e diretamente na máquina POS</strong> faz as NFC-e da forma Stone(POS) saírem na máquina selecionada. O link <strong>Gerenciar maquininhas cartão</strong> abre as maquininhas.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar o gateway Stone POS.</p>
+</li>
+</ol>
+<p><img src="screenshots/45.png" alt="Formulário do Stone POS com Account ID, antecipação, condições comerciais e Gerenciar maquininhas cartão" /></p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>A lista de gateways mostra a descrição e o gateway, com o filtro habilitados.</li>
+<li><strong>Inativar gateway</strong> aparece apenas para gateways habilitados. <strong>Ativar gateway</strong> aparece apenas para gateways desabilitados.</li>
+<li>Neste caminho não há importação por planilha.</li>
+</ul>
+</article>
+</body>
+</html>
