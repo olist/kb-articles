@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Configurar e emitir NFS-e</title>
+</head>
+<body>
+<article>
+<h1>Configurar e emitir NFS-e</h1>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A prefeitura do município precisa estar homologada para emitir a NFS-e.</li>
+<li>A emissão não ocorre se o limite de emissões da empresa já foi atingido.</li>
+<li>Na emissão externa, o município precisa usar o serviço externo de NFS-e, a empresa precisa estar configurada nessa integração e o certificado digital A1 precisa estar vinculado.</li>
+<li>Para usar um CNAE que não seja o padrão da empresa, ele precisa estar em <strong>Meus CNAEs</strong> ou ser incluído em <strong>Cadastre o seu CNAE</strong>.</li>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Notas emitidas no ambiente de <strong>Homologação</strong> não têm valor fiscal e servem apenas para testes.</li>
+<li>Com <strong>Cálculo automático impostos federais</strong> marcado, o cálculo federal vale para valor igual ou acima de R$ 215,05.</li>
+<li>Em <strong>Calcular PIS, COFINS e CSLL</strong>, as opções são notas acima de R$ 215,05, notas acima de R$ 5.000,00 (exigência revogada pela Lei nº 13.317) ou não calcular.</li>
+<li>Não é possível editar uma nota já autorizada pela prefeitura.</li>
+<li>Não é possível editar a nota enquanto houver contas lançadas. Nesse caso, estorne as contas antes.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Configurar a NFS-e</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais</strong>.</p>
+</li>
+<li>
+<p>Selecione <strong>Configuração da nota fiscal eletrônica de serviços (NFSe)</strong>.</p>
+<p><img src="screenshots/1.png" alt="Lista de notas fiscais nas configurações" /></p>
+</li>
+<li>
+<p>Revise <strong>Emitir NFS-e no padrão nacional</strong>, <strong>Ambiente</strong>, <strong>Série</strong>, <strong>Próximo número do lote</strong> e <strong>Enviar parcelas no XML do RPS</strong>. Em <strong>Ambiente</strong>, as opções são <strong>Produção</strong> e <strong>Homologação</strong>.</p>
+<p><img src="screenshots/2.png" alt="Topo da configuração da NFSe" /></p>
+</li>
+<li>
+<p>Informe <strong>CNAE</strong>, <strong>NBS</strong> e <strong>Código de Tributação Nacional</strong>. No <strong>CNAE</strong>, deixe em branco para usar o mesmo da NFe. No código de tributação, pesquise e selecione o resultado.</p>
+<p><img src="screenshots/4.png" alt="Campos de CNAE e código de tributação nacional" /></p>
+<p><img src="screenshots/5.png" alt="Consulta do código de tributação nacional" /></p>
+</li>
+<li>
+<p>Ajuste tributação, retenções e textos.</p>
+<p><img src="screenshots/3.png" alt="Retenções, textos e senha do webservice" /></p>
+</li>
+</ol>
+<h4>Tributação</h4>
+<ul>
+<li><strong>CST</strong>: as opções incluem <strong>Tributada integralmente</strong>, <strong>ISSRF</strong>, <strong>ST</strong>, redução de base, <strong>Isenta</strong>, <strong>Imune</strong>, <strong>Não Tributada</strong>, regime <strong>Fixo</strong>, <strong>Estimativa</strong>, <strong>Construção Civil</strong>, antecipado e <strong>Ato Cooperado</strong>.</li>
+<li><strong>Natureza</strong>: <strong>Tributação no município</strong> ou tributação fora do município.</li>
+<li><strong>Regime especial</strong>: <strong>Selecione</strong>, <strong>Microempresa municipal</strong>, <strong>Estimativa</strong>, <strong>Sociedade de profissionais</strong>, <strong>Cooperativa</strong>, <strong>MEI</strong> e <strong>ME EPP</strong>.</li>
+<li><strong>Optante Simples</strong>.</li>
+<li><strong>Percentual ISS</strong>.</li>
+<li><strong>Valor do ISS zerado quando não retido</strong>.</li>
+</ul>
+<h4>Retenções e textos</h4>
+<ul>
+<li><strong>Reter IR</strong>, <strong>Percentual IR</strong>, <strong>Texto IR</strong> e <strong>Texto IR Isento</strong>.</li>
+<li><strong>PIS/COFINS - Débito Próprio (Sem Retenção)</strong>.</li>
+<li><strong>Calcular PIS, COFINS e CSLL</strong>.</li>
+<li><strong>Enviar observações da OS</strong>.</li>
+<li><strong>Observação padrão</strong> e <strong>Condições Padrão</strong>, se quiser.</li>
+<li><strong>Senha webservice</strong>, sem copiar o valor para outro lugar.</li>
+</ul>
+<ol start="6">
+<li>Clique em <strong>Salvar</strong> para gravar o padrão de emissão, a tributação e o CNAE.</li>
+</ol>
+<h3>Cadastrar um CNAE</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Serviços</strong>.</p>
+<p><img src="screenshots/6.png" alt="Lista de configurações de serviços" /></p>
+</li>
+<li>
+<p>Abra <strong>Cadastro de CNAEs</strong>. A lista <strong>Meus CNAEs</strong> tem busca, <strong>Incluir CNAE</strong> e as colunas <strong>Código</strong> e <strong>Descrição</strong>.</p>
+<p><img src="screenshots/7.png" alt="Lista Meus CNAEs" /></p>
+</li>
+<li>
+<p>Clique em <strong>Incluir CNAE</strong>.</p>
+<p><img src="screenshots/8.png" alt="Modal Cadastre o seu CNAE vazio" /></p>
+</li>
+<li>
+<p>Preencha <strong>Código</strong> e <strong>Descrição</strong>. Clique em <strong>Salvar</strong> para gravar o CNAE. Fechar o modal sem <strong>Salvar</strong> não grava o CNAE.</p>
+<p><img src="screenshots/9.png" alt="Modal de CNAE preenchido" /></p>
+</li>
+</ol>
+<h3>Incluir a nota de serviço</h3>
+<ol>
+<li>
+<p>Acesse <strong>Serviços &gt; Notas de Serviço</strong>. Se o aviso de homologação aparecer, ative o ambiente de produção por ele quando a nota precisar ter valor fiscal.</p>
+<p><img src="screenshots/10.png" alt="Lista de notas de serviço" /></p>
+</li>
+<li>
+<p>Clique em <strong>Incluir nota fiscal</strong>.</p>
+<p><img src="screenshots/11.png" alt="Topo do formulário de inclusão" /></p>
+</li>
+<li>
+<p>Preencha o tomador e a descrição do serviço. Se o contato não for encontrado, complete os dados do tomador no formulário.</p>
+<p><img src="screenshots/16.png" alt="Tomador e descrição preenchidos" /></p>
+</li>
+</ol>
+<h4>Dados do tomador</h4>
+<ul>
+<li><strong>Série</strong>, <strong>Número RPS</strong>, <strong>Data emissão</strong> no formato DD/MM/AAAA e <strong>Número NFS-e</strong>.</li>
+<li><strong>Tipo de pessoa</strong>: <strong>Física</strong> ou <strong>Jurídica</strong>.</li>
+<li><strong>Contato</strong>, <strong>CPF</strong>, <strong>IE</strong>, <strong>IM</strong>, <strong>E-mail</strong> e <strong>Fone</strong>.</li>
+<li><strong>CEP</strong>. Use a busca de dados do CEP.</li>
+<li><strong>Município</strong>, <strong>UF</strong>, <strong>Bairro</strong>, <strong>Endereço</strong>, <strong>Número</strong> e <strong>Complemento</strong>.</li>
+<li><strong>Descrição</strong> do serviço.</li>
+</ul>
+<ol start="4">
+<li>
+<p>Informe o <strong>Valor</strong>. A tela calcula o ISS. Com <strong>Cálculo automático impostos federais</strong> marcado, ela mostra os impostos federais quando o valor atinge a regra exibida.</p>
+<p><img src="screenshots/17.png" alt="Valor e ISS calculados" /></p>
+</li>
+<li>
+<p>Vincule o <strong>CNAE</strong> e confira os tributos.</p>
+<p><img src="screenshots/12.png" alt="CNAE e tributos antes do preenchimento" /></p>
+<p><img src="screenshots/18.png" alt="Código municipal e tributos preenchidos" /></p>
+</li>
+</ol>
+<p>No seletor de <strong>CNAE</strong>, escolha <strong>CNAE padrão da empresa</strong>, um CNAE já cadastrado ou <strong>Incluir CNAE</strong>.</p>
+<p><img src="screenshots/14.png" alt="Seletor de CNAE na emissão" /></p>
+<p><strong>Incluir CNAE</strong> abre <strong>Cadastre o seu CNAE</strong>. Preencha <strong>Código</strong> e <strong>Descrição</strong> e clique em <strong>Salvar</strong>. Fechar o modal não grava o CNAE.</p>
+<p><img src="screenshots/15.png" alt="Modal de CNAE aberto na emissão" /></p>
+<p>Confira também <strong>Código de Tributação</strong>, <strong>NBS</strong>, <strong>Código de Tributação do Município</strong>, <strong>Natureza</strong>, <strong>CST</strong>, <strong>ISS Retido</strong> e <strong>Exibir IBS/CBS</strong>.</p>
+<ol start="6">
+<li>
+<p>Escolha a <strong>Forma de recebimento</strong>. O parcelamento vai de 1x a 12x. Clique em <strong>Gerar parcelas</strong> se quiser gerar as parcelas. Confira <strong>Meio</strong> e <strong>Gateway</strong>.</p>
+<p><img src="screenshots/13.png" alt="Recebimento e dados adicionais antes do preenchimento" /></p>
+<p><img src="screenshots/19.png" alt="Impostos calculados e recebimento" /></p>
+</li>
+<li>
+<p>Preencha <strong>Observações</strong> e <strong>Marcadores</strong>. O texto de <strong>Observações</strong> é enviado junto com a descrição do serviço. O texto de <strong>Marcadores</strong> separado vira marcadores. Clique em <strong>Salvar</strong> para gravar a nota com tomador, serviço, valor e tributos calculados na tela.</p>
+<p><img src="screenshots/20.png" alt="Observações e marcadores preenchidos" /></p>
+</li>
+</ol>
+<h3>Enviar a NFS-e</h3>
+<ol>
+<li>
+<p>Em <strong>Serviços &gt; Notas de Serviço</strong>, localize a nota pela busca de cliente ou número, pelo período ou pela aba <strong>Pendentes</strong>. As situações do filtro são <strong>Todas</strong>, <strong>Pendentes</strong>, <strong>Emitidas</strong> e <strong>Canceladas</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Enviar pendentes</strong> ou, no menu da linha, em <strong>Enviar NFS-e</strong>. No mesmo menu estão <strong>Clonar nota</strong>, <strong>Emitir cobrança</strong>, <strong>Lançar contas</strong>, <strong>Marcar como enviada</strong>, <strong>Imprimir RPS</strong> e <strong>Marcadores</strong>. <strong>Emitir cobrança</strong> só aparece quando a empresa usa contas a receber. <strong>Lançar contas</strong> só aparece quando a empresa pode lançar contas de serviços pelo contas a receber.</p>
+<p><img src="screenshots/21.png" alt="Menu da linha da nota" /></p>
+</li>
+<li>
+<p>Selecione a linha para usar <strong>Baixar XMLs NFSe</strong>, <strong>Enviar NFSe por e-mail</strong> ou <strong>Mais ações</strong>. Em <strong>Mais ações</strong> estão <strong>Excluir notas</strong>, <strong>Alterar marcadores</strong>, <strong>Baixar XMLs NFSe</strong> e <strong>Enviar NFSe por e-mail</strong>. Use o comando desejado para enviar a NFS-e, baixar o XML ou enviar a nota por email.</p>
+<p><img src="screenshots/22.png" alt="Barra de ações da nota selecionada" /></p>
+<p><img src="screenshots/23.png" alt="Menu Mais ações" /></p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>A lista de <strong>Notas de Serviço</strong> mostra as abas <strong>Todas</strong>, <strong>Pendentes</strong>, <strong>Emitidas</strong> e <strong>Canceladas</strong>, a pesquisa, os filtros e a coluna <strong>Integrações</strong>. Na lista também estão <strong>Imprimir</strong> e <strong>Enviar pendentes</strong>.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>Só é possível cancelar notas de serviço que já foram emitidas. <strong>Cancelar</strong> a NFS-e só aparece se a prefeitura permitir o cancelamento, ou se o modelo da nota permitir quando não houver serviço externo.</li>
+<li>Na consulta pela tela, só notas de serviço em processamento podem ser consultadas.</li>
+<li>Estornar contas exige permissão de contas a receber e permissão para remover nessas contas.</li>
+</ul>
+</article>
+</body>
+</html>
