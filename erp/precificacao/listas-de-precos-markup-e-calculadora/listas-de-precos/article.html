@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Listas de preços</title>
+</head>
+<body>
+<article>
+<h1>Listas de preços</h1>
+<p>No ERP da Olist, uma lista de preços aplica um acréscimo ou um desconto sobre o preço de venda. Você cadastra a lista, informa preço e preço promocional diferentes por produto, importa esses valores por planilha e escolhe qual lista vale em vendas e no PDV da Olist.</p>
+<p>A tela fica em <strong>Configurações &gt; Configurações ERP &gt; Cadastros &gt; Listas de preços</strong>.</p>
+<h2>Importante</h2>
+<ul>
+<li>O acréscimo ou desconto da lista não se aplica a vendas pelo aplicativo móvel nem a vendas via API.</li>
+<li>Use valor positivo para acréscimo e valor negativo para desconto. O percentual segue o texto da tela: alíquota aplicada no preço de venda do produto.</li>
+<li><strong>Preço</strong> e <strong>Preço promocional</strong> usam vírgula decimal, em reais.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Cadastrar uma lista de preços</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Cadastros &gt; Listas de preços</strong>.</p>
+</li>
+<li>
+<p>Confira as listas já cadastradas, com as colunas <strong>Descrição</strong> e <strong>Acréscimo/Desconto</strong>. Use a pesquisa para localizar uma lista.</p>
+<p><img src="screenshots/16.png" alt="Tela Listas de preços com as listas cadastradas" /></p>
+</li>
+<li>
+<p>Clique em <strong>Incluir lista de preço</strong>.</p>
+</li>
+<li>
+<p>Informe a <strong>Descrição</strong>. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Informe <strong>Acréscimo/desconto</strong>. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. A alíquota informada será aplicada ao preço de venda do produto.</p>
+</li>
+</ol>
+<h3>Informar preços diferentes na lista</h3>
+<p>Para lançar preço diferenciado, o produto já precisa existir no cadastro.</p>
+<ol>
+<li>
+<p>Em <strong>Listas de preços</strong>, abra a lista desejada.</p>
+</li>
+<li>
+<p>Confira <strong>Acréscimo/desconto</strong> e a tabela <strong>Produtos com preços diferentes</strong>, com as colunas <strong>Produto</strong>, <strong>Código (SKU)</strong>, <strong>Preço</strong> e <strong>Preço promocional</strong>.</p>
+<p><img src="screenshots/19.png" alt="Formulário da lista com acréscimo ou desconto e produtos com preços diferentes" /></p>
+</li>
+<li>
+<p>Clique em <strong>Adicionar item</strong>.</p>
+</li>
+<li>
+<p>Busque o <strong>Produto</strong> já cadastrado.</p>
+</li>
+<li>
+<p>Informe <strong>Preço</strong> e <strong>Preço promocional</strong>. Os campos não são obrigatórios. O <strong>Código (SKU)</strong> aparece na linha e não é digitado nela.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. A lista passa a usar esses preços no lugar do percentual geral para os produtos informados.</p>
+</li>
+</ol>
+<h3>Importar preços por planilha</h3>
+<ol>
+<li>
+<p>Em <strong>Listas de preços</strong>, clique em <strong>Importar planilha</strong>. O mesmo caminho está em <strong>Mais ações &gt; Importar preços de produtos para lista de preços</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Download da planilha de exemplo</strong>. As colunas são <strong>Id</strong>, <strong>Descrição</strong>, <strong>Código (SKU)</strong>, <strong>Preço</strong> e <strong>Preço promocional</strong>.</p>
+<p><img src="screenshots/6.png" alt="Importação de preços com download da planilha de exemplo e carga" /></p>
+</li>
+<li>
+<p>Preencha a planilha com os preços da lista.</p>
+</li>
+<li>
+<p>Clique em <strong>Carregar planilha</strong> para enviar o arquivo.</p>
+</li>
+</ol>
+<h3>Definir as listas preferenciais</h3>
+<ol>
+<li>
+<p>Em <strong>Listas de preços</strong>, clique em <strong>Preferências</strong>. O mesmo caminho está em <strong>Mais ações &gt; Configurar as listas de preços preferenciais</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Vendas</strong>, selecione a lista já cadastrada. Essa lista vale para pedidos de venda, notas fiscais e propostas comerciais.</p>
+</li>
+<li>
+<p>Em <strong>PDV</strong>, selecione a lista já cadastrada. Os dois campos não são obrigatórios e mostram <strong>Selecione</strong> e as listas da conta.</p>
+<p><img src="screenshots/18.png" alt="Preferências de lista para Vendas e PDV" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. O ERP da Olist passa a usar a lista escolhida em vendas e a lista escolhida no PDV.</p>
+</li>
+</ol>
+<h3>Informar a lista no cadastro do produto</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Produtos &gt; Incluir produto</strong>.</p>
+</li>
+<li>
+<p>Abra a aba <strong>Preços</strong>.</p>
+</li>
+<li>
+<p>Selecione <strong>Lista de preço</strong>.</p>
+</li>
+<li>
+<p>Informe <strong>Preço</strong> e <strong>Preço promocional</strong>. Os campos não são obrigatórios.</p>
+<p><img src="screenshots/9.png" alt="Aba Preços do produto com lista, preço e preço promocional" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. O produto fica com a lista, o preço e o preço promocional informados.</p>
+</li>
+</ol>
+<h2>Informações adicionais</h2>
+<h3>A lista de vendas cobre os documentos comerciais</h3>
+<p>A lista selecionada em <strong>Vendas</strong> vale para pedidos de venda, notas fiscais e propostas comerciais.</p>
+<h3>A lista pode ser exportada</h3>
+<p>No menu da linha da lista, exporte o arquivo em CSV ou Excel.</p>
+</article>
+</body>
+</html>
