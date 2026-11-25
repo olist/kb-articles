@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Atualizar custos de produtos em massa pela API</title>
+</head>
+<body>
+<article>
+<h1>Atualizar custos de produtos em massa pela API</h1>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Token da conta para autenticar as chamadas em HTTP Bearer.</li>
+<li>Identificador numérico (<strong>idProduto</strong>) dos produtos já cadastrados.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Essas operações usam caminhos próprios de custo, separados da atualização de produto, kit, fabricado ou variação.</li>
+</ul>
+<h2>Instruções</h2>
+<p>Confirme o token da conta antes das chamadas.</p>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+<p><img src="screenshots/33.png" alt="Lista de Configurações ERP com Token API em Outras configurações" /></p>
+</li>
+<li>
+<p>Na seção <strong>Outras configurações</strong>, abra <strong>Token API</strong>.</p>
+<p><img src="screenshots/34.png" alt="Tela Token API com o campo Token e o botão Gerar Token API" /></p>
+</li>
+<li>
+<p>Leia o campo <strong>Token</strong> para autenticar as chamadas.</p>
+</li>
+<li>
+<p>Se o campo <strong>Token</strong> estiver vazio, clique em <strong>Gerar Token API</strong>.</p>
+</li>
+</ol>
+<h3>Incluir custos de produtos distintos</h3>
+<p>Esta chamada inclui o custo de produtos diferentes de uma só vez.</p>
+<ol>
+<li>Autentique a chamada enviando o token da conta como HTTP Bearer (bearerAuth).</li>
+<li>Na chamada <strong>POST /produtos/custos</strong>, informe os campos abaixo.</li>
+</ol>
+<h4>Campos obrigatórios</h4>
+<ul>
+<li><strong>idProduto</strong>: inteiro do produto, por exemplo 501</li>
+<li><strong>precoCusto</strong>: número do preço de custo, por exemplo 15.90</li>
+<li><strong>custoMedio</strong>: número do custo médio, por exemplo 14.20</li>
+</ul>
+<h4>Campos opcionais</h4>
+<ul>
+<li><strong>data</strong></li>
+<li><strong>saldoAtual</strong>: número do saldo atual, por exemplo 10</li>
+<li><strong>saldoAnterior</strong>: número do saldo anterior, por exemplo 8</li>
+<li><strong>impostosRecuperaveis</strong>: número de impostos recuperáveis, por exemplo 1.50</li>
+<li><strong>precoVenda</strong>: número do preço de venda, por exemplo 29.90</li>
+</ul>
+<ol start="3">
+<li>Envie a chamada. A resposta documentada é 201 Created.</li>
+</ol>
+<h3>Incluir custo em todas as variações</h3>
+<p>Esta chamada lança o mesmo preço de custo e o mesmo custo médio em todas as variações de um produto.</p>
+<ol>
+<li>Autentique a chamada enviando o token da conta como HTTP Bearer (bearerAuth).</li>
+<li>Monte <strong>POST /produtos/{idProduto}/variacoes/custos</strong> e substitua <strong>idProduto</strong> pelo identificador inteiro do produto, por exemplo 501.</li>
+<li>Informe <strong>precoCusto</strong> e <strong>custoMedio</strong>. Os dois são obrigatórios e numéricos, por exemplo 15.90 e 14.20.</li>
+<li>Envie a chamada. A resposta documentada é 201 Created.</li>
+</ol>
+<h2>Resultado</h2>
+<p>A inclusão de custos de produtos distintos e a inclusão do mesmo custo em todas as variações respondem 201 Created.</p>
+</article>
+</body>
+</html>
