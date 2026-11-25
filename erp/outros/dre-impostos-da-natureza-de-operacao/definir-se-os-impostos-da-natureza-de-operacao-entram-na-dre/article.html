@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Definir se os impostos da natureza de operação entram na DRE</title>
+</head>
+<body>
+<article>
+<h1>Definir se os impostos da natureza de operação entram na DRE</h1>
+<p>No ERP da Olist, o campo <strong>Considerar impostos no DRE</strong> define se os impostos das notas e dos pedidos de uma natureza de operação de saída entram nas deduções do DRE, mesmo quando a operação não é tratada como receita.</p>
+<p>Ele fica em <strong>Configurações avançadas</strong>, separado de <strong>Considerar como receita no DRE</strong>, que controla só a receita bruta, e de <strong>Considerar CMV no DRE</strong>. Você define esse valor na natureza já cadastrada ou ao incluir uma natureza, em <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais &gt; Naturezas de operação de saída (tributação)</strong>.</p>
+<h2>Importante</h2>
+<ul>
+<li>Em bonificação, doação ou brinde, use <strong>Sim</strong> em <strong>Considerar impostos no DRE</strong> para incluir os impostos nas deduções.</li>
+<li>Meses de DRE já salvos só passam a refletir a alteração depois que os valores forem recalculados.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Na natureza já cadastrada</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais &gt; Naturezas de operação de saída (tributação)</strong>.</p>
+<p><img src="screenshots/21.png" alt="Lista de naturezas inativas vazia, com a mensagem Sua pesquisa não retornou resu" /></p>
+</li>
+<li>
+<p>Clique na natureza de saída.</p>
+<p><img src="screenshots/23.png" alt="Natureza Venda de mercadorias com finalidade Normal" /></p>
+</li>
+<li>
+<p>Em <strong>Configurações avançadas</strong>, clique em <strong>exibir</strong> se a seção estiver recolhida.</p>
+</li>
+<li>
+<p>Em <strong>Considerar impostos no DRE</strong>, selecione <strong>Sim</strong> ou <strong>Não</strong>. O campo não é obrigatório.</p>
+<p><img src="screenshots/22.png" alt="Configurações avançadas com os três campos de DRE em Sim" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>.</p>
+</li>
+</ol>
+<h3>Ao incluir uma natureza</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Notas Fiscais &gt; Naturezas de operação de saída (tributação)</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir natureza de operação</strong>.</p>
+</li>
+<li>
+<p>Informe a <strong>Descrição</strong> e selecione a <strong>Finalidade</strong> (<strong>Normal</strong>, <strong>Devolução</strong>, <strong>Bonificação</strong> ou <strong>Remessa</strong>). Os dois campos não são obrigatórios.</p>
+<p><img src="screenshots/16.png" alt="Inclusão de natureza com finalidade Bonificação" /></p>
+</li>
+<li>
+<p>Em <strong>Configurações avançadas</strong>, clique em <strong>exibir</strong> se a seção estiver recolhida.</p>
+</li>
+<li>
+<p>Confira <strong>Considerar impostos no DRE</strong> e selecione <strong>Sim</strong> ou <strong>Não</strong> se o padrão não servir. O campo não é obrigatório. A <strong>Finalidade</strong> preenche os três campos, e você pode alterar cada um antes de salvar.</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><strong>Normal</strong> deixa os três campos em <strong>Sim</strong>.</p>
+</li>
+<li>
+<p><strong>Bonificação</strong> deixa <strong>Considerar como receita no DRE</strong> em <strong>Não</strong> e deixa <strong>Considerar CMV no DRE</strong> e <strong>Considerar impostos no DRE</strong> em <strong>Sim</strong>.</p>
+</li>
+<li>
+<p><strong>Remessa</strong> e <strong>Devolução</strong> deixam os três campos em <strong>Não</strong>.</p>
+<p><img src="screenshots/15.png" alt="Campos de DRE na finalidade Bonificação" /></p>
+<p><img src="screenshots/18.png" alt="Campos de DRE na finalidade Remessa" /></p>
+<p><img src="screenshots/20.png" alt="Campos de DRE na finalidade Devolução" /></p>
+</li>
+</ul>
+<ol start="6">
+<li>Clique em <strong>Salvar</strong>.</li>
+</ol>
+<h2>Informações adicionais</h2>
+<h3>Impostos e estorno seguem o campo</h3>
+<p>Os impostos da nota fiscal, do pedido de venda e o estorno das devoluções entram nas deduções do DRE conforme <strong>Considerar impostos no DRE</strong>.</p>
+<h3>Nota de bonificação com o campo em Sim</h3>
+<p>Em uma nota de bonificação de R$ 1.000,00, com ICMS de R$ 180,00 e custo de R$ 600,00, <strong>Considerar impostos no DRE</strong> em <strong>Sim</strong> deixa as deduções em R$ 180,00, o CMV em R$ 600,00 e o resultado em -R$ 780,00.</p>
+</article>
+</body>
+</html>
