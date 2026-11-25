@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Sincronização de estoque com os canais</title>
+</head>
+<body>
+<article>
+<h1>Sincronização de estoque com os canais</h1>
+<p>No ERP da Olist, você define qual saldo a loja virtual recebe a partir da integração conectada. Pode não atualizar a loja, enviar o saldo físico ou enviar o saldo disponível, que é o físico menos as reservas.</p>
+<p>Você também escolhe os depósitos que entram nesse saldo e, se quiser, uma margem de estoque de segurança. A reserva de estoque já está habilitada na conta e ocorre automaticamente conforme a situação do pedido.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A integração da loja virtual precisa estar conectada.</li>
+<li>Os depósitos que entram no saldo precisam existir. Linhas marcadas como <strong>não habilitado</strong> não entram no saldo da integração.</li>
+<li>Depósitos de outra empresa do grupo só entram se o envio de dados desta empresa para ela estiver habilitado.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Com a reserva habilitada, não escolha <strong>Automático ao salvar o pedido</strong> em <strong>Lançamento de estoque para saídas</strong>. Esse lançamento invalida a reserva.</li>
+<li>O saldo disponível enviado à loja é o físico menos as reservas.</li>
+<li>O saldo de depósitos de uma empresa conectada que não recebe dados desta empresa fica de fora até você habilitar esse envio.</li>
+<li>Com estoque de segurança, o anúncio é informado como zero quando a quantidade atinge a margem.</li>
+<li>Em <strong>Configurações &gt; Configurações ERP &gt; Suprimentos &gt; Configurações de estoque</strong>, desmarcar <strong>Contratar automaticamente extensão de limite de sincronização de estoque adicional</strong> pode bloquear o envio de estoque se o limite do plano for excedido.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong> e, na integração da loja virtual conectada, clique em <strong>gerenciar</strong>.</p>
+</li>
+<li>
+<p>Acesse <strong>Produtos &gt; Regras de Estoque</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Atualizar estoque na loja virtual a partir do ERP</strong>, escolha <strong>Não atualizar</strong>, <strong>Enviar saldo físico</strong> ou <strong>Enviar saldo disponível</strong>. O campo não é obrigatório. <strong>Enviar saldo disponível</strong> envia o físico menos as reservas.</p>
+<p><img src="screenshots/16.png" alt="Opções de atualização do estoque na loja virtual" /></p>
+</li>
+<li>
+<p>Na tabela <strong>Depósito no ERP | Empresa</strong>, selecione os depósitos que entram no saldo. <strong>Todos Próprios</strong> reúne os depósitos de todas as empresas do grupo. Depósitos marcados como <strong>não habilitado</strong> ficam de fora.</p>
+<p><img src="screenshots/12.png" alt="Tabela de depósitos da integração" /></p>
+<p><img src="screenshots/17.png" alt="Ajuda de Todos Próprios" /></p>
+</li>
+<li>
+<p>Em <strong>Lançamento de estoque para saídas</strong>, mantenha <strong>Usar configuração padrão da conta</strong> ou escolha <strong>Manual</strong>, <strong>Automático ao autorizar a nota fiscal</strong>, <strong>Automático ao salvar a nota fiscal</strong>, <strong>Automático ao salvar o pedido</strong> ou <strong>Automático ao marcar pedido como enviado</strong>. O campo não é obrigatório. Não use <strong>Automático ao salvar o pedido</strong>, porque invalida a reserva.</p>
+</li>
+<li>
+<p>Marque <strong>Tornar o produto indisponível ao zerar o estoque</strong> se quiser que o produto fique indisponível na loja quando o estoque zerar. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Marque <strong>Utilizar estoque de segurança</strong> para exibir <strong>Estoque de segurança</strong>. Informe a margem no formato de número com vírgula decimal, como 5,00. O campo não é obrigatório e só aparece com <strong>Utilizar estoque de segurança</strong> marcado. O anúncio passa a ser informado como zero quando o estoque atinge essa margem.</p>
+<p><img src="screenshots/18.png" alt="Estoque de segurança e regra de lançamento de saídas" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar as regras da integração.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>A integração fica pronta para refletir na loja o saldo físico, o saldo disponível ou nenhum saldo, com os depósitos e a margem escolhidos.</p>
+<h2>Informações adicionais</h2>
+<h3>Todos Próprios reúne depósitos do grupo</h3>
+<p><strong>Todos Próprios</strong> considera depósitos de todas as empresas do grupo. Confira o detalhamento na tabela.</p>
+</article>
+</body>
+</html>
