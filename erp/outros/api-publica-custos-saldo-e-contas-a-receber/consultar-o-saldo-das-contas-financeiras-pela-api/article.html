@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Consultar o saldo das contas financeiras pela API</title>
+</head>
+<body>
+<article>
+<h1>Consultar o saldo das contas financeiras pela API</h1>
+<p>Pela API pública v3 do ERP da Olist, você lista as contas financeiras e pode filtrar a consulta por descrição, situação, ordenação e paginação.</p>
+<p>A resposta não inclui saldo atual nem saldo conciliado.</p>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+<p><img src="screenshots/33.png" alt="Lista de Configurações ERP com Token API na seção Outras configurações." /></p>
+</li>
+<li>
+<p>Na seção <strong>Outras configurações</strong>, clique em <strong>Token API</strong>.</p>
+</li>
+<li>
+<p>Se o campo <strong>Token</strong> estiver vazio, clique em <strong>Gerar Token API</strong>.</p>
+</li>
+<li>
+<p>Autentique a chamada com bearerAuth (HTTP Bearer), usando o valor do campo <strong>Token</strong>. O token é o identificador único da sua conta no ERP e permite operações nesta conta pelas APIs.</p>
+<p><img src="screenshots/34.png" alt="Tela Token API com o campo Token." /></p>
+</li>
+<li>
+<p>Envie <strong>GET /contas-financeiras</strong>. A resposta 200 devolve cada conta somente com <strong>id</strong>, <strong>descricao</strong> e <strong>situacao</strong>, sem saldo atual nem saldo conciliado. Para filtrar a lista, informe os parâmetros opcionais:</p>
+<ul>
+<li><strong>descricao</strong>: pesquisa pela descrição da conta financeira</li>
+<li><strong>situacao</strong>: informe A (Ativa) ou I (Inativa)</li>
+<li><strong>orderBy</strong>: informe asc (Crescente) ou desc (Decrescente)</li>
+<li><strong>limit</strong> e <strong>offset</strong>: paginam o resultado</li>
+</ul>
+<p><img src="screenshots/35.png" alt="Listagem de contas financeiras com id, descricao e situacao, sem saldo." /></p>
+</li>
+</ol>
+</article>
+</body>
+</html>
