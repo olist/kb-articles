@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Depósitos e configurações de estoque</title>
+</head>
+<body>
+<article>
+<h1>Depósitos e configurações de estoque</h1>
+<p>No ERP da Olist, o estoque fica organizado em depósitos. Você consulta o saldo de cada produto, inclusive quando o saldo físico ou o disponível está negativo, prepara um lançamento manual e define quando entradas, saídas e estornos são feitos.</p>
+<p>No cadastro do produto, <strong>Dias para preparação</strong> informa quantos dias corridos o item leva para ficar disponível. Na inclusão de depósito, os tipos são <strong>Próprio</strong> e <strong>Exclusivo para um canal de venda</strong>.</p>
+<h2>Importante</h2>
+<ul>
+<li>Se <strong>Permite estoque negativo</strong> não estiver em <strong>Sim</strong>, o sistema não lança estoque de nota fiscal, pedidos e ordem de serviço quando o saldo é insuficiente.</li>
+<li>O lançamento automático de saídas ao salvar o pedido é desaconselhado na tela.</li>
+<li>Ao excluir a nota fiscal, o estorno de estoque também é automático.</li>
+<li>O filtro de lançamentos lista <strong>Sem filtro</strong>, <strong>Entrada</strong>, <strong>Saída</strong> e <strong>Balanço</strong>. O estorno fica em <strong>Configurações de estoque</strong>.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Consultar saldos e preparar um lançamento</h3>
+<ol>
+<li>
+<p>Acesse <strong>Suprimentos &gt; Controle de Estoques</strong>.
+<img src="screenshots/2.png" alt="Lista de produtos com saldo por depósito" /></p>
+</li>
+<li>
+<p>No menu <strong>Mais ações</strong>, use <strong>Transferir</strong>, <strong>Inventário</strong> ou <strong>Imprimir relatório</strong>. No menu da linha do saldo, use <strong>Imprimir etiquetas</strong>.</p>
+</li>
+<li>
+<p>Abra o saldo físico para ver os detalhes por depósito.
+<img src="screenshots/5.png" alt="Detalhes do saldo físico por depósito" /></p>
+</li>
+<li>
+<p>Na tela de lançamentos do produto, confira os saldos físico, reservado, disponível e multiempresa.
+<img src="screenshots/8.png" alt="Lançamentos do produto com os quatro saldos" /></p>
+</li>
+<li>
+<p>Em <strong>Incluir lançamento</strong>, preencha <strong>Qtd</strong>, <strong>Preço</strong> e <strong>Observação</strong>. Nenhum desses campos é obrigatório. O preço aceita casas decimais.
+<img src="screenshots/11.png" alt="Formulário de incluir lançamento" /></p>
+</li>
+<li>
+<p>Filtre os lançamentos por <strong>Sem filtro</strong>, <strong>Entrada</strong>, <strong>Saída</strong> ou <strong>Balanço</strong>.
+<img src="screenshots/12.png" alt="Filtro por tipo de lançamento" /></p>
+</li>
+<li>
+<p>No menu da linha de um lançamento, calcule o saldo no período do lançamento ou remova o lançamento.
+<img src="screenshots/13.png" alt="Menu da linha do lançamento" /></p>
+</li>
+</ol>
+<h3>Incluir um depósito</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Suprimentos &gt; Depósitos de estoque</strong>. A lista tem filtro de ativos, busca e <strong>Incluir depósito</strong>.
+<img src="screenshots/15.png" alt="Lista de depósitos ativos" /></p>
+</li>
+<li>
+<p>No menu da linha de um depósito, use <strong>Inativar depósito</strong> ou <strong>Tornar depósito padrão</strong>.
+<img src="screenshots/22.png" alt="Menu da linha do depósito" /></p>
+</li>
+<li>
+<p>Clique em <strong>Incluir depósito</strong>.
+<img src="screenshots/16.png" alt="Formulário de incluir depósito com tipo Próprio" /></p>
+</li>
+<li>
+<p>Preencha <strong>Descrição</strong>. O campo não é obrigatório.
+<img src="screenshots/17.png" alt="Descrição preenchida no novo depósito" /></p>
+</li>
+<li>
+<p>Em <strong>Tipo</strong>, selecione <strong>Próprio</strong> ou <strong>Exclusivo para um canal de venda</strong>. <strong>Próprio</strong> vem selecionado. Depósitos próprios são compartilhados entre canais. Depósitos externos, em geral, são de fulfillment e exclusivos de um canal.
+<img src="screenshots/18.png" alt="Ajuda do tipo de depósito" /></p>
+</li>
+<li>
+<p>Marque <strong>Desconsiderar saldo deste depósito</strong> quando o saldo desse depósito não deve ser considerado.</p>
+</li>
+<li>
+<p>Se escolher <strong>Exclusivo para um canal de venda</strong>, preencha <strong>CNPJ</strong> no formato AA.AAA.AAA/AAAA-00, use <strong>Adicionar outro CNPJ</strong> para incluir mais um e preencha <strong>CNPJ Remetente</strong>. Em multiempresa unificado, o <strong>CNPJ Remetente</strong> é validado junto ao CNPJ destinatário para identificar o depósito da entrada. Marque <strong>Criar transferências de estoque para notas fiscais com os CNPJs informados acima</strong> quando quiser essa transferência. Esses campos não são obrigatórios.
+<img src="screenshots/20.png" alt="Depósito exclusivo com campos de CNPJ" />
+<img src="screenshots/21.png" alt="Ajuda do CNPJ Remetente" /></p>
+</li>
+</ol>
+<h3>Definir as configurações de estoque</h3>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP &gt; Suprimentos &gt; Configurações de estoque</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Permite estoque negativo</strong>, escolha <strong>Sim</strong>, <strong>Não - validar todos os depósitos com saldos a considerar</strong> ou <strong>Não - validar depósito da venda</strong>.
+<img src="screenshots/23.png" alt="Configurações de estoque negativo e de saídas" /></p>
+</li>
+<li>
+<p>Em saídas, escolha <strong>Manual</strong>, automático ao autorizar a nota fiscal, ao salvar a nota fiscal, ao salvar o pedido ou ao marcar enviado.</p>
+</li>
+<li>
+<p>Em entradas, escolha <strong>Manual</strong>, ao autorizar a nota fiscal, ao salvar a nota fiscal, ao salvar a ordem de compra ou ao finalizar a conferência.</p>
+</li>
+<li>
+<p>Em serviços, escolha <strong>Manual</strong>, ao salvar a ordem de serviço ou ao finalizar a ordem de serviço.</p>
+</li>
+<li>
+<p>Em <strong>Estorno de estoques</strong>, escolha <strong>Manual</strong> ou <strong>Automático ao cancelar nota fiscal</strong>. Na mesma tela, ajuste as demais caixas: contratar extensão de limite de sincronização, exibir estoque na lista de preços, estornar ao cancelar pedido, e-mail abaixo do mínimo, considerar saldo no sob encomenda, confirmar lotes e validades e permitir editar quantidade na importação de inventário.
+<img src="screenshots/24.png" alt="Estorno e demais opções de estoque" /></p>
+</li>
+</ol>
+<h3>Informar os dias para preparação</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Produtos</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Incluir produto</strong>.</p>
+</li>
+<li>
+<p>Na seção <strong>Estoque</strong>, preencha <strong>Controlar estoque</strong>, <strong>Estoque inicial</strong>, <strong>Estoque mínimo</strong>, <strong>Estoque máximo</strong>, <strong>Sob encomenda</strong>, <strong>Controlar lotes</strong>, <strong>Localização</strong> e <strong>Dias para preparação</strong>. Nenhum desses campos é obrigatório. <strong>Estoque inicial</strong> é a quantidade no depósito escolhido. <strong>Sob encomenda</strong> e <strong>Controlar lotes</strong> aceitam <strong>Sim</strong> ou <strong>Não</strong>.
+<img src="screenshots/26.png" alt="Seção Estoque do novo produto" /></p>
+</li>
+<li>
+<p>Em <strong>Dias para preparação</strong>, informe quantos dias corridos você demora para disponibilizar o produto. O depósito das variações usa o rótulo <strong>Depósito utilizado para as variações</strong>, com os depósitos já cadastrados.
+<img src="screenshots/28.png" alt="Estoque do produto com dias para preparação preenchidos" /></p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Em <strong>Depósitos de estoque</strong>, o formulário do novo depósito fica com a descrição e, no tipo exclusivo, com os CNPJs informados. Em <strong>Configurações de estoque</strong>, a tela mostra as regras de estoque negativo, de lançamento e de estorno. No novo produto, a seção <strong>Estoque</strong> reúne sob encomenda, localização e <strong>Dias para preparação</strong>.</p>
+</article>
+</body>
+</html>
