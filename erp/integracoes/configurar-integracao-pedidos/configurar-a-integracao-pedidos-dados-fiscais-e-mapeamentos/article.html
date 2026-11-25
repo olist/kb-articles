@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Configurar a integração: pedidos, dados fiscais e mapeamentos</title>
+</head>
+<body>
+<article>
+<h1>Configurar a integração: pedidos, dados fiscais e mapeamentos</h1>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A integração Tray já está conectada.</li>
+<li>Naturezas de operação, situações de pedido, formas de recebimento, categorias financeiras, bancos e formas de envio ou frete já cadastrados no ERP, pois as listas usam esses cadastros.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Antes de preencher os IDs de status em <strong>Outros</strong>, solicite o ID de status do pedido à Tray por ticket de atendimento com o parceiro.</li>
+<li>Cada seção tem o próprio botão <strong>Salvar</strong>. Grave a seção em que você alterou as opções.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Configurar o fluxo de pedidos</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong> e abra a configuração da integração Tray.</p>
+</li>
+<li>
+<p>Clique em <strong>Pedidos &gt; Fluxo de Pedidos</strong>.</p>
+</li>
+<li>
+<p>Marque ou desmarque <strong>Sincronização automática de pedidos</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Importar valor do frete nos pedidos</strong> para identificar e destacar no pedido de venda o valor do frete.</p>
+</li>
+<li>
+<p>Marque <strong>Formatar nome dos contatos no recebimento dos pedidos</strong> para formatar o nome com as iniciais maiúsculas em nome e sobrenome ao importar os pedidos.</p>
+</li>
+<li>
+<p>Em <strong>Completar endereço do cliente a partir do CEP na importação de pedidos</strong>, selecione <strong>Não</strong>, <strong>Apenas se bairro não está informado</strong> ou <strong>Sempre</strong>. O ERP consulta o CEP nos Correios para preencher o endereço.</p>
+<p><img src="screenshots/41.png" alt="Topo de Fluxo de Pedidos com sincronização, frete, nome e CEP" /></p>
+</li>
+<li>
+<p>Ajuste <strong>Importar apelido do Mercado Livre como marcador</strong> e <strong>Importar pedidos do Mercado Livre Fulfillment</strong>.</p>
+</li>
+<li>
+<p>Ajuste <strong>Somar o campo Interest nas despesas do pedido</strong>, <strong>Enviar rastreamento ao alterar a situação no ERP para enviado</strong> e <strong>Marcar pedido como entregue ao alterar a situação no ERP</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Intermediador</strong> e selecione o intermediador. A lista também oferece adicionar intermediador.</p>
+<p><img src="screenshots/31.png" alt="Lista do intermediador" /></p>
+<p><img src="screenshots/32.png" alt="Continuação da lista do intermediador, com a ação de adicionar intermediador" /></p>
+</li>
+<li>
+<p>Em <strong>Defina como processar valores diferentes entre nota fiscal e pagamento integrado</strong>, selecione <strong>Utilizar valor de pagamento integrado enviado pelo canal de venda (Recomendado)</strong> ou <strong>Considerar pagamento como 'Não integrado'</strong>. Pagamentos via cartão de crédito, débito ou Pix são enviados pelo canal de venda, e o valor total da nota fiscal precisa coincidir com o valor do pagamento integrado. Na opção recomendada, se o ERP identificar divergência nos valores, o pagamento é considerado como não integrado.</p>
+</li>
+</ol>
+<p><img src="screenshots/42.png" alt="Continuação de Fluxo de Pedidos, com Mercado Livre, Interest, rastreamento, intermediador e regra de pagamento" /></p>
+<ol start="11">
+<li>Clique em <strong>Salvar</strong> para gravar as regras de recebimento e tratamento dos pedidos.</li>
+</ol>
+<h3>Configurar os dados fiscais</h3>
+<ol>
+<li>
+<p>Na integração Tray, clique em <strong>Pedidos &gt; Dados Fiscais</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Envio de dados da NFe</strong>, selecione <strong>Automático ao autorizar nota fiscal</strong> ou <strong>Manual</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Natureza de operação para venda</strong>, selecione a natureza padrão dos pedidos importados, entre as naturezas já cadastradas.</p>
+</li>
+<li>
+<p>Marque <strong>Definir natureza de operação diferente para destinatários contribuintes do ICMS</strong> se quiser outra natureza para esses destinatários.</p>
+<p><img src="screenshots/33.png" alt="Dados Fiscais com envio da NFe, natureza de operação e opção de contribuinte do ICMS" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar o envio dos dados da NFe e a natureza de operação padrão.</p>
+</li>
+</ol>
+<h3>Mapear situações de pedidos</h3>
+<ol>
+<li>
+<p>Na integração Tray, clique em <strong>Mapeamentos &gt; Situações de Pedidos</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Permite retroceder situação dos pedidos na sincronização de situações</strong> se a sincronização puder voltar a situação do pedido.</p>
+</li>
+<li>
+<p>Na tabela, informe o <strong>Código da situação no E-commerce</strong> e selecione a <strong>Situação no Sistema ERP</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>adicionar mapeamento de situação</strong> para incluir outra linha.</p>
+</li>
+<li>
+<p>Clique em <strong>adicionar situações padrão</strong> para usar o atalho de situações padrão.</p>
+<p><img src="screenshots/43.png" alt="Situações de Pedidos com mapeamento e botões de adicionar" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar o vínculo entre o código da situação no ecommerce e a situação no ERP.</p>
+</li>
+</ol>
+<h3>Mapear formas de recebimento</h3>
+<ol>
+<li>
+<p>Na integração Tray, clique em <strong>Mapeamentos &gt; Formas de Recebimento</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Importar forma de recebimento nos pedidos</strong> para trazer a forma de recebimento nos pedidos.</p>
+</li>
+<li>
+<p>Em <strong>Forma de recebimento padrão</strong>, selecione a forma já cadastrada ou <strong>Não definida</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Categoria financeira padrão dos pedidos</strong>, selecione a categoria financeira.</p>
+</li>
+<li>
+<p>Na linha de mapeamento, selecione a <strong>Forma de recebimento</strong>, o meio <strong>Banco</strong> ou <strong>Gateway</strong> e o banco ou gateway já cadastrado.</p>
+</li>
+<li>
+<p>Informe o código na integração. Clique em <strong>adicionar forma de recebimento</strong> para incluir outra linha.</p>
+<p><img src="screenshots/44.png" alt="Formas de Recebimento com padrão, categoria e linha de mapeamento" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar a forma padrão, a categoria financeira e os códigos da integração.</p>
+</li>
+</ol>
+<h3>Mapear formas de frete</h3>
+<ol>
+<li>
+<p>Na integração Tray, clique em <strong>Mapeamentos &gt; Formas de Frete</strong>.</p>
+</li>
+<li>
+<p>Em cada linha, selecione a <strong>Forma de envio</strong>, a <strong>Forma de frete</strong> e informe o <strong>Código na integração</strong>. As opções de forma de frete dependem da forma de envio da linha.</p>
+<p><img src="screenshots/34.png" alt="Topo da tabela de Formas de Frete" /></p>
+</li>
+<li>
+<p>Clique em <strong>adicionar</strong> para incluir outra linha e informe o código na integração.</p>
+<p><img src="screenshots/35.png" alt="Continuação de Formas de Frete e botão adicionar" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar o vínculo entre forma de envio, forma de frete e código.</p>
+</li>
+</ol>
+<h3>Mapear categorias</h3>
+<ol>
+<li>
+<p>Na integração Tray, clique em <strong>Mapeamentos &gt; Categorias</strong>.</p>
+</li>
+<li>
+<p>Na linha da categoria do ERP, informe o <strong>Código da categoria no E-commerce</strong>.</p>
+<p><img src="screenshots/36.png" alt="Meio da tabela de categorias e campos de código" /></p>
+</li>
+<li>
+<p>Para trazer as categorias a partir do ecommerce, clique em <strong>importar categorias do e-commerce</strong>.</p>
+<p><img src="screenshots/37.png" alt="Tabela de Categorias e botão importar categorias do e-commerce" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar os códigos informados nas categorias.</p>
+</li>
+</ol>
+<h3>Configurar status e etiqueta</h3>
+<ol>
+<li>
+<p>Na integração Tray, clique em <strong>mais</strong> e em <strong>Outros</strong>.</p>
+<p><img src="screenshots/45.png" alt="Menu mais com a opção Outros" /></p>
+</li>
+<li>
+<p>Em <strong>Configurações Adicionais</strong>, selecione <strong>ID do status para envio do código de rastreio</strong>, <strong>ID do status para marcar pedido como entregue</strong> e <strong>ID do status para envio dos dados da NFe</strong>. Use os IDs solicitados à Tray.</p>
+</li>
+<li>
+<p>Em <strong>Tipo da impressão de etiqueta</strong>, selecione <strong>PDF</strong> ou <strong>ZPL</strong>.</p>
+<p><img src="screenshots/40.png" alt="Configurações Adicionais com IDs de status e tipo de etiqueta" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar os status da Tray e o formato da etiqueta.</p>
+</li>
+</ol>
+</article>
+</body>
+</html>
