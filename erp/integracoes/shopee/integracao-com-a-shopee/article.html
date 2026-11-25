@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Integração com a Shopee</title>
+</head>
+<body>
+<article>
+<h1>Integração com a Shopee</h1>
+<p>A integração com a Shopee liga a loja do canal ao ERP da Olist. Com ela, você recebe pedidos, envia produtos, imagens, estoque e preços, sincroniza situações, define regras de frete, etiquetas e pagamento, trata a NF-e, autentica o chat e configura o Fulfillment.</p>
+<p>A configuração fica em <strong>Início &gt; Integrações</strong>, no card <strong>Shopee</strong>, em <strong>gerenciar</strong>, nas abas <strong>Conexão</strong>, <strong>Produtos</strong>, <strong>Pedidos</strong>, <strong>Mapeamentos</strong> e <strong>Fulfillment</strong>. O impulsionamento fica em <strong>Cadastros &gt; Anúncios</strong> e dá destaque a até 5 anúncios por 4 horas contínuas.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Conta na Shopee para autorizar a conexão e o chat.</li>
+<li>Integração já conectada para configurar as abas, receber pedidos e impulsionar anúncios.</li>
+<li>Anúncios já publicados na Shopee para impulsionar.</li>
+<li>Fulfillment exclusivo de contas Full.</li>
+<li>Se a opção não aparecer para você, peça acesso ao administrador da conta.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>No impulsionamento, selecione até 5 anúncios ao mesmo tempo. O destaque dura 4 horas contínuas e não é possível adicionar novos anúncios durante o ciclo em andamento.</li>
+<li>Inclua todos os itens antes de ativar, para otimizar a cota. A renovação ocorre depois das 4 horas.</li>
+<li>Com a reserva de estoque habilitada, o lançamento automático ao salvar não é recomendado.</li>
+<li>O depósito de Fulfillment é exigido para salvar quando a importação é automática ou manual.</li>
+<li>Coleta Correios, Pegaki-Correios e Correios-Transacional não recebem os dados da NF. Correios recebe.</li>
+<li>Autorize o chat antes de usar as conversas. A <strong>Autenticação Chat</strong> pode estar desconectada mesmo com o canal conectado.</li>
+<li><strong>Conforme lista de preços</strong> só fica disponível se a conta tiver lista de preços. Recursos de preço promocional só ficam disponíveis se a conta tiver preço promocional.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Instalar a integração</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>.</p>
+</li>
+<li>
+<p>Em <strong>adicionar integração</strong>, escolha o canal <strong>Shopee</strong> e clique em <strong>instalar</strong>.</p>
+</li>
+<li>
+<p>Na aba <strong>Conexão</strong>, informe o <strong>Nome da integração</strong>. O campo não é obrigatório na integração já salva.</p>
+<p><img src="screenshots/30.png" alt="Recursos da integração Shopee" /></p>
+</li>
+<li>
+<p>Clique em <strong>conectar com Shopee</strong> para autorizar a loja na conta da Shopee. A tela de conexão fica pronta para essa autorização.</p>
+</li>
+</ol>
+<h3>Configurar produtos, estoque e preços</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>, abra <strong>gerenciar</strong> no card <strong>Shopee</strong> e vá à aba <strong>Produtos</strong>.</p>
+</li>
+<li>
+<p>Em atualização de estoque, escolha <strong>Não atualizar</strong>, <strong>Enviar saldo físico</strong> ou <strong>Enviar saldo disponível</strong>. O campo não é obrigatório.</p>
+<p><img src="screenshots/33.png" alt="Regras de atualização de estoque" /></p>
+</li>
+<li>
+<p>Em <strong>Lançamento de estoque para saídas</strong>, escolha <strong>Usar configuração padrão</strong>, <strong>Manual</strong>, <strong>Automático ao autorizar a nota fiscal</strong>, <strong>Automático ao salvar a nota fiscal</strong>, <strong>Automático ao salvar o pedido</strong> ou <strong>Automático ao marcar pedido como enviado</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Utilizar estoque de segurança</strong> se quiser usar a reserva. Se a reserva estiver habilitada, não use o lançamento automático ao salvar.</p>
+</li>
+<li>
+<p>Em preço enviado ao canal, escolha <strong>Preço fixo</strong>, <strong>Conforme lista de preços</strong> ou <strong>Conforme regras de preço</strong>.</p>
+<p><img src="screenshots/36.png" alt="Opções de preço enviado ao canal" /></p>
+</li>
+<li>
+<p>Em <strong>Enviar imagens dos produtos ao sincronizar</strong>, escolha <strong>Sim</strong> ou <strong>Apenas para novos produtos</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Receber imagens dos anúncios</strong>, escolha <strong>Importar imagens como anexos</strong> ou <strong>Apenas URL externa</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Importar anúncios com uma variação como anúncios simples</strong> se o anúncio de uma variação deve entrar como anúncio simples. Nenhum desses campos de envio e recebimento é obrigatório.</p>
+</li>
+<li>
+<p>Revise catálogo, estoque e preço e salve a integração.</p>
+<p><img src="screenshots/55.png" alt="Campos importados e enviados nos anúncios" /></p>
+</li>
+</ol>
+<h3>Configurar pedidos e dados fiscais</h3>
+<ol>
+<li>Na mesma integração, abra a aba <strong>Pedidos</strong>.</li>
+<li>Marque o que deve ocorrer na importação. Nenhum item é obrigatório:</li>
+</ol>
+<ul>
+<li><strong>Importar valor do frete</strong></li>
+<li><strong>Formatar nome dos contatos</strong></li>
+<li><strong>Sincronização automática</strong></li>
+<li><strong>Interpretador de endereços</strong></li>
+<li><strong>Importar moedas como desconto</strong></li>
+<li><strong>Importar taxa de cartão como outras despesas</strong></li>
+<li><strong>Organizar envio ao enviar NFe</strong></li>
+<li><strong>Enviar rastreamento ao marcar enviado</strong></li>
+<li><strong>Marcar entregue ao alterar situação</strong></li>
+</ul>
+<ol start="3">
+<li>
+<p>Em <strong>Completar endereço a partir do CEP</strong>, escolha <strong>Não</strong>, <strong>Apenas se bairro não informado</strong> ou <strong>Sempre</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Método de impressão de etiquetas</strong>, escolha <strong>Padrão do Canal</strong>, <strong>Formato PDF</strong> ou <strong>Impressora Térmica</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Intermediador</strong>, use a opção da conta. Na tela, a opção é <strong>Sem intermediador</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Valor de pagamento na NF</strong>, escolha <strong>Utilizar valor de pagamento integrado</strong> ou <strong>Considerar pagamento como não integrado</strong>.</p>
+<p><img src="screenshots/56.png" alt="Envio de dados da NF conforme o método de envio" /></p>
+</li>
+<li>
+<p>Em <strong>Envio da NFe</strong>, escolha <strong>Automático ao autorizar</strong> ou <strong>Manual</strong>.</p>
+</li>
+<li>
+<p>Preencha <strong>Bairro alternativo</strong> se precisar de um bairro substituto. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Em <strong>Natureza de operação para venda</strong>, selecione a natureza da conta.</p>
+</li>
+<li>
+<p>Ligue o controle de ICMS para exibir <strong>Natureza para contribuintes ICMS</strong> e selecione a natureza da conta.</p>
+</li>
+<li>
+<p>Revise pedidos, etiquetas, pagamento e NF-e e salve a integração.</p>
+</li>
+</ol>
+<p><img src="screenshots/43.png" alt="Dados fiscais e envio da NF-e" /></p>
+<h3>Mapear situações, recebimentos, frete e categorias</h3>
+<ol>
+<li>Abra a aba <strong>Mapeamentos</strong> da integração Shopee.</li>
+<li>Em situações, confira o de-para do canal para o ERP.</li>
+<li>Use <strong>adicionar situações padrão</strong> ou <strong>adicionar mapeamento</strong> para incluir linhas.</li>
+<li>Marque <strong>Permite retroceder</strong> somente se a situação puder voltar. O campo não é obrigatório.</li>
+<li>Ligue formas de recebimento para exibir <strong>Forma padrão de recebimento</strong> e <strong>Categoria da forma de recebimento</strong>. O valor inicial da forma padrão é <strong>Não definida</strong>. A categoria começa em <strong>Selecione</strong>.</li>
+<li>Em formas de frete, inclua a linha do frete da conta.</li>
+<li>Em categorias, abra a árvore do canal e atribua a categoria. Salve a integração depois de atribuir.</li>
+</ol>
+<h3>Configurar Fulfillment</h3>
+<ol>
+<li>
+<p>Abra a aba <strong>Fulfillment</strong> em <strong>gerenciar</strong> da integração Shopee.</p>
+</li>
+<li>
+<p>Marque <strong>Importar pedidos do Fulfillment</strong> para trazer esses pedidos. As formas de importação são <strong>Automaticamente</strong>, <strong>Manualmente</strong> e <strong>Não importar</strong>.</p>
+<p><img src="screenshots/22.png" alt="Importação de pedidos de Fulfillment desmarcada" /></p>
+</li>
+<li>
+<p>Em <strong>Lançamento de saídas do Fulfillment</strong>, escolha <strong>Usar configuração padrão da conta</strong>, <strong>Manual</strong>, <strong>Automático ao autorizar a nota fiscal</strong>, <strong>Automático ao salvar a nota fiscal</strong>, <strong>Automático ao salvar o pedido</strong> ou <strong>Automático ao marcar pedido como enviado</strong>.</p>
+<p><img src="screenshots/54.png" alt="Recomendação de lançamento ao marcar o pedido como enviado" /></p>
+</li>
+<li>
+<p>Quando a importação não está desligada, o depósito do Fulfillment é criado. Preencha o <strong>CNPJ destinatário do depósito de Fulfillment</strong>. Esse campo é obrigatório. O <strong>CNPJ remetente do depósito de Fulfillment</strong> é opcional. O tipo mostrado é <strong>Exclusivo canal de venda</strong>.</p>
+<p><img src="screenshots/51.png" alt="Formas de importação de pedidos de Fulfillment" /></p>
+<p><img src="screenshots/53.png" alt="Campos do depósito de Fulfillment" /></p>
+</li>
+<li>
+<p>Revise a importação e o estoque do Fulfillment e salve a integração.</p>
+</li>
+</ol>
+<h3>Autenticar o chat</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong> e abra <strong>gerenciar</strong> no card <strong>Shopee</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Autenticação Chat</strong>, confira se o estado está desconectada.</p>
+</li>
+<li>
+<p>Clique em <strong>gerenciar</strong> para abrir a autorização da conta na Shopee. Não há formulário de senha no ERP. Conclua a autorização na Shopee. O chat permanece desconectado até essa autorização.</p>
+<p><img src="screenshots/23.png" alt="Autorização do chat da Shopee" /></p>
+</li>
+<li>
+<p>Depois do login, acesse a aba <strong>Chat</strong> e depois <strong>Vendas &gt; Perguntas do e-commerce</strong>. A caixa reúne conversas de produto e de pedido, aceita anexos e tem filtros de não lido e lido. Pode ser necessário usar a extensão dessa tela.</p>
+<p><img src="screenshots/24.png" alt="Acesso ao chat, conversas e filtros" /></p>
+</li>
+</ol>
+<h3>Impulsionar pelo menu de contexto</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Anúncios</strong>.</p>
+</li>
+<li>
+<p>No card <strong>Shopee</strong>, clique em <strong>gerenciar</strong>.</p>
+</li>
+<li>
+<p>Na linha do anúncio, abra o menu de contexto.</p>
+</li>
+<li>
+<p>Clique em <strong>Impulsionar na Shopee</strong> para enviar o impulsionamento desse anúncio.</p>
+<p><img src="screenshots/62.png" alt="Menu de contexto com Impulsionar na Shopee" /></p>
+</li>
+</ol>
+<h3>Impulsionar por Mais ações</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Anúncios</strong> e clique em <strong>gerenciar</strong> no card <strong>Shopee</strong>.</p>
+<p><img src="screenshots/59.png" alt="Card Shopee em Anúncios" /></p>
+<p><img src="screenshots/57.png" alt="Limite de 5 anúncios e 4 horas" /></p>
+</li>
+<li>
+<p>Na lista, clique em <strong>Mais ações</strong>.</p>
+<p><img src="screenshots/60.png" alt="Lista de anúncios da Shopee" /></p>
+</li>
+<li>
+<p>Escolha <strong>Impulsionar anúncios</strong>. Abre o painel <strong>Impulsionar anúncios na Shopee</strong>, com busca, as regras de cota e os botões <strong>impulsionar</strong>, <strong>cancelar</strong> e <strong>fechar</strong>.</p>
+<p><img src="screenshots/61.png" alt="Menu Mais ações com Impulsionar anúncios" /></p>
+<p><img src="screenshots/64.png" alt="Painel Impulsionar anúncios na Shopee" /></p>
+</li>
+<li>
+<p>Busque em <strong>Busque pelo título ou identificador do anúncio</strong>, se precisar, e marque os anúncios no painel. O limite é 5. O contador inferior mostra a quantidade marcada.</p>
+</li>
+<li>
+<p>Clique em <strong>impulsionar</strong> para enviar o destaque de 4 horas contínuas. Use <strong>cancelar</strong> ou <strong>fechar</strong> se não quiser enviar.</p>
+<p><img src="screenshots/65.png" alt="Painel com um anúncio marcado" /></p>
+</li>
+</ol>
+<h3>Impulsionar em lote pela lista</h3>
+<ol>
+<li>Na lista de anúncios da Shopee, marque até 5 anúncios.</li>
+<li>Abra <strong>Mais ações &gt; Impulsionar anúncios</strong>.</li>
+<li>Confira a seleção no painel.</li>
+<li>Clique em <strong>impulsionar</strong> para enviar o mesmo destaque de até 5 anúncios por 4 horas contínuas.</li>
+</ol>
+<h2>Informações adicionais</h2>
+<h3>Situações mapeadas do canal</h3>
+<ul>
+<li><strong>UNPAID</strong> Não pago vai para <strong>Em aberto</strong>.</li>
+<li><strong>PENDING</strong> Pagamento pendente vai para <strong>Em aberto</strong>.</li>
+<li><strong>READY_TO_SHIP</strong> Pronto para envio vai para <strong>Pronto para envio</strong>.</li>
+<li><strong>PROCESSED</strong> Processado vai para <strong>Aprovado</strong>.</li>
+<li><strong>COMPLETED</strong> Finalizado vai para <strong>Entregue</strong>.</li>
+<li><strong>IN_CANCEL</strong> Em cancelamento vai para <strong>Cancelado</strong>.</li>
+<li><strong>CANCELLED</strong> Cancelado vai para <strong>Cancelado</strong>.</li>
+<li><strong>INVOICE_PENDING</strong> Nota fiscal pendente vai para <strong>Aprovado</strong>.</li>
+<li><strong>SHIPPED</strong> Enviado vai para <strong>Enviado</strong>.</li>
+</ul>
+<p>As situações do ERP na lista são <strong>Em aberto</strong>, <strong>Faturado</strong>, <strong>Cancelado</strong>, <strong>Aprovado</strong>, <strong>Preparando envio</strong>, <strong>Enviado</strong>, <strong>Entregue</strong>, <strong>Pronto para envio</strong>, <strong>Dados incompletos</strong>, <strong>Não entregue</strong> e <strong>Em devolução</strong>.</p>
+<h3>Outras ações na lista de anúncios</h3>
+<p>Em <strong>Mais ações</strong>, a lista da Shopee também exibe importar anúncios, relacionar anúncios, gerenciar preços dos anúncios, verificar anúncios com problemas de integração, enviar para o ecommerce e enviar preços para o ecommerce.</p>
+</article>
+</body>
+</html>
