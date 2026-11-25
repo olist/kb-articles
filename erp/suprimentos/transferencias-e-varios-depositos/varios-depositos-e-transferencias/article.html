@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Vários depósitos e transferências</title>
+</head>
+<body>
+<article>
+<h1>Vários depósitos e transferências</h1>
+<p>No Controle de Estoques do ERP da Olist, você consulta o saldo dos produtos no depósito escolhido e transfere quantidade de um depósito para outro. A consulta mostra estoque físico, estoque reservado e estoque disponível, com preço, custo médio, unidade e localização.</p>
+<p>Você também pode abrir o saldo por empresa e por depósito a partir do cadastro do produto, em <strong>Consultar Estoque Multiempresa</strong>. Dá para filtrar a lista por depósito, tipo, categoria, tags, variações, fornecedor e busca por nome, código (SKU) ou GTIN/EAN.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A empresa já precisa ter depósitos cadastrados. Origem, destino e o filtro de depósito só listam depósitos existentes. Esta tela não cadastra depósito novo.</li>
+<li>A transferência entre depósitos só aparece quando há mais de um depósito cadastrado.</li>
+<li>Os produtos já precisam constar no Controle de Estoques para aparecer na lista e na busca da transferência.</li>
+<li>Para ver o saldo em outra empresa do grupo, o produto precisa estar mapeado nela.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Na transferência, a quantidade não pode ser maior que o saldo do depósito de origem.</li>
+<li>A observação informada vale para todas as transferências daquele lançamento.</li>
+<li>Na consulta multiempresa, empresa sem o produto mapeado aparece como <strong>Produto não mapeado</strong>, sem linhas de depósito.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Consultar saldos por depósito</h3>
+<ol>
+<li>
+<p>Acesse <strong>Suprimentos &gt; Controle de Estoques</strong>. A lista traz <strong>Produto</strong>, <strong>Código (SKU)</strong>, <strong>Preço</strong>, <strong>Custo médio</strong>, <strong>Estoque físico</strong>, <strong>Estoque reservado</strong>, <strong>Estoque disponível</strong>, <strong>Unidade</strong> e <strong>Localização</strong>, com paginação e total de produtos.</p>
+<p><img src="screenshots/1.png" alt="Lista de Controle de Estoques com busca, chip de depósito, abas de tipo e colunas de saldo." /></p>
+</li>
+<li>
+<p>No menu <strong>•••</strong> da linha, a opção exibida é <strong>Imprimir etiquetas</strong>.</p>
+<p><img src="screenshots/8.png" alt="Menu da linha em Controle de Estoques com Imprimir etiquetas." /></p>
+</li>
+<li>
+<p>No filtro <strong>depósito</strong>, escolha o depósito da consulta ou <strong>Todos</strong>. O filtro só aparece quando a empresa tem mais de um depósito. O depósito ativo aparece no chip ao lado da busca.</p>
+</li>
+<li>
+<p>Pesquise por nome, código (SKU) ou GTIN/EAN em <strong>Pesquise por nome, código (SKU) ou GTIN/EAN</strong>, se quiser.</p>
+</li>
+<li>
+<p>Troque a aba <strong>todos</strong>, <strong>simples</strong>, <strong>kits</strong>, <strong>fabricado</strong> ou <strong>matéria-prima</strong>, se quiser.</p>
+</li>
+<li>
+<p>Abra <strong>filtros</strong> para usar <strong>Categoria</strong>, <strong>Exibir estoque de todas as empresas do grupo</strong>, <strong>Tags de produtos</strong>, <strong>Variações</strong> e <strong>Fornecedor</strong>. Em <strong>Tags de produtos</strong>, a opção inicial é <strong>Todas</strong>. Em <strong>Variações</strong>, use <strong>Sem filtro por variações</strong> quando não quiser filtrar por variação.</p>
+<p><img src="screenshots/11.png" alt="Painel filtros com Categoria, estoque do grupo, tags, variações e fornecedor." /></p>
+<p><img src="screenshots/19.png" alt="Filtros com Exibir estoque de todas as empresas do grupo marcado." /></p>
+</li>
+<li>
+<p>Clique em <strong>Aplicar</strong> para recarregar a lista. <strong>Cancelar</strong> fecha sem aplicar. <strong>Limpar filtros</strong> remove os filtros da lista.</p>
+<p><img src="screenshots/20.png" alt="Lista recarregada depois de aplicar o filtro de estoque de todas as empresas do grupo." /></p>
+</li>
+<li>
+<p>Clique no valor de <strong>Estoque físico</strong> para ver as empresas do grupo, os depósitos de cada empresa e o total por empresa.</p>
+<p><img src="screenshots/9.png" alt="Detalhe do estoque físico agrupado por empresa e depósito." /></p>
+<p><img src="screenshots/10.png" alt="Continuação do detalhe do estoque físico, com depósitos e total da empresa." /></p>
+</li>
+</ol>
+<h3>Transferir entre depósitos</h3>
+<ol>
+<li>
+<p>Em <strong>Suprimentos &gt; Controle de Estoques</strong>, clique em <strong>transferir entre depósitos</strong>. O mesmo comando está em <strong>Mais ações</strong>, junto de <strong>Inventário de estoque</strong> e <strong>Imprimir relatório</strong>.</p>
+<p><img src="screenshots/2.png" alt="Mais ações com Transferir entre depósitos, Inventário de estoque e Imprimir relatório." /></p>
+</li>
+<li>
+<p>No painel <strong>Transferência entre depósitos</strong>, selecione <strong>Depósito de origem</strong> e <strong>Depósito de destino</strong>. Os dois usam a mesma lista de depósitos cadastrados.</p>
+</li>
+<li>
+<p>Clique em <strong>Continuar</strong>. <strong>Cancelar</strong> ou o <strong>X</strong> fecham o painel nesta etapa.</p>
+<p><img src="screenshots/3.png" alt="Painel Transferência entre depósitos com origem, destino, Continuar e Cancelar." /></p>
+</li>
+<li>
+<p>Na etapa de itens, confira origem e destino já preenchidos. Preencha <strong>Observação</strong> se quiser. O campo não é obrigatório, e o texto de ajuda informa que a observação será aplicada a todas as transferências.</p>
+<p><img src="screenshots/4.png" alt="Etapa de itens da transferência sem produto, com observação e grade." /></p>
+</li>
+<li>
+<p>Pesquise o produto e escolha uma sugestão. A linha mostra <strong>Produto</strong>, <strong>Código (SKU)</strong>, <strong>Saldo na origem</strong>, <strong>Quantidade a transferir</strong> e <strong>Valor unitário</strong>.</p>
+<p><img src="screenshots/5.png" alt="Sugestões da busca de produto na transferência." /></p>
+<p><img src="screenshots/6.png" alt="Linha preenchida com saldo na origem, quantidade a transferir e valor unitário." /></p>
+</li>
+<li>
+<p>Ajuste <strong>Quantidade a transferir</strong> e <strong>Valor unitário</strong>. Informe os dois com vírgula decimal. A quantidade não pode ser maior que o saldo do depósito de origem.</p>
+</li>
+<li>
+<p>Clique em <strong>adicionar item</strong> para incluir outros produtos.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> ou em <strong>Transferir</strong>. São os comandos finais desta etapa. O lançamento reúne origem, destino, observação e itens.</p>
+</li>
+</ol>
+<h3>Descartar a transferência sem gravar</h3>
+<ol>
+<li>
+<p>Na etapa de itens, clique em <strong>Voltar</strong>.</p>
+</li>
+<li>
+<p>No aviso <strong>Deseja retornar à tela anterior? Os dados não salvos serão perdidos</strong>, clique em <strong>Confirmar</strong>. O painel fecha e a lista volta, sem gravar a transferência.</p>
+<p><img src="screenshots/7.png" alt="Aviso de dados não salvos ao voltar da transferência." /></p>
+</li>
+</ol>
+<h3>Consultar estoque multiempresa</h3>
+<ol>
+<li>
+<p>Acesse <strong>Cadastros &gt; Produtos</strong>.</p>
+</li>
+<li>
+<p>Na linha do produto, abra o menu <strong>•••</strong> e clique em <strong>Consultar Estoque Multiempresa</strong>. Esse comando não aparece no <strong>Mais ações</strong> da página.</p>
+<p><img src="screenshots/12.png" alt="Mais ações da lista de produtos, sem Consultar Estoque Multiempresa." /></p>
+<p><img src="screenshots/13.png" alt="Menu da linha do produto com Consultar Estoque Multiempresa." /></p>
+</li>
+<li>
+<p>Confira <strong>Descrição</strong>, <strong>Código (SKU)</strong>, <strong>Unidade</strong>, <strong>Preço</strong>, <strong>Estoque</strong> e <strong>Estoque Disponível</strong>.</p>
+<p><img src="screenshots/14.png" alt="Painel Estoque Multiempresa com preço, estoque e estoque disponível." /></p>
+</li>
+<li>
+<p>Clique no valor de <strong>Estoque</strong> para ver o agrupamento por empresa e, dentro dela, por depósito, com total por empresa. Empresa sem mapeamento mostra <strong>Produto não mapeado</strong>.</p>
+<p><img src="screenshots/15.png" alt="Painel Empresas aberto a partir de Estoque, com empresas e depósitos." /></p>
+<p><img src="screenshots/16.png" alt="Depósitos, total e empresas com Produto não mapeado." /></p>
+<p><img src="screenshots/17.png" alt="Final do painel Empresas aberto a partir de Estoque." /></p>
+</li>
+<li>
+<p>Clique no valor de <strong>Estoque Disponível</strong> para ver só o total de cada empresa, sem a quebra por depósito.</p>
+<p><img src="screenshots/18.png" alt="Painel Empresas aberto a partir de Estoque Disponível, com totais por empresa." /></p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Na grade, você vê os saldos do depósito escolhido. No detalhe do estoque físico, a composição por empresa e por depósito.</p>
+<p>Na transferência, depois de <strong>Continuar</strong>, a etapa de itens mostra origem, destino, observação e a grade de produtos. Ao escolher o produto, a linha exibe saldo na origem, quantidade a transferir e valor unitário.</p>
+<p>Em <strong>Consultar Estoque Multiempresa</strong>, você vê o estoque daquele produto nas empresas do grupo: detalhe por depósito em <strong>Estoque</strong> e total por empresa em <strong>Estoque Disponível</strong>.</p>
+</article>
+</body>
+</html>
