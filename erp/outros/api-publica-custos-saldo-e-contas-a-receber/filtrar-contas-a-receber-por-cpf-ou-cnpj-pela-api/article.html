@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Filtrar contas a receber por CPF ou CNPJ pela API</title>
+</head>
+<body>
+<article>
+<h1>Filtrar contas a receber por CPF ou CNPJ pela API</h1>
+<h2>Importante</h2>
+<ul>
+<li>A listagem não tem o parâmetro <strong>idContato</strong>. Para filtrar pelo cliente, informe o CPF ou CNPJ em <strong>cpfCnpj</strong>.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Configurações &gt; Configurações ERP</strong>.</p>
+</li>
+<li>
+<p>Na seção <strong>Outras configurações</strong>, abra <strong>Token API</strong>.</p>
+<p><img src="screenshots/33.png" alt="Lista de Configurações ERP com Token API na seção Outras configurações" /></p>
+</li>
+<li>
+<p>Copie o valor do campo <strong>Token</strong>. Ele é o identificador único da conta e permite operações por API. Se o campo estiver vazio, clique em <strong>Gerar Token API</strong>.</p>
+<p><img src="screenshots/34.png" alt="Tela Token API com o campo Token" /></p>
+</li>
+<li>
+<p>Autentique a chamada com o token no formato Bearer.</p>
+</li>
+<li>
+<p>Envie <strong>GET /contas-receber</strong> e informe o parâmetro opcional <strong>cpfCnpj</strong> com o CPF ou CNPJ do cliente. A API devolve a listagem de contas a receber filtrada por esse documento.</p>
+<p><img src="screenshots/36.png" alt="Parâmetro cpfCnpj na listagem de contas a receber da API v3" /></p>
+</li>
+</ol>
+<h2>Informações adicionais</h2>
+<h3>Outros filtros da mesma listagem</h3>
+<p>Na chamada <strong>GET /contas-receber</strong>, estes parâmetros também são opcionais: <strong>nomeCliente</strong>, <strong>situacao</strong>, datas de emissão e vencimento, <strong>numeroDocumento</strong>, <strong>numeroBanco</strong>, <strong>idNota</strong>, <strong>idVenda</strong>, <strong>marcadores</strong>, <strong>dataAtualizacao</strong>, <strong>orderBy</strong>, <strong>limit</strong> e <strong>offset</strong>.</p>
+<h3>A API v2 não filtra por CPF ou CNPJ</h3>
+<p>Na operação <strong>Pesquisar Contas a Receber</strong> da API v2, <strong>token</strong> e <strong>formato</strong> são obrigatórios. Informe ao menos um destes filtros: <strong>nome_cliente</strong>, <strong>numero_doc</strong>, <strong>numero_banco</strong>, data de emissão, data de vencimento, <strong>situacao</strong> (aberto, pago, cancelada, parcial) ou <strong>id_origem</strong>. O parâmetro <strong>pagina</strong> também existe. Essa pesquisa não filtra por CPF, CNPJ nem por id do contato.</p>
+<p><img src="screenshots/37.png" alt="Parâmetros de Pesquisar Contas a Receber na API v2, sem CPF, CNPJ ou id do contato" /></p>
+</article>
+</body>
+</html>
