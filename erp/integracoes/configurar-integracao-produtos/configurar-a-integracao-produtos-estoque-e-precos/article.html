@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Configurar a integração: produtos, estoque e preços</title>
+</head>
+<body>
+<article>
+<h1>Configurar a integração: produtos, estoque e preços</h1>
+<p>Na aba <strong>Produtos</strong> de uma integração de loja já conectada, você define como o ERP da Olist reflete estoque e preço na loja virtual e como produtos, imagens, Código (SKU), dias de preparação e preço de custo circulam na importação e na sincronização.</p>
+<p>Dá para escolher o saldo enviado, os depósitos considerados, o lançamento das saídas, uma margem de segurança, a origem do preço e o tratamento das imagens. O caminho é <strong>Início &gt; Integrações</strong>. Na integração conectada, use <strong>gerenciar</strong> e abra a aba <strong>Produtos</strong>.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A integração de ecommerce precisa estar conectada.</li>
+<li>Para usar <strong>Conforme lista de preços</strong>, a conta precisa ter ao menos uma lista de preços já cadastrada. O seletor só lista as existentes e não cria lista nesta tela.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Nenhum campo desta configuração é obrigatório.</li>
+<li>Se a conta tiver reserva de estoque habilitada, evite <strong>Automático ao salvar o pedido</strong>. Esse lançamento invalida a reserva.</li>
+<li>Depósitos de uma empresa conectada que não recebe dados desta empresa só entram no saldo depois de habilitar o envio de dados para ela.</li>
+<li>A gravação depende de <strong>Salvar</strong> no fim de cada sub-aba.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Regras de estoque</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>.</p>
+</li>
+<li>
+<p>Na integração conectada, clique em <strong>gerenciar</strong>.</p>
+<p><img src="screenshots/1.png" alt="Lista de integrações" /></p>
+</li>
+<li>
+<p>Abra a aba <strong>Produtos</strong> e a sub-aba <strong>Regras de Estoque</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Atualizar estoque na loja virtual a partir do ERP</strong>, escolha <strong>Não atualizar</strong>, <strong>Enviar saldo físico</strong> ou <strong>Enviar saldo disponível</strong>. O saldo disponível é o saldo físico menos as reservas. A tabela de depósitos, o lançamento das saídas e as opções de indisponibilidade e de estoque de segurança permanecem nas três opções.</p>
+<p><img src="screenshots/2.png" alt="Regras de estoque com as opções de saldo e a tabela de depósitos" /></p>
+<p><img src="screenshots/12.png" alt="Não atualizar selecionado, com a tabela de depósitos visível" /></p>
+<p><img src="screenshots/15.png" alt="Enviar saldo disponível selecionado, com a tabela de depósitos visível" /></p>
+</li>
+<li>
+<p>Em <strong>Depósitos considerados nesta integração</strong>, selecione uma linha nas colunas <strong>Depósito no ERP</strong> e <strong>Empresa</strong>, ou selecione <strong>Todos Próprios</strong>. <strong>Todos Próprios</strong> usa os depósitos de todas as empresas do grupo. Linhas não habilitadas de uma empresa conectada que não recebe dados desta empresa ficam fora do saldo até o envio ser habilitado.</p>
+<p><img src="screenshots/16.png" alt="Dica de Todos Próprios: depósitos de todas as empresas do grupo" /></p>
+<p><img src="screenshots/21.png" alt="Aviso de empresa conectada que não recebe dados e controles inferiores" /></p>
+</li>
+<li>
+<p>Em <strong>Lançamento de estoque para saídas</strong>, escolha <strong>Usar configuração padrão da conta</strong>, <strong>Manual</strong>, <strong>Automático ao autorizar a nota fiscal</strong>, <strong>Automático ao salvar a nota fiscal</strong>, <strong>Automático ao salvar o pedido</strong> ou <strong>Automático ao marcar pedido como enviado</strong>.</p>
+<p><img src="screenshots/3.png" alt="Lançamento de saídas e caixas de estoque" /></p>
+<p><img src="screenshots/17.png" alt="Lançamento de saídas, aviso de reserva e caixas de estoque" /></p>
+</li>
+<li>
+<p>Marque, se quiser, <strong>Tornar o produto indisponível ao zerar o estoque</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Utilizar estoque de segurança</strong> se quiser uma margem. Informe <strong>Estoque de segurança</strong> com vírgula decimal. Ao atingir a margem, o estoque do anúncio é informado como zero.</p>
+<p><img src="screenshots/13.png" alt="Campo Estoque de segurança após marcar Utilizar estoque de segurança" /></p>
+<p><img src="screenshots/14.png" alt="Estoque de segurança preenchido" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. A integração fica com a regra de estoque, os depósitos do saldo, o lançamento das saídas e a margem de segurança, se você a tiver informado.</p>
+</li>
+</ol>
+<h3>Preços</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>, clique em <strong>gerenciar</strong> na integração conectada e abra <strong>Produtos &gt; Preços</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Regra de utilização de preços para o e-commerce</strong>, escolha <strong>Preço fixo</strong>, <strong>Conforme lista de preços</strong> ou <strong>Conforme regras de preço</strong>.</p>
+<p><img src="screenshots/4.png" alt="Preços com a opção Preço fixo" /></p>
+</li>
+<li>
+<p>Em <strong>Conforme lista de preços</strong>, selecione <strong>Lista de preços utilizada nos produtos</strong>. Escolher uma lista não abre outros campos.</p>
+<p><img src="screenshots/19.png" alt="Conforme lista de preços com o seletor de lista" /></p>
+<p><img src="screenshots/20.png" alt="Lista de preços selecionada, sem campos adicionais" /></p>
+</li>
+<li>
+<p>Em <strong>Conforme regras de preço</strong>, informe <strong>Percentual de acréscimo ou desconto</strong> com vírgula decimal e escolha <strong>Base simples</strong> ou <strong>Base por dentro</strong> em <strong>Forma para aplicar os valores adicionais</strong>. Use <strong>Saiba mais</strong> para comparar peso bruto e peso cubado.</p>
+<p><img src="screenshots/6.png" alt="Conforme regras de preço com percentual, frete e bases de cálculo" /></p>
+<p><img src="screenshots/18.png" alt="Texto de Base simples e Base por dentro" /></p>
+<p><img src="screenshots/23.png" alt="Saiba mais com a regra de peso bruto e peso cubado" /></p>
+</li>
+<li>
+<p>Clique em <strong>Adicionar regra de preço e pesos</strong>. No modal, escolha <strong>Valor fixo</strong> ou <strong>Por faixa de peso</strong>. Em <strong>Valor fixo</strong>, informe <strong>Para anúncios com preço até</strong> e <strong>Valor adicional</strong>, com vírgula decimal. Em <strong>Por faixa de peso</strong>, informe <strong>De</strong>, <strong>Até</strong> (em kg, com vírgula decimal) e <strong>Valor do frete</strong>. Você pode adicionar nova regra e marcar <strong>Definir um limite de preço máximo</strong>. Confirme no modal para gravar a regra. Fechar sem confirmar não grava.</p>
+<p><img src="screenshots/7.png" alt="Modal de regra de preço em Valor fixo, ainda vazio" /></p>
+<p><img src="screenshots/8.png" alt="Modal em Valor fixo preenchido" /></p>
+<p><img src="screenshots/9.png" alt="Modal em Por faixa de peso com linha nova" /></p>
+<p><img src="screenshots/10.png" alt="Faixa de peso preenchida" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. A integração fica com a origem do preço da loja: preço fixo, uma lista de preços da conta ou regras com percentual, frete e forma de compor a base do anúncio.</p>
+</li>
+</ol>
+<h3>Fluxo de produtos</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>, clique em <strong>gerenciar</strong> na integração conectada e abra <strong>Produtos &gt; Fluxo de Produtos</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Ao importar produtos</strong>, escolha <strong>Importar imagens como anexos</strong> ou <strong>Apenas importar a URL externa das imagens</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Enviar imagens dos produtos ao sincronizar</strong>, escolha <strong>Sim</strong> ou <strong>Apenas para novos produtos</strong>.</p>
+<p><img src="screenshots/11.png" alt="Fluxo de produtos com opções de imagem, SKU e preparação" /></p>
+</li>
+<li>
+<p>Marque, se quiser, <strong>Enviar imagens do produto pai nas variações</strong>, <strong>Na importação de produtos, ao atualizar um produto, atualizar o Código (SKU)</strong>, <strong>Enviar dias para preparação ao sincronizar</strong> e <strong>Enviar o preço de custo ao enviar preço de venda</strong>. Essas marcações não abrem campos extras.</p>
+<p><img src="screenshots/22.png" alt="Enviar o preço de custo ao enviar preço de venda marcado, com Salvar no fim" /></p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong>. A integração fica com as regras de imagens na importação e na sincronização e com as opções de Código (SKU), dias de preparação e preço de custo.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Depois de salvar, a sub-aba <strong>Regras de Estoque</strong> mantém a forma de refletir o estoque, os depósitos e as opções de lançamento, indisponibilidade e margem. <strong>Preços</strong> mantém a regra escolhida. <strong>Fluxo de Produtos</strong> mantém as opções de imagem, Código (SKU), dias de preparação e preço de custo.</p>
+<h2>Informações adicionais</h2>
+<h3>Peso usado na regra de frete</h3>
+<p>Se o peso cubado for menor ou igual a 5, use o peso bruto. Se for maior que 5, use o maior entre bruto e cubado. O peso cubado é altura x largura x comprimento em centímetros, dividido por 6.000.</p>
+<h3>Efeito da base nos valores adicionais</h3>
+<p><strong>Base simples</strong> aplica o percentual sobre o preço do produto mais o frete. <strong>Base por dentro</strong> inclui o percentual na base, e os adicionais ficam maiores.</p>
+<h3>Caminho que não configura produtos, estoque ou preços</h3>
+<p><strong>mais &gt; Outros</strong> abre <strong>Configurações Adicionais</strong> de situação de pedido e tipo de etiqueta. Esse caminho não configura produtos, estoque ou preços.</p>
+</article>
+</body>
+</html>
