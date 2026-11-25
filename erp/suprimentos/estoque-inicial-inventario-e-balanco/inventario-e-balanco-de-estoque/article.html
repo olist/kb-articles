@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Inventário e balanço de estoque</title>
+</head>
+<body>
+<article>
+<h1>Inventário e balanço de estoque</h1>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Ter depósitos já cadastrados: o seletor lista os depósitos da conta.</li>
+<li>Para importar a contagem, ter o arquivo no formato aceito pela tela. O layout de exemplo pode ser baixado antes do envio.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Na importação por planilha, o arquivo aceito é CSV, XLS ou XLSX de até 2 MB. O produto é identificado por ID ou SKU, e só localização e saldo podem ser atualizados.</li>
+<li>Na importação por coletor, o arquivo aceito é TXT de até 2 MB.</li>
+<li>Para filtrar o inventário por fornecedor ou categoria, o cadastro correspondente já precisa existir: os dois campos buscam cadastro, não aceitam texto livre.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pela tela</h3>
+<ol>
+<li>
+<p>Acesse <strong>Suprimentos &gt; Controle de Estoques</strong>.</p>
+<p><img src="screenshots/1.png" alt="Menu Suprimentos aberto, com Controle de Estoques" /></p>
+<p><img src="screenshots/2.png" alt="Lista de Controle de Estoques com busca, abas de tipo e colunas de saldo" /></p>
+</li>
+<li>
+<p>Clique em <strong>Inventário de estoque</strong>. O mesmo item também aparece em <strong>Mais ações</strong>.</p>
+<p><img src="screenshots/3.png" alt="Menu Mais ações com Inventário de estoque" /></p>
+<p><img src="screenshots/4.png" alt="Painel Inventário de estoque com as três opções" /></p>
+</li>
+<li>
+<p>Escolha <strong>Gerar inventário (visualização, edição rápida e download)</strong>.</p>
+<p><img src="screenshots/5.png" alt="Formulário Gerar inventário" /></p>
+</li>
+<li>
+<p>Preencha os filtros. Nenhum deles é obrigatório.</p>
+</li>
+</ol>
+<h4>Quem entra na lista</h4>
+<ul>
+<li><strong>Busca</strong>: localiza o produto.</li>
+<li><strong>Tags</strong>: lista de tags. Sem filtro, a opção é <strong>Sem filtro por tags</strong>.</li>
+<li><strong>Depósitos</strong>: lista dos depósitos cadastrados.</li>
+<li><strong>Categoria</strong>: busca em categorias já cadastradas.</li>
+<li><strong>Fornecedor</strong>: busca por razão social ou nome fantasia de um fornecedor já cadastrado.</li>
+<li><strong>Situação do produto</strong>: <strong>Ativos</strong>, <strong>Inativos</strong> ou <strong>Todos exceto excluídos</strong>.</li>
+</ul>
+<h4>O que a visão mostra</h4>
+<ul>
+<li><strong>Exibir</strong>: <strong>Todos os itens</strong>, <strong>Itens com saldo em estoque</strong> ou <strong>Itens sem saldo em estoque</strong>.</li>
+<li><strong>Valor baseado em</strong>: <strong>Preço da última compra</strong>, <strong>Preço de custo atual</strong>, <strong>Preço de custo médio atual</strong> ou <strong>Preço de venda atual</strong>.</li>
+<li><strong>Exibir estoque disponível</strong>: marque para incluir o estoque disponível.</li>
+<li><strong>Exibir imagem dos produtos</strong>: marque para incluir a imagem dos produtos.</li>
+</ul>
+<p><img src="screenshots/6.png" alt="Formulário Gerar inventário preenchido" /></p>
+<ol start="5">
+<li>Clique em <strong>Gerar</strong>. O inventário filtrado fica pronto para visualização, edição rápida e download.</li>
+</ol>
+<h3>Por planilha</h3>
+<ol>
+<li>
+<p>Em <strong>Inventário de estoque</strong>, escolha <strong>Importar por planilha</strong>.</p>
+<p><img src="screenshots/7.png" alt="Tela Importar por planilha" /></p>
+</li>
+<li>
+<p>Clique em <strong>baixar arquivo de exemplo</strong>.</p>
+</li>
+<li>
+<p>No modal <strong>Download do layout</strong>, escolha <strong>Excel (.XLS)</strong> ou <strong>Text (.CSV)</strong>.</p>
+<p><img src="screenshots/8.png" alt="Modal Download do layout" /></p>
+</li>
+<li>
+<p>Selecione o <strong>Depósito de destino</strong>.</p>
+</li>
+<li>
+<p>Indique o arquivo CSV, XLS ou XLSX de até 2 MB.</p>
+</li>
+<li>
+<p>Clique em <strong>gerar inventário</strong>. A planilha atualiza localização e saldo dos produtos desse depósito.</p>
+</li>
+</ol>
+<h3>Por coletor</h3>
+<ol>
+<li>
+<p>Em <strong>Inventário de estoque</strong>, escolha <strong>Importar por coletor</strong>.</p>
+<p><img src="screenshots/9.png" alt="Tela Importar por coletor" /></p>
+</li>
+<li>
+<p>Em <strong>Como deseja validar o arquivo?</strong>, escolha <strong>Código de barras (GTIN/EAN)</strong>, <strong>Código SKU</strong> ou <strong>Código GTIN/EAN ou SKU</strong>.</p>
+</li>
+<li>
+<p>Para ver o layout, clique em <strong>baixar arquivo de exemplo</strong>. O TXT traz um código de barras por linha.</p>
+<p><img src="screenshots/10.png" alt="Arquivo de exemplo do coletor" /></p>
+</li>
+<li>
+<p>Selecione o <strong>Depósito de destino</strong> e indique o arquivo TXT de até 2 MB. A contagem do coletor entra nesse depósito, validada por GTIN/EAN, SKU ou ambos.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Em <strong>Controle de Estoques</strong>, a grade mostra o saldo do depósito selecionado, com busca, abas de tipo e as colunas de estoque físico, reservado e disponível. Em <strong>Inventário de estoque</strong>, os três caminhos ficam disponíveis: gerar a visão, importar a planilha ou importar o coletor.</p>
+<h2>Informações adicionais</h2>
+<h3>O que a lista de saldos mostra</h3>
+<p>A lista usa as abas <strong>Todos</strong>, <strong>Simples</strong>, <strong>Kits</strong>, <strong>Fabricado</strong> e <strong>Matéria-prima</strong>. As colunas visíveis são <strong>Produto</strong>, <strong>Código (SKU)</strong>, <strong>Preço</strong>, <strong>Custo médio</strong>, <strong>Estoque físico</strong>, <strong>Estoque reservado</strong>, <strong>Estoque disponível</strong>, <strong>Unidade</strong> e <strong>Localização</strong>.</p>
+</article>
+</body>
+</html>
