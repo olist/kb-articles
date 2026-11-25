@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Shopee: pedidos e dados fiscais</title>
+</head>
+<body>
+<article>
+<h1>Shopee: pedidos e dados fiscais</h1>
+<p>Na aba <strong>Pedidos</strong> da integração Shopee, o ERP da Olist define como os pedidos do canal entram no ERP e como frete, endereço, etiquetas, pagamento e NF-e são tratados.</p>
+<p>Você marca o que ocorre na importação, escolhe a impressão das etiquetas e define se a nota segue de forma automática ou manual para a Shopee.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A integração com a Shopee já precisa estar conectada.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Coleta Correios, Pegaki-Correios e Correios-Transacional não recebem os dados da NF. Correios recebe.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>.</p>
+</li>
+<li>
+<p>No card <strong>Shopee</strong>, clique em <strong>gerenciar</strong>.</p>
+</li>
+<li>
+<p>Abra a aba <strong>Pedidos</strong>.</p>
+</li>
+<li>
+<p>No fluxo, marque o que deve ocorrer na importação. Nenhum item é obrigatório: <strong>Importar valor do frete</strong>, <strong>Formatar nome dos contatos</strong>, <strong>Sincronização automática</strong>, <strong>Interpretador de endereços</strong>, <strong>Importar moedas como desconto</strong>, <strong>Importar taxa de cartão como outras despesas</strong>, <strong>Organizar envio ao enviar NFe</strong>, <strong>Enviar rastreamento ao marcar enviado</strong> e <strong>Marcar entregue ao alterar situação</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Completar endereço a partir do CEP</strong>, escolha <strong>Não</strong>, <strong>Apenas se bairro não informado</strong> ou <strong>Sempre</strong>. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Em <strong>Método de impressão de etiquetas</strong>, escolha <strong>Padrão do Canal</strong>, <strong>Formato PDF</strong> ou <strong>Impressora Térmica</strong>. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Em <strong>Intermediador</strong>, selecione <strong>Sem intermediador</strong> quando não houver intermediador. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Em <strong>Valor de pagamento na NF</strong>, escolha <strong>Utilizar valor de pagamento integrado</strong> ou <strong>Considerar pagamento como não integrado</strong>. O campo não é obrigatório.</p>
+<p><img src="screenshots/56.png" alt="Restrição de envio dos dados da NF conforme o método de envio" /></p>
+</li>
+<li>
+<p>Em dados fiscais, no campo <strong>Envio da NFe</strong>, escolha <strong>Automático ao autorizar</strong> ou <strong>Manual</strong>. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Em <strong>Bairro alternativo</strong>, digite o texto livre do bairro, se quiser usar. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Em <strong>Natureza de operação para venda</strong>, selecione uma natureza da lista da conta. O campo não é obrigatório.</p>
+</li>
+</ol>
+<p><img src="screenshots/43.png" alt="Dados fiscais e envio da NF-e" /></p>
+<ol start="12">
+<li>Ligue o <strong>controle de ICMS</strong> para exibir <strong>Natureza para contribuintes ICMS</strong> e selecione uma natureza da lista da conta. O campo não é obrigatório.</li>
+</ol>
+</article>
+</body>
+</html>
