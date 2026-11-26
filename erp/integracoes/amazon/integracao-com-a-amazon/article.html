@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Integração com a Amazon</title>
+</head>
+<body>
+<article>
+<h1>Integração com a Amazon</h1>
+<p>A integração com a Amazon liga a sua conta na Amazon ao ERP da Olist. Com ela, você importa produtos e pedidos, envia estoque e preços e relaciona situações, recebimentos, fretes e categorias.</p>
+<p>No catálogo há três canais: <strong>Amazon</strong>, <strong>Amazon FBA Classic</strong> e <strong>Amazon FBA Onsite</strong>. Depois de instalado, cada um é configurado em <strong>Início &gt; Integrações</strong>, no card, em <strong>gerenciar</strong>, nas abas <strong>Conexão</strong>, <strong>Produtos</strong>, <strong>Pedidos</strong> e <strong>Mapeamentos</strong>. O Amazon Ads é uma autenticação dentro da conexão da Amazon, não outro canal.</p>
+<h2>Importante</h2>
+<ul>
+<li>Para o ERP preencher a forma de pagamento dos pedidos importados, habilite <strong>Importar forma de recebimento nos pedidos</strong> e relacione as formas.</li>
+<li>O código de recebimento ou de frete só entra na linha quando você clica em <strong>Selecionar</strong>.</li>
+<li>Destacar uma categoria na árvore não a atribui. Confirme a seleção.</li>
+<li>Com a reserva de estoque da conta ligada, a ajuda de <strong>Lançamento de estoque para saídas</strong> não recomenda o lançamento automático ao salvar o pedido.</li>
+<li>O menu do card tem <strong>Inativar integração</strong>, <strong>Excluir todos os anúncios no ERP</strong> e <strong>Excluir integração</strong>. Não escolha essas opções se a intenção for só consultar.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Como instalar o canal</h3>
+<ol>
+<li>Acesse <strong>Início &gt; Integrações</strong>.</li>
+<li>Clique em <strong>adicionar integração</strong>.</li>
+<li>Localize <strong>Amazon</strong>, <strong>Amazon FBA Classic</strong> ou <strong>Amazon FBA Onsite</strong>.</li>
+<li>Inicie a instalação do canal desejado.</li>
+<li>Na etapa <strong>Conexão</strong>, informe o <strong>Nome da integração no ERP</strong> e conclua a autenticação com a Amazon. O canal instalado passa a aparecer em <strong>Minhas Integrações</strong> com <strong>gerenciar</strong>.</li>
+</ol>
+<h3>Como consultar a conexão da Amazon</h3>
+<ol>
+<li>Acesse <strong>Início &gt; Integrações</strong>.</li>
+<li>No card <strong>Amazon ERP</strong>, clique em <strong>gerenciar</strong>.</li>
+<li>Abra a aba <strong>Conexão</strong>.</li>
+<li>Confira o <strong>Nome da integração no ERP</strong> e o status dos cards <strong>Amazon ERP</strong> e <strong>Autenticação Amazon Ads</strong>. Para só consultar, não clique em <strong>Salvar</strong> nem inicie uma nova autenticação.</li>
+</ol>
+<h3>Como configurar produtos da Amazon</h3>
+<ol>
+<li>
+<p>No <strong>gerenciar</strong> da <strong>Amazon ERP</strong>, abra <strong>Produtos</strong>.</p>
+</li>
+<li>
+<p>Abra <strong>Receber Produtos</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Ao importar produtos</strong>, escolha <strong>Importar imagens como anexos</strong> ou <strong>Apenas importar a URL externa das imagens</strong>.</p>
+<p><img src="screenshots/121.png" alt="Receber produtos, com as opções de imagem" /></p>
+</li>
+<li>
+<p>Abra <strong>Regras de Estoque</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Atualizar estoque na loja virtual a partir do ERP</strong>, escolha <strong>Não atualizar</strong>, <strong>Enviar saldo físico</strong> ou <strong>Enviar saldo disponível</strong>.</p>
+</li>
+<li>
+<p>Na tabela de depósitos, defina quais depósitos entram na conta. A tabela traz <strong>Todos</strong> e <strong>Próprios</strong>. A tela também mostra um aviso sobre depósitos de empresa conectada que não recebem dados.</p>
+<p><img src="screenshots/152.png" alt="Regras de estoque e a tabela de depósitos" /></p>
+</li>
+<li>
+<p>Em <strong>Lançamento de estoque para saídas</strong>, escolha uma opção:</p>
+</li>
+</ol>
+<ul>
+<li><strong>Usar configuração padrão da conta</strong></li>
+<li><strong>Manual</strong></li>
+<li><strong>Automático ao autorizar a nota fiscal</strong></li>
+<li><strong>Automático ao salvar a nota fiscal</strong></li>
+<li><strong>Automático ao salvar o pedido</strong></li>
+<li><strong>Automático ao marcar pedido como enviado</strong></li>
+</ul>
+<ol start="8">
+<li>
+<p>Marque <strong>Utilizar estoque de segurança</strong> se quiser usar o estoque de segurança.</p>
+<p><img src="screenshots/153.png" alt="Lançamento de estoque para saídas e estoque de segurança" /></p>
+</li>
+<li>
+<p>Abra <strong>Preços</strong>.</p>
+</li>
+<li>
+<p>Defina o preço enviado. Em <strong>Conforme regras de preço</strong>, informe o <strong>percentual</strong> com vírgula e duas casas decimais e escolha <strong>Base simples</strong> ou <strong>Base por dentro</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Sugestão de preços (beta)</strong> se quiser usar a sugestão de preços.</p>
+</li>
+</ol>
+<p><img src="screenshots/122.png" alt="Preços com regras e sugestão de preços" /></p>
+<ol start="12">
+<li>Abra <strong>Fluxo de Produtos</strong>.</li>
+<li>Marque <strong>Enviar dias para preparação ao sincronizar</strong> se quiser enviar os dias de preparação na sincronização dos produtos.</li>
+<li>Clique em <strong>Salvar</strong> para gravar produtos, estoque, preço e dias de preparação.</li>
+</ol>
+<p><img src="screenshots/123.png" alt="Fluxo de produtos, com o envio dos dias de preparação" /></p>
+<h3>Como configurar pedidos e custos da Amazon</h3>
+<ol>
+<li>No <strong>gerenciar</strong> da <strong>Amazon ERP</strong>, abra <strong>Pedidos</strong>.</li>
+<li>Abra <strong>Fluxo de Pedidos</strong>.</li>
+<li>Ajuste a entrada do pedido:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Importar valor do frete</strong>: ligue para importar o frete do pedido.</p>
+</li>
+<li>
+<p>CEP: escolha <strong>Não</strong>, <strong>Apenas se bairro não está informado</strong> ou <strong>Sempre</strong>.</p>
+</li>
+<li>
+<p>DBA: escolha <strong>Formato PDF fornecido pela Amazon</strong> ou <strong>Impressora térmica</strong>.</p>
+</li>
+<li>
+<p><strong>Enviar rastreamento ao alterar situação para enviado</strong>: ligue para enviar o rastreamento nessa troca de situação.</p>
+</li>
+<li>
+<p>Intermediador: a opção <strong>Sem intermediador</strong> está na tela.</p>
+</li>
+<li>
+<p>Divergência de pagamento: escolha <strong>Utilizar valor de pagamento integrado (Recomendado)</strong> ou <strong>Considerar pagamento como Não integrado</strong>.</p>
+<p><img src="screenshots/124.png" alt="Fluxo de pedidos, com frete, CEP, DBA e pagamento" /></p>
+</li>
+</ul>
+<ol start="4">
+<li>
+<p>Abra <strong>Dados Fiscais</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Envio NFe</strong>, escolha <strong>Automático ao autorizar nota fiscal</strong> ou <strong>Manual</strong>.</p>
+</li>
+<li>
+<p>Em <strong>natureza</strong>, selecione a natureza de operação, como <strong>Venda de mercadorias</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>Definir natureza diferente para contribuintes ICMS</strong> se quiser outra natureza para contribuintes de ICMS.</p>
+<p><img src="screenshots/125.png" alt="Dados fiscais, com envio da NF-e e natureza" /></p>
+</li>
+<li>
+<p>Abra <strong>Custos</strong>.</p>
+</li>
+<li>
+<p>Na tabela, use <strong>Editar</strong>, <strong>Remover</strong> ou <strong>adicionar</strong>. As colunas são <strong>Categoria</strong>, <strong>Taxa (%)</strong>, <strong>Valor mínimo de comissão por unidade (R$)</strong> e <strong>Ações</strong>.</p>
+<p><img src="screenshots/126.png" alt="Tabela de comissão por categoria" /></p>
+</li>
+<li>
+<p>Para uma nova comissão, clique em <strong>adicionar</strong>, escolha a <strong>Categoria</strong>, informe a <strong>Taxa (%)</strong> com vírgula e o <strong>Valor mínimo de comissão por unidade (R$)</strong> em reais com vírgula.</p>
+</li>
+<li>
+<p>Confirme para gravar a comissão. Clique em <strong>Cancelar</strong> para fechar sem alterar a tabela. Em seguida, clique em <strong>Salvar</strong> na tela para gravar pedido, nota e custos.</p>
+</li>
+</ol>
+<p><img src="screenshots/129.png" alt="Nova comissão antes de gravar" /></p>
+<h3>Como mapear dados da Amazon</h3>
+<ol>
+<li>No <strong>gerenciar</strong> da <strong>Amazon ERP</strong>, abra <strong>Mapeamentos</strong>.</li>
+<li>Abra <strong>Situações de Pedidos</strong>.</li>
+<li>Ligue <strong>Permite retroceder situação dos pedidos na sincronização de situações</strong> somente se quiser que a sincronização volte a situação do pedido.</li>
+<li>Relacione cada situação da Amazon com uma situação do ERP. O seletor traz <strong>Selecione</strong>, <strong>Em aberto</strong>, <strong>Faturado</strong>, <strong>Cancelado</strong>, <strong>Aprovado</strong>, <strong>Preparando envio</strong>, <strong>Enviado</strong>, <strong>Entregue</strong>, <strong>Pronto para envio</strong>, <strong>Dados incompletos</strong>, <strong>Não entregue</strong> e <strong>Em devolução</strong>.</li>
+<li>Use <strong>adicionar situações padrão</strong> ou <strong>adicionar mapeamento de situação</strong> quando precisar incluir linhas. O mapeamento visto na tela é:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Pending/Pendente</strong> para <strong>Em aberto</strong></p>
+</li>
+<li>
+<p><strong>Unshipped/Pagamento autorizado</strong> para <strong>Faturado</strong></p>
+</li>
+<li>
+<p><strong>PartiallyShipped/Parcialmente enviado</strong> para <strong>Pronto para envio</strong></p>
+</li>
+<li>
+<p><strong>Shipped/Enviado</strong> para <strong>Enviado</strong></p>
+</li>
+<li>
+<p><strong>Canceled/Cancelado</strong> para <strong>Cancelado</strong></p>
+</li>
+<li>
+<p><strong>InvoiceUnconfirmed/Nota pendente</strong> para <strong>Enviado</strong></p>
+</li>
+<li>
+<p><strong>PendingAvailability/Pedido realizado (pré-ordem)</strong> para <strong>Faturado</strong></p>
+<p><img src="screenshots/130.png" alt="Mapeamento de situações de pedidos" /></p>
+</li>
+</ul>
+<ol start="6">
+<li>
+<p>Abra <strong>Formas de Recebimento</strong>.</p>
+</li>
+<li>
+<p>Com <strong>Importar forma de recebimento nos pedidos</strong> desligado, a tela mostra <strong>Você não possui formas de recebimento relacionadas</strong> e o botão <strong>habilitar importação</strong>. Há também o link <strong>vídeo explicativo</strong>.</p>
+</li>
+<li>
+<p>Ligue <strong>Importar forma de recebimento nos pedidos</strong> para exibir a forma padrão, a categoria financeira e a tabela. Ao escolher uma forma como Pix, informe <strong>Meio</strong> (<strong>Banco</strong> ou <strong>Gateway</strong>) e <strong>Meio de recebimento</strong>.</p>
+<p><img src="screenshots/131.png" alt="Formas de recebimento com a importação desligada" /></p>
+</li>
+<li>
+<p>Abra <strong>Formas de Frete</strong>.</p>
+</li>
+<li>
+<p>Inclua uma forma, como <strong>Retirar pessoalmente</strong>, e informe o <strong>Código da forma de frete</strong> no diálogo.</p>
+</li>
+<li>
+<p>Clique em <strong>Selecionar</strong> para o código entrar na linha. <strong>Cancelar</strong> fecha o diálogo sem preencher a linha.</p>
+</li>
+</ol>
+<p><img src="screenshots/138.png" alt="Formas de frete antes de gravar o relacionamento" /></p>
+<ol start="12">
+<li>Abra <strong>Categorias</strong>.</li>
+<li>No seletor em árvore, destaque a categoria e confirme a atribuição. Fechar o seletor sem confirmar não atribui a categoria destacada.</li>
+<li>Clique em <strong>Salvar</strong> para gravar situação, recebimento, frete e categoria.</li>
+</ol>
+<p><img src="screenshots/145.png" alt="Seletor de categorias em árvore" /></p>
+<h3>Como relacionar a forma de recebimento</h3>
+<ol>
+<li>
+<p>Com <strong>Importar forma de recebimento nos pedidos</strong> ligado, abra o relacionamento da forma, por exemplo <strong>Cartão de crédito</strong>.</p>
+</li>
+<li>
+<p>Informe o <strong>Código da forma de recebimento</strong> no diálogo.</p>
+<p><img src="screenshots/136.png" alt="Código da forma de recebimento no diálogo" /></p>
+</li>
+<li>
+<p>Para descobrir o código por um pedido, use a busca por pedido no mesmo diálogo, em vez do código manual.</p>
+</li>
+<li>
+<p>Clique em <strong>Selecionar</strong> para o código passar para a linha. <strong>Cancelar</strong> fecha o diálogo e volta ao mapeamento sem preencher a linha.</p>
+</li>
+</ol>
+<h3>Como configurar a Amazon FBA Classic</h3>
+<ol>
+<li>Acesse <strong>Início &gt; Integrações</strong>.</li>
+<li>No card <strong>Amazon FBA Classic</strong>, clique em <strong>gerenciar</strong>.</li>
+<li>Use as abas <strong>Conexão</strong>, <strong>Produtos</strong>, <strong>Pedidos</strong> e <strong>Mapeamentos</strong>. Não há aba <strong>Outros</strong>.</li>
+<li>Em <strong>Produtos</strong>, abra <strong>Regras de Estoque</strong> ou <strong>Preços</strong>. Não há <strong>Receber Produtos</strong> nem <strong>Fluxo de Produtos</strong>.</li>
+<li>Em <strong>Preços</strong>, escolha uma forma:</li>
+</ol>
+<ul>
+<li><strong>Preço fixo</strong></li>
+<li><strong>Conforme lista de preços</strong>, e selecione a <strong>Lista</strong></li>
+<li><strong>Conforme regras de preço</strong>, com <strong>percentual</strong> em vírgula e duas casas e <strong>Base simples</strong></li>
+</ul>
+<ol start="6">
+<li>
+<p>Na regra de preço, informe <strong>Valor fixo</strong> e <strong>adicional</strong> em reais. Na faixa de peso, informe <strong>De</strong> e <strong>Até</strong> em kg e <strong>frete</strong> em reais.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> na faixa de peso para gravar a regra. Fechar o diálogo sem <strong>Salvar</strong> não grava a faixa.</p>
+</li>
+<li>
+<p>Em <strong>Pedidos</strong>, abra <strong>Fluxo de Pedidos</strong>, <strong>Dados Fiscais</strong> ou <strong>Custos</strong>. Não há envio inbound nem título de anúncio com IA.</p>
+<p><img src="screenshots/155.png" alt="Pedidos da Amazon FBA Classic" /></p>
+</li>
+<li>
+<p>Em <strong>Mapeamentos</strong>, abra <strong>Formas de Recebimento</strong> e relacione as formas depois de habilitar a importação.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar estoque, preço, pedidos e recebimento.</p>
+</li>
+</ol>
+<h3>Como configurar a Amazon FBA Onsite</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>.</p>
+</li>
+<li>
+<p>No card <strong>Amazon FBA Onsite</strong> já instalado, clique em <strong>gerenciar</strong>.</p>
+</li>
+<li>
+<p>Use as abas <strong>Conexão</strong>, <strong>Produtos</strong>, <strong>Pedidos</strong> e <strong>Mapeamentos</strong>. Não há aba <strong>Outros</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Produtos</strong>, configure só <strong>Regras de Estoque</strong> e <strong>Preços</strong>.</p>
+<p><img src="screenshots/156.png" alt="Produtos da Amazon FBA Onsite" /></p>
+</li>
+<li>
+<p>Em <strong>Pedidos</strong>, configure só <strong>Fluxo de Pedidos</strong>, <strong>Dados Fiscais</strong> e <strong>Custos</strong>.</p>
+<p><img src="screenshots/157.png" alt="Pedidos da Amazon FBA Onsite" /></p>
+</li>
+<li>
+<p>Em <strong>Mapeamentos</strong>, abra <strong>Formas de Recebimento</strong>.</p>
+</li>
+<li>
+<p>Com a importação desligada, a tela mostra <strong>Você não possui formas de recebimento relacionadas</strong>. Clique em <strong>habilitar importação</strong> e relacione as formas. O link <strong>vídeo explicativo</strong> também está na tela.</p>
+</li>
+<li>
+<p>Clique em <strong>Salvar</strong> para gravar a configuração.</p>
+<p><img src="screenshots/158.png" alt="Formas de recebimento da Amazon FBA Onsite" /></p>
+</li>
+</ol>
+<h3>Como autenticar o Amazon Ads</h3>
+<ol>
+<li>No <strong>gerenciar</strong> da <strong>Amazon ERP</strong>, fique na aba <strong>Conexão</strong>.</li>
+<li>Localize o card <strong>Autenticação Amazon Ads</strong>.</li>
+<li>Use o link <strong>Saiba mais</strong> para abrir a página pública de Sponsored Products da Amazon.</li>
+<li>Inicie a autenticação no card <strong>Autenticação Amazon Ads</strong> para abrir o consentimento da Amazon. A autenticação fica neste conector, sem um canal separado de Amazon Ads.</li>
+</ol>
+<h3>Como usar o menu do card</h3>
+<ol>
+<li>
+<p>Em <strong>Minhas Integrações</strong>, abra o menu do card <strong>Amazon ERP</strong>. O card da <strong>Amazon FBA Classic</strong> tem o mesmo tipo de menu.</p>
+</li>
+<li>
+<p>As opções são <strong>Inativar integração</strong>, <strong>Excluir todos os anúncios no ERP</strong> e <strong>Excluir integração</strong>.</p>
+</li>
+<li>
+<p>Feche o menu sem escolher nenhuma opção se não quiser inativar ou excluir.</p>
+<p><img src="screenshots/154.png" alt="Menu do card da integração" /></p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>O canal instalado fica em <strong>Minhas Integrações</strong>, com <strong>gerenciar</strong>. Na conexão autenticada, os cards <strong>Amazon ERP</strong> e <strong>Autenticação Amazon Ads</strong> aparecem como conectada. Com a importação de recebimento desligada, <strong>Formas de Recebimento</strong> mostra <strong>Você não possui formas de recebimento relacionadas</strong> e <strong>habilitar importação</strong>.</p>
+<h2>Informações adicionais</h2>
+<h3>O Amazon Ads não é um canal do catálogo</h3>
+<p>A autenticação de anúncios fica no card <strong>Autenticação Amazon Ads</strong>, na aba <strong>Conexão</strong> da Amazon.</p>
+<h3>A FBA Classic e a FBA Onsite têm menos opções</h3>
+<p>Em <strong>Produtos</strong>, só há <strong>Regras de Estoque</strong> e <strong>Preços</strong>. Em <strong>Pedidos</strong>, só há <strong>Fluxo de Pedidos</strong>, <strong>Dados Fiscais</strong> e <strong>Custos</strong>. Em <strong>Mapeamentos</strong>, só há <strong>Formas de Recebimento</strong>.</p>
+<h3>A exclusão de anúncios pode não aparecer</h3>
+<p><strong>Excluir todos os anúncios no ERP</strong> só fica disponível quando esse recurso foi liberado para a empresa. Se a opção não aparecer para você, peça acesso ao administrador da conta.</p>
+</article>
+</body>
+</html>
