@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Configurar o status Em devolução e o estorno de estoque em pedidos cancelados</title>
+</head>
+<body>
+<article>
+<h1>Configurar o status Em devolução e o estorno de estoque em pedidos cancelados</h1>
+<p>No mapeamento de situações de pedidos, você associa o código de situação do ecommerce a uma situação do ERP da Olist. Você pode apontar esse código para <strong>Em devolução</strong>.</p>
+<p>O mapeamento fica na integração já cadastrada, em <strong>Mapeamentos &gt; Situações de Pedidos</strong>.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>A integração já precisa estar na lista de <strong>Integrações</strong>.</li>
+<li>Em uma instalação nova de canal do Hub da Olist, a tela para em <strong>Conectar Integração</strong> e o mapeamento de situações não aparece antes da autenticação.</li>
+</ul>
+<p><img src="screenshots/19.png" alt="Tela Conectar Integração de uma instalação nova, sem o mapeamento de situações" /></p>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>Acesse <strong>Integrações</strong> e clique em <strong>gerenciar</strong> na integração já cadastrada.</p>
+</li>
+<li>
+<p>Se a tela abrir em <strong>Conectar Integração</strong>, clique em <strong>Mais ações</strong> e selecione <strong>Ignorar auth check</strong>.</p>
+</li>
+<li>
+<p>Acesse <strong>Mapeamentos &gt; Situações de Pedidos</strong>.</p>
+<p><img src="screenshots/17.png" alt="Tela Situações de Pedidos sem linhas de mapeamento" /></p>
+</li>
+<li>
+<p>Clique em <strong>Adicionar mapeamento de situação</strong>.</p>
+</li>
+<li>
+<p>Digite o código da situação do ecommerce em <strong>Código da situação no E-commerce</strong>. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Selecione <strong>Em devolução</strong> em <strong>Situação no Sistema ERP</strong>. O campo não é obrigatório. A linha nova começa em <strong>Em aberto</strong>. A linha exibe o código digitado e <strong>Em devolução</strong>.</p>
+</li>
+</ol>
+<p>As opções de <strong>Situação no Sistema ERP</strong> são:</p>
+<ul>
+<li><strong>Selecione</strong></li>
+<li><strong>Em aberto</strong></li>
+<li><strong>Faturado</strong></li>
+<li><strong>Cancelado</strong></li>
+<li><strong>Aprovado</strong></li>
+<li><strong>Preparando envio</strong></li>
+<li><strong>Enviado</strong></li>
+<li><strong>Entregue</strong></li>
+<li><strong>Pronto para envio</strong></li>
+<li><strong>Dados incompletos</strong></li>
+<li><strong>Não entregue</strong></li>
+<li><strong>Em devolução</strong></li>
+</ul>
+<p><img src="screenshots/18.png" alt="Linha de mapeamento com a situação Em devolução" /></p>
+<ol start="7">
+<li>Clique em <strong>Salvar</strong>.</li>
+</ol>
+<h2>Informações adicionais</h2>
+<h3>O estoque não é estornado antes da devolução chegar</h3>
+<p>Enquanto o envio não foi entregue e a devolução ainda não chegou, o ERP aplica o mapeamento e não estorna o estoque.</p>
+<h3>O estoque é estornado quando o produto é devolvido</h3>
+<p>Quando o produto é devolvido, o ERP considera a situação do pedido e estorna o estoque.</p>
+</article>
+</body>
+</html>
