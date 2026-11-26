@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Como funciona a sincronização de produtos entre empresas na multiempresa</title>
+</head>
+<body>
+<article>
+<h1>Como funciona a sincronização de produtos entre empresas na multiempresa</h1>
+<p>A sincronização de produtos na multiempresa liga o produto da empresa de origem ao produto da empresa de destino. Na primeira sincronização, o vínculo é de 1 para 1.</p>
+<p>Você mantém o mesmo produto nas duas empresas. Nas sincronizações seguintes, o ERP da Olist atualiza o produto vinculado e não cria outro, mesmo que o SKU, o GTIN ou a descrição mudem na origem.</p>
+<h2>Importante</h2>
+<ul>
+<li>Se a conta de destino usa SKU sequencial, o envio é bloqueado.</li>
+<li>No envio manual, a mensagem é <strong>Conta de destino possui SKU sequencial, ajuste a configuração para SKU manual para permitir o envio</strong>.</li>
+<li>Na sincronização automática, você recebe uma notificação com o erro de envio. Ela leva ao relatório de sincronizações multiempresa.</li>
+</ul>
+<h2>Informações adicionais</h2>
+<h3>A variação acompanha o SKU</h3>
+<p>Editar o SKU de uma variação atualiza a variação do destino, sem excluir e recriar.</p>
+<h3>Produto excluído no destino continua vinculado</h3>
+<p>Um produto vinculado que esteja excluído no destino continua vinculado.</p>
+<h3>Produtos já sincronizados seguem as regras anteriores</h3>
+<p>O vínculo de 1 para 1 e a atualização do produto ligado valem para os produtos sincronizados com essa lógica. Produtos que já estavam sincronizados continuam com as regras anteriores.</p>
+</article>
+</body>
+</html>
