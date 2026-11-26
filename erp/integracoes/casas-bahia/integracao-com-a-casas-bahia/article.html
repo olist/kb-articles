@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Integração com a Casas Bahia</title>
+</head>
+<body>
+<article>
+<h1>Integração com a Casas Bahia</h1>
+<p>A integração Casas Bahia Marketplace conecta a loja desse marketplace ao ERP da Olist. Você instala o canal, define o nome da integração e informa o token para autenticar a conta.</p>
+<p>Depois da conexão, a integração recebe pedidos e produtos e envia produtos, estoque e preços. A ajuda da tela também descreve ajustes nas abas <strong>Produtos</strong> e <strong>Pedidos</strong>.</p>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Cadastro na Casas Bahia Marketplace.</li>
+<li>Token obtido no painel administrativo da loja.</li>
+</ul>
+<p>Se já houver outra integradora, a ajuda da integração orienta estes passos antes de conectar:</p>
+<ul>
+<li>Solicite o Client ID por chamado de suporte.</li>
+<li>Peça à Casas Bahia Marketplace a revogação do token antigo e a habilitação apenas do token do ERP.</li>
+<li>Solicite também usuário e senha. Esses dados não aparecem na tela de conexão.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>Na tela de conexão, os únicos campos são <strong>Nome da integração no ERP</strong> e <strong>Token</strong>. Nenhum dos dois é obrigatório.</li>
+<li>A informação de <strong>Dias para preparação</strong> é enviada apenas para a categoria móveis. Nas demais categorias, é enviada a soma de dias para preparação e prazo de frete.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>Acesse <strong>Início &gt; Integrações</strong>.</li>
+<li>Clique em <strong>Adicionar integração</strong> e localize o card <strong>Casas Bahia Marketplace</strong>, do tipo Marketplace, com os ícones Extra, Casas Bahia e Ponto.
+<img src="screenshots/6.png" alt="Card Casas Bahia Marketplace no catálogo de integrações" /></li>
+<li>Clique em <strong>instalar</strong>.
+<img src="screenshots/12.png" alt="Tela de conexão com o nome padrão e o token vazio" /></li>
+<li>Em <strong>Nome da integração no ERP</strong>, mantenha ou altere o nome. O valor inicial é Casas Bahia Marketplace.</li>
+<li>Em <strong>Token</strong>, informe o token do painel administrativo da loja.
+<img src="screenshots/13.png" alt="Nome e token preenchidos na tela de conexão" /></li>
+<li>Clique em <strong>conectar com Casas Bahia Marketplace</strong>. Conclua a autorização do aplicativo na plataforma, aguarde o retorno ao ERP e entre na conta desejada. A tela fica preenchida e pronta para autenticar a loja.
+<img src="screenshots/7.png" alt="Passos de instalação na ajuda da integração" /></li>
+</ol>
+<h2>Informações adicionais</h2>
+<h3>Recursos da integração</h3>
+<p>A ajuda marca estes recursos:</p>
+<ul>
+<li>receber pedidos</li>
+<li>receber produtos</li>
+<li>enviar produtos</li>
+<li>enviar estoque</li>
+<li>enviar preços</li>
+<li>sincronizar situação e OMS</li>
+</ul>
+<h3>Ajustes da aba Produtos</h3>
+<p>Na tela de conexão, abra o link <strong>Acesse a ajuda sobre a integração</strong>, em <strong>Ficou com alguma dúvida?</strong>. Em <strong>Como configurar no ERP</strong>, a aba <strong>Produtos</strong> traz:</p>
+<ul>
+<li><strong>Enviar imagens dos produtos ao sincronizar</strong>, com as opções <strong>Sim</strong> ou <strong>Apenas para novos produtos</strong></li>
+<li><strong>Regra para match automático</strong>, com as opções <strong>Caso for o mesmo EAN do produto</strong>, <strong>Maior ou igual a 80%</strong>, <strong>Maior ou igual a 95%</strong> e <strong>Não atribuir automaticamente</strong></li>
+</ul>
+<p><img src="screenshots/8.png" alt="Envio de imagens e regra de match automático na ajuda" /></p>
+<p><strong>Campos enviados</strong>, na mesma aba, lista:</p>
+<ul>
+<li>altura embalagem</li>
+<li>código (SKU)</li>
+<li>código da categoria no e-commerce</li>
+<li>comprimento embalagem</li>
+<li>descrição</li>
+<li>descrição complementar</li>
+<li>estoque atual</li>
+<li>garantia</li>
+<li>GTIN</li>
+<li>imagens</li>
+<li>largura embalagem</li>
+<li>marca</li>
+<li>peso bruto</li>
+<li>preço de venda</li>
+<li>preço promocional</li>
+<li>variações</li>
+</ul>
+<p><img src="screenshots/9.png" alt="Lista de campos enviados na ajuda" /></p>
+<p>A ajuda também descreve <strong>Enviar dias para preparação ao sincronizar</strong>. O campo <strong>Dias para preparação</strong> fica no cadastro do produto, na aba <strong>Dados gerais</strong>, seção <strong>Estoque</strong>, e pode ser alimentado por planilha.</p>
+<h3>Ajustes da aba Pedidos</h3>
+<p>A aba <strong>Pedidos</strong> da ajuda descreve:</p>
+<ul>
+<li><strong>Importar forma de recebimento nos pedidos</strong>, com o detalhe das modalidades na aba <strong>Formas de recebimento</strong></li>
+<li><strong>Enviar rastreamento ao alterar a situação no ERP para enviado</strong></li>
+<li><strong>Formatar nome dos contatos no recebimento dos pedidos</strong></li>
+<li><strong>Tipo de impressão de etiqueta</strong>, com <strong>PDF</strong> ou <strong>ZPL</strong></li>
+</ul>
+<p><img src="screenshots/10.png" alt="Ajustes de pedidos na ajuda da integração" /></p>
+</article>
+</body>
+</html>
