@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Integração com o Magalu</title>
+</head>
+<body>
+<article>
+<h1>Integração com o Magalu</h1>
+<p>A integração com o Magalu Marketplace conecta a loja do marketplace ao ERP da Olist. Você importa pedidos automaticamente, controla estoque e preços pelo ERP, envia e recebe produtos, efetua cotações de frete, transmite dados de NF-e e rastreio e sincroniza a situação Entregue.</p>
+<p>A conexão fica em <strong>Início &gt; Integrações</strong>, pelo <strong>instalar</strong> do canal, ou pela autorização do <strong>ERP da Olist</strong> no painel da Magalu. Depois de conectar, você define regras de imagens, SKU, estoque, depósito, fulfillment, etiquetas e comissão.</p>
+<h2>Importante</h2>
+<ul>
+<li>Só é possível vincular uma conta do Magalu a uma conta do ERP.</li>
+<li>No login da Magalu, use perfil de pessoa jurídica. Perfil de pessoa física não funciona.</li>
+<li>A integração só fica disponível para uso depois que você conclui todas as etapas do fluxo guiado de configuração.</li>
+<li>Para anunciar, o Magalu considera: nota no Reclame Aqui acima de Bom, boa reputação, produtos idôneos, sortimento diversificado e qualificado, pelo menos um ano de existência, ausência de processos que abalem a reputação, boa avaliação em sites e redes sociais, conta-corrente vinculada ao CNPJ do contrato, CNPJ ativo há mais de seis meses e razão social.</li>
+<li>O envio do anúncio exige descrição complementar preenchida. O botão <strong>com problema (E)</strong> indica o que impediu o envio.</li>
+<li>Somente o atributo certificado de homologação da Anatel é enviado. Ele precisa estar na ficha técnica do produto.</li>
+<li>Para enviar dimensões, a conta precisa da extensão embalagens e de uma embalagem definida no cadastro do produto.</li>
+<li>Para enviar rastreio, o pedido ou a nota precisa identificar o transportador como Correios ou Transportadora e ter agrupamento (PLP ou Coleta) na expedição.</li>
+<li>Para marcar entregue no ecommerce, o pedido já precisa estar despachado no ecommerce.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pela tela do ERP</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>.</p>
+<p><img src="screenshots/1.png" alt="Card Magalu Marketplace com a situação NÃO CONECTADA" /></p>
+<p><img src="screenshots/8.png" alt="Regras para anunciar no Magalu" /></p>
+</li>
+<li>
+<p>Se o card <strong>Magalu Marketplace</strong> estiver com a situação <strong>NÃO CONECTADA</strong>, clique em <strong>gerenciar</strong>. A tela de conexão abre de novo, sem abas de gerenciamento. No menu de contexto do card estão <strong>Excluir todos os anúncios no ERP</strong> e <strong>Excluir integração</strong>.</p>
+<p><img src="screenshots/5.png" alt="gerenciar reabre a tela de conexão" /></p>
+<p><img src="screenshots/6.png" alt="Menu do card com excluir anúncios e excluir integração" /></p>
+</li>
+<li>
+<p>Clique em <strong>Adicionar integração</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Marketplaces e Hubs</strong>, localize <strong>Magalu Marketplace</strong> e clique em <strong>instalar</strong>. A busca por Magalu retorna somente esse canal.</p>
+<p><img src="screenshots/2.png" alt="Catálogo com Magalu Marketplace e a ação instalar" /></p>
+<p><img src="screenshots/7.png" alt="Busca do catálogo por Magalu" /></p>
+</li>
+<li>
+<p>Em <strong>Conectar Integração</strong>, confira <strong>Nome da integração no ERP</strong>. O campo não é obrigatório, vem preenchido com Magalu Marketplace e você pode alterar o nome.</p>
+<p><img src="screenshots/3.png" alt="Tela Conectar Integração com o nome pré-preenchido" /></p>
+<p><img src="screenshots/4.png" alt="Nome da integração alterado" /></p>
+</li>
+<li>
+<p>Clique em <strong>conectar com Magalu Marketplace</strong>. Você é direcionado para a autenticação padrão do marketplace. Conclua o login com perfil de pessoa jurídica. Até a autenticação terminar, a tela permanece em <strong>Conectar Integração</strong> e o card continua <strong>NÃO CONECTADA</strong>.</p>
+</li>
+</ol>
+<h3>Pelo painel da Magalu</h3>
+<ol>
+<li>
+<p>No painel da Magalu, acesse <strong>menu &gt; gestão de integradoras</strong>.</p>
+<p><img src="screenshots/9.png" alt="Instalação pelo ERP e pelo painel da Magalu" /></p>
+</li>
+<li>
+<p>Localize <strong>ERP da Olist</strong> e clique em <strong>autorizar</strong>.</p>
+</li>
+<li>
+<p>Conclua o login do ERP. Em <strong>Início &gt; Integrações</strong>, a integração já aparece salva e conectada, sem passar pelo <strong>instalar</strong> do catálogo.</p>
+</li>
+</ol>
+<h3>Na configuração do conector</h3>
+<ol>
+<li>
+<p>Depois da conexão, siga o fluxo guiado de configuração. Para pausar, clique em <strong>Continuar depois</strong>, no rodapé, e retome depois.</p>
+<p><img src="screenshots/10.png" alt="Configuração com Aba Produtos, Aba Pedidos e Aba Custos" /></p>
+</li>
+<li>
+<p>Na <strong>Aba Produtos</strong>, defina os campos abaixo. Nenhum é obrigatório.</p>
+<ul>
+<li><strong>Enviar imagens dos produtos ao sincronizar</strong></li>
+<li><strong>Ao importar produtos</strong></li>
+<li><strong>Na importação de produtos, ao atualizar um produto, atualizar o Código (SKU)</strong></li>
+<li><strong>Importar anúncios com uma variação como anúncios simples</strong></li>
+<li><strong>Atualizar estoque na loja virtual a partir do ERP</strong></li>
+<li><strong>Depósito a ser considerado na integração</strong>: só aparece com a extensão depósitos de estoque instalada</li>
+<li><strong>Utilizar Magalu Fulfillment</strong></li>
+<li><strong>Utilizar estoque de segurança</strong>: informe a quantidade de itens. Ao atingir esse número, o saldo enviado à plataforma é zero. Estoque de segurança não é considerado para produtos sob encomenda.</li>
+</ul>
+<p><img src="screenshots/11.png" alt="Regras de imagens, SKU, estoque, depósito e fulfillment" /></p>
+<p><img src="screenshots/15.png" alt="Descrição complementar, embalagens e certificado Anatel" /></p>
+</li>
+<li>
+<p>Na <strong>Aba Pedidos</strong>, defina os campos abaixo. Nenhum é obrigatório.</p>
+<ul>
+<li><strong>Sincronização automática dos pedidos</strong>: cobre as situações New, Approved, Finished e Cancelled</li>
+<li><strong>Enviar rastreamento ao alterar a situação no ERP para enviado</strong></li>
+<li><strong>Método de impressão de etiquetas</strong></li>
+</ul>
+<p><img src="screenshots/13.png" alt="Regras da Aba Pedidos" /></p>
+</li>
+<li>
+<p>Conclua todas as etapas do fluxo guiado. As regras de produtos, pedidos e custos ficam definidas, e a integração passa a ficar disponível para uso. Com a extensão custos do e-commerce instalada, a <strong>Aba Custos</strong> aparece. Nela, defina <strong>Comissão por categoria</strong> (valor fixo ou taxa (%)) e <strong>Base de cálculo da comissão</strong> (valor total da venda ou total sem o frete). Os dois campos não são obrigatórios.</p>
+<p><img src="screenshots/14.png" alt="Aba Custos com comissão e base de cálculo" /></p>
+</li>
+</ol>
+<h3>Para receber produtos do ecommerce</h3>
+<ol>
+<li>
+<p>Acesse <strong>menu &gt; cadastros &gt; produtos &gt; receber do e-commerce</strong>.</p>
+</li>
+<li>
+<p>Selecione a loja no campo <strong>integração</strong> e clique em <strong>continuar importação de anúncios</strong>. Para um anúncio individual, preencha <strong>identificador do anúncio</strong>.</p>
+<p><img src="screenshots/16.png" alt="Receber produtos: integração, identificador e relacionamento" /></p>
+</li>
+<li>
+<p>Relacione os anúncios aos produtos do ERP por mesmo código (SKU), mesma descrição (título) ou mesmo GTIN (EAN).</p>
+</li>
+<li>
+<p>Escolha sim ou não para atualizar produtos já relacionados. Se sim, escolha atualizar todos os dados ou apenas dados não preenchidos, atualizar preço, estoque ou imagens e clique em <strong>relacionar</strong>.</p>
+</li>
+<li>
+<p>Marque <strong>criar produtos novos com base nos anúncios</strong>. Na criação, selecione o depósito, marque importar as imagens do anúncio para os novos produtos e, se quiser, informe unidade, NCM e origem padrão.</p>
+</li>
+<li>
+<p>Clique em <strong>criar produtos</strong>. Os anúncios da loja Magalu são relacionados ou criados como produtos no ERP. A opção <strong>criar exceções na lista de preços vinculada ao e-commerce</strong> cria ou atualiza produtos com preços diferentes.</p>
+<p><img src="screenshots/17.png" alt="Criação de produtos na importação de anúncios" /></p>
+</li>
+</ol>
+<h3>Para enviar o código de rastreio</h3>
+<ol>
+<li>
+<p>Identifique o transportador, Correios ou Transportadora, no pedido de venda ou na nota fiscal e gere o agrupamento (PLP ou Coleta) na expedição.</p>
+</li>
+<li>
+<p>Acesse <strong>início &gt; vendas &gt; expedição</strong>. A expedição passa a exibir um marcador quando o código de rastreio já foi enviado à plataforma.</p>
+<p><img src="screenshots/18.png" alt="Envio do código de rastreio pela expedição" /></p>
+</li>
+<li>
+<p>Envie o rastreio pela expedição. Também seguem chave de acesso, número, série, data e hora e data prevista, e o status no ecommerce muda para despachado.</p>
+</li>
+</ol>
+<h3>Para enviar a chave de acesso</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Vendas &gt; Expedição</strong>.</p>
+</li>
+<li>
+<p>Adicione o filtro <strong>Agrupamentos</strong>, selecione a visualização <strong>visão por pedidos</strong> e, no filtro por forma de envio, selecione <strong>Transportadora</strong>.</p>
+</li>
+<li>
+<p>Localize o número de expedição, abra o menu de contexto (<strong>...</strong>) e selecione <strong>Enviar chave de acesso para o e-commerce</strong>. O XML também é enviado para otimizar a validação da nota, e o status no ecommerce muda para despachado.</p>
+<p><img src="screenshots/19.png" alt="Envio da chave de acesso e do XML" /></p>
+</li>
+</ol>
+<h3>Para marcar pedidos como entregues</h3>
+<ol>
+<li>
+<p>Acesse <strong>menu &gt; vendas &gt; expedição</strong>.</p>
+</li>
+<li>
+<p>Selecione a forma de envio e, na aba <strong>concluídas</strong>, abra o menu de contexto (<strong>...</strong>) e escolha <strong>marcar pedidos como entregue</strong>. O pedido precisa já estar despachado no ecommerce. O pedido marcado como entregue no ERP é sincronizado com o status entregue na plataforma.</p>
+<p><img src="screenshots/20.png" alt="Marcar pedidos como entregues na expedição" /></p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Depois de autorizar o <strong>ERP da Olist</strong> no painel da Magalu, em <strong>Início &gt; Integrações</strong> a integração fica salva e conectada. O envio do rastreio ou da chave de acesso altera o status do pedido no ecommerce para despachado. Marcar entregue sincroniza o status entregue.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>A integração está disponível para todos os planos.</li>
+<li>A situação Shipped não é sincronizada automaticamente. Para pedidos já selecionados, acesse <strong>vendas &gt; pedidos de venda</strong> e use <strong>sincronizar situação</strong>.</li>
+<li>Se a importação de produtos for interrompida, a ação <strong>Interromper</strong> permite retomar do ponto em que parou em até 7 dias corridos.</li>
+</ul>
+</article>
+</body>
+</html>
