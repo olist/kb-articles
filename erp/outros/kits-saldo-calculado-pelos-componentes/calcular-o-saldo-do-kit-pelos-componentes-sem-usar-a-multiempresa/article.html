@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Calcular o saldo do kit pelos componentes sem usar a multiempresa</title>
+</head>
+<body>
+<article>
+<h1>Calcular o saldo do kit pelos componentes sem usar a multiempresa</h1>
+<p>O saldo do kit é calculado pelo menor saldo entre os componentes. Esse cálculo é o padrão e não exige ativar a multiempresa. Vender um componente baixa o saldo disponível do kit automaticamente.</p>
+<p>A ficha do kit e a planilha de composição não têm um campo para ligar ou desligar esse cálculo. Você cadastra o kit, informa o estoque do próprio kit e vincula os componentes pela aba <strong>Kits</strong> ou pela planilha de composição.</p>
+<h2>Importante</h2>
+<ul>
+<li>Para importar a composição, o produto do tipo kit ou fabricado e os componentes já precisam estar cadastrados.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Pela tela do kit</h3>
+<ol>
+<li>
+<p>Na listagem de produtos, clique em <strong>Incluir produto</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Tipo do Produto</strong>, selecione <strong>Kit</strong>.</p>
+<p><img src="screenshots/50.png" alt="Ficha do produto com Tipo do Produto Kit, sem controle de saldo pelos componentes" /></p>
+</li>
+<li>
+<p>Na seção <strong>Estoque</strong> de <strong>Dados Gerais</strong>, informe o estoque do próprio kit.</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><strong>Controlar estoque</strong>: não obrigatório. Selecione <strong>Sim</strong> ou <strong>Não</strong>.</p>
+</li>
+<li>
+<p><strong>Estoque atual</strong>: não obrigatório.</p>
+</li>
+<li>
+<p><strong>Localização</strong>: não obrigatório.</p>
+</li>
+<li>
+<p><strong>Dias para preparação</strong>: não obrigatório. Informe um número inteiro de dias.</p>
+<p><img src="screenshots/49.png" alt="Seção de estoque da ficha do kit" /></p>
+</li>
+</ul>
+<ol start="4">
+<li>Na aba <strong>Kits</strong>, informe cada componente.</li>
+</ol>
+<ul>
+<li><strong>Produto ou SKU</strong>: não obrigatório. Use um produto já cadastrado. Um código inexistente exibe <strong>Produto não encontrado no sistema</strong>.</li>
+<li><strong>Quantidade</strong>: não obrigatório. Informe a quantidade e a unidade, por exemplo 1 UN.</li>
+</ul>
+<ol start="5">
+<li>Clique em <strong>Salvar</strong>.</li>
+</ol>
+<h3>Por planilha de composição</h3>
+<ol>
+<li>
+<p>No menu lateral esquerdo, acesse <strong>início &gt; Ferramentas &gt; aba importações</strong> e clique em <strong>Kits e Produtos Fabricados</strong>.</p>
+<p><img src="screenshots/51.png" alt="Cadastro prévio do kit e dos componentes para importar a composição" /></p>
+</li>
+<li>
+<p>Baixe o layout padrão em Excel (.xls) ou texto (.csv).</p>
+</li>
+<li>
+<p>Na planilha de produtos, informe a letra <strong>K</strong> na coluna <strong>Tipo de Produto</strong> para cada item vendido como kit. A letra <strong>K</strong> é obrigatória. A composição vai em planilha separada.</p>
+</li>
+<li>
+<p>Na planilha de composição, preencha as colunas abaixo. Nenhuma é obrigatória. Essa planilha vincula os produtos que compõem cada kit e a quantidade de cada um.</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><strong>ID kit/fabricado</strong></p>
+</li>
+<li>
+<p><strong>SKU kit/fabricado</strong></p>
+</li>
+<li>
+<p><strong>Descrição kit/fabricado</strong></p>
+</li>
+<li>
+<p><strong>ID componente</strong></p>
+</li>
+<li>
+<p><strong>SKU componente</strong>: o componente precisa já estar cadastrado</p>
+</li>
+<li>
+<p><strong>Descrição componente</strong></p>
+</li>
+<li>
+<p><strong>Quantidade componente</strong></p>
+<p><img src="screenshots/52.png" alt="Colunas da planilha de composição, sem coluna de saldo" /></p>
+</li>
+</ul>
+<h2>Informações adicionais</h2>
+<h3>Criação e atualização do kit por canal</h3>
+<ul>
+<li>Interface/Tela: criar sim, atualizar sim</li>
+<li>Lote (Planilha): criar não, atualizar sim</li>
+<li>API V3: criar não, atualizar sim</li>
+<li>Lis: criar não, atualizar sim</li>
+</ul>
+</article>
+</body>
+</html>
