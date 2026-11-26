@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Integração com o TikTok Shop</title>
+</head>
+<body>
+<article>
+<h1>Integração com o TikTok Shop</h1>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Para autorizar, esteja logado na loja TikTok. A tela avisa <strong>Você não está logado na loja TikTok</strong> e orienta <strong>Acesse o painel TikTok para logar</strong>.</li>
+</ul>
+<h2>Importante</h2>
+<ul>
+<li>A loja da aba <strong>Geral</strong> é escolhida depois da autorização.</li>
+<li>Naturezas de operação, listas de preços e depósitos dos campos são os já cadastrados na conta.</li>
+<li>O texto de ajuda de estoque informa que a conta tem reserva de estoque e não recomenda o lançamento automático ao salvar o pedido.</li>
+<li>Em <strong>Formas de Frete</strong>, <strong>Código na integração</strong> não aceita digitação enquanto <strong>Forma de envio</strong> está vazia. Nesse caso, <strong>Forma de frete</strong> só oferece <strong>Selecione</strong>.</li>
+<li>Nenhum campo traz marcador de obrigatório.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Instalar a integração</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>Adicionar integração</strong>.</p>
+</li>
+<li>
+<p>No card <strong>TikTok Shop</strong>, identificado como Marketplace, clique em <strong>instalar</strong>.</p>
+<p><img src="screenshots/28.png" alt="Catálogo Adicionar integração com o card TikTok Shop e o link instalar" /></p>
+</li>
+<li>
+<p>Em <strong>Conectar Integração</strong>, revise <strong>Nome da integração no ERP</strong>. O campo não é obrigatório, vem preenchido com TikTok Shop e pode ser substituído.</p>
+<p><img src="screenshots/29.png" alt="Conectar Integração com nome padrão, botão conectar com TikTok Shop e aviso de login" /></p>
+<p><img src="screenshots/30.png" alt="Nome da integração preenchido com Loja Exemplo TikTok, sem iniciar a autorização" /></p>
+</li>
+<li>
+<p>Na seção <strong>Autenticação</strong>, leia o aviso de login no painel TikTok e clique em <strong>conectar com TikTok Shop</strong> para autorizar a loja. O link <strong>Acesse a ajuda sobre a integração</strong> permanece na própria tela. A tela fica pronta para autorizar, com o nome informado e o aviso <strong>Você não está logado na loja TikTok</strong> se você ainda não estiver logado.</p>
+</li>
+</ol>
+<h3>Configurar a integração já existente</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>.</p>
+</li>
+<li>
+<p>Localize o card <strong>TikTok Shop</strong> e clique em <strong>gerenciar</strong>.</p>
+<p><img src="screenshots/1.png" alt="Card TikTok Shop em Minhas Integrações, com acesso a gerenciar" /></p>
+</li>
+<li>
+<p>Use as abas <strong>Conexão</strong>, <strong>Produtos</strong>, <strong>Pedidos</strong>, <strong>Mapeamentos</strong>, <strong>Geral</strong> e <strong>Fulfillment</strong>. Não há aba Outros.</p>
+</li>
+</ol>
+<h4>Conexão</h4>
+<ol start="4">
+<li>
+<p>Na aba <strong>Conexão</strong>, confira <strong>Nome da integração no ERP</strong>. O campo não é obrigatório.</p>
+<p><img src="screenshots/2.png" alt="Aba Conexão com Nome da integração no ERP" /></p>
+</li>
+</ol>
+<h4>Produtos</h4>
+<ol start="5">
+<li>
+<p>Na aba <strong>Produtos</strong>, abra <strong>Regras de Estoque</strong>.</p>
+</li>
+<li>
+<p>Em <strong>Atualizar estoque na loja virtual a partir do ERP</strong>, selecione <strong>Não atualizar</strong>, <strong>Enviar saldo físico</strong> ou <strong>Enviar saldo disponível</strong>. O campo não é obrigatório.</p>
+<p><img src="screenshots/3.png" alt="Regras de Estoque, parte superior, com as opções de atualização de estoque" /></p>
+</li>
+<li>
+<p>Preencha o restante de <strong>Regras de Estoque</strong>. Nenhum destes campos é obrigatório:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><strong>Depósito TikTok Shop a ser considerado na integração</strong>: busque o depósito.</p>
+</li>
+<li>
+<p><strong>Lançamento de estoque para saídas</strong>: selecione <strong>Usar configuração padrão da conta</strong>, <strong>Manual</strong>, <strong>Automático ao autorizar a nota fiscal</strong>, <strong>Automático ao salvar a nota fiscal</strong>, <strong>Automático ao salvar o pedido</strong> ou <strong>Automático ao marcar pedido como enviado</strong>.</p>
+</li>
+<li>
+<p><strong>Utilizar estoque de segurança</strong>: marque a caixa se quiser usar.</p>
+<p><img src="screenshots/4.png" alt="Continuação de Regras de Estoque, com depósito, lançamento de saídas e estoque de segurança" /></p>
+</li>
+</ul>
+<ol start="8">
+<li>Abra <strong>Preços</strong>.</li>
+<li>Em <strong>Regra de utilização de preços para o e-commerce</strong>, selecione uma opção. O campo não é obrigatório:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Preço fixo</strong></p>
+</li>
+<li>
+<p><strong>Conforme lista de preços</strong>, que exibe <strong>Lista de preços utilizada nos produtos</strong> (opção inicial <strong>Selecione</strong>)</p>
+</li>
+<li>
+<p><strong>Conforme regras de preço</strong></p>
+<p><img src="screenshots/5.png" alt="Preços com a opção Preço fixo" /></p>
+<p><img src="screenshots/6.png" alt="Preços com Conforme lista de preços e Lista de preços utilizada nos produtos" /></p>
+</li>
+</ul>
+<ol start="10">
+<li>Se escolher <strong>Conforme regras de preço</strong>, selecione <strong>Forma para aplicar os valores adicionais</strong>: <strong>Base simples</strong> ou <strong>Base por dentro</strong>. Informe <strong>Adicional de frete</strong> em valor monetário, como 9,90. O campo não é obrigatório. Clique em <strong>Adicionar regra de preço e pesos</strong>.</li>
+</ol>
+<p><img src="screenshots/7.png" alt="Preços com Conforme regras de preço, forma de aplicar adicionais e adicional de frete" /></p>
+<ol start="11">
+<li>No modal <strong>Regra de preço e peso</strong>, use <strong>Valor fixo</strong> ou <strong>Por faixa de peso</strong>.</li>
+</ol>
+<p><img src="screenshots/8.png" alt="Modal Regra de preço e peso em Valor fixo, ainda vazio" /></p>
+<p><img src="screenshots/9.png" alt="Modal Valor fixo preenchido, sem salvar" /></p>
+<ol start="12">
+<li>Em <strong>Por faixa de peso</strong>, marque <strong>Definir um limite de preço máximo</strong> se quiser limitar o valor. Clique em <strong>adicionar nova regra</strong> e informe <strong>De</strong> e <strong>Até</strong> em kg, como 0,100 e 1,000, e o frete. Os campos não são obrigatórios. <strong>fechar</strong> sai do modal sem gravar a regra.</li>
+</ol>
+<p><img src="screenshots/10.png" alt="Modal Por faixa de peso vazio, com limite de preço máximo" /></p>
+<p><img src="screenshots/11.png" alt="Faixa de peso de 0,100 kg a 1,000 kg com frete 9,90, sem salvar" /></p>
+<ol start="13">
+<li>Abra <strong>Fluxo de Produtos</strong>. Os campos não são obrigatórios:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Ao importar produtos</strong>: <strong>Importar imagens como anexos</strong> ou <strong>Apenas importar a URL externa das imagens</strong>.</p>
+</li>
+<li>
+<p><strong>Na importação de produtos, ao atualizar um produto, atualizar o Código (SKU)</strong>: marque a caixa se quiser atualizar o código.</p>
+<p><img src="screenshots/12.png" alt="Fluxo de Produtos, com opções de imagem e atualização de SKU" /></p>
+</li>
+</ul>
+<h4>Pedidos</h4>
+<ol start="14">
+<li>Na aba <strong>Pedidos</strong>, abra <strong>Fluxo de Pedidos</strong>. Marque as caixas que quiser usar. Nenhuma é obrigatória:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Importar forma de recebimento</strong></p>
+</li>
+<li>
+<p><strong>Formatar nome dos contatos</strong></p>
+</li>
+<li>
+<p><strong>Sincronização automática de pedidos</strong></p>
+</li>
+<li>
+<p><strong>Interpretador de endereços não estruturados</strong></p>
+</li>
+<li>
+<p><strong>Enviar rastreamento ao alterar situação para enviado</strong></p>
+</li>
+<li>
+<p><strong>Marcar pedido como entregue ao alterar situação</strong></p>
+</li>
+<li>
+<p><strong>Importar valor do frete</strong></p>
+<p><img src="screenshots/13.png" alt="Fluxo de Pedidos, parte superior" /></p>
+</li>
+</ul>
+<ol start="15">
+<li>Complete a logística e o pagamento. Os campos não são obrigatórios:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Modelo de logística utilizado</strong>: <strong>Pick up</strong> ou <strong>Drop off</strong>.</p>
+</li>
+<li>
+<p><strong>Horário de corte para coleta da logística</strong>.</p>
+</li>
+<li>
+<p><strong>Método de impressão de etiquetas</strong>: <strong>Padrão do Canal</strong>, <strong>PDF</strong> ou <strong>ZPL</strong>.</p>
+</li>
+<li>
+<p><strong>Divergência de pagamento</strong>: <strong>Utilizar valor de pagamento integrado enviado pelo canal de venda (Recomendado)</strong> ou <strong>Considerar pagamento como Não integrado</strong>.</p>
+<p><img src="screenshots/14.png" alt="Continuação de Fluxo de Pedidos, com logística, etiquetas e pagamento" /></p>
+</li>
+</ul>
+<ol start="16">
+<li>Abra <strong>Dados Fiscais</strong>. Os campos não são obrigatórios:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Envio de dados da NFe</strong>: <strong>Automático ao autorizar nota fiscal</strong> ou <strong>Manual</strong>.</p>
+</li>
+<li>
+<p><strong>Natureza de operação diferente para Pedidos de Amostra e Live Giveaway</strong>: use o interruptor.</p>
+</li>
+<li>
+<p><strong>Natureza de operação diferente para contribuintes ICMS</strong>: use o interruptor.</p>
+</li>
+<li>
+<p><strong>Natureza de operação para venda</strong>: selecione uma natureza cadastrada na conta. O texto de ajuda indica a natureza padrão dos pedidos importados.</p>
+<p><img src="screenshots/15.png" alt="Dados Fiscais, com envio da NFe e natureza de operação" /></p>
+</li>
+</ul>
+<ol start="17">
+<li>Abra <strong>Custos</strong>. Informe o custo geral. Os campos não são obrigatórios:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Valor fixo (R$)</strong>: valor monetário, como 0,00.</p>
+</li>
+<li>
+<p><strong>Taxa (%)</strong>: percentual, como 0,00 ou 8,50.</p>
+</li>
+<li>
+<p><strong>Base de cálculo do custo</strong>: <strong>Total da venda</strong> ou <strong>Total da venda sem frete</strong>.</p>
+<p><img src="screenshots/16.png" alt="Custos, com valor fixo, taxa e base de cálculo" /></p>
+</li>
+</ul>
+<ol start="18">
+<li>Na tabela de comissão por categoria, clique em <strong>adicionar</strong>.</li>
+<li>No modal <strong>Comissão por categoria</strong>, busque <strong>Categoria no Sistema ERP</strong> e informe <strong>Taxa (%)</strong> e <strong>Valor mínimo (R$)</strong>. A ajuda de <strong>Valor mínimo (R$)</strong> indica o valor mínimo de comissão por unidade. Os campos não são obrigatórios. <strong>cancelar</strong> fecha o modal sem gravar na tabela.</li>
+</ol>
+<p><img src="screenshots/17.png" alt="Modal Comissão por categoria vazio" /></p>
+<p><img src="screenshots/18.png" alt="Modal Comissão por categoria com taxa 8,50 e valor mínimo 2,50, sem salvar" /></p>
+<h4>Mapeamentos</h4>
+<ol start="20">
+<li>Na aba <strong>Mapeamentos</strong>, abra <strong>Situações de Pedidos</strong>.</li>
+<li>Se quiser, marque <strong>Permite retroceder situação dos pedidos na sincronização de situações</strong>. A caixa não é obrigatória.</li>
+</ol>
+<p><img src="screenshots/19.png" alt="Situações de Pedidos, tabela e botões de inclusão" /></p>
+<ol start="22">
+<li>Clique em <strong>adicionar mapeamento de situação</strong>. Há também <strong>adicionar situações padrão</strong> na tela.</li>
+<li>Informe <strong>Código da situação no E-commerce</strong> e escolha <strong>Situação no Sistema ERP</strong>. Os campos não são obrigatórios. As situações são <strong>Selecione</strong>, <strong>Em aberto</strong>, <strong>Faturado</strong>, <strong>Cancelado</strong>, <strong>Aprovado</strong>, <strong>Preparando envio</strong>, <strong>Enviado</strong>, <strong>Entregue</strong>, <strong>Pronto para envio</strong>, <strong>Dados incompletos</strong>, <strong>Não entregue</strong> e <strong>Em devolução</strong>. A linha fica na tabela até você salvar a integração.</li>
+</ol>
+<p><img src="screenshots/20.png" alt="Linha não salva com código AGUARDANDO_ENVIO e situação Em aberto" /></p>
+<ol start="24">
+<li>Abra <strong>Formas de Frete</strong> e clique em <strong>adicionar</strong>. A tela também traz um vídeo explicativo.</li>
+</ol>
+<p><img src="screenshots/21.png" alt="Formas de Frete, tabela vazia e botão adicionar" /></p>
+<ol start="25">
+<li>Na nova linha, busque <strong>Forma de envio</strong>, selecione <strong>Forma de frete</strong> e depois informe <strong>Código na integração</strong>. Os campos não são obrigatórios. Com <strong>Forma de envio</strong> vazia, o código não aceita digitação.</li>
+</ol>
+<p><img src="screenshots/22.png" alt="Linha de frete com forma de envio ainda vazia" /></p>
+<ol start="26">
+<li>Abra <strong>Categorias</strong> e localize a categoria do ERP na tabela <strong>Categoria no Sistema ERP</strong> / <strong>Código da categoria no E-commerce</strong>.</li>
+</ol>
+<p><img src="screenshots/23.png" alt="Tabela Categorias, com categoria do ERP e código no ecommerce" /></p>
+<ol start="27">
+<li>Clique no botão de vínculo da linha.</li>
+<li>No painel, pesquise em <strong>Pesquise a categoria ou selecione abaixo</strong> ou expanda a árvore de categorias do TikTok. <strong>Código da categoria no E-commerce</strong> é preenchido pelo painel, não por digitação livre na linha. Clique em <strong>atribuir categoria</strong> para confirmar o vínculo. <strong>fechar</strong> ou <strong>cancelar</strong> sai sem atribuir.</li>
+</ol>
+<p><img src="screenshots/24.png" alt="Painel de categorias do TikTok sem seleção, com busca e botões atribuir categoria e cancelar" /></p>
+<p><img src="screenshots/25.png" alt="Árvore com Artigos para casa expandido, sem atribuir categoria" /></p>
+<h4>Geral</h4>
+<ol start="29">
+<li>Na aba <strong>Geral</strong>, em <strong>Configurações da Loja</strong>, busque <strong>Loja TikTok Shop associada</strong>. O campo não é obrigatório. Escolha a loja depois da autorização.</li>
+</ol>
+<p><img src="screenshots/26.png" alt="Aba Geral, Configurações da Loja e Loja TikTok Shop associada" /></p>
+<h4>Fulfillment</h4>
+<ol start="30">
+<li>Na aba <strong>Fulfillment</strong>, defina a importação dos pedidos, o depósito e o lançamento de estoque das saídas. Os campos não são obrigatórios:</li>
+</ol>
+<ul>
+<li>
+<p><strong>Importar pedidos do Fulfillment</strong>: marque a caixa para importar.</p>
+</li>
+<li>
+<p><strong>Depósito do Fulfillment</strong>: selecione um depósito cadastrado na conta. A opção inicial é <strong>Selecione</strong>.</p>
+</li>
+<li>
+<p><strong>Lançamento de estoque para saídas de pedidos Fulfillment</strong>: <strong>Usar configuração padrão da conta</strong>, <strong>Manual</strong>, <strong>Automático ao autorizar a nota fiscal</strong>, <strong>Automático ao salvar a nota fiscal</strong>, <strong>Automático ao salvar o pedido</strong> ou <strong>Automático ao marcar pedido como enviado</strong>.</p>
+<p><img src="screenshots/27.png" alt="Aba Fulfillment, com importação, depósito e lançamento de estoque" /></p>
+</li>
+</ul>
+<ol start="31">
+<li>Clique em <strong>salvar</strong> para gravar as alterações das abas.</li>
+</ol>
+<h2>Resultado</h2>
+<p>Em <strong>Conectar Integração</strong>, a tela mostra o nome informado, o botão <strong>conectar com TikTok Shop</strong> e o aviso <strong>Você não está logado na loja TikTok</strong> enquanto a autorização não é iniciada. No card já existente, <strong>gerenciar</strong> abre as abas de regras do conector. Modais e linhas novas exibem o que você preencheu antes de salvar, atribuir ou conectar.</p>
+<h2>Informações adicionais</h2>
+<ul>
+<li>A página da integração existente tem só as abas <strong>Conexão</strong>, <strong>Produtos</strong>, <strong>Pedidos</strong>, <strong>Mapeamentos</strong>, <strong>Geral</strong> e <strong>Fulfillment</strong>.</li>
+<li>Em <strong>Situações de Pedidos</strong>, <strong>adicionar situações padrão</strong> fica na mesma tela de <strong>adicionar mapeamento de situação</strong>.</li>
+<li>Em <strong>Formas de Frete</strong>, a tela inclui um vídeo explicativo.</li>
+<li><strong>atribuir categoria</strong> confirma o vínculo da categoria do TikTok. <strong>salvar</strong> grava as alterações das abas.</li>
+</ul>
+</article>
+</body>
+</html>
