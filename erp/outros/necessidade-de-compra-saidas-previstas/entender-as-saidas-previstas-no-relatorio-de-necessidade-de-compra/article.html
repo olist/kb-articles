@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Entender as saídas previstas no relatório de necessidade de compra</title>
+</head>
+<body>
+<article>
+<h1>Entender as saídas previstas no relatório de necessidade de compra</h1>
+<p>No relatório de Necessidades de Compra do ERP da Olist, a coluna <strong>Saídas previstas</strong> mostra, por produto, as saídas que ainda não entraram no estoque. Você pode usar esse valor para decidir a compra.</p>
+<p>A coluna reúne os pedidos de venda das situações marcadas no filtro e as notas fiscais pendentes e autorizadas ainda não integradas ao estoque. Você escolhe essas situações, limita a quantidade de meses e pode incluir as saídas previstas no cálculo de compra. O relatório fica em <strong>Suprimentos &gt; Necessidades de Compra</strong>.</p>
+<h2>Importante</h2>
+<ul>
+<li>Não há filtro separado de situação da nota nesta tela.</li>
+<li>Notas fiscais com estoque estornado não entram nas saídas previstas.</li>
+<li>Alterar o estoque mínimo ou o estoque máximo neste relatório também atualiza o cadastro do produto. Consultar a coluna <strong>Saídas previstas</strong> não exige editar esses campos.</li>
+</ul>
+<h2>Instruções</h2>
+<ol>
+<li>
+<p>No menu lateral, acesse <strong>Suprimentos &gt; Necessidades de Compra</strong>.</p>
+</li>
+<li>
+<p>Confira o filtro <strong>Situações de venda para saídas previstas</strong>. O filtro não é obrigatório e exibe as situações marcadas.</p>
+<p><img src="screenshots/23.png" alt="Filtros de Necessidades de Compra com Situações de venda para saídas previstas" /></p>
+</li>
+<li>
+<p>Abra a lista e marque as situações de venda que devem entrar como pedidos. Só as situações marcadas entram na coluna. Deixe <strong>Cancelado</strong> desmarcado se não quiser considerar pedidos cancelados. Marque <strong>Cancelado</strong> se quiser incluí-los.</p>
+</li>
+</ol>
+<p>A lista traz:</p>
+<ul>
+<li><strong>Selecionar todas</strong></li>
+<li><strong>Em aberto</strong></li>
+<li><strong>Aprovado</strong></li>
+<li><strong>Preparando envio</strong></li>
+<li><strong>Faturado</strong></li>
+<li><strong>Pronto para envio</strong></li>
+<li><strong>Enviado</strong></li>
+<li><strong>Entregue</strong></li>
+<li><strong>Não entregue</strong></li>
+<li><strong>Dados incompletos</strong></li>
+<li><strong>Em devolução</strong></li>
+<li><strong>Cancelado</strong></li>
+</ul>
+<p><img src="screenshots/24.png" alt="Lista de situações de venda para saídas previstas, com Cancelado desmarcado" /></p>
+<ol start="4">
+<li>
+<p>Para limitar o período, digite a quantidade de meses em <strong>Considerar saídas previstas dos últimos</strong>. O campo não é obrigatório.</p>
+</li>
+<li>
+<p>Mantenha ou desmarque <strong>Considerar saídas previstas para cálculo de compra</strong>. A opção não é obrigatória. Com a opção marcada, o ERP inclui a saída prevista no cálculo de compra, para considerar pedidos que ainda não tiveram saída efetiva do estoque.</p>
+<p><img src="screenshots/28.png" alt="Inclusão das saídas previstas no cálculo de compra com cobertura de estoque" /></p>
+</li>
+<li>
+<p>Clique em <strong>Gerar</strong>.</p>
+</li>
+<li>
+<p>Leia a coluna <strong>Saídas previstas</strong>. A coluna mostra um valor numérico por produto, com as saídas ainda não integradas ao estoque. Você pode usar esse valor no cálculo de compra.</p>
+<p><img src="screenshots/25.png" alt="Relatório gerado com a coluna Saídas previstas" /></p>
+</li>
+<li>
+<p>Veja o ícone de informação ao lado de <strong>Saídas previstas</strong>. O texto informa: Notas fiscais pendentes e autorizadas e pedidos de venda nas situações selecionadas não integrados ao estoque.</p>
+<p><img src="screenshots/26.png" alt="Ícone de informação da coluna Saídas previstas" /></p>
+<p><img src="screenshots/27.png" alt="Definição de Saídas previstas: pedidos nas situações do filtro e notas fiscais de saída sem estoque lançado" /></p>
+</li>
+<li>
+<p>Para reabrir os filtros, clique em <strong>Exibir filtros</strong>.</p>
+</li>
+<li>
+<p>Para levar o relatório já gerado para fora da tela, clique em <strong>Imprimir</strong> ou em <strong>Download</strong>.</p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Depois de gerar, a tabela mostra <strong>Saídas previstas</strong> com um valor numérico por produto, ao lado de <strong>Entradas previstas</strong>, <strong>Estoque físico</strong> e <strong>Estoque virtual</strong>. O valor reúne os pedidos nas situações de venda escolhidas e as notas fiscais pendentes e autorizadas ainda não integradas ao estoque.</p>
+<h2>Informações adicionais</h2>
+<h3>Saídas do período contabilizam os lançamentos de saída de estoque</h3>
+<p>A coluna <strong>Saídas do período</strong> é outra coluna do relatório e contabiliza todos os lançamentos de saída de estoque.</p>
+</article>
+</body>
+</html>
