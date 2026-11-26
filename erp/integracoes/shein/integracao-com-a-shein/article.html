@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Integração com a Shein</title>
+</head>
+<body>
+<article>
+<h1>Integração com a Shein</h1>
+<h2>Importante</h2>
+<ul>
+<li>A conexão só segue depois de <strong>conectar com Shein</strong>. A tela direciona para a autenticação padrão do marketplace.</li>
+<li>Os seletores de depósitos, naturezas de operação, formas de recebimento, categorias e variações usam o que já está cadastrado na conta.</li>
+<li>Com a reserva de estoque habilitada, não use o lançamento automático ao salvar o pedido. Isso invalida a reserva.</li>
+<li>Para importar pedidos de fulfillment, defina um depósito específico para fulfillment na configuração da integração.</li>
+<li><strong>Inativar integração</strong>, <strong>Excluir todos os anúncios no ERP</strong>, <strong>Excluir integração</strong> e excluir variações não vinculadas são ações destrutivas.</li>
+</ul>
+<h2>Instruções</h2>
+<h3>Conectar a loja</h3>
+<ol>
+<li>
+<p>Acesse <strong>Início &gt; Integrações</strong>.</p>
+<p><img src="screenshots/1.png" alt="Card da Shein na página Início" /></p>
+</li>
+<li>
+<p>Clique em <strong>adicionar integração</strong>.</p>
+</li>
+<li>
+<p>Localize <strong>Shein</strong> na categoria Marketplace e clique em <strong>instalar</strong>.</p>
+<p><img src="screenshots/3.png" alt="Catálogo com Shein Marketplace e o botão instalar" /></p>
+</li>
+<li>
+<p>Na tela <strong>Conectar Integração</strong>, confira ou informe o <strong>Nome da integração no ERP</strong>. O campo é opcional e pode vir preenchido com Shein.</p>
+<p><img src="screenshots/4.png" alt="Tela Conectar Integração" /></p>
+<p><img src="screenshots/5.png" alt="Nome da integração preenchido" /></p>
+</li>
+<li>
+<p>Leia o aviso de que você será direcionado para a autenticação padrão do marketplace. Se quiser, acesse o link <strong>Acesse a ajuda sobre a integração</strong>.</p>
+</li>
+<li>
+<p>Clique em <strong>conectar com Shein</strong>. A autenticação do marketplace começa nesse passo. A conexão não é gravada antes dele.</p>
+</li>
+</ol>
+<h3>Configurar a integração</h3>
+<ol>
+<li>
+<p>Em <strong>Início &gt; Integrações</strong>, no card da Shein, clique em <strong>gerenciar</strong>.</p>
+<p><img src="screenshots/2.png" alt="Lista de integrações com o card Shein e o link gerenciar" /></p>
+</li>
+<li>
+<p>Na aba <strong>Conexão</strong>, confira o <strong>Nome da integração no ERP</strong> e o status conectada.</p>
+<p><img src="screenshots/6.png" alt="Aba Conexão com status conectada" /></p>
+</li>
+<li>
+<p>Em <strong>Produtos</strong>, abra <strong>Receber Produtos</strong>. Em <strong>Ao importar produtos</strong>, escolha <strong>Importar imagens como anexos</strong> ou <strong>Apenas importar a URL externa das imagens</strong>. O campo é opcional.</p>
+<p><img src="screenshots/7.png" alt="Receber Produtos com as opções de imagens" /></p>
+</li>
+<li>
+<p>Em <strong>Regras de Estoque</strong>, defina <strong>Atualizar estoque na loja virtual</strong>: <strong>Não atualizar</strong>, <strong>Enviar saldo físico</strong> ou <strong>Enviar saldo disponível</strong>. Na tabela de depósitos, selecione <strong>Todos</strong> ou <strong>Próprios</strong>. Os campos são opcionais.</p>
+<p><img src="screenshots/8.png" alt="Regras de Estoque com atualização e depósitos" /></p>
+</li>
+<li>
+<p>Ainda em <strong>Regras de Estoque</strong>, escolha <strong>Lançamento de estoque para saídas</strong>: <strong>Usar configuração padrão da conta</strong>, <strong>Manual</strong>, <strong>Automático ao autorizar a nota fiscal</strong>, <strong>Automático ao salvar a nota fiscal</strong>, <strong>Automático ao salvar o pedido</strong> ou <strong>Automático ao marcar pedido como enviado</strong>. Se quiser, habilite <strong>Utilizar estoque de segurança</strong> e informe <strong>Estoque de segurança</strong> com valor numérico e decimais.</p>
+<p><img src="screenshots/9.png" alt="Lançamento das saídas e estoque de segurança" /></p>
+</li>
+<li>
+<p>Em <strong>Preços</strong>, escolha a <strong>Regra de utilização de preços</strong>: <strong>Preço fixo</strong>, <strong>Conforme lista de preços</strong> ou <strong>Conforme regras de preço</strong>. Informe o <strong>Percentual de acréscimo ou desconto</strong> com percentual numérico e decimais. Em <strong>Forma para aplicar valores adicionais</strong>, escolha <strong>Base simples</strong> ou <strong>Base por dentro</strong>.</p>
+<p><img src="screenshots/10.png" alt="Preços com regra, percentual e forma de aplicar valores" /></p>
+</li>
+<li>
+<p>Clique em <strong>Adicionar regra de preço e pesos</strong>. No modal <strong>Regra de preço e peso</strong>, use valor fixo ou faixa de peso. No valor fixo, preencha <strong>Preço até (regra de valor fixo)</strong>, <strong>Valor adicional</strong> e <strong>Adicional máximo</strong> em reais. Na faixa de peso, use <strong>Definir um limite de preço máximo</strong> e informe <strong>De</strong> e <strong>Até</strong> em kg e <strong>Valor do frete</strong> em reais.</p>
+<p><img src="screenshots/11.png" alt="Modal de valor fixo vazio" /></p>
+<p><img src="screenshots/12.png" alt="Modal de valor fixo preenchido" /></p>
+<p><img src="screenshots/13.png" alt="Regra por faixa de peso" /></p>
+<p><img src="screenshots/14.png" alt="Faixa de peso preenchida" /></p>
+</li>
+<li>
+<p>Em <strong>Pedidos</strong>, abra <strong>Fluxo de Pedidos</strong>. Ajuste <strong>Sincronização automática de pedidos</strong> e <strong>Formatar nome dos contatos no recebimento dos pedidos</strong>. Em <strong>Completar CEP</strong>, escolha <strong>Não</strong>, <strong>Apenas se bairro não está informado</strong> ou <strong>Sempre</strong>. Em <strong>Divergência entre pagamento e valor do pedido</strong>, escolha <strong>Utilizar valor de pagamento integrado enviado pelo canal de venda (Recomendado)</strong> ou <strong>Considerar pagamento como Não integrado</strong>. Em <strong>Intermediador</strong>, a opção vista é <strong>Sem intermediador</strong>.</p>
+<p><img src="screenshots/15.png" alt="Fluxo de Pedidos" /></p>
+</li>
+<li>
+<p>Em <strong>Dados Fiscais</strong>, escolha a <strong>Natureza de operação para venda</strong> entre as naturezas já cadastradas. Se quiser, habilite <strong>Definir natureza de operação diferente para destinatários contribuintes do ICMS</strong> e selecione a <strong>Natureza de operação de venda para destinatários contribuintes do ICMS</strong>.</p>
+<p><img src="screenshots/16.png" alt="Dados Fiscais com natureza de operação" /></p>
+<p><img src="screenshots/17.png" alt="Natureza diferente para contribuintes do ICMS" /></p>
+</li>
+<li>
+<p>Em <strong>Mapeamentos</strong>, abra <strong>Situações de Pedidos</strong>. Use <strong>Adicionar situações padrão</strong> ou <strong>Adicionar mapeamento de situação</strong>. Em <strong>Situação no ERP</strong>, escolha entre <strong>Selecione</strong>, <strong>Em aberto</strong>, <strong>Faturado</strong>, <strong>Cancelado</strong>, <strong>Aprovado</strong>, <strong>Preparando envio</strong>, <strong>Enviado</strong>, <strong>Entregue</strong>, <strong>Pronto para envio</strong>, <strong>Dados incompletos</strong>, <strong>Não entregue</strong> e <strong>Em devolução</strong>. Ajuste <strong>Permite retroceder situação dos pedidos na sincronização de situações</strong> se precisar.</p>
+</li>
+</ol>
+<p><img src="screenshots/18.png" alt="Situações de Pedidos, parte superior" /></p>
+<p><img src="screenshots/19.png" alt="Continuação do mapeamento de situações" /></p>
+<ol start="11">
+<li>Em <strong>Formas de Recebimento</strong>, habilite <strong>Importar forma de recebimento nos pedidos</strong> se quiser importar. Escolha a <strong>Forma de recebimento padrão</strong> e a <strong>Categoria financeira padrão dos pedidos</strong>. Clique em <strong>Adicionar forma de recebimento</strong> e preencha <strong>Forma de recebimento</strong>, <strong>Meio de recebimento</strong> (<strong>Banco</strong> ou <strong>Gateway</strong>) e <strong>Código na integração</strong>. No Banco, a conta pode ficar como <strong>Não definida</strong> ou usar uma conta já cadastrada.</li>
+</ol>
+<p><img src="screenshots/20.png" alt="Formas de Recebimento com importação desligada" /></p>
+<p><img src="screenshots/21.png" alt="Importação de forma de recebimento habilitada" /></p>
+<p><img src="screenshots/22.png" alt="Linha nova de forma de recebimento" /></p>
+<p><img src="screenshots/23.png" alt="Linha de forma de recebimento preenchida" /></p>
+<ol start="12">
+<li>Em <strong>Categorias</strong>, informe o <strong>Código da categoria no E-commerce</strong> na linha da categoria do ERP ou abra o ícone da categoria. No painel <strong>Pesquisar categoria</strong>, pesquise na árvore e clique em <strong>atribuir categoria</strong> ou <strong>cancelar</strong>.</li>
+</ol>
+<p><img src="screenshots/24.png" alt="Tabela de categorias" /></p>
+<p><img src="screenshots/25.png" alt="Painel de pesquisa de categoria" /></p>
+<p><img src="screenshots/26.png" alt="Árvore de categorias no painel" /></p>
+<ol start="13">
+<li>Em <strong>Variações</strong>, relacione a <strong>Variação no Sistema ERP</strong> e a <strong>Opção no Sistema ERP</strong> às variações e opções recebidas do ecommerce, ou relacione os valores pelo nome.</li>
+</ol>
+<p><img src="screenshots/27.png" alt="Variações com relacionar valores pelo nome" /></p>
+<ol start="14">
+<li>Em <strong>Outros</strong>, abra <strong>Configurações Adicionais</strong>. Em <strong>Forma de informação da cotação do dólar</strong>, escolha <strong>API do Banco Central</strong> ou <strong>Manual</strong>. Em <strong>Cotação monetária do dólar</strong>, informe o valor numérico com decimais. O link <strong>atualizar cotação do dólar</strong> atualiza esse valor. Em <strong>Justificativa para atualização de preços</strong>, escolha <strong>Aumento no custo do produto</strong>, <strong>Aumento do custo logístico</strong>, <strong>Recomposição do preço ao final do evento</strong> ou <strong>Outro</strong>.</li>
+</ol>
+<p><img src="screenshots/28.png" alt="Cotação pela API do Banco Central" /></p>
+<p><img src="screenshots/29.png" alt="Opção Manual da cotação do dólar" /></p>
+<ol start="15">
+<li>Em <strong>Fulfillment</strong>, abra <strong>Configurações do Fulfillment</strong>. Habilite <strong>Importar pedidos do Fulfillment</strong> para importar os pedidos e identificá-los com um marcador. Escolha o <strong>Depósito do Fulfillment</strong> e o <strong>Lançamento de estoque para saídas de pedidos Fulfillment</strong>, com as mesmas opções do lançamento das saídas.</li>
+</ol>
+<p><img src="screenshots/30.png" alt="Configurações do Fulfillment" /></p>
+<ol start="16">
+<li>Clique em <strong>Salvar</strong>. As regras do conector ficam gravadas. A integração existente permanece com status conectada.</li>
+</ol>
+<h3>Reabrir a conexão pelo card</h3>
+<ol>
+<li>
+<p>Em <strong>Início &gt; Integrações</strong>, localize o card da integração Shein.</p>
+</li>
+<li>
+<p>Clique em <strong>gerenciar</strong>. Essa ação pode abrir a tela <strong>Conectar Integração</strong> em vez das abas de configuração.</p>
+</li>
+<li>
+<p>Confira o <strong>Nome da integração no ERP</strong>. O campo é opcional e pode já vir preenchido.</p>
+</li>
+<li>
+<p>Clique em <strong>conectar com Shein</strong> para autenticar a loja no marketplace. A autenticação não começa antes desse clique.</p>
+<p><img src="screenshots/31.png" alt="Tela Conectar Integração reaberta pelo card" /></p>
+</li>
+</ol>
+<h3>Ações do card</h3>
+<ol>
+<li>
+<p>Em <strong>Início &gt; Integrações</strong>, no card da Shein, clique em <strong>Ações</strong>.</p>
+</li>
+<li>
+<p>O menu exibe <strong>Inativar integração</strong>, <strong>Excluir todos os anúncios no ERP</strong> e <strong>Excluir integração</strong>. Use essas opções só quando quiser inativar ou excluir. A exclusão de anúncios só aparece para empresas em que o recurso foi liberado. Se a opção não aparecer, peça acesso ao administrador da conta.</p>
+<p><img src="screenshots/32.png" alt="Menu Ações do card Shein" /></p>
+</li>
+</ol>
+<h2>Resultado</h2>
+<p>Na aba <strong>Conexão</strong> da integração já existente, o status exibido é conectada. O card da Shein em <strong>Início &gt; Integrações</strong> oferece <strong>gerenciar</strong> e o menu <strong>Ações</strong>. A tela <strong>Conectar Integração</strong> mostra o nome da integração e o botão <strong>conectar com Shein</strong>, com o aviso de autenticação do marketplace.</p>
+<h2>Informações adicionais</h2>
+<h3>Mapeamentos de situações já exibidos</h3>
+<ul>
+<li><strong>Todos</strong> corresponde a <strong>Em aberto</strong>.</li>
+<li><strong>Aguardando Coleta</strong> e <strong>Aguardando Coleta Shein</strong> correspondem a <strong>Preparando envio</strong>.</li>
+<li><strong>Etiqueta Impressa</strong> corresponde a <strong>Pronto para envio</strong>.</li>
+<li><strong>Entrega Confirmada</strong> e <strong>Sign</strong> correspondem a <strong>Entregue</strong>.</li>
+<li><strong>Armazém de Entrega</strong> corresponde a <strong>Enviado</strong>.</li>
+<li><strong>Reembolso</strong> corresponde a <strong>Cancelado</strong>.</li>
+</ul>
+</article>
+</body>
+</html>
